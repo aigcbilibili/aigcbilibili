@@ -1,0 +1,13 @@
+/* menu样式修改 */
+.el-menu{
+    width: 5rem;
+    border-radius: 5px;
+}
+.el-menu-item{
+    font-size: 2rem !important;
+    margin: 1rem 0.1rem;
+}
+
+.el-icon{
+    font-size: 1.6rem !important;
+}
