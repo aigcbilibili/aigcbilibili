@@ -56,8 +56,8 @@
             <div v-else>占位</div>
         </div>
         <!--视频的tags-->
-        <div class="video-tags" @v-for="(item) in `videoInfo.like`">
-            <div class="video-tag-item">{{item}}</div>
+        <div class="video-tags" @v-for="(item) in `videoInfo.tags`">
+            <div class="video-tag-item">???{{item}}</div>
         </div>
         </div>
     </div>
@@ -65,6 +65,8 @@
 </template>
 <script setup>
 import {ref, defineAsyncComponent, onMounted } from "vue"
+import { getVideoDetail } from '@/api/video'
+import { ElMessage } from "element-plus"
 const ProfileCard = defineAsyncComponent(()=>
     import ('@/components/ProfileCard')
 ) 
@@ -72,6 +74,8 @@ const playerVue  = defineAsyncComponent(()=>
     import ('@/components/Player.vue')
 )
 const isLike = ref(false) // 是否点赞过本视频
+const isUpIntro = ref(false) // 是否展开更多
+
 const playInfo = ref()
 
 /**
@@ -97,33 +101,31 @@ const userInfo = {
     following: 100, // 关注数
     followers:100, // TODO 待加入
 }
+
 /**
- * 
+ * 下拉栏
  */
-const relatedInfo = {
-    videoInfo:{
-        title:'HelloWorld', // 【通过跳转传过来】
-        intro:'加载失败，使用测试数据', // 默认为空
-        duration:'00:01:00',
-        createtime:'2023-12-15',
-        tags:['大学生', '计算机', '工作'],
-        playcontent: 100,
-        like: 1, // TODO 待加入
-        collect: 1, // TODO 待加入
-        commentNum: 999, // TODO 总评论数
-    },
-    userInfo:{ // TODO 询问UserInfo是否为大写
-        nickName:'匿名',
-        avatar:'', // 对应的cover
-        gender:'',
-        followers:100, // TODO 待加入
-    }
+const handleMoreFunc = (command) => {
+    switch (command) {
+        case 'more':
+            ElMessage.success('抱歉~功能开发中')
+            break
+        case 'report':
+            ElMessage.error('举报成功')
+            break
+    }    
 }
 
 /**
- * 获取数据
+ * 获取视频数据
  */
+const refreshVideo = async() => {
+    getVideoDetail()
+}
 
+onMounted(()=>{
+    
+})
 </script>
 
 <style lang="scss" scoped>
@@ -211,11 +213,11 @@ const relatedInfo = {
     margin-top: 1rem;
     color: #052b54a9;
 }
-
 .video-tags{
+    position: absolute;
     display: flex;
     flex-wrap: wrap;
-    margin-top: calc(80%);
+    margin-top: 1rem;
 }
 .video-tag-item{
     width: auto;

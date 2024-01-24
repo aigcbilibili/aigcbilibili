@@ -13,11 +13,11 @@
             </div>
             <!--评论区-->
             <div class="discussion-panel">
-                <commentPanel />
+                <commentPanel :videoId="13" />
             </div>
         </div>
-        <!--NOTE 视频推荐：（v-if实现）如果不是全屏，则不展示-->
-        <div v-if="isFullScreen" class="video-right"><!--XXX 长度用于显示集数的覆盖-->
+        <!--NOTE 视频推荐：如果不是全屏，则不展示-->
+        <div class="video-right"><!--XXX 长度用于显示集数的覆盖-->
            <!-- <videoRecommend /> -->
         </div>
     </div>
@@ -25,9 +25,6 @@
 
 <script setup>
 import { onMounted, onBeforeMount, ref, reactive, defineAsyncComponent } from "vue"
-
-import { getVideoDetail } from '@/api/video'
-import { ElMessage } from "element-plus"
 import { useRoute } from 'vue-router'
 const route = useRoute()
 const isLike = ref(false) // 是否点赞过本视频
@@ -42,154 +39,28 @@ const commentPanel = defineAsyncComponent(()=>
 const videoRecommend = defineAsyncComponent(()=>{
     import ('@/pages/videoDetail/VideoRecommend')
 })
-/**
- * 视频简介
- */
-const videoInfo = {
-    title:'HelloWorld', // 【通过跳转传过来】
-    intro:'加载失败，使用测试数据', // 默认为空
-    duration:'00:01:00',
-    createtime:'2023-12-15',
-    tags:['大学生', '计算机', '工作'],
-    playcontent: 100,
-    like: 1, // TODO 待加入
-    collect: 1, // TODO 待加入
-    commentNum: 999, // TODO 总评论数
-}
-/**
- * UP主信息
- */
-const userInfo = {
-    nickName:'匿名',
-    avatar:'', // 对应的cover
-    following: 100, // 关注数
-    followers:100, // TODO 待加入
-}
-/**
- * 
- */
-const relatedInfo = {
-    videoInfo:{
-        title:'HelloWorld', // 【通过跳转传过来】
-        intro:'加载失败，使用测试数据', // 默认为空
-        duration:'00:01:00',
-        createtime:'2023-12-15',
-        tags:['大学生', '计算机', '工作'],
-        playcontent: 100,
-        like: 1, // TODO 待加入
-        collect: 1, // TODO 待加入
-        commentNum: 999, // TODO 总评论数
-    },
-    userInfo:{ // TODO 询问UserInfo是否为大写
-        nickName:'匿名',
-        avatar:'', // 对应的cover
-        gender:'',
-        followers:100, // TODO 待加入
-    },
-    commentlist:[{
-        id: 0,
-        avatar: '@/assets/img/avater.png', // TODO
-        nickname: '咸鱼2号',
-        content: '测试数据，显示失败',
-        createtime: '2023-12-16',
-        reaplyId: ''
-    }],
-    similarvideo:[{
-        authorname: '',
-        videoname: 'html',
-        playcontent: 1,
-        createtime: '', // TODO
-        url: 'http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4' // TODO    
-    }]
-}
-
-/**
- * 点赞实现
- */
-const thumbUp = ()=>{
-    let add_num = "+"+1
-    let thumb = document.getElementById('likeNum')
-    let x = thumb.pageX, y = thumb.pageY
-    isLike.value = true
-}
-
-/**
- * 评论发布功能
- */
-let newComment = reactive({
-    author: '',
-    content: '',
-    parentID: 0, // TODO 如果parentID是代表非回复
-})  
-// 添加的评论需要后端再加ID
-const addComment = () => {
-    // 先在前端显示
-    if(newComment.author && newComment.content){
-        relatedInfo.commentlist.push({
-            id: relatedInfo.commentlist.length,
-            avatar: userInfo.avatar,
-            nickname: userInfo.nickName,
-            content: newComment.content,
-        })
-        // 重置当前评论发布的状态
-        newComment.author = " "
-        newComment.content = " "
-    }
-}
-
-/**
- * 动态加载视频和评论区
- */
-
-
-
-/**
- * 判断当前是否为全屏 
- */
-let isFullScreen = ref(false)
-function checkScreenSize(){
-    // NOTE 虽然script setup会自动暴露顶层变量给html（不用return），但需要使用ref和xx.value
-    isFullScreen.value = window.innerWidth > 1020 // 设全屏是超过1020px
-}
 
 onMounted(() =>{
-    // NOTE Vue3的setup使用组合式而非选项式，不能用this关键字
-    checkScreenSize()
-    window.addEventListener('resize', checkScreenSize)
-
+    const a = 1
 })
 onBeforeMount(()=>{
-    window.removeEventListener('resize', checkScreenSize)
+    const a = 1
 })
 
-/**
- * 点击后修改isUpIntro“判断能否展开”
- */
-let isUpIntro = ref(false)
 
-/**
- * 下拉栏
- */
-const handleMoreFunc = (command) => {
-    switch (command) {
-        case 'more':
-            ElMessage.success('抱歉~功能开发中')
-            break
-        case 'report':
-            ElMessage.error('举报成功')
-            break
-    }    
-}
+
 
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .video-detail-page{
-    width: 100%;
-    min-height: 85vh; /* 真奇怪，跳转后height不能用百分比或calc() */
-    overflow: hidden;
+    width: 100%; 
+    min-height: 120vh; /* 真奇怪，跳转后height不能用百分比或calc() */
 }
 .video-and-dissussion{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     position: relative;
 }
 /* NOTE float实现两栏，可用于视频模板!! */
@@ -201,11 +72,16 @@ const handleMoreFunc = (command) => {
     border-radius: 20px;
     text-align: left;
 }
-.discussion-panel{
-    position: absolute;
-    top: 70rem;
+.video-right{
+    display: none;
+}
+.discussion-panel{ /* 这里不能用absolute，否则会被父组件的min-height限制死*/
     width: 45rem;
-    margin-left: 2.5rem;
+    min-height: 20rem;
+    height: auto;
+    margin: 45rem 0 3rem 2.5rem;
+    box-shadow: 0 2px 25px 0 #79b1eca9;
+    border-radius: 20px;
 }
 @media screen and (min-width:1020px) {
     .video-left{
@@ -214,10 +90,12 @@ const handleMoreFunc = (command) => {
         height: 50rem;
     }
     .video-right{
+        display: flex;
         margin: 3rem 67rem;
         width: 35rem;
     }
     .discussion-panel{
+        margin-top: 55rem;
         width: 60rem;
         margin-left: 3rem;
     }
@@ -261,13 +139,6 @@ const handleMoreFunc = (command) => {
     margin-right: 2rem;
     border-radius: 10px;
     box-shadow: -5px 2px 25px 0 #79b1eca9;
-}
-.discussion-panel{
-    box-shadow: 0 2px 25px 0 #79b1eca9;
-    min-height: 15rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    border-radius: 20px;
 }
 .video-recommend-item{
     width: 35rem;

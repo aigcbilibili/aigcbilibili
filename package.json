@@ -27,6 +27,7 @@
     "vue": "^3.2.13",
     "vue-lazyload": "^3.0.0",
     "vue-router": "^4.2.5",
+    "vue-xss": "^1.0.5",
     "vue3-particles": "^2.12.0",
     "webpack": "4.0.0"
   },

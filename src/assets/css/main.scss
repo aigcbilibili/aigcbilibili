@@ -1,40 +1,5 @@
 // 全局样式
 
-// 组件的颜色
-.based-box{
-    box-shadow: -5px 2px 25px 0 #79b1eca9;
-}
-.left-box{
-    border-radius: 20px;
-    box-shadow: 0 -3px 25px 0 #79b1eca9;;
-}
-// 字体的颜色
-.title-font-color{
-    color: #093957;;
-}
-.content-font-color{
-    color: #052b54a9;
-}
-
-// flex布局的组件：默认以行为主轴
-.flex-based-container{
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-}
-.flex-center-container{
-    @extend .flex-based-container;
-    justify-content: center;
-}
-.flex-between-container{
-    @extend .flex-based-container;
-    justify-content: space-between;
-}
-.flex-column-container{
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-}
 /// 原来main.css中内容
 * {
     margin: 0;
@@ -72,7 +37,49 @@ body {
 a {
     text-decoration: none
 }
-
+// 禁用手势
+[role=button], a, area, button, input:not([type=range]), label, select, summary, textarea {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+// 组件的颜色
+.based-box{
+    box-shadow: -5px 2px 25px 0 #79b1eca9;
+}
+.left-box{
+    border-radius: 20px;
+    box-shadow: 0 -3px 25px 0 #79b1eca9;;
+}
+// 字体的颜色
+.title-font-color{
+    color: #093957;;
+}
+.content-font-color{
+    color: #052b54a9;
+}
+// flex布局的组件：默认以行为主轴
+.flex-based-container{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.flex-center-container{
+    @extend .flex-based-container;
+    justify-content: center;
+}
+.flex-between-container{
+    @extend .flex-based-container;
+    justify-content: space-between;
+}
+.flex-column-container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.flex-column-center-container{
+    @extend .flex-column-container;
+    justify-content: center;
+}
 .basic-btn{ 
     width: 5.5rem;
 }
@@ -92,7 +99,7 @@ a {
     border-radius: 12px;
     &:active{
         /*缩小的动效*/
-        transition: 0.05s;
+        transition: 0.02s;
         transform: scale(0.9, 0.9);
         -webkit-transform: scale(0.9, 0.9);
         -o-transform: scale(0.9, 0.9);
@@ -110,6 +117,9 @@ a {
 $detail-first-color: #79b1ec;
 $detail-second-color: #76ace5e6;
 $detail-third-color: #587ba1fc;
+$textarea-focus-color: #093957;
+$textarea-srcoller-color:rgb(67, 112, 139);
+$gray-color: #0b0b0b;
 .detail-btn{
     color: #ffffff;
     background-color: lighten($detail-first-color, 12%);
@@ -143,6 +153,12 @@ $detail-third-color: #587ba1fc;
 }
 .font-second-color{
     color: #0f4379a9; /*数量符号蓝*/
+}
+.font-third-color{
+    color: #02111b;
+}
+.font-forth-color{
+    color: #77a0c68d;
 }   
 /*分割线*/
 .vertical-divided-line{ /*纵轴*/
@@ -155,7 +171,44 @@ $detail-third-color: #587ba1fc;
     height: 0.1rem;
     background: lighten($detail-first-color, 12%);
 } 
-/*带阴影的组件*/
-.based-box{
-
+/*文字框*/
+textarea{
+    border-radius: 10px;
+    padding: 0.5rem;
+    border: 0.11rem solid $detail-third-color;
+    color: $gray-color;
+    min-height: 2rem;
+    height: auto;
+    max-height: 5rem;
+    resize: none; /* 在用户输入时，textarea自动调整高度 */
+    &:focus{
+        outline: none;
+        border: 0.12rem solid lighten($textarea-focus-color,20%);
+        font-weight: 500;
+        line-height: 1.2rem;
+    }
+}
+*+html textarea { // IE浏览器兼容
+    padding: 8px;
+}
+textarea::-webkit-scrollbar { // 滚动条
+    width: 6px;
+}
+textarea::-webkit-scrollbar-thumb {
+    background: lighten($textarea-srcoller-color, 20%);
+    border-radius: 5px;
+}
+/*头像*/
+.common-avatar{
+    border-radius: 50%;
+}
+.first-common-avatar{
+    @extend .common-avatar;
+    width: 3rem;
+    height: 3rem;
+}
+.second-common-avatar{
+    @extend .common-avatar;
+    width: 2rem;
+    height: 2rem;
 }

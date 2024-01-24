@@ -7,6 +7,7 @@ import App from './App.vue'
 import router from './router/index'
 import Particles from "vue3-particles"
 import VueLazyload from "vue-lazyload"
+// import VueXSS from "vue-xss"
 // import SkeletonPlugin from 'vue-skeleton-webpack-plugin'
 import errImg from "./assets/img/lazyLoad/err.png"
 import loadImg from "./assets/img/lazyLoad/loading.jpg"
@@ -25,6 +26,8 @@ app.use(VueLazyload, {
     attempt: 1, // number：加载错误后最大尝试次数
     // listenEvents['scroll','wheel','mousewheel','resize','animationend','	transitionend','touchmove'],  //想让vue监听的事件
 })
+// xss框架
+// app.use(VueXSS)
 // element-plus的使用
 app.use(ElementPlus, {
     locale: zhCn,

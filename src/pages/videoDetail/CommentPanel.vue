@@ -1,9 +1,9 @@
 <template>
-    <!--排序选择-->
+    <!--选择最新/最热-->
     <div class="comment-sort-select">
         <span style="display: flex; margin-right: 2rem; align-items: baseline;">
             <h3>评论</h3>
-            <p class="comment-num font-second-color">{{videoInfo.commentNum}}</p>
+            <p class="comment-num font-second-color">{{commentNum}}</p>
         </span>
         <p>最新</p>
         <div class="part-item font-second-color">|</div>
@@ -11,129 +11,100 @@
     </div>
     <!--评论发布区-->
     <div class="create-comment-panel">
-        <div class="comment-form flex-center-container">
-                <img :src="userInfo.avatar" />
-            <textarea class="comment-area" v-model="newComment.content" placeholder="和谐的评论更能促进交流~"></textarea>
-            <button class="send-comment-btn common-btn-1 detail-btn" @click="addComment">发布评论</button>
-        </div>
+        <replyVue :value="sendUser" />
     </div>
     <!--评论展示区-->
-    <div class="comment-panel">
-        <div class="comment-item" v-for="(item,index) in commentList" :key="index">
-            <div class="comment-item-img">
-                <img :src="item.avatar" alt="avater"/>
-            </div>
-            <div class="comment-item-info">
-                <div class="comment-item-name">{{item.nickname}}</div>
-                <div class="comment-item-time">{{item.createtime}}</div>
-                <div class="comment-item-content">{{item.content}}</div>
+    <div class="comment-panel flex-column-center-container">
+        <div class="comment-item" v-for="(item,index) in commentsList" :key="index">
+            <commentVue :commentInfo="item" :type="'top'" :videoId="videoId" />
+            <!--显示该评论的children-->
+            <div v-if="item.replyIdList!=[]" class="comment-replys-panel">
+                <div v-for="(child,index) in item.replyIdList" :key="index">
+                    <commentVue :commentInfo="child" :type="'nest'" :videoId="videoId" />
+                </div>
             </div>
         </div>
     </div>
 </template>
 
 <script setup>
-import { onMounted, onBeforeMount, ref, reactive, defineAsyncComponent } from "vue"
-const videoInfo = {
-    title:'HelloWorld', // 【通过跳转传过来】
-    intro:'加载失败，使用测试数据', // 默认为空
-    duration:'00:01:00',
-    createtime:'2023-12-15',
-    tags:['大学生', '计算机', '工作'],
-    playcontent: 100,
-    like: 1, // TODO 待加入
-    collect: 1, // TODO 待加入
-    commentNum: 999, // TODO 总评论数
-}
-const userInfo = {
-    nickName:'匿名',
-    avatar:'', // 对应的cover
-    following: 100, // 关注数
-    followers:100, // TODO 待加入
-}
-const relatedInfo = {
-    videoInfo:{
-        title:'HelloWorld', // 【通过跳转传过来】
-        intro:'加载失败，使用测试数据', // 默认为空
-        duration:'00:01:00',
-        createtime:'2023-12-15',
-        tags:['大学生', '计算机', '工作'],
-        playcontent: 100,
-        like: 1, // TODO 待加入
-        collect: 1, // TODO 待加入
-        commentNum: 999, // TODO 总评论数
-    },
-    userInfo:{ // TODO 询问UserInfo是否为大写
-        nickName:'匿名',
-        avatar:'', // 对应的cover
-        gender:'',
-        followers:100, // TODO 待加入
-    },
-    commentlist:[{
-        id: 0,
-        avatar: '@/assets/img/avater.png', // TODO
-        nickname: '咸鱼2号',
-        content: '测试数据，显示失败',
-        createtime: '2023-12-16',
-        reaplyId: ''
-    }],
-    similarvideo:[{
-        authorname: '',
-        videoname: 'html',
-        playcontent: 1,
-        createtime: '', // TODO
-        url: 'http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4' // TODO    
-    }]
-}
-/**
- * 评论区展示内容
- */
-const commonList = [{
-    id: 0,
-    avatar: '@/assets/img/avater.png', // TODO
-    nickname: '咸鱼2号',
-    content: '测试数据，显示失败',
-    createtime: '2023-12-16',
-    reaplyId: ''
-},{
-    id: 1,
-    nickname: '张三',
-    avatar: 'https://img.yzcdn.cn/vant/cat.jpg',
-    createtime: '2021-01-01 12:00:00',
-    content: '这是一条评论'
-}]
-/**
- * 评论发布功能
- */
- let newComment = reactive({
-    author: '',
-    content: '',
-    parentID: 0, // TODO 如果parentID是代表非回复
-})  
-// 添加的评论需要后端再加ID
-const addComment = () => {
-    // 先在前端显示
-    if(newComment.author && newComment.content){
-        relatedInfo.commentlist.push({
-            id: relatedInfo.commentlist.length,
-            avatar: userInfo.avatar,
-            nickname: userInfo.nickName,
-            content: newComment.content,
-        })
-        // 重置当前评论发布的状态
-        newComment.author = " "
-        newComment.content = " "
+import { onMounted, ref, reactive, defineAsyncComponent, defineProps } from "vue"
+import { fetchAllComments } from "@/api/comment" 
+const replyVue = defineAsyncComponent(()=>
+    import ("@/components/comment/Reply")
+)
+const commentVue = defineAsyncComponent(()=>
+    import ("@/components/comment/Comment")
+)
+const props = defineProps({
+    videoId: {
+        type: Number,
+        required: true
     }
+})
+// 父组件传递的和上传评论相关的数据
+const videoId = ref(props.videoId) 
+const commentNum = ref(999) // 评论总数
+// 向下一级子组件传递的评论发布区数据
+const sendUser = {
+    senderId: 0, // 当前登录用户id
+    parentId: null,
+    receiverId: null,
+    videoId: videoId,
+    avatar: require("@/assets/img/avater.png")
 }
+// 向下一级子组件传递的评论查看区数据
+const data_test = [{
+    id: 1, // 评论id
+    avatar: require('@/assets/img/avater.png'), // TODO
+    senderId: 2,
+    senderName: '咸鱼2号',
+    content: '测试数据，显示失败。测试数据，显示失败。测试数据，显示失败。测试数据，显示失败。测试数据，显示失败测试数据，显示失败测试数据，显示失败测试数据，显示失败',
+    createtime: '2023-12-16 12:00:00',
+    likeCount: 29, 
+    isLike: true,
+    replyIdList:[{
+        senderName: '麻辣烧鸭',
+        senderId: 11,
+        receiverName: '清蒸鲫鱼',
+        receiverId: 13,
+        avatar: require('@/assets/img/avater.png'), 
+        content: '看到了吗！',
+        likeCount: 29, 
+        isLike: true,
+        createtime: '2023-1-16 18:24:36'
+    },{
+        senderName: '清蒸鲫鱼',
+        senderId: 13,
+        receiverName: '麻辣烧鸭',
+        receiverId: 11,
+        avatar: require('@/assets/img/avater.png'), 
+        content: '看到了wwwww',
+        likeCount: 31, 
+        isLike: false,
+        createtime: '2023-1-16 19:24:36'
+    }]
+},{
+    id: 2,
+    avatar: require('@/assets/img/avater.png'),
+    senderName: '张三',
+    senderId: 3,
+    content: '这是一条评论',
+    createtime: '2021-01-01 12:00:00',
+    likeCount: 571, 
+    isLike: false,
+    replyIdList:[]
+}]
+let commentsList = reactive([])
+
+onMounted(async()=>{
+    const tmp = await fetchAllComments(1)
+    console.log('测试测试', tmp)
+    commentsList.splice(0, commentsList.length, ...(tmp == undefined ? data_test : tmp)) // 使用splice更新
+})
 </script>
 
 <style lang="scss" scoped>
-.comment-item-img{
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    // overflow: hidden;
-}
 .comment-sort-select{
     display: flex;
     justify-content: left;
@@ -155,21 +126,15 @@ const addComment = () => {
     margin-left: -0.5rem;
     margin-right: 0.5rem;
 }
-.comment-form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 1rem;
-}
-.comment-form .comment-area{
-    width: 35rem;
-    height: 10rem;
-    border-radius: 10px;
-}
-.comment-form .send-comment-btn{
-    width: auto;
+.comment-item{
+    width: 40rem;
     height: auto;
-    padding: 0.4rem;
-    margin-left: 0.5rem;
+    min-height: 3rem;
+    margin-bottom: 1rem;
+}
+@media screen and (min-width: 1020px){
+    .comment-item{
+        width: 50rem;
+    }
 }
 </style>

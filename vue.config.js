@@ -38,8 +38,8 @@ module.exports = defineConfig({
     // NOTE 跨域配置
     proxy:{
       '/api': {
-        target: 'http://v3c8zgra.beesnat.com:18865/',
-        // target: 'http://114.55.116.140:10201/', 
+        // target: 'http://v3c8zgra.beesnat.com:18865/',
+        target: 'http://114.55.116.140:10201/', 
         // 允许跨域：如果不开的话，会拦截响应
         changeOrigin: true,
         pathRewrite: {

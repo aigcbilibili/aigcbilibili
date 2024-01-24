@@ -8,8 +8,7 @@
         <!--左侧链接-->
         <div class="title-link">
           <span v-for="(item, index) in titleFunc" :key="index">
-            <span style="margin-right: 2rem; color: #fff; font-weight: 600;font-size:1.2rem; overflow: hidden;"
-            class="">{{item.title}}</span>
+            <span style="margin-right: 2rem; color: #fff; font-weight: 600;font-size:1.2rem; overflow: hidden;">{{item.title}}</span>
           </span>
         </div>
       </div>
@@ -25,7 +24,7 @@
       <div class="person-center">
         <!--点击头像后弹出-->
         <el-dropdown class="person-dropdown" id="person-dropdown" @command="handleCommand">
-          <img class="person-avater" src="@/assets/img/avater.png" id="person-dropdown-trigger"/>
+          <img class="person-avater common-avatar" src="@/assets/img/avater.png" id="person-dropdown-trigger"/>
           <template #dropdown>
             <el-dropdown-menu><!--NOTE html:  <DropdownMenu slot="list"> -->
               <el-dropdown-item command="userCenter">个人中心</el-dropdown-item>
@@ -196,7 +195,6 @@ onMounted(()=>{
   top: 1.5rem;
 }
 .header .person-avater{
-  border-radius: 50%;
   position: relative;
   width: 4rem;
   height: 4rem;
