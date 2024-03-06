@@ -1,0 +1,12 @@
+{
+    "totalNum": 1000,
+    "currentPage": 1,
+    "pageSize": 20,
+    "data": [{
+        "fansCount": 0,
+        "isFollow": true,
+        "nickName": "",
+        "userId": 0,
+        "videoCount": 0
+    }]
+}

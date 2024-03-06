@@ -1,5 +1,9 @@
-import { createApp } from 'vue'
+import { createApp, watch } from 'vue'
 import { createPinia } from 'pinia'
+import { validateToken } from "@/api/login"
+import { useRefreshToken } from './store/token' // 长短token的使用
+import request from "@/api/index.js"
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 import ElementPlus from 'element-plus'
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 import zhCn from 'element-plus/es/locale/lang/zh-cn' 
@@ -14,6 +18,7 @@ import loadImg from "./assets/img/lazyLoad/loading.jpg"
 
 const app = createApp(App)
 const pinia = createPinia()
+pinia.use(piniaPluginPersistedstate)
 app.use(Particles)
 // app.use(SkeletonPlugin)
 app.use(pinia)
@@ -37,5 +42,44 @@ app.config.silent = true // 禁用生产环境的警告
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
     app.component(key, component)
 }
-
 app.mount('#app')
+
+/**
+ * 刷新长短token
+ */
+const refreshTokenStore = useRefreshToken()
+const setTokenRefresh = (expirationTime) => {
+    const refreshTime = expirationTime; // 过期前一分钟刷新
+    const timeout = refreshTime - Date.now();
+    setTimeout(async() => {
+        // 获取后端
+        await validateToken()
+        console.log("重新发送了一次短token")
+        setTokenRefresh(expirationTime); // 递归设置下一次刷新
+    }, timeout)
+}
+const refreshToken = async() => {
+    // 从cookie取出短token，判断是否为空
+    if(refreshTokenStore.getData()!=''||request.defaults.headers.common['shortauthorization']!='') {
+        // 重新用本地的赋值
+        request.defaults.headers.common['shortauthorization'] = refreshTokenStore.getData()
+        await validateToken()
+        // 发定时任务，请求令牌
+        const expirationTime = Date.now() + 25*60*1000 // 假设过期时间为 25 分钟：25*60*1000
+        setTokenRefresh(expirationTime)
+    } 
+}
+// 监听
+watch(refreshTokenStore, (newValue, oldValue) => {
+    // 在这里执行当 isTokenPolling 变为 true 时的操作
+    if (newValue && refreshTokenStore.isTokenPolling) {
+        console.log('isTokenPolling 变为 true 了！')
+        // 设置刷新定时器
+        refreshToken()
+    } 
+})
+
+/**
+ * 长轮询更新登录用户的信息和消息通知
+ */  
+watch()

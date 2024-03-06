@@ -1,10 +1,18 @@
 <template>
   <!--具体项目-->
-  <span v-for="(item, index) in sections" :key="index">
+  <span v-for="(item, index) in sections" :key="index" style="position: relative;">
     <div @mouseleave="item.expanded=false">
+      <!--消息通知数-->
+      <div v-if="item.type==='trend' && dynamicNoticeNum>0">
+        <div class="notice-bubble-whole notice-dynamic-bubble">
+          <p v-if="dynamicNoticeNum<99">{{dynamicNoticeNum}}</p>
+          <p v-else>99+</p>
+        </div>
+      </div>
       <!--图标-->
       <span class="notice-icon-wrap">   
-          <img :src="item.icon" :alt="item.name" class="notice-icon" @click="item.expanded=true" @mouseover="item.expanded=true"/>
+          <img :src="item.icon" :alt="item.name" class="notice-icon"
+           @click.stop="turnPage(item.turnTo)" @mouseover="item.expanded=true"/>
       </span>
       <!--待展开的列表-->
       <div v-if="item.expanded" class="right-panel">
@@ -14,36 +22,58 @@
       </div>
     </div>
   </span>
-
 </template>
 
 <script setup>
 import { ref, reactive, onMounted, defineAsyncComponent } from 'vue'
-// import getVideoSmall from '@/api/video' // 动态的api
 const itemPanel = defineAsyncComponent(()=>
   import ('./ItemPanel.vue')
 )
-
+import { useRouter } from 'vue-router'
+import { useUserInfo} from "@/store/userInfo"
+import { fetchNoticeNum } from "@/api/notice"
+const userInfo = useUserInfo() // 使用登录信息
+const userId = userInfo.getId()
+const dynamicNoticeNum = ref(0)
+// import getVideoSmall from '@/api/video' // 动态的api
+const router = useRouter()
+// 打开其他页
+const turnPage = (routerPath) => {
+  const routeURL = router.resolve({
+    path: routerPath,
+  })
+  window.open(routeURL.href, '_blank')
+}
 /**
  * 具体内容分类
  */
 const sections = reactive([{
   type: 'trend',
   name: "动态",
+  turnTo: "/trend",
   icon: require("@/assets/img/trend_icon.svg"),
   expanded: false,
 },{
   type: 'collect',
   name: "收藏",
+  turnTo:  `/userCenter/myItem/${userId}`,
   icon: require("@/assets/img/collect_icon.svg"),
   expanded: false,
 },{
   type: 'history',
   name: "历史",
+  turnTo: "/history",
   icon: require("@/assets/img/history_icon.svg"),
   expanded: false,
 }])
-
+// 获得数据
+const getDNoticeNum = async() => {
+  const data_tmp = await fetchNoticeNum(userId)
+  dynamicNoticeNum.value = data_tmp.dynamicVideoCount
+}
+onMounted(()=>{
+  getDNoticeNum()
+})
 </script>
 
 <style lang="scss" scoped>
@@ -67,8 +97,17 @@ const sections = reactive([{
   padding: 1rem;
   z-index: 5;
   top: 5rem;
-  right: 3rem;
+  right: -9rem;
   border-radius: 20px;
 }
-
+.notice-dynamic-bubble {
+  width: 1.6rem;
+  height: 1.6rem;
+  right: 1.5rem;
+  background-color: #c45656 !important;
+  p {
+    color: #70a5f4;
+    font-size: 0.9rem;
+  }
+}
 </style>

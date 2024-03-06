@@ -1,0 +1,34 @@
+// 登录页所用样式
+.login-common-btn {
+	height: 2.8rem;
+	border: none;
+	border-radius: 10px;
+	background-color: #4a8fef;
+	box-shadow: 0 0 25px 3px #ffffffe5; 
+}
+.login-btn, .login-btn:visited{
+	@extend .login-common-btn;
+	font-size: 1.3rem;
+	font-weight: 500;
+}
+.login-btn:hover{
+	background: #467cc6;
+}
+.login-btn:active{
+	background: #19449a;
+}
+.login-icon {
+	font-size: 1.4rem;
+}
+.login-input{
+	width: 24rem;
+	font-size: 1.2rem;
+}
+.login-input:first-child{
+	margin-bottom: 1.3rem;
+}
+.get-message-captcha {
+    @extend .login-common-btn;
+    font-size: 1.2rem !important;
+    height: 3rem !important;
+}

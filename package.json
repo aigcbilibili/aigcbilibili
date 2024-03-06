@@ -15,7 +15,7 @@
     "core-js": "^3.8.3",
     "crypto-js": "^4.2.0",
     "dplayer": "^1.27.1",
-    "echarts": "^5.4.3",
+    "echarts": "^5.5.0",
     "element-plus": "^2.4.3",
     "json5": "^2.2.3",
     "pinia": "^2.1.7",
@@ -29,7 +29,9 @@
     "vue-router": "^4.2.5",
     "vue-xss": "^1.0.5",
     "vue3-particles": "^2.12.0",
-    "webpack": "4.0.0"
+    "webpack": "4.0.0",
+    "xss": "^1.0.14",
+    "zipson": "^0.2.12"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

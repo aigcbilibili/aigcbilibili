@@ -4,10 +4,12 @@
  *  1. verification 验证码
  *  2. varifyLogin 请求登录
  *  */
+import { ElMessage } from "element-plus"
+import { useRefreshToken } from '@/store/token' // 长短token的使用
 import request from "./index.js"
-
+import axios from "axios"
 /**
- * 验证码
+ * 请求账密的验证码
  * 场景：@/Pages/login/LoginPage
  *  请求字段：
  * @param none
@@ -15,16 +17,16 @@ import request from "./index.js"
  */
 export const getCaptcha = async () => {
     try{
-        const response =  await request.post('/login/getCaptcha', {})
+        const response =  await request.get('/login/getCaptcha', {})
         const imgSrc = "data:image/png;base64," + response
         return imgSrc     
-    }catch(e){
+    } catch(e) {
         console.error('Error loading captcha:', e)
     }
 }
 
 /**
- * 请求登录
+ * 请求账密登录
  * 场景：@/Pages/user/UserCenter
  * 请求字段：统一为loginRequest
  * @param {string} userName
@@ -36,20 +38,105 @@ export const getCaptcha = async () => {
  */
 export const verifyLogin = async (userName, password, captcha) => {
     try {
-        const response = await request.post('/login/login', {
+        const response = await axios.post('/api/login/passwordLogin', {
             userName: userName,
             password: password,
             captcha: captcha
         })
-        console.log('看下data?', response)
-        console.log('看下user？',response.user)
-        // const token = window.JSON.parse(response.token)
-        if (typeof token !== 'string') {
-            throw new Error('Invalid token')
-        } else {
-            return token
+        const authToken = response.headers['shortauthorization']
+        const refreshTokenStore = useRefreshToken()
+        if(authToken) {
+            request.defaults.headers.common['shortauthorization'] = authToken
+            refreshTokenStore.isTokenPolling = true
+            refreshTokenStore.saveData(authToken)
         }
+        return response.data.data
     } catch (e) {
         console.error('服务端返回的错误',e);;
+    }
+}
+
+/**
+ * 请求注册
+ */
+export const enroll = async(username, nickName, password, phoneNum, captcha, avatar) => {
+    try {
+        const postURL = '/register/register'
+        const response = await request.post(postURL, {
+            username: username,
+            nickName: nickName,
+            password: password,
+            phoneNum: phoneNum,
+            captcha: captcha,
+            avatar: avatar
+        })
+        return response
+    } catch (e) {
+        console.error('注册错误', e)
+    }
+}
+
+/**
+ * 手机号获取验证码
+ */
+export const getPhoneCaptcha = async(phoneNumber) => {
+    try {
+        const getURL = '/login/phoneNumberCpatcha'
+        const response = await request.get(getURL, {
+
+        })
+        if(!response) {
+            ElMessage.error("后端发生错误")
+        }
+        return response
+    } catch(e) {
+        console.error('手机号验证码获取失败：', e)
+        ElMessage.error("手机号验证码获取失败")
+    }
+}
+
+/**
+ * 手机号登录
+ */
+export const sendPhoneLogin = async(phoneNumber, captcha) => {
+    try {
+        const postURL = '/login/phoneNumberLogin'
+        const response = await request.post(postURL, {
+            phoneNumber: phoneNumber,
+            captcha: captcha
+        })
+        return response
+    } catch (e) {
+        console.error('手机号登录失败：', e)
+        ElMessage.error("手机号登录失败")
+    }
+}
+
+/**
+ * token刷新：网关
+ */
+export const validateToken = async() => {
+    try {
+        const postURL = '/api/login/refreshToken'
+        const refreshTokenStore = useRefreshToken()
+        const short_token = refreshTokenStore.getData()
+        const response = await axios.post(postURL, {},{
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest',
+                'shortauthorization': short_token,
+                'laBiliBiliHeader': 'test_method_1'
+            }
+        })
+        // 将headers设置到instance实例
+        const authToken = response.headers['shortauthorization']
+        if(authToken) {
+            request.defaults.headers.common['shortauthorization'] = authToken
+            refreshTokenStore.saveData(authToken)
+        }
+        return response.data
+        
+    } catch (e) {
+        ElMessage.error("token刷新失败")
+        console.error(`token刷新失败${e}`)
     }
 }

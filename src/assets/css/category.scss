@@ -1,0 +1,37 @@
+$left-distance: 2rem;
+.first-category {
+    width: auto;
+    height: 3rem;
+    margin-top: 0.6rem;
+    margin-left: $left-distance;
+}
+.first-category-item {
+    width: auto;
+    max-width: 5rem;
+    height: 1.3rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    .item-text {
+        font-weight: 400;
+        font-size: 1.2rem;
+        color: #525252;
+    }
+    .item-chosen {
+        color: #1f73a7;
+        font-weight: 600;
+    }
+}
+.second-category {
+    width: 40rem;
+    height: 3rem;
+    margin-top: 1.5rem;
+    margin-left: $left-distance;
+}
+.second-category-item {
+    padding: 0.6rem;
+    width: auto;
+    max-width: 10rem;
+    height: 1.3rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;    
+}

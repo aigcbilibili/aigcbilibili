@@ -10,7 +10,7 @@
 </template>
 
 <script setup>
-import { ref, defineProps } from 'vue'
+import { ref, defineProps, defineEmits, computed, onMounted } from 'vue'
 import { addComment } from '@/api/comment'
 import { ElMessage } from 'element-plus'
 const content =  ref('') //
@@ -22,7 +22,13 @@ const props = defineProps({
     }
 })
 const getSendUser = ref(props.value)
-
+const emits = defineEmits(['returnReply'])
+const replyComputed = computed({
+    get: () => content.value,
+    set: function(val) {
+        emits('returnReply', val)
+    }
+})
 /**
  * 评论发布功能
  */
@@ -30,9 +36,18 @@ const getSendUser = ref(props.value)
 const sendComment = async() => {
     // 验证评论
     
-    // 前端显示
-    
-    // 传递到后端
+    // 前端显示：要传递到CommentPanel中的列表里
+    replyComputed.value = {
+        id: 0,
+        avatar: getSendUser.value,
+        senderId: getSendUser.value,
+        senderName: "",
+        content: content.value,
+        createtime: "2024",
+        likeCount: 0,
+        isLike: false,
+    }
+    // 传递到后
     console.log('咕咕', content.value)
     const res = await addComment(content.value, 
         getSendUser.value.senderId, getSendUser.value.parentId, 
@@ -45,6 +60,11 @@ const sendComment = async() => {
         ElMessage.error('发布评论失败')
     }
 }
+onMounted(()=>{
+    // 
+    
+})
+
 </script>
 
 <style lang="scss" scoped>

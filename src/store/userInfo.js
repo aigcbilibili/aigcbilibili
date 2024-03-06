@@ -1,48 +1,41 @@
 // 用户信息
 import { defineStore } from 'pinia'
+import piniaPersistConfig from '@/utils/persist'
 
 export const useUserInfo = defineStore({
     id: 'userStore',
     state: () => ({
-        token: '123', // TODO 存储用户token，待优化
         name: '咸鱼1号',
-        id: '1',
-        avatar: '@/asstes/img/avater.png', // 需要使用img标签
+        id: 100,
+        avatar: require('@/assets/img/avater.png'), // 需要使用img标签
+        // followingNum: 100,
+        // followersNum: 50
     }),
     actions: {
-        setAll(name, token, id, avatar){
+        setAll(name, id, avatar){
             this.setName(name)
-            this.settoken(token)
             this.setId(id)
-            this.setavatar(avatar)
+            this.setAvatar(avatar)
         },
         setName(name){
             this.name = name
-            localStorage.setItem('name', JSON.stringify(this.name))
+            // localStorage.setItem('name', JSON.stringify(this.name))
         },
         getName(){
             return this.name
         },
-        setToken(token){
-            this.token = token
-            localStorage.setItem('token', JSON.stringify(this.token))
-        },
-        getToken(){
-            return this.token
-        },
         setId(id){
             this.id = id
-            localStorage.setItem('id', JSON.stringify(this.id))
         },
         getId(){
             return this.id
         },
         setAvatar(avatar){
             this.avatar = avatar
-            localStorage.setItem('avatar', JSON.stringify(this.avatar))
         },
-        getAvater(){
+        getAvatar(){
             return this.avatar
         },
-    }
+    },
+    persist: piniaPersistConfig('user', ['name','id','avatar'])
 })

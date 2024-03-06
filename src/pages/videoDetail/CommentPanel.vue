@@ -3,47 +3,58 @@
     <div class="comment-sort-select">
         <span style="display: flex; margin-right: 2rem; align-items: baseline;">
             <h3>评论</h3>
-            <p class="comment-num font-second-color">{{commentNum}}</p>
+            <div class="comment-num font-second-color">
+                <p v-if="commentNum<999">{{commentNum}}</p>
+                <p v-else>999+</p>
+            </div>
         </span>
-        <p>最新</p>
+        <p :style="{'color': hotAndNew===0?'rgba(17, 69, 125, 0.662745098)':'',
+            'font-weight':hotAndNew===0?'600':''
+        }" @click="hotAndNew=0">最新</p>
         <div class="part-item font-second-color">|</div>
-        <p>最热</p>
+        <p :style="{'color': hotAndNew===1?'rgba(17, 69, 125, 0.662745098)':'',
+            'font-weight':hotAndNew===1?'600':''
+        }"  @click="hotAndNew=1">最热</p>
     </div>
     <!--评论发布区-->
     <div class="create-comment-panel">
-        <replyVue :value="sendUser" />
+        <replyVue :value="sendUser" @xxx="getNewComment()" />
     </div>
     <!--评论展示区-->
-    <div class="comment-panel flex-column-center-container">
+    <div v-if="commentsList&&commentsList.length>0" class="flex-column-center-container">
         <div class="comment-item" v-for="(item,index) in commentsList" :key="index">
             <commentVue :commentInfo="item" :type="'top'" :videoId="videoId" />
             <!--显示该评论的children-->
-            <div v-if="item.replyIdList!=[]" class="comment-replys-panel">
-                <div v-for="(child,index) in item.replyIdList" :key="index">
-                    <commentVue :commentInfo="child" :type="'nest'" :videoId="videoId" />
+            <div v-if="item.replyIdList.length>0" class="comment-replys-panel">
+                <div class="children-bg">
+                    <div v-for="(child,index) in item.replyIdList" :key="index">
+                        <commentVue :commentInfo="child" :type="'nest'" :videoId="videoId" />
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <div v-else>
+        <img src="@/assets/img/utils/noData.png"/>
+    </div>
 </template>
 
 <script setup>
-import { onMounted, ref, reactive, defineAsyncComponent, defineProps } from "vue"
-import { fetchAllComments } from "@/api/comment" 
+import { onMounted, ref, reactive, defineAsyncComponent } from "vue"
+import { fetchAllComments } from "@/api/comment"
+import { useUserInfo } from "@/store/userInfo"
+import { useRoute } from 'vue-router'
+const userInfo = useUserInfo() // 使用登录信息
+const route = useRoute()
+const videoId = route.params.videoId // 当前视频Id
+const userId = userInfo.getId() // 登录用户的id
+const hotAndNew = ref(0) // 0:最新，1:最热
 const replyVue = defineAsyncComponent(()=>
     import ("@/components/comment/Reply")
 )
 const commentVue = defineAsyncComponent(()=>
     import ("@/components/comment/Comment")
 )
-const props = defineProps({
-    videoId: {
-        type: Number,
-        required: true
-    }
-})
-// 父组件传递的和上传评论相关的数据
-const videoId = ref(props.videoId) 
 const commentNum = ref(999) // 评论总数
 // 向下一级子组件传递的评论发布区数据
 const sendUser = {
@@ -96,11 +107,14 @@ const data_test = [{
     replyIdList:[]
 }]
 let commentsList = reactive([])
-
+const getNewComment = (topReply) => {
+    commentsList.push(topReply)
+}
 onMounted(async()=>{
-    const tmp = await fetchAllComments(1)
-    console.log('测试测试', tmp)
-    commentsList.splice(0, commentsList.length, ...(tmp == undefined ? data_test : tmp)) // 使用splice更新
+    const video_content = await fetchAllComments(videoId, userId)
+    const content_data = video_content=== undefined||null ? data_test : video_content
+    commentNum.value = content_data.commentCount
+    commentsList.splice(0, commentsList.length, ...(content_data.commentData)) // 使用splice更新
 })
 </script>
 
@@ -132,9 +146,14 @@ onMounted(async()=>{
     min-height: 3rem;
     margin-bottom: 1rem;
 }
+.children-bg{
+    background-color: #e2effd;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
 @media screen and (min-width: 1020px){
     .comment-item{
-        width: 50rem;
+        width: 55rem;
     }
 }
 </style>

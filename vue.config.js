@@ -8,6 +8,11 @@ module.exports = defineConfig({
   lintOnSave: false, // 关闭eslint校验
   css: {
     extract: true, // 拆分ExtractTextPlugin插件，默认true - 骨架屏需要为true
+    loaderOptions: {
+      sass: {
+        implementation: require('sass')
+      }
+    }
   },
   // configureWebpack: (config) => {
   //   // vue骨架屏插件配置
@@ -27,7 +32,7 @@ module.exports = defineConfig({
   // },
   devServer:{
     host: '127.0.0.12',
-    port: 2023,
+    // port: 2023,
     client:{
       webSocketURL: 'ws://127.0.0.12:2023/ws'
     },
@@ -38,8 +43,10 @@ module.exports = defineConfig({
     // NOTE 跨域配置
     proxy:{
       '/api': {
-        // target: 'http://v3c8zgra.beesnat.com:18865/',
-        target: 'http://114.55.116.140:10201/', 
+        // target: "yjgbfgsb.beesnat.com:13324", // 搜索
+        // target: 'http://zsriw8kz.beesnat.com', // 视频
+        target: "http://www.labilibili.com",
+        // target: 'http://114.55.116.140:10201/', 
         // 允许跨域：如果不开的话，会拦截响应
         changeOrigin: true,
         pathRewrite: {

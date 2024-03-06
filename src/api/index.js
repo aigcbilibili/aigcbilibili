@@ -16,18 +16,20 @@
 
 import axios from 'axios' 
 import router from '../router' 
-
+import { ElMessage } from 'element-plus'
+import { useRefreshToken } from '../store/token'
 /**
  * 1. 单个接口封装 request
  */
 var baseURL = '/api'
 const request = axios.create({
     // url: 会加在baseURL后面（e.g./comment），除非是绝对地址
-    baseURL: baseURL, // TODO: 后端服务器地址，待改
+    baseURL: baseURL, 
     timeout: 5000, // 请求超过1000ms未取得结果，提示超时
     headers: {
         'X-Requested-With': 'XMLHttpRequest',
-        'authorization': 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMTEiLCJyb2xlIjoidXNlciJ9.ybuiJ87Nq7xgcWrM50P_VgAF1P74fnEN8jCSH5daqR2re4hVTMYgkzMHWZlK104guM75RGWgVxNrtfnhinjR-g'
+        'shortauthorization': '',
+        'laBiliBiliHeader': 'test_method_1'
     },
     withCredentials: true, // 跨域请求时是否需要使用cookies发送cookie
 }) 
@@ -41,7 +43,7 @@ const request = axios.create({
  * @return config
  */
 request.interceptors.request.use(config => {
-
+    console.log("断点111111", config)
     return config 
 },err => {
     return Promise.reject('请求发出后的错误：', err)
@@ -55,39 +57,26 @@ request.interceptors.request.use(config => {
  * @return config
  */
 request.interceptors.response.use(res => {
+    console.log("断点222222222", res.status,"data", res)
     // 处理请求后的错误状态码
     if(res.status === 200){
-        return res.data // XXX如果后端除了string和number有其他类型，再改
+        return res.data.data
     }else if(res.status === 403){
         router.push('./403')
     }else if(res.status === 404){
         router.push('./404')
+    }else if(res.status === 401) {
+        ElMessage.error("登录状态过期")
+        const refreshTokenStore = useRefreshToken()
+        refreshTokenStore.shortToken = ''
+        refreshTokenStore.isTokenPolling = false
+        request.defaults.headers.common['shortauthorization'] = ''
+        router.push('/login')
     }else{
-        console.log('错误！状态码', res.status)
+        console.log('错误！状态码', res.status, "\n具体错误信息", res.data.msg)
     }
 },err => {
     return Promise.reject('接受响应后的错误：',err)
 })
-
-/**
- * 2. 多个接口，先不封装
- */
-
-// axios.all([
-// 	axios.get(),
-// 	axios.get(),
-// 	axios.post()
-// ]).then(
-// 	axios.spread((res1,res2,res3)=>{
-// 		console.log(res1,res2,res3); //依次打印每一个响应
-// 	})
-// )
-// axios.all([
-// 	axios.get(),
-// 	axios.get(),
-// 	axios.post()
-// ]).then(res=>{
-// 	console.log(res) //打印一个数组，包含上述三个请求的响应结果
-// })
 
 export default request

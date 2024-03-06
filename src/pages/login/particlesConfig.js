@@ -2,7 +2,7 @@ export const particlesConfig = {
   fpsLimit: 50,
   background: {
     color:{
-      value: '#0d42a9'
+      value: '#98beee' // #0d42a9
     }
   },
   interactivity: {

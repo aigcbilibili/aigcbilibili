@@ -40,5 +40,5 @@ export const useVideoInfo = defineStore({
             return decryptedData
         },
     },
-    persist: piniaPersistConfig('video', ['id','encryptedVideoUrl'])
+    persist: piniaPersistConfig('video', ['videoId','encryptedVideoUrl'])
 })

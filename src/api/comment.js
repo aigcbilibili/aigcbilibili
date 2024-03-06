@@ -1,28 +1,75 @@
+import { ElMessage } from 'element-plus'
 import request from './index.js'
 
 /**  
 * 获取所有评论
 * @param
 */
-export const fetchAllComments = async(videoId) => {
+export const fetchAllComments = async(videoId, userId) => {
+    const topComments = 0
+    const childrenComments = 1
+    let num_comments = 0 // 所有评论数
+    let total_comments = [] // 所有评论
+    let getUrl = `/comment/getComment/${videoId}/${userId}/`
+    // 顶层评论
     try{
-        const getUrl = '/comment/getVideoComment/' + videoId
-        const response = await request.get(getUrl,{videoId:videoId})
-        return response.map((item)=>({
+        const response = await request.get(getUrl+topComments,{
+            videoId: videoId,
+            userId: userId,
+            type: 0
+        })
+        num_comments = response.commentCount
+        response.commentResponseList.forEach((item)=>total_comments.push({
             id: item.id,
-            senderId: item.userId,
-            senderName: item.nickName,
-            avatar: item.coverUrl, // 只有发送者需要有头像
+            senderId: item.senderId,
+            senderName: item.senderName,
+            avatar: item.senderCoverUrl, // 只有发送者需要有头像
             parentId: item.topId,
-            receiverId: item.parentId,
+            receiverId: item.receiverId,
             receiverName: item.receiverName,
             content: item.content,
             isLike: item.isLike, // 登录用户是否点赞过该评论
             likeCount: item.likeCount,
-            createtime: item.createTime // 评论的时间
+            createtime: item.createTime, // 评论的时间
+            replyLen: 0,
+            replyIdList: []
         }))
-    }catch(e){
-        console.error("获取所有评论接口错误:", e)
+    } catch(e) {
+        ElMessage.error(`获取所有顶层评论错误：${e}`)
+        console.error("获取所有顶层评论错误:", e)
+    }
+    // 次级评论
+    try {
+        const response = await request.get(getUrl+childrenComments, {
+            videoId: videoId,
+            userId: userId,
+            type: 1
+        })
+        response.commentResponseList.forEach((item)=>{
+            total_comments.map((comment)=>{
+                if(item.topId===comment.id) {
+                    comment.replyLen += 1
+                    comment.replyIdList.push({
+                        senderName: item.nickName,
+                        senderId: item.userId,
+                        receiverName: item.receiverName,
+                        receiverId: item.parentId,
+                        avatar: item.coverUrl, 
+                        content: item.content,
+                        likeCount: item.likeCount, 
+                        isLike: item.isLike,
+                        createtime: item.createTime
+                    })
+                }
+            })
+        })
+    } catch (e) {
+        ElMessage.error(`获取所有评论的回复错误：${e}`)
+        console.error("获取所有评论的回复错误:", e)
+    }
+    return {
+        commentCount: num_comments,
+        commentData: total_comments
     }
 }
 
@@ -36,15 +83,13 @@ export const fetchAllComments = async(videoId) => {
  */
 export const addComment = async(content,senderId, parentId, receiverId, videoId) => {
     try{
-        const postUrl = '/comment/commentToComment'
+        const postUrl = '/comment/comment'
         await request.post(postUrl, {
-            // comment: {
-                content: content,
-                parentId: receiverId,
-                topId: parentId,
-                userId: senderId,
-                videoId: videoId
-            // }
+            content: content,
+            parentId: receiverId,
+            topId: parentId,
+            userId: senderId,
+            videoId: videoId
         })
         return true // 无参数，只要是200都能用
     }catch(e){
@@ -53,47 +98,15 @@ export const addComment = async(content,senderId, parentId, receiverId, videoId)
 }
 
 /**
- * 对评论点赞
- * @param senderId
- * @param commentId
- * //@param videoId
+ * 编辑评论
  */
-export const addThumbsUp = async(senderId, commentId) => {
-    try{
-        const postUrl = '/like/likeToComment'
-        await request.post(postUrl, {
-            commentLikeRequest:{
-                commentId: commentId,
-                userId: senderId,
-                // videoId: videoId
-            }
-        })
-        return true
-    }catch(e){
-        console.error("对评论点赞失败：", e)
-        return false
-    }
+export const editComment = async(content,senderId) => {
+
 }
 
 /**
- * 取消对评论点赞
- * @param senderId
- * @param commentId
- * //@param videoId
+ * 删除评论
  */
-export const deleteThumbsUp = async(senderId, commentId) => {
-    try{
-        const postUrl = '/like/unDoLikeToComment/'
-        await request.post(postUrl, {
-            commentLikeRequest:{
-                commentId: commentId,
-                userId: senderId,
-                // videoId: videoId
-            }
-        })
-        return true
-    }catch(e){
-        console.error("取消对评论点赞失败：", e)
-        return false
-    }
+export const deleteComment = async(content,senderId) => {
+
 }

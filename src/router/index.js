@@ -16,8 +16,11 @@ const router = createRouter({
                 path: '/hot',
                 component: () => import('@/pages/hot/HotPage.vue'),
             },{
-                path: '/rank',
-                component: () => import('@/pages/rank/RankPage.vue')
+                path: '/trend',
+                component: () => import('@/pages/trend/TrendPage.vue')
+            },{
+                path: '/history',
+                component: () => import('@/pages/history/History.vue')
             },{
                 path: '/live',
                 component: () => import('@/pages/live/LivePage.vue')
@@ -25,32 +28,66 @@ const router = createRouter({
                 path: '/article',
                 component: () => import('@/pages/article/ArticlePage.vue')
             },{
+                path: '/search',
+                component: () => import('@/pages/search/SearchPage.vue')
+            },{
                 path: '/forum',
                 component: () => import('@/pages/forum/ForumPage.vue')
             },{
-                path: '/userCenter/:userId',
-                redirect: '/userCenter/:userId/myItem',
+                path: '/shop',
+                component: () => import('@/pages/shop/ShopPage.vue')
+            },{
+                path: '/message',
+                redirect: '/message/Reply/:userId',
+                component: () => import('@/pages/message/MessagePage.vue'),
+                children: [{
+                    path: '/message/Reply/:userId',
+                    component: () => import('@/pages/message/ReplyMe.vue')
+                },{
+                    path: '/message/At/:userId',
+                    component: () => import('@/pages/message/AtMe.vue')
+                },{
+                    path: '/message/ThumbsUpMe/:userId',
+                    component: () => import('@/pages/message/ThumbsUpMe.vue')
+                },{
+                    path: '/message/SystemNotice/:userId',
+                    component: () => import('@/pages/message/SystemNotice.vue')
+                },{
+                    path: '/message/MyChat/:userId',
+                    name: "chatPage",
+                    component: () => import('@/pages/message/chat/ChatPage.vue'),
+                    props: (route) => {
+                        
+                    }
+                }]
+            },{
+                path: '/userCenter',
+                redirect: '/userCenter/myItem/:userId',
                 component: () => import('@/pages/user/UserCenter.vue'),
                 children: [{
-                    path: '/userCenter/:userId/myItem',
-                    component: () => import('@/pages/user/MyItem.vue')
+                    path: '/userCenter/myItem/:userId',
+                    component: () => import('@/pages/user/myItem/MyItem.vue')
                 },{
-                    path: '/userCenter/:userId/charts',
+                    path: '/userCenter/charts/:userId',
                     component: () => import('@/pages/user/DataCenter.vue')
                 },{
-                    path: '/userCenter/:userId/trends',
+                    path: '/userCenter/trends/:userId',
                     component: () => import('@/pages/user/NewTrend.vue')
                 },{
-                    path: '/userCenter/:userId/uploadVideo',
+                    path: '/userCenter/uploadVideo/:userId',
                     component: () => import('@/pages/user/UpVideo.vue')
                 },{
-                    path: '/userCenter/:userId/permission',
+                    path: '/userCenter/permission/:userId',
                     component: () => import('@/pages/user/PermissSet.vue')
                 }]
             },{
                 path: '/video/:videoId',
                 name: 'videoDetail',
-                component: () => import('@/pages/videoDetail/VideoDetail.vue')
+                component: () => import('@/pages/videoDetail/VideoDetail.vue'),
+                props: (route) => ({
+                    videoUrl: route.query.videoUrl,
+                    upId: route.query.upId
+                })
             }]
         },{
             path: '/404',
