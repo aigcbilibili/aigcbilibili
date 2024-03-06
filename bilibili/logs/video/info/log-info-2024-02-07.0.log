@@ -1,0 +1,716 @@
+2024-02-07 00:02:19 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 00:02:19 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server healthy check fail, currentConnection = 1707234736259_120.227.130.72_2904
+2024-02-07 00:02:19 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-07 00:02:20 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Success to connect a server [116.62.71.84:8848], connectionId = 1707235341890_120.227.130.72_2353
+2024-02-07 00:02:20 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707234736259_120.227.130.72_2904
+2024-02-07 00:02:20 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707234736259_120.227.130.72_2904
+2024-02-07 00:02:20 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify disconnected event to listeners
+2024-02-07 00:02:20 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify connected event to listeners.
+2024-02-07 00:02:23 |INFO  |nacos-grpc-client-executor-3363 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 583
+2024-02-07 00:02:23 |INFO  |nacos-grpc-client-executor-3363 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 583
+2024-02-07 00:02:24 |INFO  |nacos-grpc-client-executor-3364 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 584
+2024-02-07 00:02:24 |INFO  |nacos-grpc-client-executor-3364 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 584
+2024-02-07 00:12:26 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 00:12:26 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server healthy check fail, currentConnection = 1707235341890_120.227.130.72_2353
+2024-02-07 00:12:26 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-07 00:12:26 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Success to connect a server [116.62.71.84:8848], connectionId = 1707235947474_120.227.130.72_2886
+2024-02-07 00:12:26 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707235341890_120.227.130.72_2353
+2024-02-07 00:12:26 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707235341890_120.227.130.72_2353
+2024-02-07 00:12:26 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify disconnected event to listeners
+2024-02-07 00:12:26 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify connected event to listeners.
+2024-02-07 00:12:29 |INFO  |nacos-grpc-client-executor-3492 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 585
+2024-02-07 00:12:29 |INFO  |nacos-grpc-client-executor-3492 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 585
+2024-02-07 00:19:25 |INFO  |nacos-grpc-client-executor-3575 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 00:19:25 |INFO  |nacos-grpc-client-executor-3575 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 586
+2024-02-07 00:19:25 |INFO  |nacos-grpc-client-executor-3575 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 586
+2024-02-07 00:22:30 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server healthy check fail, currentConnection = 1707235947474_120.227.130.72_2886
+2024-02-07 00:22:30 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-07 00:22:32 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Success to connect a server [116.62.71.84:8848], connectionId = 1707236553207_120.227.130.72_2392
+2024-02-07 00:22:32 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707235947474_120.227.130.72_2886
+2024-02-07 00:22:32 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707235947474_120.227.130.72_2886
+2024-02-07 00:22:32 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify disconnected event to listeners
+2024-02-07 00:22:32 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify connected event to listeners.
+2024-02-07 00:22:34 |INFO  |nacos-grpc-client-executor-3620 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 587
+2024-02-07 00:22:34 |INFO  |nacos-grpc-client-executor-3620 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 587
+2024-02-07 00:32:36 |INFO  |com.alibaba.nacos.client.naming.updater.0 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 00:32:37 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server healthy check fail, currentConnection = 1707236553207_120.227.130.72_2392
+2024-02-07 00:32:37 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-07 00:32:37 |INFO  |nacos-grpc-client-executor-3742 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 588
+2024-02-07 00:32:37 |INFO  |nacos-grpc-client-executor-3742 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 588
+2024-02-07 00:32:37 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Success to connect a server [116.62.71.84:8848], connectionId = 1707237158687_120.227.130.72_2793
+2024-02-07 00:32:37 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707236553207_120.227.130.72_2392
+2024-02-07 00:32:37 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707236553207_120.227.130.72_2392
+2024-02-07 00:32:37 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify disconnected event to listeners
+2024-02-07 00:32:37 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify connected event to listeners.
+2024-02-07 00:32:37 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server check success, currentServer is 116.62.71.84:8848 
+2024-02-07 00:32:40 |INFO  |nacos-grpc-client-executor-3750 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 589
+2024-02-07 00:32:40 |INFO  |nacos-grpc-client-executor-3750 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 589
+2024-02-07 00:42:42 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 00:42:42 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server healthy check fail, currentConnection = 1707237158687_120.227.130.72_2793
+2024-02-07 00:42:42 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-07 00:42:42 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Success to connect a server [116.62.71.84:8848], connectionId = 1707237763723_120.227.130.72_2292
+2024-02-07 00:42:42 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707237158687_120.227.130.72_2793
+2024-02-07 00:42:42 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707237158687_120.227.130.72_2793
+2024-02-07 00:42:42 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify disconnected event to listeners
+2024-02-07 00:42:42 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify connected event to listeners.
+2024-02-07 00:42:46 |INFO  |nacos-grpc-client-executor-3878 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 590
+2024-02-07 00:42:46 |INFO  |nacos-grpc-client-executor-3878 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 590
+2024-02-07 00:52:46 |INFO  |com.alibaba.nacos.client.naming.updater.0 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 00:52:48 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server healthy check fail, currentConnection = 1707237763723_120.227.130.72_2292
+2024-02-07 00:52:48 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-07 00:52:48 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Success to connect a server [116.62.71.84:8848], connectionId = 1707238369513_120.227.130.72_2901
+2024-02-07 00:52:48 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707237763723_120.227.130.72_2292
+2024-02-07 00:52:48 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707237763723_120.227.130.72_2292
+2024-02-07 00:52:48 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify disconnected event to listeners
+2024-02-07 00:52:48 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify connected event to listeners.
+2024-02-07 00:52:48 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server check success, currentServer is 116.62.71.84:8848 
+2024-02-07 00:52:48 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server check success, currentServer is 116.62.71.84:8848 
+2024-02-07 00:52:51 |INFO  |nacos-grpc-client-executor-4007 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 591
+2024-02-07 00:52:51 |INFO  |nacos-grpc-client-executor-4007 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 591
+2024-02-07 01:02:51 |INFO  |xxl-job, executor ExecutorRegistryThread |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 01:02:51 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Read timed out), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 01:02:56 |INFO  |nacos-grpc-client-executor-4127 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 592
+2024-02-07 01:02:56 |INFO  |nacos-grpc-client-executor-4127 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 592
+2024-02-07 01:02:57 |INFO  |nacos-grpc-client-executor-4128 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 593
+2024-02-07 01:02:57 |INFO  |nacos-grpc-client-executor-4128 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 593
+2024-02-07 01:12:57 |INFO  |com.alibaba.nacos.client.naming.updater.0 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 01:12:58 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server healthy check fail, currentConnection = 1707238369513_120.227.130.72_2901
+2024-02-07 01:12:58 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-07 01:12:59 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Success to connect a server [116.62.71.84:8848], connectionId = 1707239580435_120.227.130.72_2738
+2024-02-07 01:12:59 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707238369513_120.227.130.72_2901
+2024-02-07 01:12:59 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707238369513_120.227.130.72_2901
+2024-02-07 01:12:59 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify disconnected event to listeners
+2024-02-07 01:12:59 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify connected event to listeners.
+2024-02-07 01:12:59 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server check success, currentServer is 116.62.71.84:8848 
+2024-02-07 01:13:02 |INFO  |nacos-grpc-client-executor-4256 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 594
+2024-02-07 01:13:02 |INFO  |nacos-grpc-client-executor-4256 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 594
+2024-02-07 01:13:33 |INFO  |Thread-32 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-02-07 01:13:38 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-07 01:13:38 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-07 01:13:38 |INFO  |Thread-80 |EmbedServer.java:91 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server stop.
+2024-02-07 01:13:38 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:87 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2024-02-07 01:13:38 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:105 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job, executor registry thread destroy.
+2024-02-07 01:13:38 |INFO  |SpringApplicationShutdownHook |EmbedServer.java:117 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server destroy success.
+2024-02-07 01:13:38 |INFO  |xxl-job, executor TriggerCallbackThread |TriggerCallbackThread.java:98 |com.xxl.job.core.thread.TriggerCallbackThread |>>>>>>>>>>> xxl-job, executor callback thread destroy.
+2024-02-07 01:13:38 |INFO  |Thread-79 |TriggerCallbackThread.java:128 |com.xxl.job.core.thread.TriggerCallbackThread |>>>>>>>>>>> xxl-job, executor retry callback thread destroy.
+2024-02-07 01:13:38 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-02-07 01:13:38 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-02-07 12:28:17 |INFO  |main |SpringApplication.java:645 |ljl.bilibili.video.VideoApplication |No active profile set, falling back to 1 default profile: "default"
+2024-02-07 12:29:02 |INFO  |main |SpringApplication.java:645 |ljl.bilibili.video.VideoApplication |No active profile set, falling back to 1 default profile: "default"
+2024-02-07 12:29:04 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=2e53088a-3a4f-3d0e-b742-0bcbc5304964
+2024-02-07 12:29:06 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 10201 (http)
+2024-02-07 12:29:06 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-10201"]
+2024-02-07 12:29:06 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-02-07 12:29:06 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-07 12:29:06 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-02-07 12:29:06 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 4421 ms
+2024-02-07 12:29:07 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-07 12:29:07 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-07 12:29:11 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-02-07 12:29:11 |INFO  |main |XxlJobConfig.java:46 |ljl.video.config.XxlJobConfig |>>>>>>>>>>> xxl-job config init.
+2024-02-07 12:29:12 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 0fac7bb7-67bb-4bc9-bf40-ffea64bfb0f9
+2024-02-07 12:29:12 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 45 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-07 12:29:12 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 16 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-07 12:29:12 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 12 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-07 12:29:13 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 221 ms to scan 255 urls, producing 0 keys and 0 values 
+2024-02-07 12:29:13 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 11 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-07 12:29:13 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 12 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-07 12:29:13 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 11 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-07 12:29:13 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 195 ms to scan 255 urls, producing 0 keys and 0 values 
+2024-02-07 12:29:13 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0fac7bb7-67bb-4bc9-bf40-ffea64bfb0f9] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-07 12:29:13 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0fac7bb7-67bb-4bc9-bf40-ffea64bfb0f9] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-07 12:29:13 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0fac7bb7-67bb-4bc9-bf40-ffea64bfb0f9] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-07 12:29:13 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0fac7bb7-67bb-4bc9-bf40-ffea64bfb0f9] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-07 12:29:13 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0fac7bb7-67bb-4bc9-bf40-ffea64bfb0f9] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-07 12:29:15 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0fac7bb7-67bb-4bc9-bf40-ffea64bfb0f9] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1707280155453_120.227.129.112_46199
+2024-02-07 12:29:15 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0fac7bb7-67bb-4bc9-bf40-ffea64bfb0f9] Notify connected event to listeners.
+2024-02-07 12:29:15 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0fac7bb7-67bb-4bc9-bf40-ffea64bfb0f9] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-07 12:29:15 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0fac7bb7-67bb-4bc9-bf40-ffea64bfb0f9] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$874/758190497
+2024-02-07 12:29:17 |INFO  |main |XxlJobExecutor.java:183 |com.xxl.job.core.executor.XxlJobExecutor |>>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@6765b6a2[class ljl.video.handler.SampleXxlJob#demoJobHandler2]
+2024-02-07 12:29:17 |INFO  |main |XxlJobExecutor.java:183 |com.xxl.job.core.executor.XxlJobExecutor |>>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@75c589f2[class ljl.video.handler.SampleXxlJob#httpJobHandler]
+2024-02-07 12:29:17 |INFO  |main |XxlJobExecutor.java:183 |com.xxl.job.core.executor.XxlJobExecutor |>>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@6db04a6[class ljl.video.handler.SampleXxlJob#demoJobHandler]
+2024-02-07 12:29:17 |INFO  |main |FeignClientFactoryBean.java:418 |org.springframework.cloud.openfeign.FeignClientFactoryBean |For 'video' URL not provided. Will try picking an instance via load-balancing.
+2024-02-07 12:29:17 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-10201"]
+2024-02-07 12:29:17 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 10201 (http) with context path ''
+2024-02-07 12:29:17 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP video 192.168.0.102:10201 register finished
+2024-02-07 12:29:18 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-02-07 12:29:18 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-02-07 12:29:18 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-02-07 12:29:18 |INFO  |Thread-53 |EmbedServer.java:82 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9910
+2024-02-07 12:29:18 |INFO  |main |CachingOperationNameGenerator.java:41 |springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator |Generating unique operation named: getCollectGroupUsingGET_1
+2024-02-07 12:29:18 |INFO  |main |CachingOperationNameGenerator.java:41 |springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator |Generating unique operation named: getDanmakuUsingGET_1
+2024-02-07 12:29:18 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.video.VideoApplication |Started VideoApplication in 19.563 seconds (JVM running for 21.507)
+2024-02-07 12:29:57 |INFO  |http-nio-10201-exec-1 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-07 12:29:57 |INFO  |http-nio-10201-exec-1 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-02-07 12:29:57 |INFO  |http-nio-10201-exec-1 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 4 ms
+2024-02-07 12:30:05 |INFO  |http-nio-10201-exec-6 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-02-07 12:47:30 |INFO  |http-nio-10201-exec-2 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 12:48:54 |INFO  |Thread-20 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-02-07 12:48:54 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-07 12:48:54 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-07 12:48:54 |INFO  |Thread-53 |EmbedServer.java:91 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server stop.
+2024-02-07 12:48:54 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:87 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2024-02-07 12:48:54 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:105 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job, executor registry thread destroy.
+2024-02-07 12:48:54 |INFO  |SpringApplicationShutdownHook |EmbedServer.java:117 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server destroy success.
+2024-02-07 12:48:54 |INFO  |xxl-job, executor TriggerCallbackThread |TriggerCallbackThread.java:98 |com.xxl.job.core.thread.TriggerCallbackThread |>>>>>>>>>>> xxl-job, executor callback thread destroy.
+2024-02-07 12:48:54 |INFO  |Thread-52 |TriggerCallbackThread.java:128 |com.xxl.job.core.thread.TriggerCallbackThread |>>>>>>>>>>> xxl-job, executor retry callback thread destroy.
+2024-02-07 12:48:54 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-02-07 12:48:54 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-02-07 12:49:09 |INFO  |main |SpringApplication.java:645 |ljl.bilibili.video.VideoApplication |No active profile set, falling back to 1 default profile: "default"
+2024-02-07 12:49:11 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=0cb92fad-628b-3db5-8669-b6d6f52584ec
+2024-02-07 12:49:12 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 10201 (http)
+2024-02-07 12:49:12 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-10201"]
+2024-02-07 12:49:12 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-02-07 12:49:12 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-07 12:49:13 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-02-07 12:49:13 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 3175 ms
+2024-02-07 12:49:13 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-07 12:49:14 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-07 12:49:17 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-02-07 12:49:17 |INFO  |main |XxlJobConfig.java:46 |ljl.video.config.XxlJobConfig |>>>>>>>>>>> xxl-job config init.
+2024-02-07 12:49:18 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 55ad9296-359e-47ab-ab21-40b3a49bb7d2
+2024-02-07 12:49:18 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 118 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-07 12:49:18 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 31 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-07 12:49:18 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 32 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-07 12:49:19 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 374 ms to scan 255 urls, producing 0 keys and 0 values 
+2024-02-07 12:49:19 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 17 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-07 12:49:19 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 23 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-07 12:49:19 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 55 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-07 12:49:19 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 344 ms to scan 255 urls, producing 0 keys and 0 values 
+2024-02-07 12:49:19 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[55ad9296-359e-47ab-ab21-40b3a49bb7d2] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-07 12:49:19 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[55ad9296-359e-47ab-ab21-40b3a49bb7d2] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-07 12:49:19 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[55ad9296-359e-47ab-ab21-40b3a49bb7d2] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-07 12:49:19 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[55ad9296-359e-47ab-ab21-40b3a49bb7d2] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-07 12:49:19 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[55ad9296-359e-47ab-ab21-40b3a49bb7d2] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-07 12:49:21 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[55ad9296-359e-47ab-ab21-40b3a49bb7d2] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1707281361660_120.227.129.112_46808
+2024-02-07 12:49:21 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[55ad9296-359e-47ab-ab21-40b3a49bb7d2] Notify connected event to listeners.
+2024-02-07 12:49:21 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[55ad9296-359e-47ab-ab21-40b3a49bb7d2] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-07 12:49:21 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[55ad9296-359e-47ab-ab21-40b3a49bb7d2] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$874/842729010
+2024-02-07 12:49:23 |INFO  |main |XxlJobExecutor.java:183 |com.xxl.job.core.executor.XxlJobExecutor |>>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@cfc4601[class ljl.video.handler.SampleXxlJob#demoJobHandler2]
+2024-02-07 12:49:23 |INFO  |main |XxlJobExecutor.java:183 |com.xxl.job.core.executor.XxlJobExecutor |>>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@240291d9[class ljl.video.handler.SampleXxlJob#httpJobHandler]
+2024-02-07 12:49:23 |INFO  |main |XxlJobExecutor.java:183 |com.xxl.job.core.executor.XxlJobExecutor |>>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@450f0d89[class ljl.video.handler.SampleXxlJob#demoJobHandler]
+2024-02-07 12:49:23 |INFO  |main |FeignClientFactoryBean.java:418 |org.springframework.cloud.openfeign.FeignClientFactoryBean |For 'video' URL not provided. Will try picking an instance via load-balancing.
+2024-02-07 12:49:24 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-10201"]
+2024-02-07 12:49:24 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 10201 (http) with context path ''
+2024-02-07 12:49:24 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP video 192.168.0.102:10201 register finished
+2024-02-07 12:49:24 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-02-07 12:49:24 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-02-07 12:49:24 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-02-07 12:49:24 |INFO  |Thread-49 |EmbedServer.java:82 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9910
+2024-02-07 12:49:24 |INFO  |main |CachingOperationNameGenerator.java:41 |springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator |Generating unique operation named: getCollectGroupUsingGET_1
+2024-02-07 12:49:24 |INFO  |main |CachingOperationNameGenerator.java:41 |springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator |Generating unique operation named: getDanmakuUsingGET_1
+2024-02-07 12:49:25 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.video.VideoApplication |Started VideoApplication in 17.492 seconds (JVM running for 19.0)
+2024-02-07 12:49:53 |INFO  |http-nio-10201-exec-1 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-07 12:49:53 |INFO  |http-nio-10201-exec-1 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-02-07 12:49:53 |INFO  |http-nio-10201-exec-1 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 2 ms
+2024-02-07 12:49:53 |INFO  |http-nio-10201-exec-1 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-02-07 12:55:57 |INFO  |xxl-job, executor ExecutorRegistryThread |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 12:55:57 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 12:56:30 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 12:57:02 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 12:57:34 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 12:58:06 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 12:58:39 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 12:59:11 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 12:59:43 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:00:16 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:00:49 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:01:21 |INFO  |xxl-job, executor ExecutorRegistryThread |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 13:01:21 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:01:54 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:02:27 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:02:59 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:03:32 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:04:04 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:04:37 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:05:09 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:05:42 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:06:14 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:06:47 |INFO  |xxl-job, executor ExecutorRegistryThread |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 13:06:47 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:07:20 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:07:52 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:08:24 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:08:57 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:09:29 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:10:02 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:10:34 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:11:07 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:11:39 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:12:12 |INFO  |xxl-job, executor ExecutorRegistryThread |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 13:12:12 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:12:44 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:13:17 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:13:50 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:14:22 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:14:55 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:15:27 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:15:59 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:16:31 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:17:04 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:17:36 |INFO  |xxl-job, executor ExecutorRegistryThread |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 13:17:36 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:18:08 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:18:40 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:19:13 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:19:45 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:20:17 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:20:49 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:21:22 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:21:54 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:22:26 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:22:58 |INFO  |xxl-job, executor ExecutorRegistryThread |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 13:22:58 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:23:31 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:24:03 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:24:35 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:25:07 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:25:39 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:26:12 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:26:37 |INFO  |Thread-16 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-02-07 13:26:38 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-07 13:26:38 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-07 13:26:38 |INFO  |Thread-49 |EmbedServer.java:91 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server stop.
+2024-02-07 13:26:40 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:90 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry-remove fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registryRemove, content=null]
+2024-02-07 13:26:40 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:105 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job, executor registry thread destroy.
+2024-02-07 13:26:40 |INFO  |SpringApplicationShutdownHook |EmbedServer.java:117 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server destroy success.
+2024-02-07 13:26:40 |INFO  |xxl-job, executor TriggerCallbackThread |TriggerCallbackThread.java:98 |com.xxl.job.core.thread.TriggerCallbackThread |>>>>>>>>>>> xxl-job, executor callback thread destroy.
+2024-02-07 13:26:40 |INFO  |Thread-48 |TriggerCallbackThread.java:128 |com.xxl.job.core.thread.TriggerCallbackThread |>>>>>>>>>>> xxl-job, executor retry callback thread destroy.
+2024-02-07 13:26:40 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-02-07 13:26:40 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-02-07 13:27:14 |INFO  |main |SpringApplication.java:645 |ljl.bilibili.video.VideoApplication |No active profile set, falling back to 1 default profile: "default"
+2024-02-07 13:27:23 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=0cb92fad-628b-3db5-8669-b6d6f52584ec
+2024-02-07 13:27:25 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 10201 (http)
+2024-02-07 13:27:25 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-10201"]
+2024-02-07 13:27:25 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-02-07 13:27:25 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-07 13:27:26 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-02-07 13:27:26 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 11881 ms
+2024-02-07 13:27:28 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-07 13:27:30 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-07 13:27:41 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-02-07 13:27:41 |INFO  |main |XxlJobConfig.java:46 |ljl.video.config.XxlJobConfig |>>>>>>>>>>> xxl-job config init.
+2024-02-07 13:27:45 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 62704934-a5b4-4341-bad7-28c8c359ccfc
+2024-02-07 13:27:45 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 164 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-07 13:27:45 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 100 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-07 13:27:45 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 121 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-07 13:27:47 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 1930 ms to scan 255 urls, producing 0 keys and 0 values 
+2024-02-07 13:27:47 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 83 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-07 13:27:47 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 104 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-07 13:27:48 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 89 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-07 13:27:49 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 1194 ms to scan 255 urls, producing 0 keys and 0 values 
+2024-02-07 13:27:49 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[62704934-a5b4-4341-bad7-28c8c359ccfc] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-07 13:27:49 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[62704934-a5b4-4341-bad7-28c8c359ccfc] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-07 13:27:49 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[62704934-a5b4-4341-bad7-28c8c359ccfc] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-07 13:27:49 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[62704934-a5b4-4341-bad7-28c8c359ccfc] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-07 13:27:49 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[62704934-a5b4-4341-bad7-28c8c359ccfc] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-07 13:27:56 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[62704934-a5b4-4341-bad7-28c8c359ccfc] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-07 13:27:58 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[62704934-a5b4-4341-bad7-28c8c359ccfc] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1707283678037_120.227.129.112_46185
+2024-02-07 13:27:58 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[62704934-a5b4-4341-bad7-28c8c359ccfc] Notify connected event to listeners.
+2024-02-07 13:27:58 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[62704934-a5b4-4341-bad7-28c8c359ccfc] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-07 13:27:58 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[62704934-a5b4-4341-bad7-28c8c359ccfc] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$874/2059190490
+2024-02-07 13:28:06 |INFO  |main |XxlJobExecutor.java:183 |com.xxl.job.core.executor.XxlJobExecutor |>>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@6e489bb8[class ljl.video.handler.SampleXxlJob#httpJobHandler]
+2024-02-07 13:28:06 |INFO  |main |XxlJobExecutor.java:183 |com.xxl.job.core.executor.XxlJobExecutor |>>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@1331d6fd[class ljl.video.handler.SampleXxlJob#demoJobHandler2]
+2024-02-07 13:28:06 |INFO  |main |XxlJobExecutor.java:183 |com.xxl.job.core.executor.XxlJobExecutor |>>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@6b6c0b7c[class ljl.video.handler.SampleXxlJob#demoJobHandler]
+2024-02-07 13:28:07 |INFO  |main |FeignClientFactoryBean.java:418 |org.springframework.cloud.openfeign.FeignClientFactoryBean |For 'video' URL not provided. Will try picking an instance via load-balancing.
+2024-02-07 13:28:08 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-10201"]
+2024-02-07 13:28:08 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 10201 (http) with context path ''
+2024-02-07 13:28:08 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP video 192.168.0.102:10201 register finished
+2024-02-07 13:28:08 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-02-07 13:28:08 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-02-07 13:28:09 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-02-07 13:28:09 |INFO  |Thread-91 |EmbedServer.java:82 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9910
+2024-02-07 13:28:09 |INFO  |main |CachingOperationNameGenerator.java:41 |springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator |Generating unique operation named: getCollectGroupUsingGET_1
+2024-02-07 13:28:10 |INFO  |main |CachingOperationNameGenerator.java:41 |springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator |Generating unique operation named: getDanmakuUsingGET_1
+2024-02-07 13:28:11 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.video.VideoApplication |Started VideoApplication in 65.487 seconds (JVM running for 72.729)
+2024-02-07 13:28:12 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:28:44 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:29:16 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 13:33:01 |INFO  |http-nio-10201-exec-1 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 13:33:01 |INFO  |http-nio-10201-exec-1 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-07 13:33:01 |INFO  |http-nio-10201-exec-1 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-02-07 13:33:01 |INFO  |http-nio-10201-exec-1 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 6 ms
+2024-02-07 13:33:02 |INFO  |http-nio-10201-exec-1 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-02-07 14:50:02 |INFO  |Thread-70 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 14:50:02 |INFO  |Thread-43 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 14:50:02 |INFO  |Thread-73 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 14:50:02 |INFO  |Thread-43 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-02-07 14:50:07 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-07 14:50:07 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-07 14:50:07 |INFO  |Thread-91 |EmbedServer.java:91 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server stop.
+2024-02-07 14:50:07 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:87 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2024-02-07 14:50:07 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:105 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job, executor registry thread destroy.
+2024-02-07 14:50:07 |INFO  |SpringApplicationShutdownHook |EmbedServer.java:117 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server destroy success.
+2024-02-07 14:50:07 |INFO  |xxl-job, executor TriggerCallbackThread |TriggerCallbackThread.java:98 |com.xxl.job.core.thread.TriggerCallbackThread |>>>>>>>>>>> xxl-job, executor callback thread destroy.
+2024-02-07 14:50:07 |INFO  |Thread-90 |TriggerCallbackThread.java:128 |com.xxl.job.core.thread.TriggerCallbackThread |>>>>>>>>>>> xxl-job, executor retry callback thread destroy.
+2024-02-07 14:50:07 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-02-07 14:50:07 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-02-07 17:11:24 |INFO  |main |SpringApplication.java:645 |ljl.bilibili.video.VideoApplication |No active profile set, falling back to 1 default profile: "default"
+2024-02-07 17:11:30 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=2e53088a-3a4f-3d0e-b742-0bcbc5304964
+2024-02-07 17:11:32 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 10201 (http)
+2024-02-07 17:11:32 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-10201"]
+2024-02-07 17:11:32 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-02-07 17:11:32 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-07 17:11:33 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-02-07 17:11:33 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 8461 ms
+2024-02-07 17:11:35 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-07 17:11:35 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-07 17:11:43 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-02-07 17:11:43 |INFO  |main |XxlJobConfig.java:46 |ljl.video.config.XxlJobConfig |>>>>>>>>>>> xxl-job config init.
+2024-02-07 17:11:45 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 029bd5a9-b2b5-497e-bd03-23ca41b97eef
+2024-02-07 17:11:45 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 132 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-07 17:11:45 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 51 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-07 17:11:45 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 47 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-07 17:11:46 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 838 ms to scan 255 urls, producing 0 keys and 0 values 
+2024-02-07 17:11:46 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 37 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-07 17:11:46 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 42 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-07 17:11:46 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 35 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-07 17:11:47 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 608 ms to scan 255 urls, producing 0 keys and 0 values 
+2024-02-07 17:11:47 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-07 17:11:47 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-07 17:11:47 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-07 17:11:47 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-07 17:11:47 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-07 17:11:51 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1707297110972_120.227.129.112_46509
+2024-02-07 17:11:51 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Notify connected event to listeners.
+2024-02-07 17:11:51 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-07 17:11:51 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$874/633915166
+2024-02-07 17:11:55 |INFO  |main |XxlJobExecutor.java:183 |com.xxl.job.core.executor.XxlJobExecutor |>>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@565c887e[class ljl.video.handler.SampleXxlJob#demoJobHandler]
+2024-02-07 17:11:55 |INFO  |main |XxlJobExecutor.java:183 |com.xxl.job.core.executor.XxlJobExecutor |>>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@5c215642[class ljl.video.handler.SampleXxlJob#demoJobHandler2]
+2024-02-07 17:11:55 |INFO  |main |XxlJobExecutor.java:183 |com.xxl.job.core.executor.XxlJobExecutor |>>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@1317ac2c[class ljl.video.handler.SampleXxlJob#httpJobHandler]
+2024-02-07 17:11:55 |INFO  |main |FeignClientFactoryBean.java:418 |org.springframework.cloud.openfeign.FeignClientFactoryBean |For 'video' URL not provided. Will try picking an instance via load-balancing.
+2024-02-07 17:11:55 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-10201"]
+2024-02-07 17:11:55 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 10201 (http) with context path ''
+2024-02-07 17:11:55 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP video 192.168.0.102:10201 register finished
+2024-02-07 17:11:56 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-02-07 17:11:56 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-02-07 17:11:56 |INFO  |Thread-83 |EmbedServer.java:82 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9910
+2024-02-07 17:11:56 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-02-07 17:11:57 |INFO  |main |CachingOperationNameGenerator.java:41 |springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator |Generating unique operation named: getCollectGroupUsingGET_1
+2024-02-07 17:11:57 |INFO  |main |CachingOperationNameGenerator.java:41 |springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator |Generating unique operation named: getDanmakuUsingGET_1
+2024-02-07 17:11:58 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.video.VideoApplication |Started VideoApplication in 38.663 seconds (JVM running for 42.153)
+2024-02-07 17:13:14 |INFO  |http-nio-10201-exec-2 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-07 17:13:14 |INFO  |http-nio-10201-exec-2 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-02-07 17:13:14 |INFO  |http-nio-10201-exec-2 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 4 ms
+2024-02-07 17:16:09 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Server healthy check fail, currentConnection = 1707297110972_120.227.129.112_46509
+2024-02-07 17:16:09 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-07 17:16:10 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Success to connect a server [116.62.71.84:8848], connectionId = 1707297370138_120.227.129.112_46928
+2024-02-07 17:16:10 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707297110972_120.227.129.112_46509
+2024-02-07 17:16:10 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707297110972_120.227.129.112_46509
+2024-02-07 17:16:10 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Notify disconnected event to listeners
+2024-02-07 17:16:10 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Notify connected event to listeners.
+2024-02-07 17:26:16 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 17:26:16 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Server healthy check fail, currentConnection = 1707297370138_120.227.129.112_46928
+2024-02-07 17:26:16 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-07 17:26:17 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Success to connect a server [116.62.71.84:8848], connectionId = 1707297977268_120.227.129.112_46550
+2024-02-07 17:26:17 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707297370138_120.227.129.112_46928
+2024-02-07 17:26:17 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707297370138_120.227.129.112_46928
+2024-02-07 17:26:17 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Notify disconnected event to listeners
+2024-02-07 17:26:17 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Notify connected event to listeners.
+2024-02-07 17:50:19 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 17:50:19 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Server healthy check fail, currentConnection = 1707297977268_120.227.129.112_46550
+2024-02-07 17:50:19 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-07 17:50:20 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Success to connect a server [116.62.71.84:8848], connectionId = 1707299420231_120.227.129.112_46935
+2024-02-07 17:50:20 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707297977268_120.227.129.112_46550
+2024-02-07 17:50:20 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707297977268_120.227.129.112_46550
+2024-02-07 17:50:20 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Notify disconnected event to listeners
+2024-02-07 17:50:20 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Notify connected event to listeners.
+2024-02-07 18:00:24 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 18:00:24 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Server healthy check fail, currentConnection = 1707299420231_120.227.129.112_46935
+2024-02-07 18:00:24 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-07 18:00:25 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Success to connect a server [116.62.71.84:8848], connectionId = 1707300025081_120.227.129.112_46335
+2024-02-07 18:00:25 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707299420231_120.227.129.112_46935
+2024-02-07 18:00:25 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707299420231_120.227.129.112_46935
+2024-02-07 18:00:25 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Notify disconnected event to listeners
+2024-02-07 18:00:25 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Notify connected event to listeners.
+2024-02-07 18:10:29 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 18:10:29 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Server healthy check fail, currentConnection = 1707300025081_120.227.129.112_46335
+2024-02-07 18:10:29 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-07 18:10:29 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Success to connect a server [116.62.71.84:8848], connectionId = 1707300629971_120.227.129.112_46816
+2024-02-07 18:10:29 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707300025081_120.227.129.112_46335
+2024-02-07 18:10:29 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707300025081_120.227.129.112_46335
+2024-02-07 18:10:29 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Notify disconnected event to listeners
+2024-02-07 18:10:29 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Notify connected event to listeners.
+2024-02-07 18:37:02 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 18:37:02 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Server healthy check fail, currentConnection = 1707300629971_120.227.129.112_46816
+2024-02-07 18:37:02 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-07 18:37:03 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Success to connect a server [116.62.71.84:8848], connectionId = 1707302223512_120.227.129.112_46457
+2024-02-07 18:37:03 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707300629971_120.227.129.112_46816
+2024-02-07 18:37:03 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707300629971_120.227.129.112_46816
+2024-02-07 18:37:03 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Notify disconnected event to listeners
+2024-02-07 18:37:03 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Notify connected event to listeners.
+2024-02-07 20:10:35 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 20:10:35 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Server healthy check fail, currentConnection = 1707302223512_120.227.129.112_46457
+2024-02-07 20:10:35 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-07 20:10:40 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Success to connect a server [116.62.71.84:8848], connectionId = 1707307840191_120.227.129.112_46902
+2024-02-07 20:10:40 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707302223512_120.227.129.112_46457
+2024-02-07 20:10:40 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707302223512_120.227.129.112_46457
+2024-02-07 20:10:40 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Notify disconnected event to listeners
+2024-02-07 20:10:40 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Notify connected event to listeners.
+2024-02-07 20:25:27 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 20:25:27 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Server healthy check fail, currentConnection = 1707307840191_120.227.129.112_46902
+2024-02-07 20:25:27 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-07 20:25:30 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Success to connect a server [116.62.71.84:8848], connectionId = 1707308731101_120.227.129.112_46441
+2024-02-07 20:25:30 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707307840191_120.227.129.112_46902
+2024-02-07 20:25:30 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707307840191_120.227.129.112_46902
+2024-02-07 20:25:30 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Notify disconnected event to listeners
+2024-02-07 20:25:30 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Notify connected event to listeners.
+2024-02-07 20:35:32 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 20:35:32 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Server healthy check fail, currentConnection = 1707308731101_120.227.129.112_46441
+2024-02-07 20:35:32 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-07 20:35:35 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Success to connect a server [116.62.71.84:8848], connectionId = 1707309335605_120.227.129.112_46647
+2024-02-07 20:35:35 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707308731101_120.227.129.112_46441
+2024-02-07 20:35:35 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707308731101_120.227.129.112_46441
+2024-02-07 20:35:35 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Notify disconnected event to listeners
+2024-02-07 20:35:35 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Notify connected event to listeners.
+2024-02-07 21:05:46 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 21:05:46 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Server healthy check fail, currentConnection = 1707309335605_120.227.129.112_46647
+2024-02-07 21:05:46 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-07 21:05:49 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Success to connect a server [116.62.71.84:8848], connectionId = 1707311150032_120.227.129.112_46878
+2024-02-07 21:05:49 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707309335605_120.227.129.112_46647
+2024-02-07 21:05:49 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707309335605_120.227.129.112_46647
+2024-02-07 21:05:49 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Notify disconnected event to listeners
+2024-02-07 21:05:49 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Notify connected event to listeners.
+2024-02-07 21:15:53 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 21:15:53 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Server healthy check fail, currentConnection = 1707311150032_120.227.129.112_46878
+2024-02-07 21:15:53 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-07 21:15:53 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Success to connect a server [116.62.71.84:8848], connectionId = 1707311754365_120.227.129.112_46287
+2024-02-07 21:15:53 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707311150032_120.227.129.112_46878
+2024-02-07 21:15:53 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707311150032_120.227.129.112_46878
+2024-02-07 21:15:53 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Notify disconnected event to listeners
+2024-02-07 21:15:53 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Notify connected event to listeners.
+2024-02-07 21:28:48 |INFO  |xxl-job, executor ExecutorRegistryThread |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 21:28:48 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(No route to host: connect), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-07 21:28:50 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Server healthy check fail, currentConnection = 1707311754365_120.227.129.112_46287
+2024-02-07 21:28:50 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-07 21:28:52 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Fail to connect server, after trying 1 times, last try server is {serverIp = '116.62.71.84', server main port = 8848}, error = unknown
+2024-02-07 21:28:52 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Fail to connect server, after trying 2 times, last try server is {serverIp = '116.62.71.84', server main port = 8848}, error = unknown
+2024-02-07 21:28:53 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Success to connect a server [116.62.71.84:8848], connectionId = 1707312534217_120.227.129.112_46854
+2024-02-07 21:28:53 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707311754365_120.227.129.112_46287
+2024-02-07 21:28:53 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707311754365_120.227.129.112_46287
+2024-02-07 21:28:53 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Notify disconnected event to listeners
+2024-02-07 21:28:53 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Notify connected event to listeners.
+2024-02-07 21:37:32 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 21:37:32 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Server healthy check fail, currentConnection = 1707312534217_120.227.129.112_46854
+2024-02-07 21:37:32 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-07 21:37:32 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Success to connect a server [116.62.71.84:8848], connectionId = 1707313053294_120.227.129.112_46584
+2024-02-07 21:37:32 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707312534217_120.227.129.112_46854
+2024-02-07 21:37:32 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707312534217_120.227.129.112_46854
+2024-02-07 21:37:32 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Notify disconnected event to listeners
+2024-02-07 21:37:32 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Notify connected event to listeners.
+2024-02-07 21:42:16 |INFO  |http-nio-10201-exec-9 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-02-07 22:59:19 |INFO  |http-nio-10201-exec-10 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 22:59:19 |INFO  |http-nio-10201-exec-10 |CommentController.java:35 |ljl.video.controller.audience_reactions.comment.CommentController |获取评论
+2024-02-07 22:59:19 |INFO  |http-nio-10201-exec-10 |CommentController.java:36 |ljl.video.controller.audience_reactions.comment.CommentController |1
+2024-02-07 22:59:19 |INFO  |http-nio-10201-exec-10 |CommentController.java:37 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-07 22:59:19 |INFO  |http-nio-10201-exec-10 |CommentController.java:38 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-07 22:59:19 |INFO  |http-nio-10201-exec-10 |CommentController.java:39 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-07 23:21:15 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 23:21:15 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Server healthy check fail, currentConnection = 1707313053294_120.227.129.112_46584
+2024-02-07 23:21:15 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-07 23:21:16 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Success to connect a server [116.62.71.84:8848], connectionId = 1707319276011_120.227.129.112_46751
+2024-02-07 23:21:16 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707313053294_120.227.129.112_46584
+2024-02-07 23:21:16 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707313053294_120.227.129.112_46584
+2024-02-07 23:21:16 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Notify disconnected event to listeners
+2024-02-07 23:21:16 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[029bd5a9-b2b5-497e-bd03-23ca41b97eef] Notify connected event to listeners.

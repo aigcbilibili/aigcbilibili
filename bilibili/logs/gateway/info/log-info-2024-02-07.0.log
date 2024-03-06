@@ -1,0 +1,847 @@
+2024-02-07 13:32:21 |INFO  |background-preinit |Version.java:21 |org.hibernate.validator.internal.util.Version |HV000001: Hibernate Validator 6.2.4.Final
+2024-02-07 13:32:21 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.GateWayApplication |Starting GateWayApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 13452 (E:\bilibili\gateway\target\classes started by Administrator in E:\bilibili)
+2024-02-07 13:32:21 |INFO  |main |SpringApplication.java:651 |ljl.bilibili.GateWayApplication |The following 1 profile is active: "dev"
+2024-02-07 13:32:24 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 13:32:24 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 13:32:24 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 32 ms. Found 0 Redis repository interfaces.
+2024-02-07 13:32:25 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=b9e9c24f-ad59-3cc4-917d-16bcc9898533
+2024-02-07 13:32:26 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-07 13:32:26 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-07 13:32:26 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-07 13:32:29 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-07 13:32:29 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-07 13:32:32 |INFO  |main |ReactiveUserDetailsServiceAutoConfiguration.java:88 |org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration |
+
+Using generated security password: d7504389-dea2-469b-88ab-158fb32c4ba9
+
+2024-02-07 13:32:37 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [After]
+2024-02-07 13:32:37 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Before]
+2024-02-07 13:32:37 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Between]
+2024-02-07 13:32:37 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Cookie]
+2024-02-07 13:32:37 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Header]
+2024-02-07 13:32:37 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Host]
+2024-02-07 13:32:37 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Method]
+2024-02-07 13:32:37 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Path]
+2024-02-07 13:32:37 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Query]
+2024-02-07 13:32:37 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [ReadBody]
+2024-02-07 13:32:37 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [RemoteAddr]
+2024-02-07 13:32:37 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-02-07 13:32:37 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Weight]
+2024-02-07 13:32:37 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-02-07 13:32:38 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of dc945e1f-8964-4376-920c-1278e94e8c00
+2024-02-07 13:32:38 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 116 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-07 13:32:38 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 58 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-07 13:32:38 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 73 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-07 13:32:39 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 775 ms to scan 210 urls, producing 0 keys and 0 values 
+2024-02-07 13:32:39 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 40 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-07 13:32:39 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 33 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-07 13:32:39 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 32 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-07 13:32:39 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 420 ms to scan 210 urls, producing 0 keys and 0 values 
+2024-02-07 13:32:39 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[dc945e1f-8964-4376-920c-1278e94e8c00] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-07 13:32:39 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[dc945e1f-8964-4376-920c-1278e94e8c00] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-07 13:32:39 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[dc945e1f-8964-4376-920c-1278e94e8c00] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-07 13:32:39 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[dc945e1f-8964-4376-920c-1278e94e8c00] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-07 13:32:39 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[dc945e1f-8964-4376-920c-1278e94e8c00] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-07 13:32:43 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[dc945e1f-8964-4376-920c-1278e94e8c00] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1707283963175_120.227.129.112_47012
+2024-02-07 13:32:43 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[dc945e1f-8964-4376-920c-1278e94e8c00] Notify connected event to listeners.
+2024-02-07 13:32:43 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[dc945e1f-8964-4376-920c-1278e94e8c00] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-07 13:32:43 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[dc945e1f-8964-4376-920c-1278e94e8c00] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$894/2108777202
+2024-02-07 13:32:51 |INFO  |main |NettyWebServer.java:111 |org.springframework.boot.web.embedded.netty.NettyWebServer |Netty started on port 8200
+2024-02-07 13:32:52 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP gateway 192.168.0.102:8200 register finished
+2024-02-07 13:32:52 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.GateWayApplication |Started GateWayApplication in 33.95 seconds (JVM running for 37.358)
+2024-02-07 13:33:00 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:33:00 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:33:00 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:33:00 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:46 |INFO  |reactor-http-nio-3 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 13:47:46 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:46 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:47 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:47 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:47 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:47 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:47 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:47 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:47 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:47 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:47 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:47 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:47 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:47 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:47 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:47 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:47 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:47 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:47 |INFO  |parallel-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:47 |INFO  |parallel-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:47 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:47 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:47 |INFO  |parallel-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:47 |INFO  |parallel-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:47 |INFO  |parallel-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:47 |INFO  |parallel-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:47 |INFO  |parallel-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:47 |INFO  |parallel-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:47 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:47 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:47 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:47 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:47 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:48 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:48 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:48 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:47 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:48 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:48 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:48 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:48 |INFO  |parallel-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:48 |INFO  |parallel-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:48 |INFO  |parallel-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:48 |INFO  |parallel-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:48 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:48 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:48 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:48 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:48 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:48 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:48 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:48 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:48 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:48 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:48 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:48 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:48 |INFO  |parallel-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:48 |INFO  |parallel-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:48 |INFO  |parallel-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:48 |INFO  |parallel-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:48 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:48 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:48 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:48 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:48 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:48 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:48 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:48 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:48 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:48 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:48 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:48 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:48 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:48 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:48 |INFO  |parallel-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:48 |INFO  |parallel-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:48 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:48 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:48 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:48 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:48 |INFO  |parallel-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:48 |INFO  |parallel-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:48 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:48 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:50 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:50 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:50 |INFO  |parallel-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:50 |INFO  |parallel-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:50 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:50 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:50 |INFO  |parallel-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:50 |INFO  |parallel-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:50 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:50 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:50 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:50 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:55 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:55 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:55 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:55 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:55 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:55 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:55 |INFO  |parallel-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:55 |INFO  |parallel-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:57 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:57 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:57 |INFO  |parallel-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:57 |INFO  |parallel-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |parallel-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |parallel-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |parallel-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |parallel-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |parallel-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |parallel-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |parallel-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |parallel-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |parallel-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |parallel-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |parallel-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |parallel-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |parallel-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |parallel-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |parallel-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |parallel-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |parallel-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |parallel-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |parallel-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |parallel-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:47:58 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:47:58 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:48:00 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:48:00 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:48:00 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:48:00 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:48:00 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:48:00 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:48:00 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:48:00 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:48:43 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-07 13:48:43 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-07 13:48:43 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-0} closing ...
+2024-02-07 13:49:04 |INFO  |background-preinit |Version.java:21 |org.hibernate.validator.internal.util.Version |HV000001: Hibernate Validator 6.2.4.Final
+2024-02-07 13:49:04 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.GateWayApplication |Starting GateWayApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 11316 (E:\bilibili\gateway\target\classes started by Administrator in E:\bilibili)
+2024-02-07 13:49:04 |INFO  |main |SpringApplication.java:651 |ljl.bilibili.GateWayApplication |The following 1 profile is active: "dev"
+2024-02-07 13:49:08 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 13:49:08 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 13:49:08 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 42 ms. Found 0 Redis repository interfaces.
+2024-02-07 13:49:09 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=b9e9c24f-ad59-3cc4-917d-16bcc9898533
+2024-02-07 13:49:10 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-07 13:49:10 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-07 13:49:10 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-07 13:49:13 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-07 13:49:13 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-07 13:49:18 |INFO  |main |ReactiveUserDetailsServiceAutoConfiguration.java:88 |org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration |
+
+Using generated security password: 5af96aa8-a315-4c80-a377-7db0c98c6246
+
+2024-02-07 13:49:23 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [After]
+2024-02-07 13:49:23 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Before]
+2024-02-07 13:49:23 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Between]
+2024-02-07 13:49:23 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Cookie]
+2024-02-07 13:49:23 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Header]
+2024-02-07 13:49:23 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Host]
+2024-02-07 13:49:23 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Method]
+2024-02-07 13:49:23 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Path]
+2024-02-07 13:49:23 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Query]
+2024-02-07 13:49:23 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [ReadBody]
+2024-02-07 13:49:23 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [RemoteAddr]
+2024-02-07 13:49:23 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-02-07 13:49:23 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Weight]
+2024-02-07 13:49:23 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-02-07 13:49:25 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 1ba1eb06-c6a0-40e7-992a-0a4fe3da44bd
+2024-02-07 13:49:25 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 210 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-07 13:49:25 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 312 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-07 13:49:26 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 94 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-07 13:49:27 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 1498 ms to scan 210 urls, producing 0 keys and 0 values 
+2024-02-07 13:49:27 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 22 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-07 13:49:27 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 155 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-07 13:49:27 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 62 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-07 13:49:29 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 1621 ms to scan 210 urls, producing 0 keys and 0 values 
+2024-02-07 13:49:29 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[1ba1eb06-c6a0-40e7-992a-0a4fe3da44bd] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-07 13:49:29 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[1ba1eb06-c6a0-40e7-992a-0a4fe3da44bd] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-07 13:49:29 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[1ba1eb06-c6a0-40e7-992a-0a4fe3da44bd] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-07 13:49:29 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[1ba1eb06-c6a0-40e7-992a-0a4fe3da44bd] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-07 13:49:29 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[1ba1eb06-c6a0-40e7-992a-0a4fe3da44bd] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-07 13:49:35 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[1ba1eb06-c6a0-40e7-992a-0a4fe3da44bd] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-07 13:49:36 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[1ba1eb06-c6a0-40e7-992a-0a4fe3da44bd] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1707284975863_120.227.129.112_46615
+2024-02-07 13:49:36 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[1ba1eb06-c6a0-40e7-992a-0a4fe3da44bd] Notify connected event to listeners.
+2024-02-07 13:49:36 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[1ba1eb06-c6a0-40e7-992a-0a4fe3da44bd] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-07 13:49:36 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[1ba1eb06-c6a0-40e7-992a-0a4fe3da44bd] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$894/10559673
+2024-02-07 13:49:44 |INFO  |main |NettyWebServer.java:111 |org.springframework.boot.web.embedded.netty.NettyWebServer |Netty started on port 8200
+2024-02-07 13:49:45 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP gateway 192.168.0.102:8200 register finished
+2024-02-07 13:49:45 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.GateWayApplication |Started GateWayApplication in 43.378 seconds (JVM running for 46.619)
+2024-02-07 13:50:32 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-07 13:50:32 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-07 13:50:32 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-0} closing ...
+2024-02-07 13:51:12 |INFO  |background-preinit |Version.java:21 |org.hibernate.validator.internal.util.Version |HV000001: Hibernate Validator 6.2.4.Final
+2024-02-07 13:51:12 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.GateWayApplication |Starting GateWayApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 7712 (E:\bilibili\gateway\target\classes started by Administrator in E:\bilibili)
+2024-02-07 13:51:12 |INFO  |main |SpringApplication.java:651 |ljl.bilibili.GateWayApplication |The following 1 profile is active: "dev"
+2024-02-07 13:51:15 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 13:51:15 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 13:51:15 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
+2024-02-07 13:51:17 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=b9e9c24f-ad59-3cc4-917d-16bcc9898533
+2024-02-07 13:51:18 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-07 13:51:18 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-07 13:51:18 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-07 13:51:21 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-07 13:51:21 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-07 13:51:26 |INFO  |main |ReactiveUserDetailsServiceAutoConfiguration.java:88 |org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration |
+
+Using generated security password: 15e62eca-e7e7-47d2-be10-3638d0ce74c6
+
+2024-02-07 13:51:31 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [After]
+2024-02-07 13:51:31 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Before]
+2024-02-07 13:51:31 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Between]
+2024-02-07 13:51:31 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Cookie]
+2024-02-07 13:51:31 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Header]
+2024-02-07 13:51:31 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Host]
+2024-02-07 13:51:31 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Method]
+2024-02-07 13:51:31 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Path]
+2024-02-07 13:51:31 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Query]
+2024-02-07 13:51:31 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [ReadBody]
+2024-02-07 13:51:31 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [RemoteAddr]
+2024-02-07 13:51:31 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-02-07 13:51:31 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Weight]
+2024-02-07 13:51:31 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-02-07 13:51:32 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of ebe1d659-2e83-429f-a9fc-369367567c23
+2024-02-07 13:51:32 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 178 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-07 13:51:32 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 90 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-07 13:51:32 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 42 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-07 13:51:33 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 922 ms to scan 210 urls, producing 0 keys and 0 values 
+2024-02-07 13:51:33 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 40 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-07 13:51:33 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 29 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-07 13:51:33 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 33 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-07 13:51:34 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 573 ms to scan 210 urls, producing 0 keys and 0 values 
+2024-02-07 13:51:34 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ebe1d659-2e83-429f-a9fc-369367567c23] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-07 13:51:34 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ebe1d659-2e83-429f-a9fc-369367567c23] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-07 13:51:34 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ebe1d659-2e83-429f-a9fc-369367567c23] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-07 13:51:34 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ebe1d659-2e83-429f-a9fc-369367567c23] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-07 13:51:34 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ebe1d659-2e83-429f-a9fc-369367567c23] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-07 13:51:40 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ebe1d659-2e83-429f-a9fc-369367567c23] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-07 13:51:40 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ebe1d659-2e83-429f-a9fc-369367567c23] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1707285100459_120.227.129.112_46154
+2024-02-07 13:51:40 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ebe1d659-2e83-429f-a9fc-369367567c23] Notify connected event to listeners.
+2024-02-07 13:51:40 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ebe1d659-2e83-429f-a9fc-369367567c23] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-07 13:51:40 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ebe1d659-2e83-429f-a9fc-369367567c23] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$894/657626056
+2024-02-07 13:51:47 |INFO  |main |NettyWebServer.java:111 |org.springframework.boot.web.embedded.netty.NettyWebServer |Netty started on port 8200
+2024-02-07 13:51:48 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP gateway 192.168.0.102:8200 register finished
+2024-02-07 13:51:48 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.GateWayApplication |Started GateWayApplication in 39.079 seconds (JVM running for 42.157)
+2024-02-07 13:52:38 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:38 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:38 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:38 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:43 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:43 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:44 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:44 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:44 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:44 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:44 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:44 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:44 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:44 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:44 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:44 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:44 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:44 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:44 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:44 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:44 |INFO  |parallel-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:44 |INFO  |parallel-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:44 |INFO  |parallel-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:44 |INFO  |parallel-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:44 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:44 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:44 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:44 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:44 |INFO  |parallel-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:44 |INFO  |parallel-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:44 |INFO  |parallel-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:44 |INFO  |parallel-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:44 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:44 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:44 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:44 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:44 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:44 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:44 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:44 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:45 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:45 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:45 |INFO  |parallel-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:45 |INFO  |parallel-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:45 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:45 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:45 |INFO  |parallel-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:45 |INFO  |parallel-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:45 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:45 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:45 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:45 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:45 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:45 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:45 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:45 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:45 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:45 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:45 |INFO  |parallel-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:45 |INFO  |parallel-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:45 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:45 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:45 |INFO  |parallel-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:45 |INFO  |parallel-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:46 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:46 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:46 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:46 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:46 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:46 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:46 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:46 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:46 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:46 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:46 |INFO  |parallel-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:46 |INFO  |parallel-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:46 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:46 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:46 |INFO  |parallel-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:46 |INFO  |parallel-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:47 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:47 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:47 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:47 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:47 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:47 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:47 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:47 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:56 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:56 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:56 |INFO  |parallel-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:56 |INFO  |parallel-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:56 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:56 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:56 |INFO  |parallel-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:56 |INFO  |parallel-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:56 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:56 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:52:56 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:52:56 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:03 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:03 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:03 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:03 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:03 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:03 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:03 |INFO  |parallel-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:03 |INFO  |parallel-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:04 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:04 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:04 |INFO  |parallel-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:04 |INFO  |parallel-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:04 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:04 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:05 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:05 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:05 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:05 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:05 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:05 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:05 |INFO  |parallel-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:05 |INFO  |parallel-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:05 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:05 |INFO  |parallel-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:05 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:05 |INFO  |parallel-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:05 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:05 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:05 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:05 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:05 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:05 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:05 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:05 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:05 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:05 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:05 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:05 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:05 |INFO  |parallel-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:05 |INFO  |parallel-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:05 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:05 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:05 |INFO  |parallel-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:05 |INFO  |parallel-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:06 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:06 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:06 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:06 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:06 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:06 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:06 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:06 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:09 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:09 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:09 |INFO  |parallel-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:09 |INFO  |parallel-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:09 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:09 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:09 |INFO  |parallel-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:09 |INFO  |parallel-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:09 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:09 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:09 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:09 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:09 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:09 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:09 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:09 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:10 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:10 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:10 |INFO  |parallel-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:10 |INFO  |parallel-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:10 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:10 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:10 |INFO  |parallel-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:10 |INFO  |parallel-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:10 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:10 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:10 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:10 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:11 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:11 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:11 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:11 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:11 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:11 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:11 |INFO  |parallel-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:11 |INFO  |parallel-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:11 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:11 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:11 |INFO  |parallel-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:11 |INFO  |parallel-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:19 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:19 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:19 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:19 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:19 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:19 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:19 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:19 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:21 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:21 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:21 |INFO  |parallel-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:21 |INFO  |parallel-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:21 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:21 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:21 |INFO  |parallel-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:21 |INFO  |parallel-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:21 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:21 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:21 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:21 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:21 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:21 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:21 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:21 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:21 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:21 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:21 |INFO  |parallel-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:21 |INFO  |parallel-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:21 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:21 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:21 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:21 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:21 |INFO  |parallel-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:21 |INFO  |parallel-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:21 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:21 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:21 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:21 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:21 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:21 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:21 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:21 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:21 |INFO  |parallel-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:21 |INFO  |parallel-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:22 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:22 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:22 |INFO  |parallel-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:22 |INFO  |parallel-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:22 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:22 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:22 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:22 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:23 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:23 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:23 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:23 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:23 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:23 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:23 |INFO  |parallel-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:23 |INFO  |parallel-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:23 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:23 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:23 |INFO  |parallel-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:23 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:23 |INFO  |parallel-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:23 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:23 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:23 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:23 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:23 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:23 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:23 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:24 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:24 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:24 |INFO  |parallel-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:24 |INFO  |parallel-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:24 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:24 |INFO  |reactor-http-nio-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:24 |INFO  |parallel-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:24 |INFO  |parallel-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:25 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:25 |INFO  |reactor-http-nio-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:25 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:25 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:25 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:25 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:25 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:25 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:25 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:25 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:25 |INFO  |parallel-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:25 |INFO  |parallel-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:33 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:33 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:33 |INFO  |parallel-4 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:33 |INFO  |parallel-4 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:33 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:33 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 13:53:33 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 13:53:33 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 14:05:42 |INFO  |reactor-http-nio-2 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 14:05:42 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 14:05:42 |INFO  |reactor-http-nio-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 14:05:42 |INFO  |parallel-2 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 14:05:42 |INFO  |parallel-2 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 14:06:51 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-07 14:06:51 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-07 14:06:51 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-0} closing ...
+2024-02-07 14:08:04 |INFO  |background-preinit |Version.java:21 |org.hibernate.validator.internal.util.Version |HV000001: Hibernate Validator 6.2.4.Final
+2024-02-07 14:08:04 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.GateWayApplication |Starting GateWayApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 13464 (E:\bilibili\gateway\target\classes started by Administrator in E:\bilibili)
+2024-02-07 14:08:04 |INFO  |main |SpringApplication.java:651 |ljl.bilibili.GateWayApplication |The following 1 profile is active: "dev"
+2024-02-07 14:08:10 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 14:08:10 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 14:08:10 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 31 ms. Found 0 Redis repository interfaces.
+2024-02-07 14:08:11 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=b9e9c24f-ad59-3cc4-917d-16bcc9898533
+2024-02-07 14:08:12 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-07 14:08:12 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-07 14:08:12 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-07 14:08:15 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-07 14:08:16 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-07 14:08:21 |INFO  |main |ReactiveUserDetailsServiceAutoConfiguration.java:88 |org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration |
+
+Using generated security password: 33e697e1-5388-4d86-a02c-f914ae583f1c
+
+2024-02-07 14:08:25 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [After]
+2024-02-07 14:08:25 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Before]
+2024-02-07 14:08:25 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Between]
+2024-02-07 14:08:25 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Cookie]
+2024-02-07 14:08:25 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Header]
+2024-02-07 14:08:25 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Host]
+2024-02-07 14:08:25 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Method]
+2024-02-07 14:08:25 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Path]
+2024-02-07 14:08:25 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Query]
+2024-02-07 14:08:25 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [ReadBody]
+2024-02-07 14:08:25 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [RemoteAddr]
+2024-02-07 14:08:25 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-02-07 14:08:25 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Weight]
+2024-02-07 14:08:25 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-02-07 14:08:26 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 48066847-397b-48fd-8b72-3e540e32516c
+2024-02-07 14:08:26 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 120 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-07 14:08:26 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 54 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-07 14:08:26 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 56 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-07 14:08:27 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 515 ms to scan 210 urls, producing 0 keys and 0 values 
+2024-02-07 14:08:27 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 25 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-07 14:08:27 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 33 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-07 14:08:27 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 61 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-07 14:08:28 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 637 ms to scan 210 urls, producing 0 keys and 0 values 
+2024-02-07 14:08:28 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[48066847-397b-48fd-8b72-3e540e32516c] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-07 14:08:28 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[48066847-397b-48fd-8b72-3e540e32516c] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-07 14:08:28 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[48066847-397b-48fd-8b72-3e540e32516c] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-07 14:08:28 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[48066847-397b-48fd-8b72-3e540e32516c] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-07 14:08:28 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[48066847-397b-48fd-8b72-3e540e32516c] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-07 14:08:33 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[48066847-397b-48fd-8b72-3e540e32516c] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-07 14:08:36 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[48066847-397b-48fd-8b72-3e540e32516c] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-07 14:08:38 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[48066847-397b-48fd-8b72-3e540e32516c] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1707286117204_120.227.129.112_46520
+2024-02-07 14:08:38 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[48066847-397b-48fd-8b72-3e540e32516c] Notify connected event to listeners.
+2024-02-07 14:08:38 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[48066847-397b-48fd-8b72-3e540e32516c] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-07 14:08:38 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[48066847-397b-48fd-8b72-3e540e32516c] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$894/564787547
+2024-02-07 14:08:46 |INFO  |main |NettyWebServer.java:111 |org.springframework.boot.web.embedded.netty.NettyWebServer |Netty started on port 8200
+2024-02-07 14:08:48 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP gateway 192.168.0.102:8200 register finished
+2024-02-07 14:08:49 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.GateWayApplication |Started GateWayApplication in 48.589 seconds (JVM running for 55.536)
+2024-02-07 14:09:02 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 14:09:02 |INFO  |reactor-http-nio-3 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 14:09:02 |INFO  |parallel-1 |JwtAuthenticationFilter.java:26 |ljl.gateway.filter.JwtAuthenticationFilter |null
+2024-02-07 14:09:02 |INFO  |parallel-1 |JwtAuthenticationFilter.java:28 |ljl.gateway.filter.JwtAuthenticationFilter |no
+2024-02-07 14:09:02 |INFO  |reactor-http-nio-3 |LoginController.java:30 |ljl.gateway.controller.LoginController |111
+2024-02-07 14:09:05 |INFO  |reactor-http-nio-3 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-02-07 14:50:02 |INFO  |Thread-53 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 14:50:02 |INFO  |Thread-50 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 14:50:05 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-07 14:50:05 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-07 14:50:05 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-02-07 14:50:05 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-02-07 16:34:21 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.GateWayApplication |Starting GateWayApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 9064 (E:\bilibili\gateway\target\classes started by Administrator in E:\bilibili)
+2024-02-07 16:34:21 |INFO  |background-preinit |Version.java:21 |org.hibernate.validator.internal.util.Version |HV000001: Hibernate Validator 6.2.4.Final
+2024-02-07 16:34:21 |INFO  |main |SpringApplication.java:651 |ljl.bilibili.GateWayApplication |The following 1 profile is active: "dev"
+2024-02-07 16:34:30 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 16:34:30 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 16:34:30 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 32 ms. Found 0 Redis repository interfaces.
+2024-02-07 16:34:31 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=b9e9c24f-ad59-3cc4-917d-16bcc9898533
+2024-02-07 16:34:32 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-07 16:34:32 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-07 16:34:32 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-07 16:34:34 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-07 16:34:35 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-07 16:34:39 |INFO  |main |ReactiveUserDetailsServiceAutoConfiguration.java:88 |org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration |
+
+Using generated security password: 82a30eb8-1f2a-497e-bc0e-d66541033ae3
+
+2024-02-07 16:34:43 |INFO  |main |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-0} closing ...
+2024-02-07 16:34:43 |INFO  |main |ConditionEvaluationReportLoggingListener.java:136 |org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener |
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-02-07 16:35:59 |INFO  |background-preinit |Version.java:21 |org.hibernate.validator.internal.util.Version |HV000001: Hibernate Validator 6.2.4.Final
+2024-02-07 16:35:59 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.GateWayApplication |Starting GateWayApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 15692 (E:\bilibili\gateway\target\classes started by Administrator in E:\bilibili)
+2024-02-07 16:35:59 |INFO  |main |SpringApplication.java:651 |ljl.bilibili.GateWayApplication |The following 1 profile is active: "dev"
+2024-02-07 16:36:04 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 16:36:04 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 16:36:04 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 49 ms. Found 0 Redis repository interfaces.
+2024-02-07 16:36:06 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=b9e9c24f-ad59-3cc4-917d-16bcc9898533
+2024-02-07 16:36:07 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-07 16:36:07 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-07 16:36:07 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-07 16:36:11 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-07 16:36:11 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-07 16:36:16 |INFO  |main |ReactiveUserDetailsServiceAutoConfiguration.java:88 |org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration |
+
+Using generated security password: 259efad4-6e00-4a4d-9e40-98e6e5d2dd8c
+
+2024-02-07 16:36:20 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [After]
+2024-02-07 16:36:20 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Before]
+2024-02-07 16:36:20 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Between]
+2024-02-07 16:36:20 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Cookie]
+2024-02-07 16:36:20 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Header]
+2024-02-07 16:36:20 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Host]
+2024-02-07 16:36:20 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Method]
+2024-02-07 16:36:20 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Path]
+2024-02-07 16:36:20 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Query]
+2024-02-07 16:36:20 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [ReadBody]
+2024-02-07 16:36:20 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [RemoteAddr]
+2024-02-07 16:36:20 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-02-07 16:36:20 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Weight]
+2024-02-07 16:36:20 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-02-07 16:36:21 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 22697e2d-f1be-4440-aed8-94bc783c525c
+2024-02-07 16:36:21 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 218 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-07 16:36:22 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 105 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-07 16:36:22 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 119 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-07 16:36:23 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 1106 ms to scan 210 urls, producing 0 keys and 0 values 
+2024-02-07 16:36:23 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 39 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-07 16:36:23 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 25 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-07 16:36:23 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 33 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-07 16:36:24 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 466 ms to scan 210 urls, producing 0 keys and 0 values 
+2024-02-07 16:36:24 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[22697e2d-f1be-4440-aed8-94bc783c525c] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-07 16:36:24 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[22697e2d-f1be-4440-aed8-94bc783c525c] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-07 16:36:24 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[22697e2d-f1be-4440-aed8-94bc783c525c] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-07 16:36:24 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[22697e2d-f1be-4440-aed8-94bc783c525c] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-07 16:36:24 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[22697e2d-f1be-4440-aed8-94bc783c525c] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-07 16:36:29 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[22697e2d-f1be-4440-aed8-94bc783c525c] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-07 16:36:30 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[22697e2d-f1be-4440-aed8-94bc783c525c] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1707294990119_120.227.129.112_46705
+2024-02-07 16:36:30 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[22697e2d-f1be-4440-aed8-94bc783c525c] Notify connected event to listeners.
+2024-02-07 16:36:30 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[22697e2d-f1be-4440-aed8-94bc783c525c] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-07 16:36:30 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[22697e2d-f1be-4440-aed8-94bc783c525c] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$894/1766431855
+2024-02-07 16:36:36 |INFO  |main |NettyWebServer.java:111 |org.springframework.boot.web.embedded.netty.NettyWebServer |Netty started on port 8200
+2024-02-07 16:36:38 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP gateway 192.168.0.102:8200 register finished
+2024-02-07 16:36:38 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.GateWayApplication |Started GateWayApplication in 42.931 seconds (JVM running for 47.487)
+2024-02-07 16:45:55 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 16:45:55 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[22697e2d-f1be-4440-aed8-94bc783c525c] Server healthy check fail, currentConnection = 1707294990119_120.227.129.112_46705
+2024-02-07 16:45:55 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[22697e2d-f1be-4440-aed8-94bc783c525c] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-07 16:45:56 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[22697e2d-f1be-4440-aed8-94bc783c525c] Success to connect a server [116.62.71.84:8848], connectionId = 1707295555988_120.227.129.112_46423
+2024-02-07 16:45:56 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[22697e2d-f1be-4440-aed8-94bc783c525c] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707294990119_120.227.129.112_46705
+2024-02-07 16:45:56 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707294990119_120.227.129.112_46705
+2024-02-07 16:45:56 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[22697e2d-f1be-4440-aed8-94bc783c525c] Notify disconnected event to listeners
+2024-02-07 16:45:56 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[22697e2d-f1be-4440-aed8-94bc783c525c] Notify connected event to listeners.
+2024-02-07 17:10:20 |INFO  |Thread-36 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-07 17:10:20 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-07 17:10:20 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-07 17:10:20 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-0} closing ...

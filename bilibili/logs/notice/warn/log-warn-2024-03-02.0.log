@@ -1,0 +1,139 @@
+2024-03-02 01:11:41 |WARN  |main |TableInfoHelper.java:423 |com.baomidou.mybatisplus.core.metadata.TableInfoHelper |This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "ljl.entity.notice.dynamic.DynamicToUser"
+2024-03-02 01:11:52 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-03-02 01:29:50 |WARN  |nacos-grpc-client-executor-73 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1709313111150_120.227.129.112_46823]Ignore error event,isRunning:true,isAbandon=true
+2024-03-02 01:30:08 |WARN  |nacos-grpc-client-executor-80 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1709314189360_120.227.129.112_46483]Ignore error event,isRunning:true,isAbandon=true
+2024-03-02 01:30:08 |WARN  |ConsumeMessageThread_2 |DefaultRocketMQListenerContainer.java:354 |org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer |consume message failed. messageExt:MessageExt [queueId=1, storeSize=401, queueOffset=6, sysFlag=0, bornTimestamp=1709313446856, bornHost=/120.227.129.112:46819, storeTimestamp=1709313446361, storeHost=/120.55.183.155:10911, msgId=7837B79B00002A9F0000000000175234, commitLogOffset=1528372, bodyCRC=1524986502, reconsumeTimes=0, preparedTransactionOffset=0, toString()=Message{topic='mysqlToEs', flag=0, properties={MIN_OFFSET=0, MAX_OFFSET=7, CONSUME_START_TIME=1709313446898, id=a87258ba-39fb-b8ad-0f3e-482aaa0a79d1, UNIQ_KEY=C0A8006448B414DAD5DC056D43C80019, CLUSTER=DefaultCluster, contentType=text/plain;charset=UTF-8, timestamp=1709313446850}, body=[123, 34, 105, 100, 34, 58, 49, 54, 53, 44, 34, 99, 114, 101, 97, 116, 101, 95, 116, 105, 109, 101, 34, 58, 110, 117, 108, 108, 44, 34, 117, 115, 101, 114, 95, 105, 100, 34, 58, 54, 44, 34, 105, 110, 116, 114, 111, 34, 58, 110, 117, 108, 108, 44, 34, 108, 101, 110, 103, 116, 104, 34, 58, 110, 117, 108, 108, 44, 34, 110, 97, 109, 101, 34, 58, 110, 117, 108, 108, 44, 34, 117, 114, 108, 34, 58, 110, 117, 108, 108, 44, 34, 99, 111, 118, 101, 114, 34, 58, 110, 117, 108, 108, 44, 34, 116, 97, 98, 108, 101, 34, 58, 34, 118, 105, 100, 101, 111, 34, 44, 34, 116, 121, 112, 101, 34, 58, 34, 117, 112, 100, 97, 116, 101, 34, 125], transactionId='null'}]
+org.springframework.data.redis.RedisSystemException: Redis exception; nested exception is io.lettuce.core.RedisException: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:74)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:272)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.await(LettuceConnection.java:1063)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.lambda$doInvoke$4(LettuceConnection.java:920)
+	at org.springframework.data.redis.connection.lettuce.LettuceInvoker$Synchronizer.invoke(LettuceInvoker.java:665)
+	at org.springframework.data.redis.connection.lettuce.LettuceInvoker.just(LettuceInvoker.java:109)
+	at org.springframework.data.redis.connection.lettuce.LettuceListCommands.rPush(LettuceListCommands.java:53)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.rPush(DefaultedRedisConnection.java:653)
+	at org.springframework.data.redis.core.DefaultListOperations.lambda$rightPush$12(DefaultListOperations.java:280)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:223)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:190)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:97)
+	at org.springframework.data.redis.core.DefaultListOperations.rightPush(DefaultListOperations.java:280)
+	at ljl.consumer.mysql_es.MysqlToEsConsumer.onMessage(MysqlToEsConsumer.java:67)
+	at ljl.consumer.mysql_es.MysqlToEsConsumer.onMessage(MysqlToEsConsumer.java:18)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer$DefaultMessageListenerConcurrently.consumeMessage(DefaultRocketMQListenerContainer.java:350)
+	at org.apache.rocketmq.client.impl.consumer.ConsumeMessageConcurrentlyService$ConsumeRequest.run(ConsumeMessageConcurrentlyService.java:411)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: io.lettuce.core.RedisException: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at io.lettuce.core.internal.Exceptions.bubble(Exceptions.java:83)
+	at io.lettuce.core.internal.Futures.awaitOrCancel(Futures.java:250)
+	at io.lettuce.core.LettuceFutures.awaitOrCancel(LettuceFutures.java:74)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.await(LettuceConnection.java:1061)
+	... 20 common frames omitted
+Caused by: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:258)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+2024-03-02 02:17:29 |WARN  |Thread-57 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-03-02 02:17:29 |WARN  |Thread-57 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end
+2024-03-02 02:17:29 |WARN  |Thread-60 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-03-02 02:17:29 |WARN  |Thread-60 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-03-02 02:17:30 |WARN  |SpringApplicationShutdownHook |DisposableBeanAdapter.java:222 |org.springframework.beans.factory.support.DisposableBeanAdapter |Invocation of destroy method failed on bean with name 'rocketMQTemplate': java.lang.IllegalStateException: Shutdown in progress
+2024-03-02 02:17:30 |WARN  |SpringApplicationShutdownHook |DisposableBeanAdapter.java:329 |org.springframework.beans.factory.support.DisposableBeanAdapter |Custom destroy method 'shutdown' on bean with name 'defaultMQProducer' threw an exception: java.lang.IllegalStateException: Shutdown in progress
+2024-03-02 02:17:52 |WARN  |main |TableInfoHelper.java:423 |com.baomidou.mybatisplus.core.metadata.TableInfoHelper |This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "ljl.entity.notice.dynamic.DynamicToUser"
+2024-03-02 02:17:56 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-03-02 02:21:47 |WARN  |Thread-33 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-03-02 02:21:47 |WARN  |Thread-30 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-03-02 02:21:47 |WARN  |Thread-30 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end
+2024-03-02 02:21:47 |WARN  |Thread-33 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-03-02 02:21:48 |WARN  |SpringApplicationShutdownHook |DisposableBeanAdapter.java:222 |org.springframework.beans.factory.support.DisposableBeanAdapter |Invocation of destroy method failed on bean with name 'rocketMQTemplate': java.lang.IllegalStateException: Shutdown in progress
+2024-03-02 02:21:48 |WARN  |SpringApplicationShutdownHook |DisposableBeanAdapter.java:329 |org.springframework.beans.factory.support.DisposableBeanAdapter |Custom destroy method 'shutdown' on bean with name 'defaultMQProducer' threw an exception: java.lang.IllegalStateException: Shutdown in progress
+2024-03-02 02:22:17 |WARN  |main |TableInfoHelper.java:423 |com.baomidou.mybatisplus.core.metadata.TableInfoHelper |This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "ljl.entity.notice.dynamic.DynamicToUser"
+2024-03-02 02:22:25 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-03-02 02:24:36 |WARN  |nacos-grpc-client-executor-28 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1709317344117_120.227.129.112_46382]Ignore error event,isRunning:true,isAbandon=true
+2024-03-02 02:42:38 |WARN  |Thread-40 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-03-02 02:42:38 |WARN  |Thread-37 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-03-02 02:42:38 |WARN  |Thread-37 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end
+2024-03-02 02:42:38 |WARN  |Thread-40 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-03-02 02:42:38 |WARN  |nacos-grpc-client-executor-240 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1709317475389_120.227.129.112_46486]Ignore error event,isRunning:true,isAbandon=true
+2024-03-02 02:42:38 |WARN  |ConsumeMessageThread_3 |DefaultRocketMQListenerContainer.java:354 |org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer |consume message failed. messageExt:MessageExt [queueId=3, storeSize=484, queueOffset=11, sysFlag=0, bornTimestamp=1709318526201, bornHost=/120.227.129.112:46377, storeTimestamp=1709318525754, storeHost=/120.55.183.155:10911, msgId=7837B79B00002A9F0000000000177A05, commitLogOffset=1538565, bodyCRC=1107683833, reconsumeTimes=0, preparedTransactionOffset=0, toString()=Message{topic='mysqlToEs', flag=0, properties={MIN_OFFSET=0, MAX_OFFSET=12, CONSUME_START_TIME=1709318526250, id=a22b452a-1b5a-b58c-d40c-0ceae4fccb6f, UNIQ_KEY=C0A800644B6C14DAD5DC05BAC4F60014, CLUSTER=DefaultCluster, contentType=text/plain;charset=UTF-8, timestamp=1709318526176}, body=[123, 34, 105, 100, 34, 58, 110, 117, 108, 108, 44, 34, 117, 115, 101, 114, 95, 110, 97, 109, 101, 34, 58, 34, 49, 49, 52, 53, 34, 44, 34, 112, 97, 115, 115, 119, 111, 114, 100, 34, 58, 34, 49, 49, 49, 34, 44, 34, 99, 111, 118, 101, 114, 34, 58, 34, 104, 116, 116, 112, 58, 47, 47, 49, 50, 48, 46, 53, 53, 46, 49, 56, 51, 46, 49, 53, 53, 58, 57, 48, 48, 48, 47, 105, 109, 103, 47, 100, 101, 102, 117, 97, 108, 116, 46, 112, 110, 103, 34, 44, 34, 110, 105, 99, 107, 110, 97, 109, 101, 34, 58, 110, 117, 108, 108, 44, 34, 105, 110, 116, 114, 111, 34, 58, 110, 117, 108, 108, 44, 34, 99, 114, 101, 97, 116, 101, 95, 116, 105, 109, 101, 34, 58, 34, 50, 48, 50, 52, 45, 48, 51, 45, 48, 50, 84, 48, 50, 58, 52, 50, 58, 48, 53, 46, 55, 56, 53, 34, 44, 34, 112, 104, 111, 110, 101, 95, 110, 117, 109, 98, 101, 114, 34, 58, 34, 49, 50, 51, 52, 34, 44, 34, 116, 97, 98, 108, 101, 34, 58, 34, 117, 115, 101, 114, 34, 44, 34, 116, 121, 112, 101, 34, 58, 34, 97, 100, 100, 34, 125], transactionId='null'}]
+org.springframework.data.redis.RedisSystemException: Redis exception; nested exception is io.lettuce.core.RedisException: Connection closed
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:74)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:272)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.await(LettuceConnection.java:1063)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.lambda$doInvoke$4(LettuceConnection.java:920)
+	at org.springframework.data.redis.connection.lettuce.LettuceInvoker$Synchronizer.invoke(LettuceInvoker.java:665)
+	at org.springframework.data.redis.connection.lettuce.LettuceInvoker.just(LettuceInvoker.java:109)
+	at org.springframework.data.redis.connection.lettuce.LettuceListCommands.rPush(LettuceListCommands.java:53)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.rPush(DefaultedRedisConnection.java:653)
+	at org.springframework.data.redis.core.DefaultListOperations.lambda$rightPush$12(DefaultListOperations.java:280)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:223)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:190)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:97)
+	at org.springframework.data.redis.core.DefaultListOperations.rightPush(DefaultListOperations.java:280)
+	at ljl.consumer.mysql_es.MysqlToEsConsumer.onMessage(MysqlToEsConsumer.java:46)
+	at ljl.consumer.mysql_es.MysqlToEsConsumer.onMessage(MysqlToEsConsumer.java:18)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer$DefaultMessageListenerConcurrently.consumeMessage(DefaultRocketMQListenerContainer.java:350)
+	at org.apache.rocketmq.client.impl.consumer.ConsumeMessageConcurrentlyService$ConsumeRequest.run(ConsumeMessageConcurrentlyService.java:411)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: io.lettuce.core.RedisException: Connection closed
+	at io.lettuce.core.protocol.DefaultEndpoint.notifyDrainQueuedCommands(DefaultEndpoint.java:679)
+	at io.lettuce.core.protocol.CommandHandler.channelInactive(CommandHandler.java:358)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:262)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:248)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:241)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:81)
+	at io.lettuce.core.protocol.RedisHandshakeHandler.channelInactive(RedisHandshakeHandler.java:89)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:262)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:248)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:241)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:81)
+	at io.lettuce.core.ChannelGroupListener.channelInactive(ChannelGroupListener.java:69)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:262)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:248)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:241)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelInactive(DefaultChannelPipeline.java:1405)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:262)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:248)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:901)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$7.run(AbstractChannel.java:813)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask$$$capture(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:503)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+2024-03-02 02:42:39 |WARN  |SpringApplicationShutdownHook |DisposableBeanAdapter.java:222 |org.springframework.beans.factory.support.DisposableBeanAdapter |Invocation of destroy method failed on bean with name 'rocketMQTemplate': java.lang.IllegalStateException: Shutdown in progress
+2024-03-02 02:42:39 |WARN  |SpringApplicationShutdownHook |DisposableBeanAdapter.java:329 |org.springframework.beans.factory.support.DisposableBeanAdapter |Custom destroy method 'shutdown' on bean with name 'defaultMQProducer' threw an exception: java.lang.IllegalStateException: Shutdown in progress
