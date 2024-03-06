@@ -1,0 +1,87 @@
+2024-02-09 01:27:24 |INFO  |main |SpringApplication.java:645 |ljl.bilibili.video.VideoApplication |No active profile set, falling back to 1 default profile: "default"
+2024-02-09 01:27:28 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=296f97aa-7a32-3d28-812d-f6a45b7783cf
+2024-02-09 01:27:29 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 10201 (http)
+2024-02-09 01:27:29 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-10201"]
+2024-02-09 01:27:29 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-02-09 01:27:29 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-09 01:27:29 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-02-09 01:27:29 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 5537 ms
+2024-02-09 01:27:31 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-09 01:27:31 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-09 01:27:34 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-02-09 01:27:34 |INFO  |main |XxlJobConfig.java:46 |ljl.video.config.XxlJobConfig |>>>>>>>>>>> xxl-job config init.
+2024-02-09 01:27:35 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of dc5c1930-4868-462b-bc20-b33cca1d19f1
+2024-02-09 01:27:35 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 60 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-09 01:27:35 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 17 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-09 01:27:35 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 13 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-09 01:27:35 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 177 ms to scan 255 urls, producing 0 keys and 0 values 
+2024-02-09 01:27:35 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 11 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-09 01:27:35 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 12 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-09 01:27:35 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 10 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-09 01:27:35 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 171 ms to scan 255 urls, producing 0 keys and 0 values 
+2024-02-09 01:27:35 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[dc5c1930-4868-462b-bc20-b33cca1d19f1] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-09 01:27:35 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[dc5c1930-4868-462b-bc20-b33cca1d19f1] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-09 01:27:35 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[dc5c1930-4868-462b-bc20-b33cca1d19f1] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-09 01:27:35 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[dc5c1930-4868-462b-bc20-b33cca1d19f1] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-09 01:27:35 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[dc5c1930-4868-462b-bc20-b33cca1d19f1] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-09 01:27:37 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[dc5c1930-4868-462b-bc20-b33cca1d19f1] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1707413257375_120.227.129.112_46356
+2024-02-09 01:27:37 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[dc5c1930-4868-462b-bc20-b33cca1d19f1] Notify connected event to listeners.
+2024-02-09 01:27:37 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[dc5c1930-4868-462b-bc20-b33cca1d19f1] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-09 01:27:37 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[dc5c1930-4868-462b-bc20-b33cca1d19f1] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$874/209089454
+2024-02-09 01:27:39 |INFO  |main |XxlJobExecutor.java:183 |com.xxl.job.core.executor.XxlJobExecutor |>>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@102fd71d[class ljl.video.handler.SampleXxlJob#demoJobHandler2]
+2024-02-09 01:27:39 |INFO  |main |XxlJobExecutor.java:183 |com.xxl.job.core.executor.XxlJobExecutor |>>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@8e00c02[class ljl.video.handler.SampleXxlJob#demoJobHandler]
+2024-02-09 01:27:39 |INFO  |main |XxlJobExecutor.java:183 |com.xxl.job.core.executor.XxlJobExecutor |>>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@464d60fb[class ljl.video.handler.SampleXxlJob#httpJobHandler]
+2024-02-09 01:27:39 |INFO  |main |FeignClientFactoryBean.java:418 |org.springframework.cloud.openfeign.FeignClientFactoryBean |For 'video' URL not provided. Will try picking an instance via load-balancing.
+2024-02-09 01:27:39 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-10201"]
+2024-02-09 01:27:39 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 10201 (http) with context path ''
+2024-02-09 01:27:39 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP video 192.168.0.102:10201 register finished
+2024-02-09 01:27:39 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-02-09 01:27:39 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-02-09 01:27:39 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-02-09 01:27:39 |INFO  |Thread-52 |EmbedServer.java:82 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9910
+2024-02-09 01:27:40 |INFO  |main |CachingOperationNameGenerator.java:41 |springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator |Generating unique operation named: getCollectGroupUsingGET_1
+2024-02-09 01:27:40 |INFO  |main |CachingOperationNameGenerator.java:41 |springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator |Generating unique operation named: getDanmakuUsingGET_1
+2024-02-09 01:27:40 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.video.VideoApplication |Started VideoApplication in 19.184 seconds (JVM running for 21.887)
+2024-02-09 01:31:34 |INFO  |http-nio-10201-exec-1 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-09 01:31:34 |INFO  |http-nio-10201-exec-1 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-02-09 01:31:34 |INFO  |http-nio-10201-exec-1 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 3 ms
+2024-02-09 01:33:14 |INFO  |http-nio-10201-exec-3 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-09 01:33:14 |INFO  |http-nio-10201-exec-3 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-02-09 01:44:15 |INFO  |Thread-22 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-09 01:44:15 |INFO  |Thread-33 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-09 01:44:15 |INFO  |Thread-37 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-09 01:44:15 |INFO  |Thread-22 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-02-09 01:44:15 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-09 01:44:15 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-09 01:44:15 |INFO  |Thread-52 |EmbedServer.java:91 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server stop.
+2024-02-09 01:44:15 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:87 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2024-02-09 01:44:15 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:105 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job, executor registry thread destroy.
+2024-02-09 01:44:16 |INFO  |SpringApplicationShutdownHook |EmbedServer.java:117 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server destroy success.
+2024-02-09 01:44:16 |INFO  |xxl-job, executor TriggerCallbackThread |TriggerCallbackThread.java:98 |com.xxl.job.core.thread.TriggerCallbackThread |>>>>>>>>>>> xxl-job, executor callback thread destroy.
+2024-02-09 01:44:16 |INFO  |Thread-51 |TriggerCallbackThread.java:128 |com.xxl.job.core.thread.TriggerCallbackThread |>>>>>>>>>>> xxl-job, executor retry callback thread destroy.
+2024-02-09 01:44:16 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-02-09 01:44:16 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed

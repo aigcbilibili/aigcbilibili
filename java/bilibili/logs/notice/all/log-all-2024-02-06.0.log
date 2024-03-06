@@ -1,0 +1,566 @@
+2024-02-06 02:33:39 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 02:33:39 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[347853a2-a561-46f6-97fb-318ae0f9c04b] Server healthy check fail, currentConnection = 1707146077001_120.227.130.72_2832
+2024-02-06 02:33:39 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[347853a2-a561-46f6-97fb-318ae0f9c04b] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 02:33:40 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[347853a2-a561-46f6-97fb-318ae0f9c04b] Success to connect a server [116.62.71.84:8848], connectionId = 1707158020542_120.227.130.72_2627
+2024-02-06 02:33:40 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[347853a2-a561-46f6-97fb-318ae0f9c04b] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707146077001_120.227.130.72_2832
+2024-02-06 02:33:40 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707146077001_120.227.130.72_2832
+2024-02-06 02:33:40 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[347853a2-a561-46f6-97fb-318ae0f9c04b] Notify disconnected event to listeners
+2024-02-06 02:33:40 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[347853a2-a561-46f6-97fb-318ae0f9c04b] Notify connected event to listeners.
+2024-02-06 02:33:40 |WARN  |nacos-grpc-client-executor-2389 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1707146077001_120.227.130.72_2832]Ignore error event,isRunning:true,isAbandon=true
+2024-02-06 02:41:32 |INFO  |Thread-33 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 02:41:32 |WARN  |Thread-33 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-02-06 02:41:32 |WARN  |Thread-36 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-02-06 02:41:32 |WARN  |Thread-33 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end
+2024-02-06 02:41:32 |WARN  |Thread-36 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-02-06 02:41:37 |INFO  |SpringApplicationShutdownHook |DefaultRocketMQListenerContainer.java:254 |org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer |container destroyed, DefaultRocketMQListenerContainer{consumerGroup='my-consumers-group4', nameServer='120.55.183.155:9876', topic='mysqlToEs', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2024-02-06 02:41:37 |INFO  |SpringApplicationShutdownHook |DefaultRocketMQListenerContainer.java:254 |org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer |container destroyed, DefaultRocketMQListenerContainer{consumerGroup='my-consumer3-group', nameServer='120.55.183.155:9876', topic='like', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2024-02-06 02:41:37 |INFO  |SpringApplicationShutdownHook |DefaultRocketMQListenerContainer.java:254 |org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer |container destroyed, DefaultRocketMQListenerContainer{consumerGroup='my-consumer2-group', nameServer='120.55.183.155:9876', topic='dynamic', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2024-02-06 02:41:37 |INFO  |SpringApplicationShutdownHook |DefaultRocketMQListenerContainer.java:254 |org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer |container destroyed, DefaultRocketMQListenerContainer{consumerGroup='my-consumer1-group', nameServer='120.55.183.155:9876', topic='comment', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2024-02-06 02:41:37 |INFO  |SpringApplicationShutdownHook |DefaultRocketMQListenerContainer.java:254 |org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer |container destroyed, DefaultRocketMQListenerContainer{consumerGroup='my-consumers-group', nameServer='120.55.183.155:9876', topic='chat', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2024-02-06 02:41:37 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-06 02:41:38 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-06 02:41:38 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-0} closing ...
+2024-02-06 02:41:40 |INFO  |NettyClientSelector_1 |Slf4jLoggerFactory.java:95 |RocketmqRemoting |closeChannel: close the connection to remote address[120.55.183.155:9876] result: true
+2024-02-06 02:41:40 |INFO  |NettyClientSelector_1 |Slf4jLoggerFactory.java:95 |RocketmqRemoting |closeChannel: close the connection to remote address[120.55.183.155:10911] result: true
+2024-02-06 02:41:40 |INFO  |NettyClientSelector_1 |Slf4jLoggerFactory.java:95 |RocketmqRemoting |closeChannel: close the connection to remote address[120.55.183.155:10911] result: true
+2024-02-06 02:41:40 |INFO  |NettyClientSelector_1 |Slf4jLoggerFactory.java:95 |RocketmqRemoting |closeChannel: close the connection to remote address[120.55.183.155:9876] result: true
+2024-02-06 02:41:40 |WARN  |SpringApplicationShutdownHook |DisposableBeanAdapter.java:222 |org.springframework.beans.factory.support.DisposableBeanAdapter |Invocation of destroy method failed on bean with name 'rocketMQTemplate': java.lang.IllegalStateException: Shutdown in progress
+2024-02-06 02:41:40 |WARN  |SpringApplicationShutdownHook |DisposableBeanAdapter.java:329 |org.springframework.beans.factory.support.DisposableBeanAdapter |Custom destroy method 'shutdown' on bean with name 'defaultMQProducer' threw an exception: java.lang.IllegalStateException: Shutdown in progress
+2024-02-06 16:13:37 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.notice.MessageApplication |Starting MessageApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 18332 (E:\bilibili\notice\target\classes started by Administrator in E:\bilibili)
+2024-02-06 16:13:37 |INFO  |main |SpringApplication.java:651 |ljl.bilibili.notice.MessageApplication |The following 1 profile is active: "test"
+2024-02-06 16:13:37 |INFO  |background-preinit |Version.java:21 |org.hibernate.validator.internal.util.Version |HV000001: Hibernate Validator 6.2.4.Final
+2024-02-06 16:13:40 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-06 16:13:40 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-06 16:13:40 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 38 ms. Found 0 Redis repository interfaces.
+2024-02-06 16:13:40 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=5ce5b9cf-c777-3b4d-b9b8-b13b8af1d6c2
+2024-02-06 16:13:41 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.apache.rocketmq.spring.autoconfigure.RocketMQAutoConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQAutoConfiguration$$EnhancerBySpringCGLIB$$85cc2678] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-06 16:13:41 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-06 16:13:41 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-06 16:13:41 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$411/351965871] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-06 16:13:41 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-06 16:13:41 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'rocketmq-org.apache.rocketmq.spring.autoconfigure.RocketMQProperties' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-06 16:13:41 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'defaultMQProducer' of type [org.apache.rocketmq.client.producer.DefaultMQProducer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-06 16:13:41 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.apache.rocketmq.spring.autoconfigure.JacksonFallbackConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.JacksonFallbackConfiguration$$EnhancerBySpringCGLIB$$b747bcda] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-06 16:13:41 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'rocketMQMessageObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-06 16:13:41 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.apache.rocketmq.spring.autoconfigure.MessageConverterConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.MessageConverterConfiguration$$EnhancerBySpringCGLIB$$a0db1f66] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-06 16:13:42 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'createRocketMQMessageConverter' of type [org.apache.rocketmq.spring.support.RocketMQMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-06 16:13:44 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'rocketMQTemplate' of type [org.apache.rocketmq.spring.core.RocketMQTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-06 16:13:44 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'transactionHandlerRegistry' of type [org.apache.rocketmq.spring.config.TransactionHandlerRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-06 16:13:45 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 30000 (http)
+2024-02-06 16:13:45 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-30000"]
+2024-02-06 16:13:45 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-02-06 16:13:45 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-06 16:13:45 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-02-06 16:13:45 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 8113 ms
+2024-02-06 16:13:46 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-06 16:13:46 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-06 16:13:48 |WARN  |main |TableInfoHelper.java:423 |com.baomidou.mybatisplus.core.metadata.TableInfoHelper |This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "ljl.entity.video.dynamic.DynamicToUser"
+2024-02-06 16:13:49 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-02-06 16:13:50 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of a91da58e-a70c-4cd6-9a56-f3bd6ea88d58
+2024-02-06 16:13:50 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 121 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-06 16:13:50 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 46 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-06 16:13:50 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 46 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-06 16:13:51 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 355 ms to scan 218 urls, producing 0 keys and 0 values 
+2024-02-06 16:13:51 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 20 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-06 16:13:51 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 12 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-06 16:13:51 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 11 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-06 16:13:51 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 231 ms to scan 218 urls, producing 0 keys and 0 values 
+2024-02-06 16:13:51 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[a91da58e-a70c-4cd6-9a56-f3bd6ea88d58] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-06 16:13:51 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[a91da58e-a70c-4cd6-9a56-f3bd6ea88d58] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-06 16:13:51 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[a91da58e-a70c-4cd6-9a56-f3bd6ea88d58] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-06 16:13:51 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[a91da58e-a70c-4cd6-9a56-f3bd6ea88d58] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-06 16:13:51 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[a91da58e-a70c-4cd6-9a56-f3bd6ea88d58] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-06 16:13:54 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[a91da58e-a70c-4cd6-9a56-f3bd6ea88d58] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1707207233980_120.227.130.72_2994
+2024-02-06 16:13:54 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[a91da58e-a70c-4cd6-9a56-f3bd6ea88d58] Notify connected event to listeners.
+2024-02-06 16:13:54 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[a91da58e-a70c-4cd6-9a56-f3bd6ea88d58] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-06 16:13:54 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[a91da58e-a70c-4cd6-9a56-f3bd6ea88d58] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$929/1314740929
+2024-02-06 16:13:54 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-02-06 16:13:56 |INFO  |main |DefaultRocketMQListenerContainer.java:281 |org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer |running container: DefaultRocketMQListenerContainer{consumerGroup='my-consumers-group', nameServer='120.55.183.155:9876', topic='chat', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2024-02-06 16:13:56 |INFO  |main |ListenerContainerConfiguration.java:127 |org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration |Register the listener to container, listenerBeanName:chatConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2024-02-06 16:13:56 |INFO  |main |DefaultRocketMQListenerContainer.java:281 |org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer |running container: DefaultRocketMQListenerContainer{consumerGroup='my-consumer1-group', nameServer='120.55.183.155:9876', topic='comment', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2024-02-06 16:13:56 |INFO  |main |ListenerContainerConfiguration.java:127 |org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration |Register the listener to container, listenerBeanName:commentConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_2
+2024-02-06 16:13:57 |INFO  |main |DefaultRocketMQListenerContainer.java:281 |org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer |running container: DefaultRocketMQListenerContainer{consumerGroup='my-consumer2-group', nameServer='120.55.183.155:9876', topic='dynamic', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2024-02-06 16:13:57 |INFO  |main |ListenerContainerConfiguration.java:127 |org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration |Register the listener to container, listenerBeanName:dynamicConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_3
+2024-02-06 16:13:57 |INFO  |main |DefaultRocketMQListenerContainer.java:281 |org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer |running container: DefaultRocketMQListenerContainer{consumerGroup='my-consumer3-group', nameServer='120.55.183.155:9876', topic='like', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2024-02-06 16:13:57 |INFO  |main |ListenerContainerConfiguration.java:127 |org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration |Register the listener to container, listenerBeanName:likeConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_4
+2024-02-06 16:13:58 |INFO  |main |DefaultRocketMQListenerContainer.java:281 |org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer |running container: DefaultRocketMQListenerContainer{consumerGroup='my-consumers-group4', nameServer='120.55.183.155:9876', topic='mysqlToEs', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2024-02-06 16:13:58 |INFO  |main |ListenerContainerConfiguration.java:127 |org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration |Register the listener to container, listenerBeanName:mysqlToEsConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_5
+2024-02-06 16:13:58 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-30000"]
+2024-02-06 16:13:58 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 30000 (http) with context path ''
+2024-02-06 16:13:58 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP notice 192.168.0.102:30000 register finished
+2024-02-06 16:13:58 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-02-06 16:13:58 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-02-06 16:13:58 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-02-06 16:13:58 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.notice.MessageApplication |Started MessageApplication in 22.834 seconds (JVM running for 25.308)
+2024-02-06 16:15:09 |INFO  |http-nio-30000-exec-1 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-06 16:15:09 |INFO  |http-nio-30000-exec-1 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-02-06 16:15:09 |INFO  |http-nio-30000-exec-1 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 3 ms
+2024-02-06 16:15:10 |INFO  |NettyClientPublicExecutor_2 |SendDBChangeService.java:35 |ljl.service.send_notice.SendDBChangeService |Message sent successfully:
+2024-02-06 18:56:17 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.notice.MessageApplication |Starting MessageApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 17476 (E:\bilibili\notice\target\classes started by Administrator in E:\bilibili)
+2024-02-06 18:56:17 |INFO  |main |SpringApplication.java:651 |ljl.bilibili.notice.MessageApplication |The following 1 profile is active: "test"
+2024-02-06 18:56:17 |INFO  |background-preinit |Version.java:21 |org.hibernate.validator.internal.util.Version |HV000001: Hibernate Validator 6.2.4.Final
+2024-02-06 18:56:22 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-06 18:56:22 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-06 18:56:23 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 89 ms. Found 0 Redis repository interfaces.
+2024-02-06 18:56:24 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=5ce5b9cf-c777-3b4d-b9b8-b13b8af1d6c2
+2024-02-06 18:56:24 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.apache.rocketmq.spring.autoconfigure.RocketMQAutoConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQAutoConfiguration$$EnhancerBySpringCGLIB$$70bb79a7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-06 18:56:24 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-06 18:56:24 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-06 18:56:24 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$411/1207953777] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-06 18:56:24 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-06 18:56:24 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'rocketmq-org.apache.rocketmq.spring.autoconfigure.RocketMQProperties' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-06 18:56:26 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'defaultMQProducer' of type [org.apache.rocketmq.client.producer.DefaultMQProducer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-06 18:56:26 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.apache.rocketmq.spring.autoconfigure.JacksonFallbackConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.JacksonFallbackConfiguration$$EnhancerBySpringCGLIB$$a2371009] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-06 18:56:26 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'rocketMQMessageObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-06 18:56:27 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.apache.rocketmq.spring.autoconfigure.MessageConverterConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.MessageConverterConfiguration$$EnhancerBySpringCGLIB$$8bca7295] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-06 18:56:27 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'createRocketMQMessageConverter' of type [org.apache.rocketmq.spring.support.RocketMQMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-06 18:56:31 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'rocketMQTemplate' of type [org.apache.rocketmq.spring.core.RocketMQTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-06 18:56:31 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'transactionHandlerRegistry' of type [org.apache.rocketmq.spring.config.TransactionHandlerRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-06 18:56:34 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 30000 (http)
+2024-02-06 18:56:34 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-30000"]
+2024-02-06 18:56:34 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-02-06 18:56:34 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-06 18:56:36 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-02-06 18:56:36 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 18608 ms
+2024-02-06 18:56:38 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-06 18:56:39 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-06 18:56:42 |WARN  |main |TableInfoHelper.java:423 |com.baomidou.mybatisplus.core.metadata.TableInfoHelper |This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "ljl.entity.video.dynamic.DynamicToUser"
+2024-02-06 18:56:44 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-02-06 18:56:46 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 8cf71a47-a1f0-4bbe-8502-87af124d2ccd
+2024-02-06 18:56:46 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 101 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-06 18:56:46 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 43 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-06 18:56:46 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 35 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-06 18:56:47 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 402 ms to scan 218 urls, producing 0 keys and 0 values 
+2024-02-06 18:56:47 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 20 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-06 18:56:47 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 25 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-06 18:56:47 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 22 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-06 18:56:47 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 273 ms to scan 218 urls, producing 0 keys and 0 values 
+2024-02-06 18:56:47 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-06 18:56:47 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-06 18:56:47 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-06 18:56:47 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-06 18:56:47 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-06 18:56:51 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1707217011423_120.227.130.72_3011
+2024-02-06 18:56:51 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify connected event to listeners.
+2024-02-06 18:56:51 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-06 18:56:51 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$929/1826091905
+2024-02-06 18:56:53 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-02-06 18:56:57 |INFO  |main |DefaultRocketMQListenerContainer.java:281 |org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer |running container: DefaultRocketMQListenerContainer{consumerGroup='my-consumers-group', nameServer='120.55.183.155:9876', topic='chat', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2024-02-06 18:56:57 |INFO  |main |ListenerContainerConfiguration.java:127 |org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration |Register the listener to container, listenerBeanName:chatConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2024-02-06 18:56:58 |INFO  |main |DefaultRocketMQListenerContainer.java:281 |org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer |running container: DefaultRocketMQListenerContainer{consumerGroup='my-consumer1-group', nameServer='120.55.183.155:9876', topic='comment', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2024-02-06 18:56:58 |INFO  |main |ListenerContainerConfiguration.java:127 |org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration |Register the listener to container, listenerBeanName:commentConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_2
+2024-02-06 18:57:00 |INFO  |main |DefaultRocketMQListenerContainer.java:281 |org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer |running container: DefaultRocketMQListenerContainer{consumerGroup='my-consumer2-group', nameServer='120.55.183.155:9876', topic='dynamic', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2024-02-06 18:57:00 |INFO  |main |ListenerContainerConfiguration.java:127 |org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration |Register the listener to container, listenerBeanName:dynamicConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_3
+2024-02-06 18:57:01 |INFO  |main |DefaultRocketMQListenerContainer.java:281 |org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer |running container: DefaultRocketMQListenerContainer{consumerGroup='my-consumer3-group', nameServer='120.55.183.155:9876', topic='like', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2024-02-06 18:57:01 |INFO  |main |ListenerContainerConfiguration.java:127 |org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration |Register the listener to container, listenerBeanName:likeConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_4
+2024-02-06 18:57:02 |INFO  |main |DefaultRocketMQListenerContainer.java:281 |org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer |running container: DefaultRocketMQListenerContainer{consumerGroup='my-consumers-group4', nameServer='120.55.183.155:9876', topic='mysqlToEs', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2024-02-06 18:57:02 |INFO  |main |ListenerContainerConfiguration.java:127 |org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration |Register the listener to container, listenerBeanName:mysqlToEsConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_5
+2024-02-06 18:57:02 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-30000"]
+2024-02-06 18:57:02 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 30000 (http) with context path ''
+2024-02-06 18:57:03 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP notice 192.168.0.102:30000 register finished
+2024-02-06 18:57:03 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-02-06 18:57:03 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-02-06 18:57:03 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-02-06 18:57:04 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.notice.MessageApplication |Started MessageApplication in 49.808 seconds (JVM running for 53.041)
+2024-02-06 18:57:46 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Server healthy check fail, currentConnection = 1707217011423_120.227.130.72_3011
+2024-02-06 18:57:46 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 18:57:46 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Success to connect a server [116.62.71.84:8848], connectionId = 1707217066366_120.227.130.72_3066
+2024-02-06 18:57:46 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707217011423_120.227.130.72_3011
+2024-02-06 18:57:46 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707217011423_120.227.130.72_3011
+2024-02-06 18:57:46 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify disconnected event to listeners
+2024-02-06 18:57:46 |WARN  |nacos-grpc-client-executor-17 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1707217011423_120.227.130.72_3011]Ignore error event,isRunning:true,isAbandon=true
+2024-02-06 18:57:46 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify connected event to listeners.
+2024-02-06 19:01:14 |INFO  |http-nio-30000-exec-2 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-06 19:01:14 |INFO  |http-nio-30000-exec-2 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-02-06 19:01:14 |INFO  |http-nio-30000-exec-2 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 16 ms
+2024-02-06 19:01:15 |INFO  |NettyClientPublicExecutor_3 |SendDBChangeService.java:35 |ljl.service.send_notice.SendDBChangeService |Message sent successfully:
+2024-02-06 19:07:50 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 19:07:50 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Server healthy check fail, currentConnection = 1707217066366_120.227.130.72_3066
+2024-02-06 19:07:50 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 19:07:51 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Success to connect a server [116.62.71.84:8848], connectionId = 1707217671201_120.227.130.72_2601
+2024-02-06 19:07:51 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707217066366_120.227.130.72_3066
+2024-02-06 19:07:51 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707217066366_120.227.130.72_3066
+2024-02-06 19:07:51 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify disconnected event to listeners
+2024-02-06 19:07:51 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify connected event to listeners.
+2024-02-06 19:07:51 |WARN  |nacos-grpc-client-executor-144 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1707217066366_120.227.130.72_3066]Ignore error event,isRunning:true,isAbandon=true
+2024-02-06 19:17:55 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 19:17:55 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Server healthy check fail, currentConnection = 1707217671201_120.227.130.72_2601
+2024-02-06 19:17:55 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 19:17:57 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Success to connect a server [116.62.71.84:8848], connectionId = 1707218277128_120.227.130.72_2306
+2024-02-06 19:17:57 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707217671201_120.227.130.72_2601
+2024-02-06 19:17:57 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707217671201_120.227.130.72_2601
+2024-02-06 19:17:57 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify disconnected event to listeners
+2024-02-06 19:17:57 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify connected event to listeners.
+2024-02-06 19:17:57 |WARN  |nacos-grpc-client-executor-270 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1707217671201_120.227.130.72_2601]Ignore error event,isRunning:true,isAbandon=true
+2024-02-06 19:28:00 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 19:28:00 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Server healthy check fail, currentConnection = 1707218277128_120.227.130.72_2306
+2024-02-06 19:28:00 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 19:28:03 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Success to connect a server [116.62.71.84:8848], connectionId = 1707218883009_120.227.130.72_3018
+2024-02-06 19:28:03 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707218277128_120.227.130.72_2306
+2024-02-06 19:28:03 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707218277128_120.227.130.72_2306
+2024-02-06 19:28:03 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify disconnected event to listeners
+2024-02-06 19:28:03 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify connected event to listeners.
+2024-02-06 19:28:03 |WARN  |nacos-grpc-client-executor-394 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1707218277128_120.227.130.72_2306]Ignore error event,isRunning:true,isAbandon=true
+2024-02-06 19:38:07 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 19:38:07 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Server healthy check fail, currentConnection = 1707218883009_120.227.130.72_3018
+2024-02-06 19:38:07 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 19:38:07 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Success to connect a server [116.62.71.84:8848], connectionId = 1707219487409_120.227.130.72_2522
+2024-02-06 19:38:07 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707218883009_120.227.130.72_3018
+2024-02-06 19:38:07 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707218883009_120.227.130.72_3018
+2024-02-06 19:38:07 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify disconnected event to listeners
+2024-02-06 19:38:07 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify connected event to listeners.
+2024-02-06 19:38:07 |WARN  |nacos-grpc-client-executor-517 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1707218883009_120.227.130.72_3018]Ignore error event,isRunning:true,isAbandon=true
+2024-02-06 19:48:08 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 19:48:08 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Server healthy check fail, currentConnection = 1707219487409_120.227.130.72_2522
+2024-02-06 19:48:08 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 19:48:11 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Success to connect a server [116.62.71.84:8848], connectionId = 1707220091195_120.227.130.72_2437
+2024-02-06 19:48:11 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707219487409_120.227.130.72_2522
+2024-02-06 19:48:11 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707219487409_120.227.130.72_2522
+2024-02-06 19:48:11 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify disconnected event to listeners
+2024-02-06 19:48:11 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify connected event to listeners.
+2024-02-06 19:48:11 |WARN  |nacos-grpc-client-executor-642 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1707219487409_120.227.130.72_2522]Ignore error event,isRunning:true,isAbandon=true
+2024-02-06 19:58:14 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 19:58:14 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Server healthy check fail, currentConnection = 1707220091195_120.227.130.72_2437
+2024-02-06 19:58:14 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 19:58:17 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Success to connect a server [116.62.71.84:8848], connectionId = 1707220697019_120.227.130.72_2855
+2024-02-06 19:58:17 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707220091195_120.227.130.72_2437
+2024-02-06 19:58:17 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707220091195_120.227.130.72_2437
+2024-02-06 19:58:17 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify disconnected event to listeners
+2024-02-06 19:58:17 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify connected event to listeners.
+2024-02-06 19:58:17 |WARN  |nacos-grpc-client-executor-764 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1707220091195_120.227.130.72_2437]Ignore error event,isRunning:true,isAbandon=true
+2024-02-06 20:18:36 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 20:18:36 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Server healthy check fail, currentConnection = 1707220697019_120.227.130.72_2855
+2024-02-06 20:18:36 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 20:18:37 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Success to connect a server [116.62.71.84:8848], connectionId = 1707221917411_120.227.130.72_2658
+2024-02-06 20:18:37 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707220697019_120.227.130.72_2855
+2024-02-06 20:18:37 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707220697019_120.227.130.72_2855
+2024-02-06 20:18:37 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify disconnected event to listeners
+2024-02-06 20:18:37 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify connected event to listeners.
+2024-02-06 20:18:37 |WARN  |nacos-grpc-client-executor-1010 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1707220697019_120.227.130.72_2855]Ignore error event,isRunning:true,isAbandon=true
+2024-02-06 20:28:41 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 20:28:41 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Server healthy check fail, currentConnection = 1707221917411_120.227.130.72_2658
+2024-02-06 20:28:41 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 20:28:42 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Success to connect a server [116.62.71.84:8848], connectionId = 1707222522002_120.227.130.72_2391
+2024-02-06 20:28:42 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707221917411_120.227.130.72_2658
+2024-02-06 20:28:42 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707221917411_120.227.130.72_2658
+2024-02-06 20:28:42 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify disconnected event to listeners
+2024-02-06 20:28:42 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify connected event to listeners.
+2024-02-06 20:28:42 |WARN  |nacos-grpc-client-executor-1134 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1707221917411_120.227.130.72_2658]Ignore error event,isRunning:true,isAbandon=true
+2024-02-06 20:38:45 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 20:38:45 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Server healthy check fail, currentConnection = 1707222522002_120.227.130.72_2391
+2024-02-06 20:38:45 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 20:38:47 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Success to connect a server [116.62.71.84:8848], connectionId = 1707223127049_120.227.130.72_2568
+2024-02-06 20:38:47 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707222522002_120.227.130.72_2391
+2024-02-06 20:38:47 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707222522002_120.227.130.72_2391
+2024-02-06 20:38:47 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify disconnected event to listeners
+2024-02-06 20:38:47 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify connected event to listeners.
+2024-02-06 20:38:47 |WARN  |nacos-grpc-client-executor-1258 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1707222522002_120.227.130.72_2391]Ignore error event,isRunning:true,isAbandon=true
+2024-02-06 20:48:50 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 20:48:50 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Server healthy check fail, currentConnection = 1707223127049_120.227.130.72_2568
+2024-02-06 20:48:50 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 20:48:53 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Success to connect a server [116.62.71.84:8848], connectionId = 1707223733095_120.227.130.72_2085
+2024-02-06 20:48:53 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707223127049_120.227.130.72_2568
+2024-02-06 20:48:53 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707223127049_120.227.130.72_2568
+2024-02-06 20:48:53 |WARN  |nacos-grpc-client-executor-1382 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1707223127049_120.227.130.72_2568]Ignore error event,isRunning:true,isAbandon=true
+2024-02-06 20:48:53 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify disconnected event to listeners
+2024-02-06 20:48:53 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify connected event to listeners.
+2024-02-06 20:58:56 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 20:58:56 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Server healthy check fail, currentConnection = 1707223733095_120.227.130.72_2085
+2024-02-06 20:58:56 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 20:58:58 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Success to connect a server [116.62.71.84:8848], connectionId = 1707224338064_120.227.130.72_2477
+2024-02-06 20:58:58 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707223733095_120.227.130.72_2085
+2024-02-06 20:58:58 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707223733095_120.227.130.72_2085
+2024-02-06 20:58:58 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify disconnected event to listeners
+2024-02-06 20:58:58 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify connected event to listeners.
+2024-02-06 20:58:58 |WARN  |nacos-grpc-client-executor-1508 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1707223733095_120.227.130.72_2085]Ignore error event,isRunning:true,isAbandon=true
+2024-02-06 21:09:00 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 21:09:00 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Server healthy check fail, currentConnection = 1707224338064_120.227.130.72_2477
+2024-02-06 21:09:00 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 21:09:03 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Success to connect a server [116.62.71.84:8848], connectionId = 1707224943612_120.227.130.72_2962
+2024-02-06 21:09:03 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707224338064_120.227.130.72_2477
+2024-02-06 21:09:03 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707224338064_120.227.130.72_2477
+2024-02-06 21:09:03 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify disconnected event to listeners
+2024-02-06 21:09:03 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify connected event to listeners.
+2024-02-06 21:09:03 |WARN  |nacos-grpc-client-executor-1631 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1707224338064_120.227.130.72_2477]Ignore error event,isRunning:true,isAbandon=true
+2024-02-06 21:19:16 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 21:19:16 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Server healthy check fail, currentConnection = 1707224943612_120.227.130.72_2962
+2024-02-06 21:19:16 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 21:19:17 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Success to connect a server [116.62.71.84:8848], connectionId = 1707225557735_120.227.130.72_2214
+2024-02-06 21:19:17 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707224943612_120.227.130.72_2962
+2024-02-06 21:19:17 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707224943612_120.227.130.72_2962
+2024-02-06 21:19:17 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify disconnected event to listeners
+2024-02-06 21:19:17 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify connected event to listeners.
+2024-02-06 21:19:17 |WARN  |nacos-grpc-client-executor-1756 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1707224943612_120.227.130.72_2962]Ignore error event,isRunning:true,isAbandon=true
+2024-02-06 21:29:23 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 21:29:23 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Server healthy check fail, currentConnection = 1707225557735_120.227.130.72_2214
+2024-02-06 21:29:23 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 21:29:23 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Success to connect a server [116.62.71.84:8848], connectionId = 1707226163281_120.227.130.72_2371
+2024-02-06 21:29:23 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707225557735_120.227.130.72_2214
+2024-02-06 21:29:23 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707225557735_120.227.130.72_2214
+2024-02-06 21:29:23 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify disconnected event to listeners
+2024-02-06 21:29:23 |WARN  |nacos-grpc-client-executor-1879 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1707225557735_120.227.130.72_2214]Ignore error event,isRunning:true,isAbandon=true
+2024-02-06 21:29:23 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify connected event to listeners.
+2024-02-06 21:39:27 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 21:39:27 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Server healthy check fail, currentConnection = 1707226163281_120.227.130.72_2371
+2024-02-06 21:39:27 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 21:39:30 |ERROR |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:99 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |Server check fail, please check server 116.62.71.84 ,port 9848 is available , error ={}
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 6 milliseconds, 539100 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@37ff23d0[status=PENDING, info=[GrpcFuture{clientCall={delegate={delegate=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@13da215e, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@25785b19, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@26f0ba4a}}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264)
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:522)
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:370)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2024-02-06 21:39:30 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Success to connect a server [116.62.71.84:8848], connectionId = 1707226770483_120.227.130.72_2388
+2024-02-06 21:39:30 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707226163281_120.227.130.72_2371
+2024-02-06 21:39:30 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707226163281_120.227.130.72_2371
+2024-02-06 21:39:30 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify disconnected event to listeners
+2024-02-06 21:39:30 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify connected event to listeners.
+2024-02-06 21:39:30 |WARN  |nacos-grpc-client-executor-2005 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1707226163281_120.227.130.72_2371]Ignore error event,isRunning:true,isAbandon=true
+2024-02-06 21:49:33 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 21:49:33 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Server healthy check fail, currentConnection = 1707226770483_120.227.130.72_2388
+2024-02-06 21:49:33 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 21:49:35 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Success to connect a server [116.62.71.84:8848], connectionId = 1707227375871_120.227.130.72_2048
+2024-02-06 21:49:35 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707226770483_120.227.130.72_2388
+2024-02-06 21:49:35 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707226770483_120.227.130.72_2388
+2024-02-06 21:49:35 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify disconnected event to listeners
+2024-02-06 21:49:35 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify connected event to listeners.
+2024-02-06 21:49:35 |WARN  |nacos-grpc-client-executor-2129 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1707226770483_120.227.130.72_2388]Ignore error event,isRunning:true,isAbandon=true
+2024-02-06 21:59:39 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 21:59:39 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Server healthy check fail, currentConnection = 1707227375871_120.227.130.72_2048
+2024-02-06 21:59:39 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 21:59:40 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Success to connect a server [116.62.71.84:8848], connectionId = 1707227980666_120.227.130.72_2399
+2024-02-06 21:59:40 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707227375871_120.227.130.72_2048
+2024-02-06 21:59:40 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707227375871_120.227.130.72_2048
+2024-02-06 21:59:40 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify disconnected event to listeners
+2024-02-06 21:59:40 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify connected event to listeners.
+2024-02-06 21:59:40 |WARN  |nacos-grpc-client-executor-2253 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1707227375871_120.227.130.72_2048]Ignore error event,isRunning:true,isAbandon=true
+2024-02-06 22:41:47 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 22:41:47 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Server healthy check fail, currentConnection = 1707227980666_120.227.130.72_2399
+2024-02-06 22:41:47 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 22:41:50 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Success to connect a server [116.62.71.84:8848], connectionId = 1707230509946_120.227.130.72_2570
+2024-02-06 22:41:50 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707227980666_120.227.130.72_2399
+2024-02-06 22:41:50 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707227980666_120.227.130.72_2399
+2024-02-06 22:41:50 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify disconnected event to listeners
+2024-02-06 22:41:50 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify connected event to listeners.
+2024-02-06 22:41:51 |WARN  |nacos-grpc-client-executor-2300 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1707227980666_120.227.130.72_2399]Ignore error event,isRunning:true,isAbandon=true
+2024-02-06 22:41:52 |INFO  |NettyClientSelector_1 |Slf4jLoggerFactory.java:95 |RocketmqRemoting |closeChannel: close the connection to remote address[120.55.183.155:9876] result: true
+2024-02-06 22:41:52 |INFO  |NettyClientSelector_1 |Slf4jLoggerFactory.java:95 |RocketmqRemoting |closeChannel: close the connection to remote address[120.55.183.155:9876] result: true
+2024-02-06 22:41:53 |INFO  |NettyClientSelector_1 |Slf4jLoggerFactory.java:95 |RocketmqRemoting |closeChannel: close the connection to remote address[120.55.183.155:10911] result: true
+2024-02-06 22:41:53 |INFO  |NettyClientSelector_1 |Slf4jLoggerFactory.java:95 |RocketmqRemoting |closeChannel: close the connection to remote address[120.55.183.155:10911] result: true
+2024-02-06 22:41:53 |INFO  |NettyClientSelector_1 |Slf4jLoggerFactory.java:95 |RocketmqRemoting |closeChannel: close the connection to remote address[120.55.183.155:9876] result: true
+2024-02-06 23:01:44 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 23:01:44 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Server healthy check fail, currentConnection = 1707230509946_120.227.130.72_2570
+2024-02-06 23:01:44 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 23:01:46 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Success to connect a server [116.62.71.84:8848], connectionId = 1707231706909_120.227.130.72_2751
+2024-02-06 23:01:46 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707230509946_120.227.130.72_2570
+2024-02-06 23:01:46 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707230509946_120.227.130.72_2570
+2024-02-06 23:01:46 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify disconnected event to listeners
+2024-02-06 23:01:46 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify connected event to listeners.
+2024-02-06 23:01:46 |WARN  |nacos-grpc-client-executor-2539 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1707230509946_120.227.130.72_2570]Ignore error event,isRunning:false,isAbandon=true
+2024-02-06 23:11:51 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 23:11:51 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Server healthy check fail, currentConnection = 1707231706909_120.227.130.72_2751
+2024-02-06 23:11:51 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 23:11:52 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Success to connect a server [116.62.71.84:8848], connectionId = 1707232312998_120.227.130.72_2122
+2024-02-06 23:11:52 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707231706909_120.227.130.72_2751
+2024-02-06 23:11:52 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707231706909_120.227.130.72_2751
+2024-02-06 23:11:52 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify disconnected event to listeners
+2024-02-06 23:11:52 |WARN  |nacos-grpc-client-executor-2663 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1707231706909_120.227.130.72_2751]Ignore error event,isRunning:true,isAbandon=true
+2024-02-06 23:11:52 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify connected event to listeners.
+2024-02-06 23:21:56 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 23:21:56 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Server healthy check fail, currentConnection = 1707232312998_120.227.130.72_2122
+2024-02-06 23:21:56 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 23:21:58 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Success to connect a server [116.62.71.84:8848], connectionId = 1707232919192_120.227.130.72_2557
+2024-02-06 23:21:58 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707232312998_120.227.130.72_2122
+2024-02-06 23:21:58 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707232312998_120.227.130.72_2122
+2024-02-06 23:21:58 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify disconnected event to listeners
+2024-02-06 23:21:58 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify connected event to listeners.
+2024-02-06 23:21:58 |WARN  |nacos-grpc-client-executor-2787 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1707232312998_120.227.130.72_2122]Ignore error event,isRunning:true,isAbandon=true
+2024-02-06 23:31:59 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 23:31:59 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Server healthy check fail, currentConnection = 1707232919192_120.227.130.72_2557
+2024-02-06 23:31:59 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 23:32:02 |ERROR |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:99 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |Server check fail, please check server 116.62.71.84 ,port 9848 is available , error ={}
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 6 milliseconds, 735900 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@7e6be3b5[status=PENDING, info=[GrpcFuture{clientCall={delegate={delegate=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@13da215e, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@25785b19, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@26f0ba4a}}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264)
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:522)
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:370)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2024-02-06 23:32:03 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Success to connect a server [116.62.71.84:8848], connectionId = 1707233524783_120.227.130.72_2930
+2024-02-06 23:32:03 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707232919192_120.227.130.72_2557
+2024-02-06 23:32:03 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707232919192_120.227.130.72_2557
+2024-02-06 23:32:03 |WARN  |nacos-grpc-client-executor-2910 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1707232919192_120.227.130.72_2557]Ignore error event,isRunning:true,isAbandon=true
+2024-02-06 23:32:03 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify disconnected event to listeners
+2024-02-06 23:32:03 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify connected event to listeners.
+2024-02-06 23:52:12 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 23:52:12 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Server healthy check fail, currentConnection = 1707233524783_120.227.130.72_2930
+2024-02-06 23:52:12 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 23:52:14 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Success to connect a server [116.62.71.84:8848], connectionId = 1707234735857_120.227.130.72_2903
+2024-02-06 23:52:14 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707233524783_120.227.130.72_2930
+2024-02-06 23:52:14 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707233524783_120.227.130.72_2930
+2024-02-06 23:52:14 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify disconnected event to listeners
+2024-02-06 23:52:14 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8cf71a47-a1f0-4bbe-8502-87af124d2ccd] Notify connected event to listeners.
+2024-02-06 23:52:14 |WARN  |nacos-grpc-client-executor-3152 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1707233524783_120.227.130.72_2930]Ignore error event,isRunning:true,isAbandon=true

@@ -1,0 +1,200 @@
+2024-03-05 18:17:16 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.search.SearchApplication |Starting SearchApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 7012 (E:\bilibili\search\target\classes started by Administrator in E:\bilibili)
+2024-03-05 18:17:16 |INFO  |main |SpringApplication.java:645 |ljl.bilibili.search.SearchApplication |No active profile set, falling back to 1 default profile: "default"
+2024-03-05 18:17:19 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-05 18:17:19 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2024-03-05 18:17:19 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 12 ms. Found 0 Elasticsearch repository interfaces.
+2024-03-05 18:17:19 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-05 18:17:19 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2024-03-05 18:17:19 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 5 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2024-03-05 18:17:19 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-05 18:17:19 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-05 18:17:19 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2024-03-05 18:17:20 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=20aff51d-5265-313d-adf0-3c95e5cc4ca3
+2024-03-05 18:17:22 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 8201 (http)
+2024-03-05 18:17:22 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-8201"]
+2024-03-05 18:17:22 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-03-05 18:17:22 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-03-05 18:17:22 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-03-05 18:17:22 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 5620 ms
+2024-03-05 18:17:25 |INFO  |main |ElasticsearchClientConfig.java:58 |ljl.bilibili.search.config.ElasticsearchClientConfig |Connecting Elasticsearch...
+2024-03-05 18:17:25 |INFO  |main |ElasticsearchClientConfig.java:73 |ljl.bilibili.search.config.ElasticsearchClientConfig |Elasticsearch Connected!
+2024-03-05 18:17:25 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-03-05 18:17:26 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-03-05 18:17:30 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-03-05 18:17:30 |INFO  |main |XxlJobConfig.java:46 |ljl.bilibili.search.config.XxlJobConfig |>>>>>>>>>>> xxl-job config init.
+2024-03-05 18:17:32 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 02b53f15-e77a-4e03-8d38-95f30f572037
+2024-03-05 18:17:32 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 53 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-03-05 18:17:32 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 19 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-03-05 18:17:32 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 15 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-03-05 18:17:32 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 226 ms to scan 275 urls, producing 0 keys and 0 values 
+2024-03-05 18:17:32 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 18 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-03-05 18:17:32 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 28 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-03-05 18:17:32 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 44 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-03-05 18:17:32 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 243 ms to scan 275 urls, producing 0 keys and 0 values 
+2024-03-05 18:17:32 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[02b53f15-e77a-4e03-8d38-95f30f572037] RpcClient init label, labels = {module=naming, source=sdk}
+2024-03-05 18:17:32 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[02b53f15-e77a-4e03-8d38-95f30f572037] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-03-05 18:17:32 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[02b53f15-e77a-4e03-8d38-95f30f572037] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-03-05 18:17:32 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[02b53f15-e77a-4e03-8d38-95f30f572037] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-03-05 18:17:32 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[02b53f15-e77a-4e03-8d38-95f30f572037] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-03-05 18:17:35 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[02b53f15-e77a-4e03-8d38-95f30f572037] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709633856028_120.227.131.104_44844
+2024-03-05 18:17:35 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[02b53f15-e77a-4e03-8d38-95f30f572037] Notify connected event to listeners.
+2024-03-05 18:17:35 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[02b53f15-e77a-4e03-8d38-95f30f572037] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-03-05 18:17:35 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[02b53f15-e77a-4e03-8d38-95f30f572037] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1205/1949153992
+2024-03-05 18:17:37 |INFO  |main |XxlJobExecutor.java:183 |com.xxl.job.core.executor.XxlJobExecutor |>>>>>>>>>>> xxl-job register jobhandler success, name:mysqlToEs, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@44723d95[class ljl.bilibili.search.handler.MysqlToEsHandler#mysqlToEsHandler]
+2024-03-05 18:17:38 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-8201"]
+2024-03-05 18:17:38 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 8201 (http) with context path ''
+2024-03-05 18:17:38 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP search 192.168.10.9:8201 register finished
+2024-03-05 18:17:38 |INFO  |Thread-64 |EmbedServer.java:82 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9916
+2024-03-05 18:17:38 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-03-05 18:17:38 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-03-05 18:17:38 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-03-05 18:17:38 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.search.SearchApplication |Started SearchApplication in 24.245 seconds (JVM running for 26.61)
+2024-03-05 18:18:20 |INFO  |http-nio-8201-exec-2 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-05 18:18:20 |INFO  |http-nio-8201-exec-2 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-03-05 18:18:20 |INFO  |http-nio-8201-exec-2 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 2 ms
+2024-03-05 18:18:20 |INFO  |http-nio-8201-exec-2 |SearchController.java:66 |ljl.bilibili.search.controller.SearchController |1
+2024-03-05 18:18:58 |INFO  |Thread-21 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-03-05 18:18:59 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-03-05 18:18:59 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-03-05 18:18:59 |INFO  |Thread-64 |EmbedServer.java:91 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server stop.
+2024-03-05 18:18:59 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:87 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.10.9:9916/'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2024-03-05 18:18:59 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:105 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job, executor registry thread destroy.
+2024-03-05 18:18:59 |INFO  |SpringApplicationShutdownHook |EmbedServer.java:117 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server destroy success.
+2024-03-05 18:18:59 |INFO  |xxl-job, executor TriggerCallbackThread |TriggerCallbackThread.java:98 |com.xxl.job.core.thread.TriggerCallbackThread |>>>>>>>>>>> xxl-job, executor callback thread destroy.
+2024-03-05 18:18:59 |INFO  |Thread-63 |TriggerCallbackThread.java:128 |com.xxl.job.core.thread.TriggerCallbackThread |>>>>>>>>>>> xxl-job, executor retry callback thread destroy.
+2024-03-05 18:18:59 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-0} closing ...
+2024-03-05 19:16:00 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.search.SearchApplication |Starting SearchApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 9980 (E:\bilibili\search\target\classes started by Administrator in E:\bilibili)
+2024-03-05 19:16:00 |INFO  |main |SpringApplication.java:645 |ljl.bilibili.search.SearchApplication |No active profile set, falling back to 1 default profile: "default"
+2024-03-05 19:16:03 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-05 19:16:03 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2024-03-05 19:16:03 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 13 ms. Found 0 Elasticsearch repository interfaces.
+2024-03-05 19:16:03 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-05 19:16:03 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2024-03-05 19:16:03 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 4 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2024-03-05 19:16:04 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-05 19:16:04 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-05 19:16:04 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2024-03-05 19:16:04 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=20aff51d-5265-313d-adf0-3c95e5cc4ca3
+2024-03-05 19:16:09 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 8201 (http)
+2024-03-05 19:16:09 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-8201"]
+2024-03-05 19:16:09 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-03-05 19:16:09 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-03-05 19:16:10 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-03-05 19:16:10 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 9111 ms
+2024-03-05 19:16:13 |INFO  |main |ElasticsearchClientConfig.java:58 |ljl.bilibili.search.config.ElasticsearchClientConfig |Connecting Elasticsearch...
+2024-03-05 19:16:13 |INFO  |main |ElasticsearchClientConfig.java:73 |ljl.bilibili.search.config.ElasticsearchClientConfig |Elasticsearch Connected!
+2024-03-05 19:16:13 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-03-05 19:16:14 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-03-05 19:16:20 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-03-05 19:16:20 |INFO  |main |XxlJobConfig.java:46 |ljl.bilibili.search.config.XxlJobConfig |>>>>>>>>>>> xxl-job config init.
+2024-03-05 19:16:21 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of ed09d59c-6119-437d-b494-a7669135333b
+2024-03-05 19:16:21 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 59 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-03-05 19:16:21 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 21 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-03-05 19:16:21 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 18 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-03-05 19:16:22 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 268 ms to scan 276 urls, producing 0 keys and 0 values 
+2024-03-05 19:16:22 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 13 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-03-05 19:16:22 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 19 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-03-05 19:16:22 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 20 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-03-05 19:16:22 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 226 ms to scan 276 urls, producing 0 keys and 0 values 
+2024-03-05 19:16:22 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ed09d59c-6119-437d-b494-a7669135333b] RpcClient init label, labels = {module=naming, source=sdk}
+2024-03-05 19:16:22 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ed09d59c-6119-437d-b494-a7669135333b] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-03-05 19:16:22 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ed09d59c-6119-437d-b494-a7669135333b] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-03-05 19:16:22 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ed09d59c-6119-437d-b494-a7669135333b] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-03-05 19:16:22 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ed09d59c-6119-437d-b494-a7669135333b] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-03-05 19:16:25 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ed09d59c-6119-437d-b494-a7669135333b] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709637386723_120.227.131.104_44659
+2024-03-05 19:16:25 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ed09d59c-6119-437d-b494-a7669135333b] Notify connected event to listeners.
+2024-03-05 19:16:25 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ed09d59c-6119-437d-b494-a7669135333b] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-03-05 19:16:25 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ed09d59c-6119-437d-b494-a7669135333b] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1205/703352837
+2024-03-05 19:16:28 |INFO  |main |XxlJobExecutor.java:183 |com.xxl.job.core.executor.XxlJobExecutor |>>>>>>>>>>> xxl-job register jobhandler success, name:mysqlToEs, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@4e7d77ec[class ljl.bilibili.search.handler.MysqlToEsHandler#mysqlToEsHandler]
+2024-03-05 19:16:28 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-8201"]
+2024-03-05 19:16:28 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 8201 (http) with context path ''
+2024-03-05 19:16:28 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP search 192.168.10.9:8201 register finished
+2024-03-05 19:16:29 |INFO  |Thread-65 |EmbedServer.java:82 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9916
+2024-03-05 19:16:29 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-03-05 19:16:29 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-03-05 19:16:29 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-03-05 19:16:29 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.search.SearchApplication |Started SearchApplication in 31.404 seconds (JVM running for 33.705)
+2024-03-05 19:16:53 |INFO  |http-nio-8201-exec-2 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-05 19:16:53 |INFO  |http-nio-8201-exec-2 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-03-05 19:16:53 |INFO  |http-nio-8201-exec-2 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 3 ms
+2024-03-05 19:17:32 |INFO  |http-nio-8201-exec-8 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-03-05 19:18:38 |INFO  |http-nio-8201-exec-10 |SearchController.java:86 |ljl.bilibili.search.controller.SearchController |1
+2024-03-05 19:18:42 |INFO  |http-nio-8201-exec-2 |SearchController.java:80 |ljl.bilibili.search.controller.SearchController |1
+2024-03-05 19:19:35 |INFO  |Thread-21 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-03-05 19:19:35 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-03-05 19:19:35 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-03-05 19:19:35 |INFO  |Thread-65 |EmbedServer.java:91 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server stop.
+2024-03-05 19:19:35 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:87 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.10.9:9916/'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2024-03-05 19:19:35 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:105 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job, executor registry thread destroy.
+2024-03-05 19:19:35 |INFO  |SpringApplicationShutdownHook |EmbedServer.java:117 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server destroy success.
+2024-03-05 19:19:35 |INFO  |xxl-job, executor TriggerCallbackThread |TriggerCallbackThread.java:98 |com.xxl.job.core.thread.TriggerCallbackThread |>>>>>>>>>>> xxl-job, executor callback thread destroy.
+2024-03-05 19:19:35 |INFO  |Thread-64 |TriggerCallbackThread.java:128 |com.xxl.job.core.thread.TriggerCallbackThread |>>>>>>>>>>> xxl-job, executor retry callback thread destroy.
+2024-03-05 19:19:36 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-03-05 19:19:36 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-03-05 19:19:48 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.search.SearchApplication |Starting SearchApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 16160 (E:\bilibili\search\target\classes started by Administrator in E:\bilibili)
+2024-03-05 19:19:48 |INFO  |main |SpringApplication.java:645 |ljl.bilibili.search.SearchApplication |No active profile set, falling back to 1 default profile: "default"
+2024-03-05 19:19:51 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-05 19:19:51 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2024-03-05 19:19:51 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 12 ms. Found 0 Elasticsearch repository interfaces.
+2024-03-05 19:19:51 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-05 19:19:51 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2024-03-05 19:19:51 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 5 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2024-03-05 19:19:51 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-05 19:19:51 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-05 19:19:51 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2024-03-05 19:19:52 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=20aff51d-5265-313d-adf0-3c95e5cc4ca3
+2024-03-05 19:19:54 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 8201 (http)
+2024-03-05 19:19:54 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-8201"]
+2024-03-05 19:19:54 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-03-05 19:19:54 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-03-05 19:19:55 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-03-05 19:19:55 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 5680 ms
+2024-03-05 19:19:56 |INFO  |main |ElasticsearchClientConfig.java:58 |ljl.bilibili.search.config.ElasticsearchClientConfig |Connecting Elasticsearch...
+2024-03-05 19:19:56 |INFO  |main |ElasticsearchClientConfig.java:73 |ljl.bilibili.search.config.ElasticsearchClientConfig |Elasticsearch Connected!
+2024-03-05 19:19:57 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-03-05 19:19:57 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-03-05 19:20:02 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-03-05 19:20:02 |INFO  |main |XxlJobConfig.java:46 |ljl.bilibili.search.config.XxlJobConfig |>>>>>>>>>>> xxl-job config init.
+2024-03-05 19:20:04 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 0d00eac0-2a0d-4bf0-a817-104833707f0c
+2024-03-05 19:20:04 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 93 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-03-05 19:20:04 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 40 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-03-05 19:20:04 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 34 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-03-05 19:20:05 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 414 ms to scan 275 urls, producing 0 keys and 0 values 
+2024-03-05 19:20:05 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 65 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-03-05 19:20:05 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 37 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-03-05 19:20:05 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 34 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-03-05 19:20:05 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 387 ms to scan 275 urls, producing 0 keys and 0 values 
+2024-03-05 19:20:05 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0d00eac0-2a0d-4bf0-a817-104833707f0c] RpcClient init label, labels = {module=naming, source=sdk}
+2024-03-05 19:20:05 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0d00eac0-2a0d-4bf0-a817-104833707f0c] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-03-05 19:20:05 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0d00eac0-2a0d-4bf0-a817-104833707f0c] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-03-05 19:20:05 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0d00eac0-2a0d-4bf0-a817-104833707f0c] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-03-05 19:20:05 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0d00eac0-2a0d-4bf0-a817-104833707f0c] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-03-05 19:20:11 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0d00eac0-2a0d-4bf0-a817-104833707f0c] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-03-05 19:20:13 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0d00eac0-2a0d-4bf0-a817-104833707f0c] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709637613546_120.227.131.104_44881
+2024-03-05 19:20:13 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0d00eac0-2a0d-4bf0-a817-104833707f0c] Notify connected event to listeners.
+2024-03-05 19:20:13 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0d00eac0-2a0d-4bf0-a817-104833707f0c] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-03-05 19:20:13 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0d00eac0-2a0d-4bf0-a817-104833707f0c] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1205/1962603600
+2024-03-05 19:20:19 |INFO  |main |XxlJobExecutor.java:183 |com.xxl.job.core.executor.XxlJobExecutor |>>>>>>>>>>> xxl-job register jobhandler success, name:mysqlToEs, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@6ee07d7f[class ljl.bilibili.search.handler.MysqlToEsHandler#mysqlToEsHandler]
+2024-03-05 19:20:20 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-8201"]
+2024-03-05 19:20:20 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 8201 (http) with context path ''
+2024-03-05 19:20:20 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP search 192.168.10.9:8201 register finished
+2024-03-05 19:20:21 |INFO  |Thread-66 |EmbedServer.java:82 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9916
+2024-03-05 19:20:21 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-03-05 19:20:21 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-03-05 19:20:21 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-03-05 19:20:21 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.search.SearchApplication |Started SearchApplication in 35.04 seconds (JVM running for 37.473)
+2024-03-05 19:20:40 |INFO  |http-nio-8201-exec-1 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-05 19:20:40 |INFO  |http-nio-8201-exec-1 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-03-05 19:20:40 |INFO  |http-nio-8201-exec-1 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 2 ms
+2024-03-05 19:20:40 |INFO  |http-nio-8201-exec-1 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-03-05 19:21:48 |INFO  |Thread-19 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-03-05 19:21:48 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-03-05 19:21:48 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-03-05 19:21:49 |INFO  |Thread-66 |EmbedServer.java:91 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server stop.
+2024-03-05 19:21:49 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:87 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.10.9:9916/'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2024-03-05 19:21:49 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:105 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job, executor registry thread destroy.
+2024-03-05 19:21:49 |INFO  |SpringApplicationShutdownHook |EmbedServer.java:117 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server destroy success.
+2024-03-05 19:21:49 |INFO  |xxl-job, executor TriggerCallbackThread |TriggerCallbackThread.java:98 |com.xxl.job.core.thread.TriggerCallbackThread |>>>>>>>>>>> xxl-job, executor callback thread destroy.
+2024-03-05 19:21:49 |INFO  |Thread-65 |TriggerCallbackThread.java:128 |com.xxl.job.core.thread.TriggerCallbackThread |>>>>>>>>>>> xxl-job, executor retry callback thread destroy.
+2024-03-05 19:21:49 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-03-05 19:21:49 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed

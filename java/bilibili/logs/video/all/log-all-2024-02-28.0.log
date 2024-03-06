@@ -1,0 +1,1060 @@
+2024-02-28 01:18:37 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-28 01:18:37 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[aa85f831-1ccc-40b7-8cd1-40cd03a3e564] Server healthy check fail, currentConnection = 1709044916782_120.227.129.112_46518
+2024-02-28 01:18:38 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[aa85f831-1ccc-40b7-8cd1-40cd03a3e564] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-28 01:18:39 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[aa85f831-1ccc-40b7-8cd1-40cd03a3e564] Success to connect a server [116.62.71.84:8848], connectionId = 1709054320253_120.227.129.112_46348
+2024-02-28 01:18:39 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[aa85f831-1ccc-40b7-8cd1-40cd03a3e564] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1709044916782_120.227.129.112_46518
+2024-02-28 01:18:39 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1709044916782_120.227.129.112_46518
+2024-02-28 01:18:40 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[aa85f831-1ccc-40b7-8cd1-40cd03a3e564] Notify disconnected event to listeners
+2024-02-28 01:18:40 |WARN  |nacos-grpc-client-executor-1795 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1709044916782_120.227.129.112_46518]Ignore error event,isRunning:true,isAbandon=true
+2024-02-28 01:18:40 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[aa85f831-1ccc-40b7-8cd1-40cd03a3e564] Notify connected event to listeners.
+2024-02-28 01:23:48 |INFO  |nacos-grpc-client-executor-1857 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-28 01:23:48 |ERROR |nacos-grpc-client-executor-1857 |LoggerUtils.java:99 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1709054320253_120.227.129.112_46348]Request stream error, switch server,error={}
+com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at com.alibaba.nacos.shaded.io.grpc.Status.asRuntimeException(Status.java:533)
+	at com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:442)
+	at com.alibaba.nacos.shaded.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+	at com.alibaba.nacos.shaded.io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:700)
+	at com.alibaba.nacos.shaded.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+	at com.alibaba.nacos.shaded.io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:399)
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:510)
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:66)
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:630)
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:518)
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:692)
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:681)
+	at com.alibaba.nacos.shaded.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at com.alibaba.nacos.shaded.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1140)
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:697)
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632)
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549)
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511)
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918)
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+2024-02-28 01:23:48 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[aa85f831-1ccc-40b7-8cd1-40cd03a3e564] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-28 01:23:49 |ERROR |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:99 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |Server check fail, please check server 116.62.71.84 ,port 9848 is available , error ={}
+java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:566)
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:445)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264)
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:522)
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:370)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at com.alibaba.nacos.shaded.io.grpc.Status.asRuntimeException(Status.java:533)
+	at com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:490)
+	at com.alibaba.nacos.shaded.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+	at com.alibaba.nacos.shaded.io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:700)
+	at com.alibaba.nacos.shaded.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+	at com.alibaba.nacos.shaded.io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:399)
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:510)
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:66)
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:630)
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:518)
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:692)
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:681)
+	at com.alibaba.nacos.shaded.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at com.alibaba.nacos.shaded.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123)
+	... 3 common frames omitted
+Caused by: com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedSocketException: Network is unreachable: no further information: /116.62.71.84:9848
+Caused by: java.net.SocketException: Network is unreachable: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:336)
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:685)
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632)
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549)
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511)
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918)
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:745)
+2024-02-28 01:23:49 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[aa85f831-1ccc-40b7-8cd1-40cd03a3e564] Success to connect a server [116.62.71.84:8848], connectionId = 1709054630343_120.227.129.112_46865
+2024-02-28 01:23:49 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[aa85f831-1ccc-40b7-8cd1-40cd03a3e564] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1709054320253_120.227.129.112_46348
+2024-02-28 01:23:49 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1709054320253_120.227.129.112_46348
+2024-02-28 01:23:49 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[aa85f831-1ccc-40b7-8cd1-40cd03a3e564] Notify disconnected event to listeners
+2024-02-28 01:23:49 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[aa85f831-1ccc-40b7-8cd1-40cd03a3e564] Notify connected event to listeners.
+2024-02-28 01:25:06 |WARN  |Thread-47 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-02-28 01:25:06 |WARN  |Thread-44 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-02-28 01:25:06 |WARN  |Thread-44 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end
+2024-02-28 01:25:06 |INFO  |Thread-29 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-02-28 01:25:06 |WARN  |Thread-47 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-02-28 01:25:07 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-28 01:25:07 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-28 01:25:08 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-0} closing ...
+2024-02-28 20:21:27 |INFO  |main |SpringApplication.java:645 |ljl.bilibili.video.VideoApplication |No active profile set, falling back to 1 default profile: "default"
+2024-02-28 20:21:30 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=e220b647-0dba-3cd9-ac0a-399d08c770de
+2024-02-28 20:21:31 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 10201 (http)
+2024-02-28 20:21:31 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-10201"]
+2024-02-28 20:21:31 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-02-28 20:21:31 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-28 20:21:32 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-02-28 20:21:32 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 4802 ms
+2024-02-28 20:21:32 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-28 20:21:33 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-28 20:21:34 |WARN  |main |TableInfoHelper.java:423 |com.baomidou.mybatisplus.core.metadata.TableInfoHelper |This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "ljl.entity.notice.dynamic.DynamicToUser"
+2024-02-28 20:21:36 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-02-28 20:21:37 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 0d0f7cc7-3cca-4425-b76c-084311105cf9
+2024-02-28 20:21:37 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 36 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-28 20:21:37 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 17 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-28 20:21:37 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 12 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-28 20:21:37 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 200 ms to scan 255 urls, producing 0 keys and 0 values 
+2024-02-28 20:21:37 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 10 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-28 20:21:37 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 12 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-28 20:21:37 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 10 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-28 20:21:37 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 143 ms to scan 255 urls, producing 0 keys and 0 values 
+2024-02-28 20:21:37 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0d0f7cc7-3cca-4425-b76c-084311105cf9] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-28 20:21:37 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0d0f7cc7-3cca-4425-b76c-084311105cf9] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-28 20:21:37 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0d0f7cc7-3cca-4425-b76c-084311105cf9] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-28 20:21:37 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0d0f7cc7-3cca-4425-b76c-084311105cf9] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-28 20:21:37 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0d0f7cc7-3cca-4425-b76c-084311105cf9] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-28 20:21:39 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0d0f7cc7-3cca-4425-b76c-084311105cf9] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709122899325_120.227.129.112_46486
+2024-02-28 20:21:39 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0d0f7cc7-3cca-4425-b76c-084311105cf9] Notify connected event to listeners.
+2024-02-28 20:21:39 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0d0f7cc7-3cca-4425-b76c-084311105cf9] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-28 20:21:39 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0d0f7cc7-3cca-4425-b76c-084311105cf9] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$884/1107514015
+2024-02-28 20:21:40 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-02-28 20:21:40 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-10201"]
+2024-02-28 20:21:40 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 10201 (http) with context path ''
+2024-02-28 20:21:40 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP video 192.168.10.5:10201 register finished
+2024-02-28 20:21:41 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-02-28 20:21:41 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-02-28 20:21:41 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-02-28 20:21:41 |INFO  |main |CachingOperationNameGenerator.java:41 |springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator |Generating unique operation named: getCollectGroupUsingGET_1
+2024-02-28 20:21:41 |INFO  |main |CachingOperationNameGenerator.java:41 |springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator |Generating unique operation named: getCommentUsingGET_1
+2024-02-28 20:21:41 |INFO  |main |CachingOperationNameGenerator.java:41 |springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator |Generating unique operation named: getDanmakuUsingGET_1
+2024-02-28 20:21:42 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.video.VideoApplication |Started VideoApplication in 17.766 seconds (JVM running for 20.008)
+2024-02-28 20:22:15 |INFO  |http-nio-10201-exec-1 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-28 20:22:15 |INFO  |http-nio-10201-exec-1 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-02-28 20:22:15 |INFO  |http-nio-10201-exec-1 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 5 ms
+2024-02-28 20:22:37 |INFO  |http-nio-10201-exec-3 |CommentController.java:36 |ljl.video.controller.audience_reactions.comment.CommentController |获取评论
+2024-02-28 20:22:37 |INFO  |http-nio-10201-exec-3 |CommentController.java:37 |ljl.video.controller.audience_reactions.comment.CommentController |1
+2024-02-28 20:22:37 |INFO  |http-nio-10201-exec-3 |CommentController.java:38 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 20:22:37 |INFO  |http-nio-10201-exec-3 |CommentController.java:39 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 20:22:37 |INFO  |http-nio-10201-exec-3 |CommentController.java:40 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 20:22:37 |INFO  |http-nio-10201-exec-3 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-02-28 20:22:38 |ERROR |http-nio-10201-exec-3 |GlobalExceptionHandler.java:24 |ljl.handler.GlobalExceptionHandler |
+java.lang.NullPointerException: null
+	at ljl.video.service.audience_reactions.comment.CommentService.lambda$getComment$3(CommentService.java:92)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at ljl.video.service.audience_reactions.comment.CommentService.getComment(CommentService.java:91)
+	at ljl.video.controller.audience_reactions.comment.CommentController.getComment(CommentController.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.cloud.sleuth.instrument.web.servlet.TracingFilter.doFilter(TracingFilter.java:68)
+	at org.springframework.cloud.sleuth.autoconfig.instrument.web.TraceWebServletConfiguration$LazyTracingFilter.doFilter(TraceWebServletConfiguration.java:131)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.springframework.cloud.sleuth.instrument.web.tomcat.TraceValve.invoke(TraceValve.java:103)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2024-02-28 20:23:06 |INFO  |http-nio-10201-exec-7 |CommentController.java:36 |ljl.video.controller.audience_reactions.comment.CommentController |获取评论
+2024-02-28 20:23:06 |INFO  |http-nio-10201-exec-7 |CommentController.java:37 |ljl.video.controller.audience_reactions.comment.CommentController |2
+2024-02-28 20:23:06 |INFO  |http-nio-10201-exec-7 |CommentController.java:38 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 20:23:06 |INFO  |http-nio-10201-exec-7 |CommentController.java:39 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 20:23:06 |INFO  |http-nio-10201-exec-7 |CommentController.java:40 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 20:23:06 |ERROR |http-nio-10201-exec-7 |GlobalExceptionHandler.java:24 |ljl.handler.GlobalExceptionHandler |
+java.lang.NullPointerException: null
+	at ljl.video.service.audience_reactions.comment.CommentService.lambda$getComment$3(CommentService.java:92)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at ljl.video.service.audience_reactions.comment.CommentService.getComment(CommentService.java:91)
+	at ljl.video.controller.audience_reactions.comment.CommentController.getComment(CommentController.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.cloud.sleuth.instrument.web.servlet.TracingFilter.doFilter(TracingFilter.java:68)
+	at org.springframework.cloud.sleuth.autoconfig.instrument.web.TraceWebServletConfiguration$LazyTracingFilter.doFilter(TraceWebServletConfiguration.java:131)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.springframework.cloud.sleuth.instrument.web.tomcat.TraceValve.invoke(TraceValve.java:103)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2024-02-28 20:25:51 |INFO  |http-nio-10201-exec-3 |GetAllController.java:116 |ljl.video.controller.all_table_data.GetAllController |1
+2024-02-28 20:28:01 |INFO  |http-nio-10201-exec-2 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-28 20:28:01 |INFO  |http-nio-10201-exec-2 |CommentController.java:36 |ljl.video.controller.audience_reactions.comment.CommentController |获取评论
+2024-02-28 20:28:01 |INFO  |http-nio-10201-exec-2 |CommentController.java:37 |ljl.video.controller.audience_reactions.comment.CommentController |2
+2024-02-28 20:28:01 |INFO  |http-nio-10201-exec-2 |CommentController.java:38 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 20:28:01 |INFO  |http-nio-10201-exec-2 |CommentController.java:39 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 20:28:01 |INFO  |http-nio-10201-exec-2 |CommentController.java:40 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 20:28:02 |ERROR |http-nio-10201-exec-2 |GlobalExceptionHandler.java:24 |ljl.handler.GlobalExceptionHandler |
+java.lang.NullPointerException: null
+	at ljl.video.service.audience_reactions.comment.CommentService.lambda$getComment$3(CommentService.java:92)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at ljl.video.service.audience_reactions.comment.CommentService.getComment(CommentService.java:91)
+	at ljl.video.controller.audience_reactions.comment.CommentController.getComment(CommentController.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.cloud.sleuth.instrument.web.servlet.TracingFilter.doFilter(TracingFilter.java:68)
+	at org.springframework.cloud.sleuth.autoconfig.instrument.web.TraceWebServletConfiguration$LazyTracingFilter.doFilter(TraceWebServletConfiguration.java:131)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.springframework.cloud.sleuth.instrument.web.tomcat.TraceValve.invoke(TraceValve.java:103)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2024-02-28 20:28:14 |INFO  |Thread-21 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-02-28 20:28:14 |WARN  |Thread-35 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-02-28 20:28:14 |WARN  |Thread-32 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-02-28 20:28:14 |WARN  |Thread-32 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end
+2024-02-28 20:28:14 |WARN  |Thread-35 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-02-28 20:28:14 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-28 20:28:14 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-28 20:28:14 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-02-28 20:28:14 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-02-28 20:28:25 |INFO  |main |SpringApplication.java:645 |ljl.bilibili.video.VideoApplication |No active profile set, falling back to 1 default profile: "default"
+2024-02-28 20:28:27 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=e220b647-0dba-3cd9-ac0a-399d08c770de
+2024-02-28 20:28:28 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 10201 (http)
+2024-02-28 20:28:28 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-10201"]
+2024-02-28 20:28:28 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-02-28 20:28:28 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-28 20:28:28 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-02-28 20:28:28 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 3133 ms
+2024-02-28 20:28:29 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-28 20:28:29 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-28 20:28:31 |WARN  |main |TableInfoHelper.java:423 |com.baomidou.mybatisplus.core.metadata.TableInfoHelper |This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "ljl.entity.notice.dynamic.DynamicToUser"
+2024-02-28 20:28:33 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-02-28 20:28:34 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 341a157e-c160-495c-bf1d-c23935c66ab8
+2024-02-28 20:28:34 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 58 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-28 20:28:34 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 55 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-28 20:28:34 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 54 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-28 20:28:35 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 637 ms to scan 256 urls, producing 0 keys and 0 values 
+2024-02-28 20:28:35 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 25 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-28 20:28:35 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 23 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-28 20:28:35 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 24 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-28 20:28:35 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 270 ms to scan 256 urls, producing 0 keys and 0 values 
+2024-02-28 20:28:35 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[341a157e-c160-495c-bf1d-c23935c66ab8] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-28 20:28:35 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[341a157e-c160-495c-bf1d-c23935c66ab8] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-28 20:28:35 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[341a157e-c160-495c-bf1d-c23935c66ab8] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-28 20:28:35 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[341a157e-c160-495c-bf1d-c23935c66ab8] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-28 20:28:35 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[341a157e-c160-495c-bf1d-c23935c66ab8] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-28 20:28:43 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[341a157e-c160-495c-bf1d-c23935c66ab8] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709123322945_120.227.129.112_46232
+2024-02-28 20:28:43 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[341a157e-c160-495c-bf1d-c23935c66ab8] Notify connected event to listeners.
+2024-02-28 20:28:43 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[341a157e-c160-495c-bf1d-c23935c66ab8] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-28 20:28:43 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[341a157e-c160-495c-bf1d-c23935c66ab8] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$884/696327501
+2024-02-28 20:28:44 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-02-28 20:28:44 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-10201"]
+2024-02-28 20:28:44 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 10201 (http) with context path ''
+2024-02-28 20:28:44 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP video 192.168.10.5:10201 register finished
+2024-02-28 20:28:44 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-02-28 20:28:44 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-02-28 20:28:44 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-02-28 20:28:45 |INFO  |main |CachingOperationNameGenerator.java:41 |springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator |Generating unique operation named: getCollectGroupUsingGET_1
+2024-02-28 20:28:45 |INFO  |main |CachingOperationNameGenerator.java:41 |springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator |Generating unique operation named: getCommentUsingGET_1
+2024-02-28 20:28:45 |INFO  |main |CachingOperationNameGenerator.java:41 |springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator |Generating unique operation named: getDanmakuUsingGET_1
+2024-02-28 20:28:45 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.video.VideoApplication |Started VideoApplication in 22.619 seconds (JVM running for 24.389)
+2024-02-28 20:29:07 |INFO  |http-nio-10201-exec-2 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-28 20:29:07 |INFO  |http-nio-10201-exec-2 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-02-28 20:29:07 |INFO  |http-nio-10201-exec-2 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 4 ms
+2024-02-28 20:29:07 |INFO  |http-nio-10201-exec-2 |CommentController.java:36 |ljl.video.controller.audience_reactions.comment.CommentController |获取评论
+2024-02-28 20:29:07 |INFO  |http-nio-10201-exec-2 |CommentController.java:37 |ljl.video.controller.audience_reactions.comment.CommentController |2
+2024-02-28 20:29:07 |INFO  |http-nio-10201-exec-2 |CommentController.java:38 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 20:29:07 |INFO  |http-nio-10201-exec-2 |CommentController.java:39 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 20:29:07 |INFO  |http-nio-10201-exec-2 |CommentController.java:40 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 20:29:07 |INFO  |http-nio-10201-exec-2 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-02-28 20:30:24 |ERROR |http-nio-10201-exec-2 |GlobalExceptionHandler.java:24 |ljl.handler.GlobalExceptionHandler |
+java.lang.NullPointerException: null
+	at ljl.video.service.audience_reactions.comment.CommentService.lambda$getComment$3(CommentService.java:92)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at ljl.video.service.audience_reactions.comment.CommentService.getComment(CommentService.java:91)
+	at ljl.video.controller.audience_reactions.comment.CommentController.getComment(CommentController.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.cloud.sleuth.instrument.web.servlet.TracingFilter.doFilter(TracingFilter.java:68)
+	at org.springframework.cloud.sleuth.autoconfig.instrument.web.TraceWebServletConfiguration$LazyTracingFilter.doFilter(TraceWebServletConfiguration.java:131)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.springframework.cloud.sleuth.instrument.web.tomcat.TraceValve.invoke(TraceValve.java:103)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2024-02-28 20:30:51 |INFO  |http-nio-10201-exec-1 |CommentController.java:36 |ljl.video.controller.audience_reactions.comment.CommentController |获取评论
+2024-02-28 20:30:51 |INFO  |http-nio-10201-exec-1 |CommentController.java:37 |ljl.video.controller.audience_reactions.comment.CommentController |2
+2024-02-28 20:30:51 |INFO  |http-nio-10201-exec-1 |CommentController.java:38 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 20:30:51 |INFO  |http-nio-10201-exec-1 |CommentController.java:39 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 20:30:51 |INFO  |http-nio-10201-exec-1 |CommentController.java:40 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 20:31:55 |ERROR |http-nio-10201-exec-1 |GlobalExceptionHandler.java:24 |ljl.handler.GlobalExceptionHandler |
+java.lang.NullPointerException: null
+	at ljl.video.service.audience_reactions.comment.CommentService.lambda$getComment$3(CommentService.java:92)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at ljl.video.service.audience_reactions.comment.CommentService.getComment(CommentService.java:91)
+	at ljl.video.controller.audience_reactions.comment.CommentController.getComment(CommentController.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.cloud.sleuth.instrument.web.servlet.TracingFilter.doFilter(TracingFilter.java:68)
+	at org.springframework.cloud.sleuth.autoconfig.instrument.web.TraceWebServletConfiguration$LazyTracingFilter.doFilter(TraceWebServletConfiguration.java:131)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.springframework.cloud.sleuth.instrument.web.tomcat.TraceValve.invoke(TraceValve.java:103)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2024-02-28 20:31:55 |WARN  |Thread-33 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-02-28 20:31:55 |INFO  |Thread-17 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-02-28 20:31:55 |WARN  |Thread-33 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-02-28 20:31:55 |WARN  |Thread-30 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-02-28 20:31:55 |WARN  |Thread-30 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end
+2024-02-28 20:31:56 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-28 20:31:56 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-28 20:31:56 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-02-28 20:31:56 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-02-28 20:32:09 |INFO  |main |SpringApplication.java:645 |ljl.bilibili.video.VideoApplication |No active profile set, falling back to 1 default profile: "default"
+2024-02-28 20:32:11 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=e220b647-0dba-3cd9-ac0a-399d08c770de
+2024-02-28 20:32:12 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 10201 (http)
+2024-02-28 20:32:12 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-10201"]
+2024-02-28 20:32:12 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-02-28 20:32:12 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-28 20:32:12 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-02-28 20:32:12 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 2826 ms
+2024-02-28 20:32:13 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-28 20:32:13 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-28 20:32:15 |WARN  |main |TableInfoHelper.java:423 |com.baomidou.mybatisplus.core.metadata.TableInfoHelper |This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "ljl.entity.notice.dynamic.DynamicToUser"
+2024-02-28 20:32:16 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-02-28 20:32:16 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 2c789b79-34e3-4d70-87ed-ede48c9739d6
+2024-02-28 20:32:16 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 30 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-28 20:32:16 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 15 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-28 20:32:16 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 11 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-28 20:32:17 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 185 ms to scan 255 urls, producing 0 keys and 0 values 
+2024-02-28 20:32:17 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 10 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-28 20:32:17 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 17 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-28 20:32:17 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 11 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-28 20:32:17 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 179 ms to scan 255 urls, producing 0 keys and 0 values 
+2024-02-28 20:32:17 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[2c789b79-34e3-4d70-87ed-ede48c9739d6] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-28 20:32:17 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[2c789b79-34e3-4d70-87ed-ede48c9739d6] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-28 20:32:17 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[2c789b79-34e3-4d70-87ed-ede48c9739d6] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-28 20:32:17 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[2c789b79-34e3-4d70-87ed-ede48c9739d6] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-28 20:32:17 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[2c789b79-34e3-4d70-87ed-ede48c9739d6] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-28 20:32:19 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[2c789b79-34e3-4d70-87ed-ede48c9739d6] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709123539189_120.227.129.112_46714
+2024-02-28 20:32:19 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[2c789b79-34e3-4d70-87ed-ede48c9739d6] Notify connected event to listeners.
+2024-02-28 20:32:19 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[2c789b79-34e3-4d70-87ed-ede48c9739d6] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-28 20:32:19 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[2c789b79-34e3-4d70-87ed-ede48c9739d6] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$884/44979584
+2024-02-28 20:32:20 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-02-28 20:32:20 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-10201"]
+2024-02-28 20:32:20 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 10201 (http) with context path ''
+2024-02-28 20:32:20 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP video 192.168.10.5:10201 register finished
+2024-02-28 20:32:21 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-02-28 20:32:21 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-02-28 20:32:21 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-02-28 20:32:21 |INFO  |main |CachingOperationNameGenerator.java:41 |springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator |Generating unique operation named: getCollectGroupUsingGET_1
+2024-02-28 20:32:21 |INFO  |main |CachingOperationNameGenerator.java:41 |springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator |Generating unique operation named: getCommentUsingGET_1
+2024-02-28 20:32:21 |INFO  |main |CachingOperationNameGenerator.java:41 |springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator |Generating unique operation named: getDanmakuUsingGET_1
+2024-02-28 20:32:21 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.video.VideoApplication |Started VideoApplication in 14.513 seconds (JVM running for 15.918)
+2024-02-28 20:32:25 |INFO  |http-nio-10201-exec-1 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-28 20:32:25 |INFO  |http-nio-10201-exec-1 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-02-28 20:32:25 |INFO  |http-nio-10201-exec-1 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 5 ms
+2024-02-28 20:32:25 |INFO  |http-nio-10201-exec-1 |CommentController.java:36 |ljl.video.controller.audience_reactions.comment.CommentController |获取评论
+2024-02-28 20:32:25 |INFO  |http-nio-10201-exec-1 |CommentController.java:37 |ljl.video.controller.audience_reactions.comment.CommentController |2
+2024-02-28 20:32:25 |INFO  |http-nio-10201-exec-1 |CommentController.java:38 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 20:32:25 |INFO  |http-nio-10201-exec-1 |CommentController.java:39 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 20:32:25 |INFO  |http-nio-10201-exec-1 |CommentController.java:40 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 20:32:26 |INFO  |http-nio-10201-exec-1 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-02-28 20:35:54 |WARN  |Thread-30 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-02-28 20:35:54 |WARN  |Thread-27 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-02-28 20:35:54 |INFO  |Thread-16 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-02-28 20:35:54 |WARN  |Thread-27 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end
+2024-02-28 20:35:54 |WARN  |Thread-30 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-02-28 20:35:54 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-28 20:35:54 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-28 20:35:54 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-02-28 20:35:54 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-02-28 20:36:09 |INFO  |main |SpringApplication.java:645 |ljl.bilibili.video.VideoApplication |No active profile set, falling back to 1 default profile: "default"
+2024-02-28 20:36:11 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=e220b647-0dba-3cd9-ac0a-399d08c770de
+2024-02-28 20:36:13 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 10201 (http)
+2024-02-28 20:36:13 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-10201"]
+2024-02-28 20:36:13 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-02-28 20:36:13 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-28 20:36:13 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-02-28 20:36:13 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 3347 ms
+2024-02-28 20:36:14 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-28 20:36:14 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-28 20:36:16 |WARN  |main |TableInfoHelper.java:423 |com.baomidou.mybatisplus.core.metadata.TableInfoHelper |This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "ljl.entity.notice.dynamic.DynamicToUser"
+2024-02-28 20:36:17 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-02-28 20:36:18 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of a11b62c7-7e35-403b-9e21-ed01e4473d3f
+2024-02-28 20:36:18 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 33 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-28 20:36:18 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 14 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-28 20:36:18 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 12 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-28 20:36:18 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 165 ms to scan 255 urls, producing 0 keys and 0 values 
+2024-02-28 20:36:18 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 11 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-28 20:36:18 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 13 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-28 20:36:18 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 14 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-28 20:36:19 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 248 ms to scan 255 urls, producing 0 keys and 0 values 
+2024-02-28 20:36:19 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[a11b62c7-7e35-403b-9e21-ed01e4473d3f] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-28 20:36:19 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[a11b62c7-7e35-403b-9e21-ed01e4473d3f] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-28 20:36:19 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[a11b62c7-7e35-403b-9e21-ed01e4473d3f] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-28 20:36:19 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[a11b62c7-7e35-403b-9e21-ed01e4473d3f] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-28 20:36:19 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[a11b62c7-7e35-403b-9e21-ed01e4473d3f] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-28 20:36:21 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[a11b62c7-7e35-403b-9e21-ed01e4473d3f] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709123781066_120.227.129.112_46114
+2024-02-28 20:36:21 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[a11b62c7-7e35-403b-9e21-ed01e4473d3f] Notify connected event to listeners.
+2024-02-28 20:36:21 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[a11b62c7-7e35-403b-9e21-ed01e4473d3f] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-28 20:36:21 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[a11b62c7-7e35-403b-9e21-ed01e4473d3f] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$884/1396538465
+2024-02-28 20:36:22 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-02-28 20:36:22 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-10201"]
+2024-02-28 20:36:22 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 10201 (http) with context path ''
+2024-02-28 20:36:22 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP video 192.168.10.5:10201 register finished
+2024-02-28 20:36:22 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-02-28 20:36:22 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-02-28 20:36:22 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-02-28 20:36:22 |INFO  |main |CachingOperationNameGenerator.java:41 |springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator |Generating unique operation named: getCollectGroupUsingGET_1
+2024-02-28 20:36:22 |INFO  |main |CachingOperationNameGenerator.java:41 |springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator |Generating unique operation named: getCommentUsingGET_1
+2024-02-28 20:36:22 |INFO  |main |CachingOperationNameGenerator.java:41 |springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator |Generating unique operation named: getDanmakuUsingGET_1
+2024-02-28 20:36:23 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.video.VideoApplication |Started VideoApplication in 16.364 seconds (JVM running for 18.047)
+2024-02-28 20:40:32 |INFO  |http-nio-10201-exec-1 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-28 20:40:32 |INFO  |http-nio-10201-exec-1 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-02-28 20:40:32 |INFO  |http-nio-10201-exec-1 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 2 ms
+2024-02-28 20:40:32 |INFO  |http-nio-10201-exec-1 |CommentController.java:36 |ljl.video.controller.audience_reactions.comment.CommentController |获取评论
+2024-02-28 20:40:32 |INFO  |http-nio-10201-exec-1 |CommentController.java:37 |ljl.video.controller.audience_reactions.comment.CommentController |2
+2024-02-28 20:40:32 |INFO  |http-nio-10201-exec-1 |CommentController.java:38 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 20:40:32 |INFO  |http-nio-10201-exec-1 |CommentController.java:39 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 20:40:32 |INFO  |http-nio-10201-exec-1 |CommentController.java:40 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 20:40:35 |INFO  |http-nio-10201-exec-1 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-02-28 20:40:41 |INFO  |http-nio-10201-exec-2 |CommentController.java:36 |ljl.video.controller.audience_reactions.comment.CommentController |获取评论
+2024-02-28 20:40:41 |INFO  |http-nio-10201-exec-2 |CommentController.java:37 |ljl.video.controller.audience_reactions.comment.CommentController |2
+2024-02-28 20:40:41 |INFO  |http-nio-10201-exec-2 |CommentController.java:38 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 20:40:41 |INFO  |http-nio-10201-exec-2 |CommentController.java:39 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 20:40:41 |INFO  |http-nio-10201-exec-2 |CommentController.java:40 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 20:40:45 |INFO  |http-nio-10201-exec-4 |CommentController.java:36 |ljl.video.controller.audience_reactions.comment.CommentController |获取评论
+2024-02-28 20:40:45 |INFO  |http-nio-10201-exec-4 |CommentController.java:37 |ljl.video.controller.audience_reactions.comment.CommentController |2
+2024-02-28 20:40:45 |INFO  |http-nio-10201-exec-4 |CommentController.java:38 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 20:40:45 |INFO  |http-nio-10201-exec-4 |CommentController.java:39 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 20:40:45 |INFO  |http-nio-10201-exec-4 |CommentController.java:40 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 20:40:48 |INFO  |http-nio-10201-exec-5 |CommentController.java:36 |ljl.video.controller.audience_reactions.comment.CommentController |获取评论
+2024-02-28 20:40:48 |INFO  |http-nio-10201-exec-5 |CommentController.java:37 |ljl.video.controller.audience_reactions.comment.CommentController |2
+2024-02-28 20:40:48 |INFO  |http-nio-10201-exec-5 |CommentController.java:38 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 20:40:48 |INFO  |http-nio-10201-exec-5 |CommentController.java:39 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 20:40:48 |INFO  |http-nio-10201-exec-5 |CommentController.java:40 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 20:59:24 |INFO  |http-nio-10201-exec-7 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-28 20:59:24 |INFO  |http-nio-10201-exec-7 |LikeController.java:27 |ljl.video.controller.audience_reactions.like.LikeController |点赞评论
+2024-02-28 20:59:24 |INFO  |http-nio-10201-exec-7 |LikeController.java:28 |ljl.video.controller.audience_reactions.like.LikeController |LikeRequest(userId=6, videoId=1, commentId=null)
+2024-02-28 20:59:24 |INFO  |http-nio-10201-exec-7 |LikeController.java:29 |ljl.video.controller.audience_reactions.like.LikeController |
+
+2024-02-28 20:59:24 |INFO  |http-nio-10201-exec-7 |LikeController.java:30 |ljl.video.controller.audience_reactions.like.LikeController |
+
+2024-02-28 20:59:24 |INFO  |http-nio-10201-exec-7 |LikeController.java:31 |ljl.video.controller.audience_reactions.like.LikeController |
+
+2024-02-28 20:59:37 |ERROR |http-nio-10201-exec-7 |GlobalExceptionHandler.java:24 |ljl.handler.GlobalExceptionHandler |
+feign.RetryableException: Connection refused: connect executing POST http://localhost:30000/notice/sendLikeNotice
+	at feign.FeignException.errorExecuting(FeignException.java:268)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:129)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:89)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:100)
+	at com.sun.proxy.$Proxy143.sendLikeNotice(Unknown Source)
+	at ljl.video.service.audience_reactions.like.LikeService.like(LikeService.java:38)
+	at ljl.video.controller.audience_reactions.like.LikeController.like(LikeController.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.cloud.sleuth.instrument.web.servlet.TracingFilter.doFilter(TracingFilter.java:68)
+	at org.springframework.cloud.sleuth.autoconfig.instrument.web.TraceWebServletConfiguration$LazyTracingFilter.doFilter(TraceWebServletConfiguration.java:131)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.springframework.cloud.sleuth.instrument.web.tomcat.TraceValve.invoke(TraceValve.java:103)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1169)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1105)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:999)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:933)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1283)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1258)
+	at feign.Client$Default.convertAndSend(Client.java:207)
+	at feign.Client$Default.execute(Client.java:104)
+	at org.springframework.cloud.sleuth.instrument.web.client.feign.TracingFeignClient.execute(TracingFeignClient.java:79)
+	at org.springframework.cloud.sleuth.instrument.web.client.feign.LazyTracingFeignClient.execute(LazyTracingFeignClient.java:62)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:119)
+	... 60 common frames omitted
+2024-02-28 21:08:24 |INFO  |Thread-34 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-28 21:08:24 |INFO  |Thread-18 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-28 21:08:24 |WARN  |Thread-34 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-02-28 21:08:24 |INFO  |Thread-18 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-02-28 21:08:24 |WARN  |Thread-31 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-02-28 21:08:24 |WARN  |Thread-31 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end
+2024-02-28 21:08:24 |WARN  |Thread-34 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-02-28 21:08:24 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-28 21:08:24 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-28 21:08:24 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-02-28 21:08:24 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-02-28 21:08:55 |INFO  |main |SpringApplication.java:645 |ljl.bilibili.video.VideoApplication |No active profile set, falling back to 1 default profile: "default"
+2024-02-28 21:08:57 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=e220b647-0dba-3cd9-ac0a-399d08c770de
+2024-02-28 21:08:59 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 10201 (http)
+2024-02-28 21:08:59 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-10201"]
+2024-02-28 21:08:59 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-02-28 21:08:59 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-28 21:08:59 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-02-28 21:08:59 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 4397 ms
+2024-02-28 21:09:00 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-28 21:09:01 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-28 21:09:03 |WARN  |main |TableInfoHelper.java:423 |com.baomidou.mybatisplus.core.metadata.TableInfoHelper |This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "ljl.entity.notice.dynamic.DynamicToUser"
+2024-02-28 21:09:06 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-02-28 21:09:08 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 37931c1b-d31c-4d8c-9280-f8a515cb2484
+2024-02-28 21:09:08 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 200 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-28 21:09:08 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 24 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-28 21:09:08 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 14 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-28 21:09:09 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 354 ms to scan 255 urls, producing 0 keys and 0 values 
+2024-02-28 21:09:09 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 10 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-28 21:09:09 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 13 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-28 21:09:09 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 12 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-28 21:09:09 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 189 ms to scan 255 urls, producing 0 keys and 0 values 
+2024-02-28 21:09:09 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[37931c1b-d31c-4d8c-9280-f8a515cb2484] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-28 21:09:09 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[37931c1b-d31c-4d8c-9280-f8a515cb2484] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-28 21:09:09 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[37931c1b-d31c-4d8c-9280-f8a515cb2484] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-28 21:09:09 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[37931c1b-d31c-4d8c-9280-f8a515cb2484] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-28 21:09:09 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[37931c1b-d31c-4d8c-9280-f8a515cb2484] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-28 21:09:16 |ERROR |main |LoggerUtils.java:99 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |Server check fail, please check server 116.62.71.84 ,port 9848 is available , error ={}
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 10 milliseconds, 161800 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@5614ae05[status=PENDING, info=[GrpcFuture{clientCall={delegate={delegate=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@6bfbab1c, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@349aeec4, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@3700994c}}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264)
+	at com.alibaba.nacos.common.remote.client.RpcClient.start(RpcClient.java:390)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.start(NamingGrpcClientProxy.java:96)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.<init>(NamingGrpcClientProxy.java:89)
+	at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.<init>(NamingClientProxyDelegate.java:76)
+	at com.alibaba.nacos.client.naming.NacosNamingService.init(NacosNamingService.java:95)
+	at com.alibaba.nacos.client.naming.NacosNamingService.<init>(NacosNamingService.java:81)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.alibaba.nacos.api.naming.NamingFactory.createNamingService(NamingFactory.java:59)
+	at com.alibaba.nacos.api.NacosFactory.createNamingService(NacosFactory.java:77)
+	at com.alibaba.cloud.nacos.NacosDiscoveryProperties.namingServiceInstance(NacosDiscoveryProperties.java:520)
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.<init>(NacosServiceRegistry.java:47)
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistryAutoConfiguration.nacosServiceRegistry(NacosServiceRegistryAutoConfiguration.java:50)
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistryAutoConfiguration$$EnhancerBySpringCGLIB$$d0d8beea.CGLIB$nacosServiceRegistry$1(<generated>)
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistryAutoConfiguration$$EnhancerBySpringCGLIB$$d0d8beea$$FastClassBySpringCGLIB$$f1bf9bee.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistryAutoConfiguration$$EnhancerBySpringCGLIB$$d0d8beea.nacosServiceRegistry(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at ljl.bilibili.video.VideoApplication.main(VideoApplication.java:13)
+2024-02-28 21:09:16 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[37931c1b-d31c-4d8c-9280-f8a515cb2484] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-28 21:09:18 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[37931c1b-d31c-4d8c-9280-f8a515cb2484] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709125757727_120.227.129.112_46432
+2024-02-28 21:09:18 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[37931c1b-d31c-4d8c-9280-f8a515cb2484] Notify connected event to listeners.
+2024-02-28 21:09:18 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[37931c1b-d31c-4d8c-9280-f8a515cb2484] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-28 21:09:18 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[37931c1b-d31c-4d8c-9280-f8a515cb2484] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$884/978105475
+2024-02-28 21:09:21 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-02-28 21:09:21 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-10201"]
+2024-02-28 21:09:22 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 10201 (http) with context path ''
+2024-02-28 21:09:22 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP video 192.168.10.5:10201 register finished
+2024-02-28 21:09:22 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-02-28 21:09:22 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-02-28 21:09:22 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-02-28 21:09:22 |INFO  |main |CachingOperationNameGenerator.java:41 |springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator |Generating unique operation named: getCollectGroupUsingGET_1
+2024-02-28 21:09:22 |INFO  |main |CachingOperationNameGenerator.java:41 |springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator |Generating unique operation named: getCommentUsingGET_1
+2024-02-28 21:09:22 |INFO  |main |CachingOperationNameGenerator.java:41 |springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator |Generating unique operation named: getDanmakuUsingGET_1
+2024-02-28 21:09:23 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.video.VideoApplication |Started VideoApplication in 30.899 seconds (JVM running for 32.694)
+2024-02-28 21:09:27 |INFO  |http-nio-10201-exec-1 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-28 21:09:27 |INFO  |http-nio-10201-exec-1 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-02-28 21:09:27 |INFO  |http-nio-10201-exec-1 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 6 ms
+2024-02-28 21:09:27 |INFO  |http-nio-10201-exec-1 |CommentController.java:36 |ljl.video.controller.audience_reactions.comment.CommentController |获取评论
+2024-02-28 21:09:27 |INFO  |http-nio-10201-exec-1 |CommentController.java:37 |ljl.video.controller.audience_reactions.comment.CommentController |2
+2024-02-28 21:09:27 |INFO  |http-nio-10201-exec-1 |CommentController.java:38 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 21:09:27 |INFO  |http-nio-10201-exec-1 |CommentController.java:39 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 21:09:27 |INFO  |http-nio-10201-exec-1 |CommentController.java:40 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 21:09:27 |INFO  |http-nio-10201-exec-1 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-02-28 21:09:31 |INFO  |http-nio-10201-exec-2 |CommentController.java:36 |ljl.video.controller.audience_reactions.comment.CommentController |获取评论
+2024-02-28 21:09:31 |INFO  |http-nio-10201-exec-2 |CommentController.java:37 |ljl.video.controller.audience_reactions.comment.CommentController |2
+2024-02-28 21:09:31 |INFO  |http-nio-10201-exec-2 |CommentController.java:38 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 21:09:31 |INFO  |http-nio-10201-exec-2 |CommentController.java:39 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 21:09:31 |INFO  |http-nio-10201-exec-2 |CommentController.java:40 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 21:09:34 |INFO  |http-nio-10201-exec-4 |CommentController.java:36 |ljl.video.controller.audience_reactions.comment.CommentController |获取评论
+2024-02-28 21:09:34 |INFO  |http-nio-10201-exec-4 |CommentController.java:37 |ljl.video.controller.audience_reactions.comment.CommentController |2
+2024-02-28 21:09:34 |INFO  |http-nio-10201-exec-4 |CommentController.java:38 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 21:09:34 |INFO  |http-nio-10201-exec-4 |CommentController.java:39 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 21:09:34 |INFO  |http-nio-10201-exec-4 |CommentController.java:40 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 21:09:35 |INFO  |http-nio-10201-exec-5 |CommentController.java:36 |ljl.video.controller.audience_reactions.comment.CommentController |获取评论
+2024-02-28 21:09:35 |INFO  |http-nio-10201-exec-5 |CommentController.java:37 |ljl.video.controller.audience_reactions.comment.CommentController |2
+2024-02-28 21:09:35 |INFO  |http-nio-10201-exec-5 |CommentController.java:38 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 21:09:35 |INFO  |http-nio-10201-exec-5 |CommentController.java:39 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 21:09:35 |INFO  |http-nio-10201-exec-5 |CommentController.java:40 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 21:09:36 |INFO  |http-nio-10201-exec-6 |CommentController.java:36 |ljl.video.controller.audience_reactions.comment.CommentController |获取评论
+2024-02-28 21:09:36 |INFO  |http-nio-10201-exec-6 |CommentController.java:37 |ljl.video.controller.audience_reactions.comment.CommentController |2
+2024-02-28 21:09:36 |INFO  |http-nio-10201-exec-6 |CommentController.java:38 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 21:09:36 |INFO  |http-nio-10201-exec-6 |CommentController.java:39 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 21:09:36 |INFO  |http-nio-10201-exec-6 |CommentController.java:40 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 21:09:37 |INFO  |http-nio-10201-exec-7 |CommentController.java:36 |ljl.video.controller.audience_reactions.comment.CommentController |获取评论
+2024-02-28 21:09:37 |INFO  |http-nio-10201-exec-7 |CommentController.java:37 |ljl.video.controller.audience_reactions.comment.CommentController |2
+2024-02-28 21:09:37 |INFO  |http-nio-10201-exec-7 |CommentController.java:38 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 21:09:37 |INFO  |http-nio-10201-exec-7 |CommentController.java:39 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 21:09:37 |INFO  |http-nio-10201-exec-7 |CommentController.java:40 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 21:09:38 |INFO  |http-nio-10201-exec-8 |CommentController.java:36 |ljl.video.controller.audience_reactions.comment.CommentController |获取评论
+2024-02-28 21:09:38 |INFO  |http-nio-10201-exec-8 |CommentController.java:37 |ljl.video.controller.audience_reactions.comment.CommentController |2
+2024-02-28 21:09:38 |INFO  |http-nio-10201-exec-8 |CommentController.java:38 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 21:09:38 |INFO  |http-nio-10201-exec-8 |CommentController.java:39 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 21:09:38 |INFO  |http-nio-10201-exec-8 |CommentController.java:40 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 21:09:38 |INFO  |http-nio-10201-exec-9 |CommentController.java:36 |ljl.video.controller.audience_reactions.comment.CommentController |获取评论
+2024-02-28 21:09:38 |INFO  |http-nio-10201-exec-9 |CommentController.java:37 |ljl.video.controller.audience_reactions.comment.CommentController |2
+2024-02-28 21:09:38 |INFO  |http-nio-10201-exec-9 |CommentController.java:38 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 21:09:38 |INFO  |http-nio-10201-exec-9 |CommentController.java:39 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 21:09:38 |INFO  |http-nio-10201-exec-9 |CommentController.java:40 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 21:09:39 |INFO  |http-nio-10201-exec-10 |CommentController.java:36 |ljl.video.controller.audience_reactions.comment.CommentController |获取评论
+2024-02-28 21:09:39 |INFO  |http-nio-10201-exec-10 |CommentController.java:37 |ljl.video.controller.audience_reactions.comment.CommentController |2
+2024-02-28 21:09:39 |INFO  |http-nio-10201-exec-10 |CommentController.java:38 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 21:09:39 |INFO  |http-nio-10201-exec-10 |CommentController.java:39 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 21:09:39 |INFO  |http-nio-10201-exec-10 |CommentController.java:40 |ljl.video.controller.audience_reactions.comment.CommentController |
+
+2024-02-28 21:11:55 |WARN  |Thread-41 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-02-28 21:11:55 |INFO  |Thread-20 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-02-28 21:11:55 |WARN  |Thread-38 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-02-28 21:11:55 |WARN  |Thread-41 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-02-28 21:11:55 |WARN  |Thread-38 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end
+2024-02-28 21:11:55 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-28 21:11:55 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-28 21:11:55 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-02-28 21:11:55 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed

@@ -1,0 +1,42 @@
+server:
+  port: 30000
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 500MB
+      max-request-size: 500MB
+      location: /path
+  redis:
+    host: xxx.xxx.xxx.xxx
+  cloud:
+    nacos:
+      discovery:
+        server-addr: xxx.xxx.xxx.xxx:8848
+        register-enabled: true
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    name: datasource
+    url: jdbc:mysql://xxx.xxx.xxx.xxx:3306/xxxx?useUnicode=true&allowPublicKeyRetrieval=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8&rewriteBatchedStatements=true
+    username: xxxx
+    password: xxxx
+  application:
+    name: notice
+  zipkin:
+    base-url: http://xxx.xxx.xxx.xxx:9411
+    sender:
+      type: web
+    sleuth:
+      sampler:
+        probability: 1
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+rocketmq:
+  name-server: xxx.xxx.xxx.xxx:9876
+  producer:
+    group: test
+module-name: notice
+global-exception-handler:
+  enabled: true

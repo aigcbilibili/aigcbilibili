@@ -1,0 +1,558 @@
+2024-02-06 02:23:35 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 02:23:35 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[59a3bb8a-1825-4268-9af3-f94706b35027] Server healthy check fail, currentConnection = 1707142922179_120.227.130.72_2758
+2024-02-06 02:23:35 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[59a3bb8a-1825-4268-9af3-f94706b35027] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 02:23:35 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[59a3bb8a-1825-4268-9af3-f94706b35027] Success to connect a server [116.62.71.84:8848], connectionId = 1707157415718_120.227.130.72_2820
+2024-02-06 02:23:35 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[59a3bb8a-1825-4268-9af3-f94706b35027] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707142922179_120.227.130.72_2758
+2024-02-06 02:23:35 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707142922179_120.227.130.72_2758
+2024-02-06 02:23:35 |INFO  |nacos-grpc-client-executor-2914 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1707142922179_120.227.130.72_2758]Ignore complete event,isRunning:false,isAbandon=true
+2024-02-06 02:23:36 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[59a3bb8a-1825-4268-9af3-f94706b35027] Notify disconnected event to listeners
+2024-02-06 02:23:36 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[59a3bb8a-1825-4268-9af3-f94706b35027] Notify connected event to listeners.
+2024-02-06 02:23:37 |INFO  |nacos-grpc-client-executor-2917 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[59a3bb8a-1825-4268-9af3-f94706b35027] Receive server push request, request = NotifySubscriberRequest, requestId = 14
+2024-02-06 02:23:37 |INFO  |nacos-grpc-client-executor-2917 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[59a3bb8a-1825-4268-9af3-f94706b35027] Ack server push request, request = NotifySubscriberRequest, requestId = 14
+2024-02-06 02:33:40 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 02:33:40 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[59a3bb8a-1825-4268-9af3-f94706b35027] Server healthy check fail, currentConnection = 1707157415718_120.227.130.72_2820
+2024-02-06 02:33:40 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[59a3bb8a-1825-4268-9af3-f94706b35027] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 02:33:40 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[59a3bb8a-1825-4268-9af3-f94706b35027] Success to connect a server [116.62.71.84:8848], connectionId = 1707158020217_120.227.130.72_2628
+2024-02-06 02:33:40 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[59a3bb8a-1825-4268-9af3-f94706b35027] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707157415718_120.227.130.72_2820
+2024-02-06 02:33:40 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707157415718_120.227.130.72_2820
+2024-02-06 02:33:40 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[59a3bb8a-1825-4268-9af3-f94706b35027] Notify disconnected event to listeners
+2024-02-06 02:33:40 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[59a3bb8a-1825-4268-9af3-f94706b35027] Notify connected event to listeners.
+2024-02-06 02:33:42 |INFO  |nacos-grpc-client-executor-3044 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[59a3bb8a-1825-4268-9af3-f94706b35027] Receive server push request, request = NotifySubscriberRequest, requestId = 15
+2024-02-06 02:33:42 |INFO  |nacos-grpc-client-executor-3044 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[59a3bb8a-1825-4268-9af3-f94706b35027] Ack server push request, request = NotifySubscriberRequest, requestId = 15
+2024-02-06 02:33:43 |INFO  |nacos-grpc-client-executor-3045 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[59a3bb8a-1825-4268-9af3-f94706b35027] Receive server push request, request = NotifySubscriberRequest, requestId = 16
+2024-02-06 02:33:43 |INFO  |nacos-grpc-client-executor-3045 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[59a3bb8a-1825-4268-9af3-f94706b35027] Ack server push request, request = NotifySubscriberRequest, requestId = 16
+2024-02-06 02:41:33 |INFO  |Thread-34 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 02:41:33 |INFO  |Thread-31 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 02:41:33 |INFO  |Thread-19 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-02-06 02:41:37 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-06 02:41:37 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-06 02:41:37 |INFO  |Thread-49 |EmbedServer.java:91 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server stop.
+2024-02-06 02:41:37 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:87 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2024-02-06 02:41:37 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:105 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job, executor registry thread destroy.
+2024-02-06 02:41:37 |INFO  |SpringApplicationShutdownHook |EmbedServer.java:117 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server destroy success.
+2024-02-06 02:41:37 |INFO  |xxl-job, executor TriggerCallbackThread |TriggerCallbackThread.java:98 |com.xxl.job.core.thread.TriggerCallbackThread |>>>>>>>>>>> xxl-job, executor callback thread destroy.
+2024-02-06 02:41:37 |INFO  |Thread-48 |TriggerCallbackThread.java:128 |com.xxl.job.core.thread.TriggerCallbackThread |>>>>>>>>>>> xxl-job, executor retry callback thread destroy.
+2024-02-06 02:41:38 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-02-06 02:41:38 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-02-06 16:12:43 |INFO  |main |SpringApplication.java:645 |ljl.bilibili.video.VideoApplication |No active profile set, falling back to 1 default profile: "default"
+2024-02-06 16:12:47 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=e24f4458-6d86-3165-9632-6c82a475ded5
+2024-02-06 16:12:48 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 10201 (http)
+2024-02-06 16:12:48 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-10201"]
+2024-02-06 16:12:48 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-02-06 16:12:48 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-06 16:12:49 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-02-06 16:12:49 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 5988 ms
+2024-02-06 16:12:50 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-06 16:12:51 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-06 16:12:53 |INFO  |main |FeignClientFactoryBean.java:418 |org.springframework.cloud.openfeign.FeignClientFactoryBean |For 'notice' URL not provided. Will try picking an instance via load-balancing.
+2024-02-06 16:12:59 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-02-06 16:12:59 |INFO  |main |XxlJobConfig.java:46 |ljl.video.config.XxlJobConfig |>>>>>>>>>>> xxl-job config init.
+2024-02-06 16:13:02 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 8f54958c-4d5c-4e24-93c4-802a3f556cfd
+2024-02-06 16:13:02 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 232 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-06 16:13:02 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 69 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-06 16:13:03 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 19 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-06 16:13:03 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 508 ms to scan 251 urls, producing 0 keys and 0 values 
+2024-02-06 16:13:03 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 31 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-06 16:13:03 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 35 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-06 16:13:03 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 44 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-06 16:13:04 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 528 ms to scan 251 urls, producing 0 keys and 0 values 
+2024-02-06 16:13:04 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8f54958c-4d5c-4e24-93c4-802a3f556cfd] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-06 16:13:04 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8f54958c-4d5c-4e24-93c4-802a3f556cfd] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-06 16:13:04 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8f54958c-4d5c-4e24-93c4-802a3f556cfd] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-06 16:13:04 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8f54958c-4d5c-4e24-93c4-802a3f556cfd] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-06 16:13:04 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8f54958c-4d5c-4e24-93c4-802a3f556cfd] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-06 16:13:12 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8f54958c-4d5c-4e24-93c4-802a3f556cfd] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-06 16:13:12 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8f54958c-4d5c-4e24-93c4-802a3f556cfd] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1707207192415_120.227.130.72_2966
+2024-02-06 16:13:12 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8f54958c-4d5c-4e24-93c4-802a3f556cfd] Notify connected event to listeners.
+2024-02-06 16:13:12 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8f54958c-4d5c-4e24-93c4-802a3f556cfd] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-06 16:13:12 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8f54958c-4d5c-4e24-93c4-802a3f556cfd] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$874/1826086004
+2024-02-06 16:13:15 |INFO  |main |XxlJobExecutor.java:183 |com.xxl.job.core.executor.XxlJobExecutor |>>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@1fa796a4[class ljl.video.handler.SampleXxlJob#demoJobHandler2]
+2024-02-06 16:13:15 |INFO  |main |XxlJobExecutor.java:183 |com.xxl.job.core.executor.XxlJobExecutor |>>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@68de8522[class ljl.video.handler.SampleXxlJob#demoJobHandler]
+2024-02-06 16:13:15 |INFO  |main |XxlJobExecutor.java:183 |com.xxl.job.core.executor.XxlJobExecutor |>>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@8dcacf1[class ljl.video.handler.SampleXxlJob#httpJobHandler]
+2024-02-06 16:13:15 |INFO  |main |FeignClientFactoryBean.java:418 |org.springframework.cloud.openfeign.FeignClientFactoryBean |For 'video' URL not provided. Will try picking an instance via load-balancing.
+2024-02-06 16:13:15 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-10201"]
+2024-02-06 16:13:15 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 10201 (http) with context path ''
+2024-02-06 16:13:15 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP video 192.168.0.102:10201 register finished
+2024-02-06 16:13:16 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-02-06 16:13:16 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-02-06 16:13:16 |INFO  |Thread-76 |EmbedServer.java:82 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9910
+2024-02-06 16:13:16 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-02-06 16:13:16 |INFO  |main |CachingOperationNameGenerator.java:41 |springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator |Generating unique operation named: getCollectGroupUsingGET_1
+2024-02-06 16:13:16 |INFO  |main |CachingOperationNameGenerator.java:41 |springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator |Generating unique operation named: getDanmakuUsingGET_1
+2024-02-06 16:13:17 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.video.VideoApplication |Started VideoApplication in 39.24 seconds (JVM running for 42.03)
+2024-02-06 16:14:21 |INFO  |http-nio-10201-exec-1 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-06 16:14:21 |INFO  |http-nio-10201-exec-1 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-02-06 16:14:21 |INFO  |http-nio-10201-exec-1 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 6 ms
+2024-02-06 16:14:52 |INFO  |http-nio-10201-exec-1 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-02-06 16:14:54 |INFO  |nacos-grpc-client-executor-28 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8f54958c-4d5c-4e24-93c4-802a3f556cfd] Receive server push request, request = NotifySubscriberRequest, requestId = 18
+2024-02-06 16:14:54 |INFO  |nacos-grpc-client-executor-28 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8f54958c-4d5c-4e24-93c4-802a3f556cfd] Ack server push request, request = NotifySubscriberRequest, requestId = 18
+2024-02-06 18:57:30 |INFO  |main |SpringApplication.java:645 |ljl.bilibili.video.VideoApplication |No active profile set, falling back to 1 default profile: "default"
+2024-02-06 18:57:34 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=e24f4458-6d86-3165-9632-6c82a475ded5
+2024-02-06 18:57:37 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 10201 (http)
+2024-02-06 18:57:37 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-10201"]
+2024-02-06 18:57:37 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-02-06 18:57:37 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-06 18:57:38 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-02-06 18:57:38 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 7620 ms
+2024-02-06 18:57:40 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-06 18:57:40 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-06 18:57:44 |INFO  |main |FeignClientFactoryBean.java:418 |org.springframework.cloud.openfeign.FeignClientFactoryBean |For 'notice' URL not provided. Will try picking an instance via load-balancing.
+2024-02-06 18:57:48 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-02-06 18:57:48 |INFO  |main |XxlJobConfig.java:46 |ljl.video.config.XxlJobConfig |>>>>>>>>>>> xxl-job config init.
+2024-02-06 18:57:49 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 906ada40-748f-4d9a-876b-8587a675f4b1
+2024-02-06 18:57:49 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 131 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-06 18:57:49 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 50 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-06 18:57:50 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 24 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-06 18:57:50 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 403 ms to scan 251 urls, producing 0 keys and 0 values 
+2024-02-06 18:57:50 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 17 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-06 18:57:50 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 19 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-06 18:57:50 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 18 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-06 18:57:50 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 244 ms to scan 251 urls, producing 0 keys and 0 values 
+2024-02-06 18:57:50 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-06 18:57:50 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-06 18:57:50 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-06 18:57:50 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-06 18:57:50 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-06 18:57:54 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1707217074311_120.227.130.72_2054
+2024-02-06 18:57:54 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify connected event to listeners.
+2024-02-06 18:57:54 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-06 18:57:54 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$873/1086342015
+2024-02-06 18:57:57 |INFO  |main |XxlJobExecutor.java:183 |com.xxl.job.core.executor.XxlJobExecutor |>>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@38197e82[class ljl.video.handler.SampleXxlJob#demoJobHandler2]
+2024-02-06 18:57:57 |INFO  |main |XxlJobExecutor.java:183 |com.xxl.job.core.executor.XxlJobExecutor |>>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@5516ee5[class ljl.video.handler.SampleXxlJob#httpJobHandler]
+2024-02-06 18:57:57 |INFO  |main |XxlJobExecutor.java:183 |com.xxl.job.core.executor.XxlJobExecutor |>>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@6765b6a2[class ljl.video.handler.SampleXxlJob#demoJobHandler]
+2024-02-06 18:57:57 |INFO  |main |FeignClientFactoryBean.java:418 |org.springframework.cloud.openfeign.FeignClientFactoryBean |For 'video' URL not provided. Will try picking an instance via load-balancing.
+2024-02-06 18:57:57 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-10201"]
+2024-02-06 18:57:57 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 10201 (http) with context path ''
+2024-02-06 18:57:57 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP video 192.168.0.102:10201 register finished
+2024-02-06 18:57:58 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-02-06 18:57:58 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-02-06 18:57:58 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-02-06 18:57:58 |INFO  |Thread-80 |EmbedServer.java:82 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9910
+2024-02-06 18:57:59 |INFO  |main |CachingOperationNameGenerator.java:41 |springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator |Generating unique operation named: getCollectGroupUsingGET_1
+2024-02-06 18:57:59 |INFO  |main |CachingOperationNameGenerator.java:41 |springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator |Generating unique operation named: getDanmakuUsingGET_1
+2024-02-06 18:57:59 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.video.VideoApplication |Started VideoApplication in 34.832 seconds (JVM running for 40.154)
+2024-02-06 19:00:29 |INFO  |http-nio-10201-exec-10 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-06 19:00:29 |INFO  |http-nio-10201-exec-10 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-02-06 19:00:29 |INFO  |http-nio-10201-exec-10 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 7 ms
+2024-02-06 19:00:38 |INFO  |http-nio-10201-exec-7 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-02-06 19:00:41 |INFO  |nacos-grpc-client-executor-44 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 1
+2024-02-06 19:00:41 |INFO  |nacos-grpc-client-executor-44 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 1
+2024-02-06 19:07:51 |INFO  |nacos-grpc-client-executor-134 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 19:07:51 |INFO  |nacos-grpc-client-executor-134 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 2
+2024-02-06 19:07:51 |INFO  |nacos-grpc-client-executor-134 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 2
+2024-02-06 19:07:54 |INFO  |nacos-grpc-client-executor-135 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 3
+2024-02-06 19:07:54 |INFO  |nacos-grpc-client-executor-135 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 3
+2024-02-06 19:17:54 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 19:17:54 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server healthy check fail, currentConnection = 1707217074311_120.227.130.72_2054
+2024-02-06 19:17:54 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 19:17:57 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Success to connect a server [116.62.71.84:8848], connectionId = 1707218277242_120.227.130.72_2305
+2024-02-06 19:17:57 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707217074311_120.227.130.72_2054
+2024-02-06 19:17:57 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707217074311_120.227.130.72_2054
+2024-02-06 19:17:57 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify disconnected event to listeners
+2024-02-06 19:17:57 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify connected event to listeners.
+2024-02-06 19:17:59 |INFO  |nacos-grpc-client-executor-269 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 4
+2024-02-06 19:17:59 |INFO  |nacos-grpc-client-executor-269 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 4
+2024-02-06 19:28:01 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 19:28:01 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server healthy check fail, currentConnection = 1707218277242_120.227.130.72_2305
+2024-02-06 19:28:01 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 19:28:02 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Success to connect a server [116.62.71.84:8848], connectionId = 1707218882657_120.227.130.72_3020
+2024-02-06 19:28:02 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707218277242_120.227.130.72_2305
+2024-02-06 19:28:02 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707218277242_120.227.130.72_2305
+2024-02-06 19:28:02 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify disconnected event to listeners
+2024-02-06 19:28:02 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify connected event to listeners.
+2024-02-06 19:28:03 |INFO  |nacos-grpc-client-executor-397 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 5
+2024-02-06 19:28:03 |INFO  |nacos-grpc-client-executor-397 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 5
+2024-02-06 19:28:04 |INFO  |nacos-grpc-client-executor-398 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 6
+2024-02-06 19:28:04 |INFO  |nacos-grpc-client-executor-398 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 6
+2024-02-06 19:38:05 |INFO  |xxl-job, executor ExecutorRegistryThread |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 19:38:05 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Read timed out), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-06 19:38:05 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server healthy check fail, currentConnection = 1707218882657_120.227.130.72_3020
+2024-02-06 19:38:05 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 19:38:07 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Success to connect a server [116.62.71.84:8848], connectionId = 1707219487338_120.227.130.72_2521
+2024-02-06 19:38:07 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707218882657_120.227.130.72_3020
+2024-02-06 19:38:07 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707218882657_120.227.130.72_3020
+2024-02-06 19:38:07 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify disconnected event to listeners
+2024-02-06 19:38:07 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify connected event to listeners.
+2024-02-06 19:38:08 |INFO  |nacos-grpc-client-executor-525 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 7
+2024-02-06 19:38:08 |INFO  |nacos-grpc-client-executor-525 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 7
+2024-02-06 19:48:09 |INFO  |xxl-job, executor ExecutorRegistryThread |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 19:48:09 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Read timed out), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-06 19:48:11 |INFO  |nacos-grpc-client-executor-644 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 8
+2024-02-06 19:48:11 |INFO  |nacos-grpc-client-executor-644 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 8
+2024-02-06 19:58:13 |INFO  |xxl-job, executor ExecutorRegistryThread |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 19:58:13 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Read timed out), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-06 19:58:16 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server healthy check fail, currentConnection = 1707219487338_120.227.130.72_2521
+2024-02-06 19:58:16 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 19:58:16 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Success to connect a server [116.62.71.84:8848], connectionId = 1707220696728_120.227.130.72_2857
+2024-02-06 19:58:16 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707219487338_120.227.130.72_2521
+2024-02-06 19:58:16 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707219487338_120.227.130.72_2521
+2024-02-06 19:58:16 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify disconnected event to listeners
+2024-02-06 19:58:16 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify connected event to listeners.
+2024-02-06 19:58:19 |INFO  |nacos-grpc-client-executor-771 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 9
+2024-02-06 19:58:19 |INFO  |nacos-grpc-client-executor-771 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 9
+2024-02-06 19:58:20 |INFO  |nacos-grpc-client-executor-772 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 10
+2024-02-06 19:58:20 |INFO  |nacos-grpc-client-executor-772 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 10
+2024-02-06 20:08:31 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 20:08:31 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server healthy check fail, currentConnection = 1707220696728_120.227.130.72_2857
+2024-02-06 20:08:31 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 20:08:32 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Success to connect a server [116.62.71.84:8848], connectionId = 1707221312388_120.227.130.72_2255
+2024-02-06 20:08:32 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707220696728_120.227.130.72_2857
+2024-02-06 20:08:32 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707220696728_120.227.130.72_2857
+2024-02-06 20:08:32 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify disconnected event to listeners
+2024-02-06 20:08:32 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify connected event to listeners.
+2024-02-06 20:08:34 |INFO  |nacos-grpc-client-executor-899 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 11
+2024-02-06 20:08:34 |INFO  |nacos-grpc-client-executor-899 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 11
+2024-02-06 20:18:37 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 20:18:37 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server healthy check fail, currentConnection = 1707221312388_120.227.130.72_2255
+2024-02-06 20:18:37 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 20:18:37 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Success to connect a server [116.62.71.84:8848], connectionId = 1707221917473_120.227.130.72_2663
+2024-02-06 20:18:37 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707221312388_120.227.130.72_2255
+2024-02-06 20:18:37 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707221312388_120.227.130.72_2255
+2024-02-06 20:18:37 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify disconnected event to listeners
+2024-02-06 20:18:37 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify connected event to listeners.
+2024-02-06 20:18:39 |INFO  |nacos-grpc-client-executor-1025 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 12
+2024-02-06 20:18:39 |INFO  |nacos-grpc-client-executor-1025 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 12
+2024-02-06 20:28:41 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 20:28:41 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server healthy check fail, currentConnection = 1707221917473_120.227.130.72_2663
+2024-02-06 20:28:41 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 20:28:41 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Success to connect a server [116.62.71.84:8848], connectionId = 1707222521627_120.227.130.72_2390
+2024-02-06 20:28:41 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707221917473_120.227.130.72_2663
+2024-02-06 20:28:41 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707221917473_120.227.130.72_2663
+2024-02-06 20:28:41 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify disconnected event to listeners
+2024-02-06 20:28:41 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify connected event to listeners.
+2024-02-06 20:28:44 |INFO  |nacos-grpc-client-executor-1151 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 13
+2024-02-06 20:28:44 |INFO  |nacos-grpc-client-executor-1151 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 13
+2024-02-06 20:38:45 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 20:38:45 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server healthy check fail, currentConnection = 1707222521627_120.227.130.72_2390
+2024-02-06 20:38:45 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 20:38:46 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Success to connect a server [116.62.71.84:8848], connectionId = 1707223126826_120.227.130.72_2567
+2024-02-06 20:38:46 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707222521627_120.227.130.72_2390
+2024-02-06 20:38:46 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707222521627_120.227.130.72_2390
+2024-02-06 20:38:46 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify disconnected event to listeners
+2024-02-06 20:38:46 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify connected event to listeners.
+2024-02-06 20:38:49 |INFO  |nacos-grpc-client-executor-1279 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 14
+2024-02-06 20:38:49 |INFO  |nacos-grpc-client-executor-1279 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 14
+2024-02-06 20:48:50 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 20:48:50 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server healthy check fail, currentConnection = 1707223126826_120.227.130.72_2567
+2024-02-06 20:48:50 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 20:48:51 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(connect timed out), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-06 20:48:53 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Success to connect a server [116.62.71.84:8848], connectionId = 1707223733644_120.227.130.72_2088
+2024-02-06 20:48:53 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707223126826_120.227.130.72_2567
+2024-02-06 20:48:53 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707223126826_120.227.130.72_2567
+2024-02-06 20:48:53 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify disconnected event to listeners
+2024-02-06 20:48:53 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify connected event to listeners.
+2024-02-06 20:48:57 |INFO  |nacos-grpc-client-executor-1407 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 15
+2024-02-06 20:48:57 |INFO  |nacos-grpc-client-executor-1407 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 15
+2024-02-06 20:58:55 |INFO  |xxl-job, executor ExecutorRegistryThread |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 20:58:55 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Read timed out), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-06 20:58:56 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server healthy check fail, currentConnection = 1707223733644_120.227.130.72_2088
+2024-02-06 20:58:56 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 20:58:58 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Success to connect a server [116.62.71.84:8848], connectionId = 1707224338064_120.227.130.72_2476
+2024-02-06 20:58:58 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707223733644_120.227.130.72_2088
+2024-02-06 20:58:58 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707223733644_120.227.130.72_2088
+2024-02-06 20:58:58 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify disconnected event to listeners
+2024-02-06 20:58:58 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify connected event to listeners.
+2024-02-06 20:58:58 |INFO  |nacos-grpc-client-executor-1536 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 16
+2024-02-06 20:58:58 |INFO  |nacos-grpc-client-executor-1536 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 16
+2024-02-06 20:59:01 |INFO  |nacos-grpc-client-executor-1537 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 17
+2024-02-06 20:59:01 |INFO  |nacos-grpc-client-executor-1537 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 17
+2024-02-06 21:09:00 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 21:09:00 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server healthy check fail, currentConnection = 1707224338064_120.227.130.72_2476
+2024-02-06 21:09:00 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 21:09:03 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Success to connect a server [116.62.71.84:8848], connectionId = 1707224943182_120.227.130.72_2961
+2024-02-06 21:09:03 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707224338064_120.227.130.72_2476
+2024-02-06 21:09:03 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707224338064_120.227.130.72_2476
+2024-02-06 21:09:03 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify disconnected event to listeners
+2024-02-06 21:09:03 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify connected event to listeners.
+2024-02-06 21:09:06 |INFO  |nacos-grpc-client-executor-1664 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 18
+2024-02-06 21:09:06 |INFO  |nacos-grpc-client-executor-1664 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 18
+2024-02-06 21:19:17 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 21:19:17 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server healthy check fail, currentConnection = 1707224943182_120.227.130.72_2961
+2024-02-06 21:19:17 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 21:19:18 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Success to connect a server [116.62.71.84:8848], connectionId = 1707225558611_120.227.130.72_2215
+2024-02-06 21:19:18 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707224943182_120.227.130.72_2961
+2024-02-06 21:19:18 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707224943182_120.227.130.72_2961
+2024-02-06 21:19:18 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify disconnected event to listeners
+2024-02-06 21:19:18 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify connected event to listeners.
+2024-02-06 21:19:20 |INFO  |nacos-grpc-client-executor-1794 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 20
+2024-02-06 21:19:20 |INFO  |nacos-grpc-client-executor-1794 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 20
+2024-02-06 21:29:22 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 21:29:22 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server healthy check fail, currentConnection = 1707225558611_120.227.130.72_2215
+2024-02-06 21:29:22 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 21:29:23 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Success to connect a server [116.62.71.84:8848], connectionId = 1707226163762_120.227.130.72_2370
+2024-02-06 21:29:23 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707225558611_120.227.130.72_2215
+2024-02-06 21:29:23 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707225558611_120.227.130.72_2215
+2024-02-06 21:29:23 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify disconnected event to listeners
+2024-02-06 21:29:23 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify connected event to listeners.
+2024-02-06 21:29:26 |INFO  |nacos-grpc-client-executor-1919 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 22
+2024-02-06 21:29:26 |INFO  |nacos-grpc-client-executor-1919 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 22
+2024-02-06 21:39:27 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 21:39:27 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server healthy check fail, currentConnection = 1707226163762_120.227.130.72_2370
+2024-02-06 21:39:27 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 21:39:29 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Success to connect a server [116.62.71.84:8848], connectionId = 1707226769086_120.227.130.72_2386
+2024-02-06 21:39:29 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707226163762_120.227.130.72_2370
+2024-02-06 21:39:29 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707226163762_120.227.130.72_2370
+2024-02-06 21:39:29 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify disconnected event to listeners
+2024-02-06 21:39:29 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify connected event to listeners.
+2024-02-06 21:39:30 |INFO  |nacos-grpc-client-executor-2046 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 23
+2024-02-06 21:39:31 |INFO  |nacos-grpc-client-executor-2046 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 23
+2024-02-06 21:49:31 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 21:49:31 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server healthy check fail, currentConnection = 1707226769086_120.227.130.72_2386
+2024-02-06 21:49:31 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 21:49:32 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(connect timed out), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-06 21:49:35 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Success to connect a server [116.62.71.84:8848], connectionId = 1707227375170_120.227.130.72_2050
+2024-02-06 21:49:35 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707226769086_120.227.130.72_2386
+2024-02-06 21:49:35 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707226769086_120.227.130.72_2386
+2024-02-06 21:49:35 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify disconnected event to listeners
+2024-02-06 21:49:35 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify connected event to listeners.
+2024-02-06 21:49:38 |INFO  |nacos-grpc-client-executor-2180 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 24
+2024-02-06 21:49:38 |INFO  |nacos-grpc-client-executor-2180 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 24
+2024-02-06 21:59:37 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 21:59:37 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server healthy check fail, currentConnection = 1707227375170_120.227.130.72_2050
+2024-02-06 21:59:37 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 21:59:41 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Success to connect a server [116.62.71.84:8848], connectionId = 1707227981139_120.227.130.72_2401
+2024-02-06 21:59:41 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707227375170_120.227.130.72_2050
+2024-02-06 21:59:41 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707227375170_120.227.130.72_2050
+2024-02-06 21:59:41 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify disconnected event to listeners
+2024-02-06 21:59:41 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify connected event to listeners.
+2024-02-06 21:59:43 |INFO  |nacos-grpc-client-executor-2308 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 25
+2024-02-06 21:59:43 |INFO  |nacos-grpc-client-executor-2308 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 25
+2024-02-06 22:41:47 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 22:41:47 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server healthy check fail, currentConnection = 1707227981139_120.227.130.72_2401
+2024-02-06 22:41:47 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 22:41:50 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Success to connect a server [116.62.71.84:8848], connectionId = 1707230509938_120.227.130.72_2569
+2024-02-06 22:41:50 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707227981139_120.227.130.72_2401
+2024-02-06 22:41:50 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707227981139_120.227.130.72_2401
+2024-02-06 22:41:50 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify disconnected event to listeners
+2024-02-06 22:41:50 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify connected event to listeners.
+2024-02-06 22:41:54 |INFO  |nacos-grpc-client-executor-2359 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 27
+2024-02-06 22:41:54 |INFO  |nacos-grpc-client-executor-2359 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 27
+2024-02-06 23:01:46 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 23:01:46 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server healthy check fail, currentConnection = 1707230509938_120.227.130.72_2569
+2024-02-06 23:01:46 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 23:01:46 |INFO  |nacos-grpc-client-executor-2598 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 189
+2024-02-06 23:01:46 |INFO  |nacos-grpc-client-executor-2598 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 189
+2024-02-06 23:01:47 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Success to connect a server [116.62.71.84:8848], connectionId = 1707231708187_120.227.130.72_2760
+2024-02-06 23:01:47 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707230509938_120.227.130.72_2569
+2024-02-06 23:01:47 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707230509938_120.227.130.72_2569
+2024-02-06 23:01:47 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify disconnected event to listeners
+2024-02-06 23:01:47 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify connected event to listeners.
+2024-02-06 23:01:50 |INFO  |nacos-grpc-client-executor-2605 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 190
+2024-02-06 23:01:50 |INFO  |nacos-grpc-client-executor-2605 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 190
+2024-02-06 23:03:41 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server healthy check fail, currentConnection = 1707231708187_120.227.130.72_2760
+2024-02-06 23:03:41 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 23:03:41 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Success to connect a server [116.62.71.84:8848], connectionId = 1707231822845_120.227.130.72_2445
+2024-02-06 23:03:41 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707231708187_120.227.130.72_2760
+2024-02-06 23:03:41 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707231708187_120.227.130.72_2760
+2024-02-06 23:03:41 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify disconnected event to listeners
+2024-02-06 23:03:41 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify connected event to listeners.
+2024-02-06 23:03:45 |INFO  |nacos-grpc-client-executor-2633 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 191
+2024-02-06 23:03:45 |INFO  |nacos-grpc-client-executor-2633 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 191
+2024-02-06 23:11:50 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 23:11:50 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server healthy check fail, currentConnection = 1707231822845_120.227.130.72_2445
+2024-02-06 23:11:50 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 23:11:51 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Success to connect a server [116.62.71.84:8848], connectionId = 1707232312693_120.227.130.72_2119
+2024-02-06 23:11:51 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707231822845_120.227.130.72_2445
+2024-02-06 23:11:51 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707231822845_120.227.130.72_2445
+2024-02-06 23:11:51 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify disconnected event to listeners
+2024-02-06 23:11:51 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify connected event to listeners.
+2024-02-06 23:11:52 |INFO  |nacos-grpc-client-executor-2737 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 193
+2024-02-06 23:11:52 |INFO  |nacos-grpc-client-executor-2737 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 193
+2024-02-06 23:11:55 |INFO  |nacos-grpc-client-executor-2738 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 195
+2024-02-06 23:11:55 |INFO  |nacos-grpc-client-executor-2738 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 195
+2024-02-06 23:21:56 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 23:21:56 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server healthy check fail, currentConnection = 1707232312693_120.227.130.72_2119
+2024-02-06 23:21:56 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 23:21:57 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Success to connect a server [116.62.71.84:8848], connectionId = 1707232918620_120.227.130.72_2556
+2024-02-06 23:21:57 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707232312693_120.227.130.72_2119
+2024-02-06 23:21:57 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707232312693_120.227.130.72_2119
+2024-02-06 23:21:57 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify disconnected event to listeners
+2024-02-06 23:21:57 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify connected event to listeners.
+2024-02-06 23:21:59 |INFO  |nacos-grpc-client-executor-2865 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 397
+2024-02-06 23:21:59 |INFO  |nacos-grpc-client-executor-2865 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 397
+2024-02-06 23:22:00 |INFO  |nacos-grpc-client-executor-2866 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 399
+2024-02-06 23:22:00 |INFO  |nacos-grpc-client-executor-2866 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 399
+2024-02-06 23:32:04 |INFO  |nacos-grpc-client-executor-2986 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 23:32:04 |INFO  |nacos-grpc-client-executor-2986 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 580
+2024-02-06 23:32:04 |INFO  |nacos-grpc-client-executor-2986 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 580
+2024-02-06 23:32:05 |INFO  |nacos-grpc-client-executor-2987 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 581
+2024-02-06 23:32:05 |INFO  |nacos-grpc-client-executor-2987 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 581
+2024-02-06 23:52:11 |INFO  |xxl-job, executor ExecutorRegistryThread |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-06 23:52:11 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Read timed out), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-02-06 23:52:12 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Server healthy check fail, currentConnection = 1707232918620_120.227.130.72_2556
+2024-02-06 23:52:12 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-06 23:52:15 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Success to connect a server [116.62.71.84:8848], connectionId = 1707234736259_120.227.130.72_2904
+2024-02-06 23:52:15 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1707232918620_120.227.130.72_2556
+2024-02-06 23:52:15 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1707232918620_120.227.130.72_2556
+2024-02-06 23:52:15 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify disconnected event to listeners
+2024-02-06 23:52:15 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Notify connected event to listeners.
+2024-02-06 23:52:18 |INFO  |nacos-grpc-client-executor-3234 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 582
+2024-02-06 23:52:18 |INFO  |nacos-grpc-client-executor-3234 |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[906ada40-748f-4d9a-876b-8587a675f4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 582
