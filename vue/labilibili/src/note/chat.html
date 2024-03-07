@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket Connection Example</title>
+    <script type="text/javascript">
+        var socket = null;
+
+        function connectWebSocket() {
+            // 创建WebSocket连接
+            socket = new WebSocket("ws://120.55.183.155:1688/ljl/chat");
+
+            // 连接建立后发送第一条初始化消息，把聊天对象转换，这个地方先不用管，我明天再详细说
+            socket.onopen = function(event) {
+                console.log("Connection opened");
+                var initMessage = {
+                    type: "init",
+                    chattingWith: "someUserId" // 设置初始的聊天对象ID
+                };
+                socket.send(JSON.stringify(initMessage));
+            };
+
+            // 接收消息时的事件处理
+            socket.onmessage = function(event) {
+               var message = JSON.parse(event.data);
+                  if (message.type === "sessionInfo") {
+					  //由于自己的会话id是随机生成的，所以要由服务器发送Websocket消息来得到这次会话自己的会话id
+                      var sessionId = message.sessionId;
+                      console.log("Received session ID: " + sessionId);
+                      // 可以在这里存储sessionId以供后续使用
+                  }if(message.type==="message"){
+					  //来自对方的消息则显现在页面上
+					  document.getElementById("message").innerText=message.content;
+					  console.log(message.content);
+				  }
+            };
+
+            // 连接出错时的事件处理
+            socket.onerror = function(event) {
+                console.error("WebSocket error observed:", event);
+            };
+
+            // 连接关闭时的事件处理
+            socket.onclose = function(event) {
+                console.log("Connection closed");
+            };
+        }
+
+        function sendMessage() {
+            var messageContent = document.getElementById('messageInput').value;
+            if (socket && socket.readyState === WebSocket.OPEN) {
+                var message = {
+                    type: "message", // 指定消息类型为"message"
+                    content: messageContent // 发送的消息内容
+                };
+                socket.send(JSON.stringify(message)); // 将消息对象转换为JSON字符串并发送
+            } else {
+                console.error("WebSocket is not connected.");
+            }
+        }
+		function changeChattingWith() {
+		    var newChattingWith = document.getElementById('chattingWithInput').value;
+		    if (socket && socket.readyState === WebSocket.OPEN) {
+		        var changeMessage = {
+		            type: "changeTarget", // 指定消息类型为"changeTarget"
+		            targetClientId: newChattingWith // 新的聊天对象ID
+		        };
+		        socket.send(JSON.stringify(changeMessage));
+		    } else {
+		        console.error("WebSocket is not connected.");
+		    }
+			}
+
+    </script>
+</head>
+<body>
+	<input type="text" id="chattingWithInput" placeholder="Enter user ID to chat with">
+	<button onclick="changeChattingWith()">Change Chatting With</button>
+
+    <h2>WebSocket Connection Example</h2>
+    <input type="text" id="messageInput" placeholder="Enter your message">
+    <button onclick="sendMessage()">Send Message</button>
+    <br>
+    <button onclick="connectWebSocket()">Connect WebSocket</button>
+	<h1 id="message">通话区</h1>
+</body>
+</html>
