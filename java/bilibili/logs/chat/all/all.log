@@ -1,0 +1,862 @@
+2024-03-05 02:56:53 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.ChatApplication |Starting ChatApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 15812 (E:\bilibili\chat\target\classes started by Administrator in E:\bilibili)
+2024-03-05 02:56:53 |INFO  |main |SpringApplication.java:645 |ljl.bilibili.ChatApplication |No active profile set, falling back to 1 default profile: "default"
+2024-03-05 02:56:58 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=e6ad048c-7d01-341a-b915-884882c1a7b0
+2024-03-05 02:57:00 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 1688 (http)
+2024-03-05 02:57:00 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-1688"]
+2024-03-05 02:57:00 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-03-05 02:57:00 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-03-05 02:57:01 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-03-05 02:57:01 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 7474 ms
+2024-03-05 02:57:04 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-03-05 02:57:04 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-03-05 02:57:07 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-03-05 02:57:08 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 201725e8-26c6-4a61-8a41-fdd19d587af4
+2024-03-05 02:57:08 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 86 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-03-05 02:57:09 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 46 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-03-05 02:57:09 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 32 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-03-05 02:57:09 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 273 ms to scan 199 urls, producing 0 keys and 0 values 
+2024-03-05 02:57:09 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 22 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-03-05 02:57:09 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 26 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-03-05 02:57:09 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 28 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-03-05 02:57:10 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 528 ms to scan 199 urls, producing 0 keys and 0 values 
+2024-03-05 02:57:10 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[201725e8-26c6-4a61-8a41-fdd19d587af4] RpcClient init label, labels = {module=naming, source=sdk}
+2024-03-05 02:57:10 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[201725e8-26c6-4a61-8a41-fdd19d587af4] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-03-05 02:57:10 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[201725e8-26c6-4a61-8a41-fdd19d587af4] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-03-05 02:57:10 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[201725e8-26c6-4a61-8a41-fdd19d587af4] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-03-05 02:57:10 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[201725e8-26c6-4a61-8a41-fdd19d587af4] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-03-05 02:57:22 |ERROR |main |LoggerUtils.java:99 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |Server check fail, please check server 116.62.71.84 ,port 9848 is available , error ={}
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 21 milliseconds, 717500 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@18ffc008[status=PENDING, info=[GrpcFuture{clientCall={delegate={delegate=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@5c13534a, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@4d7f9b33, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@782e0844}}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264)
+	at com.alibaba.nacos.common.remote.client.RpcClient.start(RpcClient.java:390)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.start(NamingGrpcClientProxy.java:96)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.<init>(NamingGrpcClientProxy.java:89)
+	at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.<init>(NamingClientProxyDelegate.java:76)
+	at com.alibaba.nacos.client.naming.NacosNamingService.init(NacosNamingService.java:95)
+	at com.alibaba.nacos.client.naming.NacosNamingService.<init>(NacosNamingService.java:81)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.alibaba.nacos.api.naming.NamingFactory.createNamingService(NamingFactory.java:59)
+	at com.alibaba.nacos.api.NacosFactory.createNamingService(NacosFactory.java:77)
+	at com.alibaba.cloud.nacos.NacosDiscoveryProperties.namingServiceInstance(NacosDiscoveryProperties.java:520)
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.<init>(NacosServiceRegistry.java:47)
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistryAutoConfiguration.nacosServiceRegistry(NacosServiceRegistryAutoConfiguration.java:50)
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistryAutoConfiguration$$EnhancerBySpringCGLIB$$5137acb6.CGLIB$nacosServiceRegistry$1(<generated>)
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistryAutoConfiguration$$EnhancerBySpringCGLIB$$5137acb6$$FastClassBySpringCGLIB$$c0a28fe5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistryAutoConfiguration$$EnhancerBySpringCGLIB$$5137acb6.nacosServiceRegistry(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at ljl.bilibili.ChatApplication.main(ChatApplication.java:14)
+2024-03-05 02:57:24 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[201725e8-26c6-4a61-8a41-fdd19d587af4] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-03-05 02:57:25 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[201725e8-26c6-4a61-8a41-fdd19d587af4] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709578644813_120.227.131.104_44782
+2024-03-05 02:57:25 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[201725e8-26c6-4a61-8a41-fdd19d587af4] Notify connected event to listeners.
+2024-03-05 02:57:25 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[201725e8-26c6-4a61-8a41-fdd19d587af4] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-03-05 02:57:25 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[201725e8-26c6-4a61-8a41-fdd19d587af4] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$859/650245099
+2024-03-05 02:57:29 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-03-05 02:57:29 |WARN  |main |TableInfoHelper.java:423 |com.baomidou.mybatisplus.core.metadata.TableInfoHelper |This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "ljl.bilibili.entity.notice.dynamic.DynamicToUser"
+2024-03-05 02:57:31 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-1688"]
+2024-03-05 02:57:31 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 1688 (http) with context path ''
+2024-03-05 02:57:31 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP chat 192.168.10.9:1688 register finished
+2024-03-05 02:57:32 |INFO  |http-nio-1688-exec-10 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-05 02:57:32 |INFO  |http-nio-1688-exec-10 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-03-05 02:57:32 |INFO  |http-nio-1688-exec-10 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 4 ms
+2024-03-05 02:57:32 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-03-05 02:57:32 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-03-05 02:57:32 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-03-05 02:57:33 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.ChatApplication |Started ChatApplication in 41.776 seconds (JVM running for 47.039)
+2024-03-05 02:57:50 |INFO  |http-nio-1688-exec-1 |ChatController.java:32 |ljl.bilibili.chat.controller.ChatController |1
+2024-03-05 02:57:51 |INFO  |http-nio-1688-exec-1 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-03-05 02:58:18 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[201725e8-26c6-4a61-8a41-fdd19d587af4] Server healthy check fail, currentConnection = 1709578644813_120.227.131.104_44782
+2024-03-05 02:58:18 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[201725e8-26c6-4a61-8a41-fdd19d587af4] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-03-05 02:58:21 |ERROR |http-nio-1688-exec-1 |GlobalExceptionHandler.java:20 |ljl.bilibili.handler.GlobalExceptionHandler |
+java.lang.NullPointerException: null
+	at java.time.chrono.ChronoLocalDateTime.compareTo(ChronoLocalDateTime.java:500)
+	at java.time.LocalDateTime.compareTo(LocalDateTime.java:1823)
+	at java.time.LocalDateTime.compareTo(LocalDateTime.java:135)
+	at java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:469)
+	at java.util.Collections$ReverseComparator2.compare(Collections.java:5178)
+	at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
+	at java.util.TimSort.sort(TimSort.java:220)
+	at java.util.Arrays.sort(Arrays.java:1512)
+	at java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:348)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at ljl.bilibili.chat.service.impl.ChatServiceImpl.getHistoryChatSession(ChatServiceImpl.java:66)
+	at ljl.bilibili.chat.controller.ChatController.getHistoryChatSession(ChatController.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.cloud.sleuth.instrument.web.servlet.TracingFilter.doFilter(TracingFilter.java:68)
+	at org.springframework.cloud.sleuth.autoconfig.instrument.web.TraceWebServletConfiguration$LazyTracingFilter.doFilter(TraceWebServletConfiguration.java:131)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.springframework.cloud.sleuth.instrument.web.tomcat.TraceValve.invoke(TraceValve.java:103)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2024-03-05 02:58:21 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[201725e8-26c6-4a61-8a41-fdd19d587af4] Success to connect a server [116.62.71.84:8848], connectionId = 1709578701780_120.227.131.104_44834
+2024-03-05 02:58:21 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[201725e8-26c6-4a61-8a41-fdd19d587af4] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1709578644813_120.227.131.104_44782
+2024-03-05 02:58:21 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1709578644813_120.227.131.104_44782
+2024-03-05 02:58:21 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[201725e8-26c6-4a61-8a41-fdd19d587af4] Notify disconnected event to listeners
+2024-03-05 02:58:21 |WARN  |nacos-grpc-client-executor-18 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1709578644813_120.227.131.104_44782]Ignore error event,isRunning:true,isAbandon=true
+2024-03-05 02:58:21 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[201725e8-26c6-4a61-8a41-fdd19d587af4] Notify connected event to listeners.
+2024-03-05 03:03:46 |INFO  |http-nio-1688-exec-5 |TimeBasedFilter.java:24 |ljl.bilibili.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-03-05 03:03:46 |INFO  |http-nio-1688-exec-5 |ChatController.java:32 |ljl.bilibili.chat.controller.ChatController |1
+2024-03-05 03:04:58 |WARN  |Thread-36 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-03-05 03:04:58 |WARN  |Thread-36 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-03-05 03:04:58 |WARN  |Thread-33 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-03-05 03:04:58 |WARN  |Thread-33 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end
+2024-03-05 03:04:58 |INFO  |Thread-20 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-03-05 03:04:58 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-03-05 03:04:58 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-03-05 03:04:58 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-03-05 03:04:58 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-03-05 15:56:32 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.ChatApplication |Starting ChatApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 1972 (E:\bilibili\chat\target\classes started by Administrator in E:\bilibili)
+2024-03-05 15:56:32 |INFO  |main |SpringApplication.java:645 |ljl.bilibili.ChatApplication |No active profile set, falling back to 1 default profile: "default"
+2024-03-05 15:56:35 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=e6ad048c-7d01-341a-b915-884882c1a7b0
+2024-03-05 15:56:36 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 1688 (http)
+2024-03-05 15:56:36 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-1688"]
+2024-03-05 15:56:36 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-03-05 15:56:36 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-03-05 15:56:37 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-03-05 15:56:37 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 4400 ms
+2024-03-05 15:56:38 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-03-05 15:56:39 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-03-05 15:56:41 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-03-05 15:56:42 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of ac4fa466-d92c-4438-82ee-3a0bcadd2693
+2024-03-05 15:56:42 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 73 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-03-05 15:56:42 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 36 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-03-05 15:56:42 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 29 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-03-05 15:56:42 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 316 ms to scan 199 urls, producing 0 keys and 0 values 
+2024-03-05 15:56:42 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 24 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-03-05 15:56:42 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 23 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-03-05 15:56:42 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 24 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-03-05 15:56:43 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 264 ms to scan 199 urls, producing 0 keys and 0 values 
+2024-03-05 15:56:43 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ac4fa466-d92c-4438-82ee-3a0bcadd2693] RpcClient init label, labels = {module=naming, source=sdk}
+2024-03-05 15:56:43 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ac4fa466-d92c-4438-82ee-3a0bcadd2693] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-03-05 15:56:43 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ac4fa466-d92c-4438-82ee-3a0bcadd2693] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-03-05 15:56:43 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ac4fa466-d92c-4438-82ee-3a0bcadd2693] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-03-05 15:56:43 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ac4fa466-d92c-4438-82ee-3a0bcadd2693] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-03-05 15:57:04 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ac4fa466-d92c-4438-82ee-3a0bcadd2693] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709625424933_120.227.131.104_44533
+2024-03-05 15:57:04 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ac4fa466-d92c-4438-82ee-3a0bcadd2693] Notify connected event to listeners.
+2024-03-05 15:57:04 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ac4fa466-d92c-4438-82ee-3a0bcadd2693] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-03-05 15:57:04 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ac4fa466-d92c-4438-82ee-3a0bcadd2693] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$859/1817069678
+2024-03-05 15:57:07 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-03-05 15:57:08 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-1688"]
+2024-03-05 15:57:08 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 1688 (http) with context path ''
+2024-03-05 15:57:08 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP chat 192.168.10.9:1688 register finished
+2024-03-05 15:57:08 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-03-05 15:57:08 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-03-05 15:57:08 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-03-05 15:57:09 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.ChatApplication |Started ChatApplication in 38.05 seconds (JVM running for 41.671)
+2024-03-05 15:58:04 |INFO  |http-nio-1688-exec-2 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-05 15:58:04 |INFO  |http-nio-1688-exec-2 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-03-05 15:58:04 |INFO  |http-nio-1688-exec-2 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 5 ms
+2024-03-05 15:58:40 |INFO  |http-nio-1688-exec-2 |ChatController.java:32 |ljl.bilibili.chat.controller.ChatController |1
+2024-03-05 15:58:41 |INFO  |http-nio-1688-exec-2 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-03-05 15:59:38 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ac4fa466-d92c-4438-82ee-3a0bcadd2693] Server healthy check fail, currentConnection = 1709625424933_120.227.131.104_44533
+2024-03-05 15:59:38 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ac4fa466-d92c-4438-82ee-3a0bcadd2693] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-03-05 15:59:38 |INFO  |Thread-17 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-03-05 15:59:38 |WARN  |Thread-28 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-03-05 15:59:38 |WARN  |Thread-28 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end
+2024-03-05 15:59:38 |WARN  |Thread-31 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-03-05 15:59:38 |WARN  |Thread-31 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-03-05 15:59:38 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ac4fa466-d92c-4438-82ee-3a0bcadd2693] Success to connect a server [116.62.71.84:8848], connectionId = 1709625579753_120.227.131.104_44686
+2024-03-05 15:59:38 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ac4fa466-d92c-4438-82ee-3a0bcadd2693] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1709625424933_120.227.131.104_44533
+2024-03-05 15:59:38 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1709625424933_120.227.131.104_44533
+2024-03-05 15:59:39 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ac4fa466-d92c-4438-82ee-3a0bcadd2693] Notify disconnected event to listeners
+2024-03-05 15:59:39 |WARN  |nacos-grpc-client-executor-28 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1709625424933_120.227.131.104_44533]Ignore error event,isRunning:true,isAbandon=true
+2024-03-05 15:59:39 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[ac4fa466-d92c-4438-82ee-3a0bcadd2693] Notify connected event to listeners.
+2024-03-05 15:59:39 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-03-05 15:59:39 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-03-05 15:59:39 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-03-05 15:59:39 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-03-05 15:59:54 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.ChatApplication |Starting ChatApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 15880 (E:\bilibili\chat\target\classes started by Administrator in E:\bilibili)
+2024-03-05 15:59:54 |INFO  |main |SpringApplication.java:645 |ljl.bilibili.ChatApplication |No active profile set, falling back to 1 default profile: "default"
+2024-03-05 15:59:57 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=e6ad048c-7d01-341a-b915-884882c1a7b0
+2024-03-05 15:59:58 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 1688 (http)
+2024-03-05 15:59:58 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-1688"]
+2024-03-05 15:59:58 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-03-05 15:59:58 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-03-05 15:59:59 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-03-05 15:59:59 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 4390 ms
+2024-03-05 16:00:00 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-03-05 16:00:00 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-03-05 16:00:02 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-03-05 16:00:03 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of c266ef0f-2f1f-4800-80e0-c73f4b9d8f55
+2024-03-05 16:00:03 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 46 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-03-05 16:00:03 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 21 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-03-05 16:00:03 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 16 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-03-05 16:00:03 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 190 ms to scan 199 urls, producing 0 keys and 0 values 
+2024-03-05 16:00:03 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 12 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-03-05 16:00:03 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 12 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-03-05 16:00:03 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 12 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-03-05 16:00:03 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 211 ms to scan 199 urls, producing 0 keys and 0 values 
+2024-03-05 16:00:03 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[c266ef0f-2f1f-4800-80e0-c73f4b9d8f55] RpcClient init label, labels = {module=naming, source=sdk}
+2024-03-05 16:00:03 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[c266ef0f-2f1f-4800-80e0-c73f4b9d8f55] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-03-05 16:00:03 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[c266ef0f-2f1f-4800-80e0-c73f4b9d8f55] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-03-05 16:00:03 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[c266ef0f-2f1f-4800-80e0-c73f4b9d8f55] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-03-05 16:00:03 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[c266ef0f-2f1f-4800-80e0-c73f4b9d8f55] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-03-05 16:00:11 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[c266ef0f-2f1f-4800-80e0-c73f4b9d8f55] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709625611842_120.227.131.104_44702
+2024-03-05 16:00:11 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[c266ef0f-2f1f-4800-80e0-c73f4b9d8f55] Notify connected event to listeners.
+2024-03-05 16:00:11 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[c266ef0f-2f1f-4800-80e0-c73f4b9d8f55] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-03-05 16:00:11 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[c266ef0f-2f1f-4800-80e0-c73f4b9d8f55] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$859/2086260582
+2024-03-05 16:00:13 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-03-05 16:00:15 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-1688"]
+2024-03-05 16:00:15 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 1688 (http) with context path ''
+2024-03-05 16:00:15 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP chat 192.168.10.9:1688 register finished
+2024-03-05 16:00:16 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-03-05 16:00:16 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-03-05 16:00:16 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-03-05 16:00:16 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.ChatApplication |Started ChatApplication in 23.268 seconds (JVM running for 24.862)
+2024-03-05 16:00:54 |INFO  |http-nio-1688-exec-2 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-05 16:00:54 |INFO  |http-nio-1688-exec-2 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-03-05 16:00:54 |INFO  |http-nio-1688-exec-2 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 5 ms
+2024-03-05 16:00:54 |INFO  |http-nio-1688-exec-2 |ChatController.java:32 |ljl.bilibili.chat.controller.ChatController |1
+2024-03-05 16:00:54 |INFO  |http-nio-1688-exec-2 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-03-05 17:23:55 |INFO  |Thread-27 |TimeBasedFilter.java:24 |ljl.bilibili.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-03-05 17:23:55 |INFO  |Thread-14 |TimeBasedFilter.java:24 |ljl.bilibili.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-03-05 17:23:55 |INFO  |Thread-14 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-03-05 17:23:55 |WARN  |Thread-27 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-03-05 17:23:55 |WARN  |Thread-24 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-03-05 17:23:55 |WARN  |Thread-24 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end
+2024-03-05 17:23:55 |WARN  |Thread-27 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-03-05 17:23:56 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-03-05 17:23:56 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-03-05 17:23:56 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-03-05 17:23:56 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-03-05 21:16:27 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.ChatApplication |Starting ChatApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 16992 (E:\bilibili\chat\target\classes started by Administrator in E:\bilibili)
+2024-03-05 21:16:27 |INFO  |main |SpringApplication.java:645 |ljl.bilibili.ChatApplication |No active profile set, falling back to 1 default profile: "default"
+2024-03-05 21:16:30 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=e6ad048c-7d01-341a-b915-884882c1a7b0
+2024-03-05 21:16:33 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 1688 (http)
+2024-03-05 21:16:33 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-1688"]
+2024-03-05 21:16:33 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-03-05 21:16:33 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-03-05 21:16:33 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-03-05 21:16:33 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 6132 ms
+2024-03-05 21:16:36 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-03-05 21:16:36 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-03-05 21:16:39 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-03-05 21:16:40 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of d2d38220-5745-429f-8e6f-e11026dcf441
+2024-03-05 21:16:40 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 77 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-03-05 21:16:40 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 33 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-03-05 21:16:40 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 25 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-03-05 21:16:40 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 235 ms to scan 199 urls, producing 0 keys and 0 values 
+2024-03-05 21:16:40 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 19 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-03-05 21:16:40 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 15 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-03-05 21:16:40 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 12 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-03-05 21:16:41 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 184 ms to scan 199 urls, producing 0 keys and 0 values 
+2024-03-05 21:16:41 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] RpcClient init label, labels = {module=naming, source=sdk}
+2024-03-05 21:16:41 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-03-05 21:16:41 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-03-05 21:16:41 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-03-05 21:16:41 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-03-05 21:17:40 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709644659634_120.227.131.104_44873
+2024-03-05 21:17:40 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Notify connected event to listeners.
+2024-03-05 21:17:40 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-03-05 21:17:40 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$859/1887123617
+2024-03-05 21:17:42 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-03-05 21:17:44 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-1688"]
+2024-03-05 21:17:44 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 1688 (http) with context path ''
+2024-03-05 21:17:44 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP chat 192.168.10.9:1688 register finished
+2024-03-05 21:17:45 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-03-05 21:17:45 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-03-05 21:17:45 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-03-05 21:17:45 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.ChatApplication |Started ChatApplication in 79.908 seconds (JVM running for 83.912)
+2024-03-05 21:19:06 |INFO  |http-nio-1688-exec-2 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-05 21:19:06 |INFO  |http-nio-1688-exec-2 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-03-05 21:19:06 |INFO  |http-nio-1688-exec-2 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 2 ms
+2024-03-05 21:19:07 |INFO  |http-nio-1688-exec-2 |WebSocketHandler.java:114 |ljl.bilibili.chat.handler.WebSocketHandler |连接成功
+2024-03-05 21:19:11 |INFO  |http-nio-1688-exec-2 |WebSocketHandler.java:68 |ljl.bilibili.chat.handler.WebSocketHandler |初始化
+2024-03-05 21:19:41 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Server healthy check fail, currentConnection = 1709644659634_120.227.131.104_44873
+2024-03-05 21:19:41 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-03-05 21:19:45 |ERROR |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:99 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |Server check fail, please check server 116.62.71.84 ,port 9848 is available , error ={}
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 1153 milliseconds, 649800 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@ae6acd2[status=PENDING, info=[GrpcFuture{clientCall={delegate={delegate=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@67b539b0, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@36647513, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@5ad86b9d}}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264)
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:522)
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:370)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2024-03-05 21:19:45 |ERROR |http-nio-1688-exec-1 |ExceptionWebSocketHandlerDecorator.java:90 |org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator |Closing session due to exception for StandardWebSocketSession[id=df54b5a4-7ab9-5135-8bcf-35614db3f40d, uri=ws://localhost:1688/ljl/bilibili/chat]
+java.lang.NullPointerException: null
+	at ljl.bilibili.chat.handler.WebSocketHandler.handleTextMessage(WebSocketHandler.java:99)
+	at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43)
+	at org.springframework.web.socket.handler.AbstractWebSocketHandler$$FastClassBySpringCGLIB$$a136c683.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at ljl.bilibili.chat.handler.WebSocketHandler$$EnhancerBySpringCGLIB$$139ed7f5.handleMessage(<generated>)
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75)
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56)
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:114)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.access$000(StandardWebSocketHandlerAdapter.java:43)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:85)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:82)
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:415)
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:129)
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:515)
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:301)
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133)
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183)
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157)
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2024-03-05 21:19:45 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Success to connect a server [116.62.71.84:8848], connectionId = 1709644785637_120.227.131.104_45007
+2024-03-05 21:19:45 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1709644659634_120.227.131.104_44873
+2024-03-05 21:19:45 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1709644659634_120.227.131.104_44873
+2024-03-05 21:19:45 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Notify disconnected event to listeners
+2024-03-05 21:19:45 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Notify connected event to listeners.
+2024-03-05 21:19:45 |WARN  |nacos-grpc-client-executor-33 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1709644659634_120.227.131.104_44873]Ignore error event,isRunning:true,isAbandon=true
+2024-03-05 21:20:04 |INFO  |http-nio-1688-exec-4 |WebSocketHandler.java:114 |ljl.bilibili.chat.handler.WebSocketHandler |连接成功
+2024-03-05 21:20:07 |INFO  |http-nio-1688-exec-4 |WebSocketHandler.java:68 |ljl.bilibili.chat.handler.WebSocketHandler |初始化
+2024-03-05 21:20:12 |INFO  |http-nio-1688-exec-3 |BigModelHandler.java:248 |ljl.bilibili.chat.handler.BigModelHandler |你是？
+2024-03-05 21:20:13 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:20:13 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:20:13 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:20:13 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:20:13 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:20:13 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:20:13 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:20:13 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:20:13 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:20:13 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:20:13 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:20:13 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:20:13 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:20:13 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:20:13 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:20:13 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:20:13 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:20:13 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:20:14 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:20:14 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:20:14 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:20:14 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:20:14 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:20:14 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:20:24 |INFO  |http-nio-1688-exec-5 |BigModelHandler.java:248 |ljl.bilibili.chat.handler.BigModelHandler |李白写过什么诗
+2024-03-05 21:20:26 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:20:26 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:20:26 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:20:26 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:20:26 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:20:26 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:20:26 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:20:26 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:20:26 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:20:26 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:20:26 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:20:26 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:20:26 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:20:26 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:20:26 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:20:27 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:20:27 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:20:27 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:20:27 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:20:27 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:20:27 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:20:28 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:20:28 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:20:28 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:20:30 |INFO  |http-nio-1688-exec-6 |BigModelHandler.java:248 |ljl.bilibili.chat.handler.BigModelHandler |杜甫呢
+2024-03-05 21:20:32 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:20:32 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:20:32 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:20:33 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:20:33 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:20:33 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:20:33 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:20:33 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:20:33 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:20:33 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:20:33 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:20:33 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:20:33 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:20:33 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:20:33 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:20:33 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:20:33 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:20:33 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:20:34 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:20:34 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:20:34 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:20:34 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:20:34 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:20:34 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:20:35 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:20:35 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:20:35 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:22:01 |INFO  |http-nio-1688-exec-7 |TimeBasedFilter.java:24 |ljl.bilibili.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-03-05 21:22:01 |INFO  |http-nio-1688-exec-7 |BigModelHandler.java:248 |ljl.bilibili.chat.handler.BigModelHandler |听起来似乎很厉害
+2024-03-05 21:22:02 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:22:02 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:22:02 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:22:02 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:22:02 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:22:02 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:22:02 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:22:02 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:22:02 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:22:02 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:22:02 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:22:02 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:22:02 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:22:02 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:22:02 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:22:03 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:22:03 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:22:03 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:22:03 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:22:03 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:22:03 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:22:03 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:22:03 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:22:03 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:22:14 |INFO  |http-nio-1688-exec-8 |BigModelHandler.java:248 |ljl.bilibili.chat.handler.BigModelHandler |我提的和李白有关的问题是什么
+2024-03-05 21:22:14 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:22:14 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:22:14 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:22:15 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:22:15 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:22:15 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:22:15 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:22:15 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:22:15 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:22:15 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:22:15 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:22:15 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:22:15 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:22:15 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:22:15 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:22:15 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:22:15 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:22:15 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:22:16 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:22:16 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:22:16 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:22:17 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:22:17 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:22:17 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:22:17 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:22:17 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:22:17 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:25:16 |INFO  |http-nio-1688-exec-10 |BigModelHandler.java:248 |ljl.bilibili.chat.handler.BigModelHandler |我提的和李白有关的问题是什么
+2024-03-05 21:25:17 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:25:17 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:25:17 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:25:17 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:25:17 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:25:17 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:25:17 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:25:17 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:25:17 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:25:17 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:25:17 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:25:17 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:25:18 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:25:18 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:25:18 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:25:19 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:25:19 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:25:19 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:25:20 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:25:20 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:25:20 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:25:20 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:25:20 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:25:20 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:31:07 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.bilibili.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-03-05 21:31:07 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Server healthy check fail, currentConnection = 1709644785637_120.227.131.104_45007
+2024-03-05 21:31:10 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-03-05 21:31:16 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Success to connect a server [116.62.71.84:8848], connectionId = 1709645476572_120.227.131.104_44472
+2024-03-05 21:31:16 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1709644785637_120.227.131.104_45007
+2024-03-05 21:31:16 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1709644785637_120.227.131.104_45007
+2024-03-05 21:31:16 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Notify disconnected event to listeners
+2024-03-05 21:31:16 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Notify connected event to listeners.
+2024-03-05 21:31:16 |WARN  |nacos-grpc-client-executor-169 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1709644785637_120.227.131.104_45007]Ignore error event,isRunning:true,isAbandon=true
+2024-03-05 21:31:52 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Server healthy check fail, currentConnection = 1709645476572_120.227.131.104_44472
+2024-03-05 21:31:54 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-03-05 21:31:54 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Success to connect a server [116.62.71.84:8848], connectionId = 1709645514605_120.227.131.104_44580
+2024-03-05 21:31:54 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1709645476572_120.227.131.104_44472
+2024-03-05 21:31:54 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1709645476572_120.227.131.104_44472
+2024-03-05 21:31:54 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Notify disconnected event to listeners
+2024-03-05 21:31:54 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Notify connected event to listeners.
+2024-03-05 21:31:54 |WARN  |nacos-grpc-client-executor-175 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1709645476572_120.227.131.104_44472]Ignore error event,isRunning:true,isAbandon=true
+2024-03-05 21:32:11 |INFO  |http-nio-1688-exec-6 |BigModelHandler.java:248 |ljl.bilibili.chat.handler.BigModelHandler |你能做首诗吗
+2024-03-05 21:32:12 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:32:12 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:32:12 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:32:12 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:32:12 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:32:12 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:32:12 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:32:12 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:32:12 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:32:12 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:32:12 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:32:12 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:32:12 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:32:12 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:32:12 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:32:13 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:32:13 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:32:13 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:32:13 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:32:13 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:32:13 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:32:14 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:32:14 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:32:14 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:32:14 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:32:14 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:32:14 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:32:14 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:32:14 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:32:14 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:32:14 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:32:14 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:32:14 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:32:15 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:32:15 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:32:15 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:32:28 |INFO  |http-nio-1688-exec-7 |BigModelHandler.java:248 |ljl.bilibili.chat.handler.BigModelHandler |看起来很有诗意
+2024-03-05 21:32:28 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:32:28 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:32:28 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:32:28 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:32:28 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:32:28 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:32:28 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:32:28 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:32:28 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:32:29 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:32:29 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:32:29 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:32:29 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:32:29 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:32:29 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:32:29 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:32:29 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:32:29 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:32:47 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Server healthy check fail, currentConnection = 1709645514605_120.227.131.104_44580
+2024-03-05 21:32:47 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-03-05 21:32:48 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Success to connect a server [116.62.71.84:8848], connectionId = 1709645567918_120.227.131.104_44626
+2024-03-05 21:32:48 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1709645514605_120.227.131.104_44580
+2024-03-05 21:32:48 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1709645514605_120.227.131.104_44580
+2024-03-05 21:32:48 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Notify disconnected event to listeners
+2024-03-05 21:32:48 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[d2d38220-5745-429f-8e6f-e11026dcf441] Notify connected event to listeners.
+2024-03-05 21:32:48 |WARN  |nacos-grpc-client-executor-186 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1709645514605_120.227.131.104_44580]Ignore error event,isRunning:true,isAbandon=true
+2024-03-05 21:32:56 |INFO  |http-nio-1688-exec-9 |BigModelHandler.java:248 |ljl.bilibili.chat.handler.BigModelHandler |我提的第一个问题是什么
+2024-03-05 21:32:56 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:32:56 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:32:56 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:32:56 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:32:56 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:32:56 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:32:56 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:32:56 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:32:56 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:32:57 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:32:57 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:32:57 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:32:57 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:32:57 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:32:57 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:32:57 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:32:57 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:32:57 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:18 |INFO  |http-nio-1688-exec-2 |BigModelHandler.java:248 |ljl.bilibili.chat.handler.BigModelHandler |你能写一首诗吗
+2024-03-05 21:33:19 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:19 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:19 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:19 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:19 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:19 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:19 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:19 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:19 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:19 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:19 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:19 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:20 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:20 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:20 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:20 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:20 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:20 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:20 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:20 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:20 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:21 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:21 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:21 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:21 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:21 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:21 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:22 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:22 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:22 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:22 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:22 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:22 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:23 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:23 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:23 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:23 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:23 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:23 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:24 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:24 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:24 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:24 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:24 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:24 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:24 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:24 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:24 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:25 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:25 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:25 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:25 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:25 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:25 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:25 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:25 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:25 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:32 |INFO  |http-nio-1688-exec-1 |BigModelHandler.java:248 |ljl.bilibili.chat.handler.BigModelHandler |似乎很美丽的诗歌
+2024-03-05 21:33:32 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:32 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:32 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:32 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:32 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:32 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:32 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:32 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:32 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:33 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:33 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:33 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:33 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:33 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:33 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:33 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:33 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:33 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:46 |INFO  |http-nio-1688-exec-4 |BigModelHandler.java:248 |ljl.bilibili.chat.handler.BigModelHandler |我问你的第一个问题是什么，你能回答我吗
+2024-03-05 21:33:47 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:47 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:47 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:47 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:47 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:47 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:47 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:47 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:47 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:47 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:47 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:47 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:47 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:47 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:47 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:47 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:47 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:47 |INFO  |ForkJoinPool.commonPool-worker-0 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:58 |INFO  |http-nio-1688-exec-3 |BigModelHandler.java:248 |ljl.bilibili.chat.handler.BigModelHandler |和诗歌有关的问题
+2024-03-05 21:33:59 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:59 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:59 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:59 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:59 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:59 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:33:59 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:33:59 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:33:59 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:34:00 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:34:00 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:34:00 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:34:00 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:34:00 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:34:00 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:34:10 |INFO  |http-nio-1688-exec-5 |BigModelHandler.java:248 |ljl.bilibili.chat.handler.BigModelHandler |我前面提过的和诗歌有关的问题
+2024-03-05 21:34:11 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:34:11 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:34:11 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:34:11 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:34:11 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:34:11 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:34:11 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:34:11 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:34:11 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:34:12 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:34:12 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:34:12 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:34:12 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:34:12 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:34:12 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:34:13 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModelHandler.java:86 |ljl.bilibili.chat.handler.BigModelHandler |线程1
+2024-03-05 21:34:13 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:100 |ljl.bilibili.chat.handler.BigModelHandler |线程2
+2024-03-05 21:34:13 |INFO  |ForkJoinPool.commonPool-worker-2 |BigModelHandler.java:39 |ljl.bilibili.chat.handler.BigModelHandler |publish
+2024-03-05 21:34:21 |WARN  |Thread-28 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-03-05 21:34:21 |INFO  |Thread-13 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-03-05 21:34:21 |WARN  |Thread-28 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end
+2024-03-05 21:34:21 |WARN  |Thread-31 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-03-05 21:34:21 |WARN  |Thread-31 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-03-05 21:34:22 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-03-05 21:34:22 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-03-05 21:34:22 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-0} closing ...

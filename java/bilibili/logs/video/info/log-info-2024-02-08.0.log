@@ -1,0 +1,47 @@
+2024-02-08 01:40:07 |INFO  |http-nio-10201-exec-3 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-08 01:40:07 |INFO  |http-nio-10201-exec-3 |DanmakuController.java:26 |ljl.video.controller.audience_reactions.danmaku.DanmakuController |获取视频弹幕
+2024-02-08 01:40:08 |INFO  |http-nio-10201-exec-3 |DanmakuController.java:27 |ljl.video.controller.audience_reactions.danmaku.DanmakuController |1
+2024-02-08 01:40:08 |INFO  |http-nio-10201-exec-3 |DanmakuController.java:28 |ljl.video.controller.audience_reactions.danmaku.DanmakuController |
+
+2024-02-08 01:40:08 |INFO  |http-nio-10201-exec-3 |DanmakuController.java:29 |ljl.video.controller.audience_reactions.danmaku.DanmakuController |
+
+2024-02-08 01:40:08 |INFO  |http-nio-10201-exec-3 |DanmakuController.java:30 |ljl.video.controller.audience_reactions.danmaku.DanmakuController |
+
+2024-02-08 02:32:39 |INFO  |Thread-54 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-08 02:32:39 |INFO  |Thread-29 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-08 02:32:39 |INFO  |Thread-57 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-08 02:32:39 |INFO  |Thread-29 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-02-08 02:32:41 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-08 02:32:41 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-08 02:32:41 |INFO  |Thread-83 |EmbedServer.java:91 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server stop.
+2024-02-08 02:32:41 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:87 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.102:9910/'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2024-02-08 02:32:41 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:105 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job, executor registry thread destroy.
+2024-02-08 02:32:41 |INFO  |SpringApplicationShutdownHook |EmbedServer.java:117 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server destroy success.
+2024-02-08 02:32:41 |INFO  |xxl-job, executor TriggerCallbackThread |TriggerCallbackThread.java:98 |com.xxl.job.core.thread.TriggerCallbackThread |>>>>>>>>>>> xxl-job, executor callback thread destroy.
+2024-02-08 02:32:41 |INFO  |Thread-82 |TriggerCallbackThread.java:128 |com.xxl.job.core.thread.TriggerCallbackThread |>>>>>>>>>>> xxl-job, executor retry callback thread destroy.
+2024-02-08 02:32:42 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-02-08 02:32:42 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed

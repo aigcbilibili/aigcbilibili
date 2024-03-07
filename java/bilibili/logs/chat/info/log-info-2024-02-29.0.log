@@ -1,0 +1,73 @@
+2024-02-29 00:30:42 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.ChatApplication |Starting ChatApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 5268 (E:\bilibili\chat\target\classes started by Administrator in E:\bilibili)
+2024-02-29 00:30:42 |INFO  |main |SpringApplication.java:645 |ljl.bilibili.ChatApplication |No active profile set, falling back to 1 default profile: "default"
+2024-02-29 00:30:44 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=d265a9af-3694-3177-8f0a-05338ffcaa52
+2024-02-29 00:30:45 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 1688 (http)
+2024-02-29 00:30:45 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-1688"]
+2024-02-29 00:30:45 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-02-29 00:30:45 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-29 00:30:45 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-02-29 00:30:45 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 3499 ms
+2024-02-29 00:30:46 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-29 00:30:46 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-29 00:30:47 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-02-29 00:30:48 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 3f763b04-b2f1-42bb-910d-8e1e0bfce96a
+2024-02-29 00:30:48 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 114 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-29 00:30:48 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 19 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-29 00:30:48 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 18 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-29 00:30:49 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 143 ms to scan 170 urls, producing 0 keys and 0 values 
+2024-02-29 00:30:49 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 12 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-29 00:30:49 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 14 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-29 00:30:49 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 17 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-29 00:30:49 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 155 ms to scan 170 urls, producing 0 keys and 0 values 
+2024-02-29 00:30:49 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[3f763b04-b2f1-42bb-910d-8e1e0bfce96a] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-29 00:30:49 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[3f763b04-b2f1-42bb-910d-8e1e0bfce96a] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-29 00:30:49 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[3f763b04-b2f1-42bb-910d-8e1e0bfce96a] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-29 00:30:49 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[3f763b04-b2f1-42bb-910d-8e1e0bfce96a] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-29 00:30:49 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[3f763b04-b2f1-42bb-910d-8e1e0bfce96a] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-29 00:30:51 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[3f763b04-b2f1-42bb-910d-8e1e0bfce96a] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709137851192_120.227.129.112_46216
+2024-02-29 00:30:51 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[3f763b04-b2f1-42bb-910d-8e1e0bfce96a] Notify connected event to listeners.
+2024-02-29 00:30:51 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[3f763b04-b2f1-42bb-910d-8e1e0bfce96a] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-29 00:30:51 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[3f763b04-b2f1-42bb-910d-8e1e0bfce96a] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$805/389353983
+2024-02-29 00:30:53 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-1688"]
+2024-02-29 00:30:53 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 1688 (http) with context path ''
+2024-02-29 00:30:53 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP chat 192.168.10.5:1688 register finished
+2024-02-29 00:30:53 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-02-29 00:30:53 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-02-29 00:30:53 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-02-29 00:30:54 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.ChatApplication |Started ChatApplication in 12.937 seconds (JVM running for 14.349)
+2024-02-29 00:32:16 |INFO  |http-nio-1688-exec-1 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-29 00:32:16 |INFO  |http-nio-1688-exec-1 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-02-29 00:32:16 |INFO  |http-nio-1688-exec-1 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 5 ms
+2024-02-29 00:32:17 |INFO  |http-nio-1688-exec-1 |WebSocketHandler.java:94 |ljl.chat.handler.WebSocketHandler |连接成功
+2024-02-29 00:32:17 |INFO  |http-nio-1688-exec-1 |WebSocketHandler.java:60 |ljl.chat.handler.WebSocketHandler |初始化
+2024-02-29 00:32:26 |INFO  |http-nio-1688-exec-2 |BigModel.java:68 |ljl.chat.handler.BigModelHandler |你好
+2024-02-29 00:32:27 |INFO  |http-nio-1688-exec-2 |BigModel.java:272 |ljl.chat.handler.BigModelHandler |你好
+2024-02-29 00:32:28 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModel.java:106 |ljl.chat.handler.BigModelHandler |线程1
+2024-02-29 00:32:28 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModel.java:106 |ljl.chat.handler.BigModelHandler |线程1
+2024-02-29 00:32:28 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModel.java:123 |ljl.chat.handler.BigModelHandler |线程2
+2024-02-29 00:32:28 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModel.java:56 |ljl.chat.handler.BigModelHandler |publish
+2024-02-29 00:32:28 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModel.java:123 |ljl.chat.handler.BigModelHandler |线程2
+2024-02-29 00:32:28 |INFO  |ForkJoinPool.commonPool-worker-1 |BigModel.java:56 |ljl.chat.handler.BigModelHandler |publish
+2024-02-29 00:32:28 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModel.java:106 |ljl.chat.handler.BigModelHandler |线程1
+2024-02-29 00:32:28 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModel.java:123 |ljl.chat.handler.BigModelHandler |线程2
+2024-02-29 00:32:28 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModel.java:56 |ljl.chat.handler.BigModelHandler |publish
+2024-02-29 00:32:28 |INFO  |OkHttp https://spark-api.xf-yun.com/... |BigModel.java:106 |ljl.chat.handler.BigModelHandler |线程1
+2024-02-29 00:32:28 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModel.java:123 |ljl.chat.handler.BigModelHandler |线程2
+2024-02-29 00:32:28 |INFO  |ForkJoinPool.commonPool-worker-3 |BigModel.java:56 |ljl.chat.handler.BigModelHandler |publish
+2024-02-29 00:47:43 |INFO  |Thread-19 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-29 00:47:43 |INFO  |Thread-22 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-29 00:47:44 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-29 00:47:44 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-29 00:47:44 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-0} closing ...

@@ -1,0 +1,843 @@
+2024-02-28 15:38:41 |INFO  |main |StartupInfoLogger.java:55 |ljl.user_center.CenterEditApplication |Starting CenterEditApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 7516 (E:\bilibili\user_center\target\classes started by Administrator in E:\bilibili)
+2024-02-28 15:38:41 |INFO  |main |SpringApplication.java:645 |ljl.user_center.CenterEditApplication |No active profile set, falling back to 1 default profile: "default"
+2024-02-28 15:38:50 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=c54bc169-09c4-34aa-8ab7-2aa245c76d85
+2024-02-28 15:38:54 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 3000 (http)
+2024-02-28 15:38:54 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-3000"]
+2024-02-28 15:38:54 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-02-28 15:38:54 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-28 15:38:55 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-02-28 15:38:55 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 13137 ms
+2024-02-28 15:38:56 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-28 15:38:57 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-28 15:39:02 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-02-28 15:39:04 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of b5e3a276-b2df-424e-a598-87a0ad71ce1a
+2024-02-28 15:39:04 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 285 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-28 15:39:05 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 889 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-28 15:39:05 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 39 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-28 15:39:06 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 986 ms to scan 197 urls, producing 0 keys and 0 values 
+2024-02-28 15:39:06 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 45 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-28 15:39:06 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 30 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-28 15:39:06 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 36 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-28 15:39:07 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 381 ms to scan 197 urls, producing 0 keys and 0 values 
+2024-02-28 15:39:07 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[b5e3a276-b2df-424e-a598-87a0ad71ce1a] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-28 15:39:07 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[b5e3a276-b2df-424e-a598-87a0ad71ce1a] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-28 15:39:07 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[b5e3a276-b2df-424e-a598-87a0ad71ce1a] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-28 15:39:07 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[b5e3a276-b2df-424e-a598-87a0ad71ce1a] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-28 15:39:07 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[b5e3a276-b2df-424e-a598-87a0ad71ce1a] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-28 15:39:11 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[b5e3a276-b2df-424e-a598-87a0ad71ce1a] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709105951065_120.227.129.112_46431
+2024-02-28 15:39:11 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[b5e3a276-b2df-424e-a598-87a0ad71ce1a] Notify connected event to listeners.
+2024-02-28 15:39:11 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[b5e3a276-b2df-424e-a598-87a0ad71ce1a] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-28 15:39:11 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[b5e3a276-b2df-424e-a598-87a0ad71ce1a] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$824/1676883562
+2024-02-28 15:39:14 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-3000"]
+2024-02-28 15:39:14 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 3000 (http) with context path ''
+2024-02-28 15:39:14 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP user-center 192.168.10.5:3000 register finished
+2024-02-28 15:39:14 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-02-28 15:39:14 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-02-28 15:39:14 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-02-28 15:39:15 |INFO  |main |StartupInfoLogger.java:61 |ljl.user_center.CenterEditApplication |Started CenterEditApplication in 37.735 seconds (JVM running for 40.136)
+2024-02-28 15:39:57 |INFO  |http-nio-3000-exec-2 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-28 15:39:57 |INFO  |http-nio-3000-exec-2 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-02-28 15:39:57 |INFO  |http-nio-3000-exec-2 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 4 ms
+2024-02-28 15:40:16 |INFO  |http-nio-3000-exec-1 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-02-28 15:52:54 |INFO  |Thread-35 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-28 15:52:54 |INFO  |Thread-35 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-02-28 15:52:55 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-28 15:52:55 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-28 15:52:55 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-02-28 15:52:55 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-02-28 15:53:11 |INFO  |main |StartupInfoLogger.java:55 |ljl.user_center.CenterEditApplication |Starting CenterEditApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 11064 (E:\bilibili\user_center\target\classes started by Administrator in E:\bilibili)
+2024-02-28 15:53:11 |INFO  |main |SpringApplication.java:645 |ljl.user_center.CenterEditApplication |No active profile set, falling back to 1 default profile: "default"
+2024-02-28 15:53:14 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=c54bc169-09c4-34aa-8ab7-2aa245c76d85
+2024-02-28 15:53:15 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 3000 (http)
+2024-02-28 15:53:15 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-3000"]
+2024-02-28 15:53:15 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-02-28 15:53:15 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-28 15:53:16 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-02-28 15:53:16 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 4437 ms
+2024-02-28 15:53:17 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-28 15:53:17 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-28 15:53:19 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-02-28 15:53:20 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 3818d668-5a8e-4160-bdfe-8dad538e5aa3
+2024-02-28 15:53:20 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 44 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-28 15:53:20 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 17 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-28 15:53:20 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 14 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-28 15:53:21 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 192 ms to scan 197 urls, producing 0 keys and 0 values 
+2024-02-28 15:53:21 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 18 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-28 15:53:21 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 12 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-28 15:53:21 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 11 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-28 15:53:21 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 132 ms to scan 197 urls, producing 0 keys and 0 values 
+2024-02-28 15:53:21 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[3818d668-5a8e-4160-bdfe-8dad538e5aa3] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-28 15:53:21 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[3818d668-5a8e-4160-bdfe-8dad538e5aa3] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-28 15:53:21 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[3818d668-5a8e-4160-bdfe-8dad538e5aa3] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-28 15:53:21 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[3818d668-5a8e-4160-bdfe-8dad538e5aa3] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-28 15:53:21 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[3818d668-5a8e-4160-bdfe-8dad538e5aa3] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-28 15:53:23 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[3818d668-5a8e-4160-bdfe-8dad538e5aa3] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709106803419_120.227.129.112_46282
+2024-02-28 15:53:23 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[3818d668-5a8e-4160-bdfe-8dad538e5aa3] Notify connected event to listeners.
+2024-02-28 15:53:23 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[3818d668-5a8e-4160-bdfe-8dad538e5aa3] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-28 15:53:23 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[3818d668-5a8e-4160-bdfe-8dad538e5aa3] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$824/620301055
+2024-02-28 15:53:25 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-3000"]
+2024-02-28 15:53:25 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 3000 (http) with context path ''
+2024-02-28 15:53:25 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP user-center 192.168.10.5:3000 register finished
+2024-02-28 15:53:25 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-02-28 15:53:25 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-02-28 15:53:25 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-02-28 15:53:26 |INFO  |main |StartupInfoLogger.java:61 |ljl.user_center.CenterEditApplication |Started CenterEditApplication in 15.579 seconds (JVM running for 17.06)
+2024-02-28 15:54:22 |INFO  |http-nio-3000-exec-1 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-28 15:54:22 |INFO  |http-nio-3000-exec-1 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-02-28 15:54:22 |INFO  |http-nio-3000-exec-1 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 6 ms
+2024-02-28 15:54:23 |INFO  |http-nio-3000-exec-1 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-02-28 16:04:40 |INFO  |Thread-15 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-28 16:04:40 |INFO  |Thread-29 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-28 16:04:40 |INFO  |Thread-26 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-28 16:04:40 |INFO  |Thread-15 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-02-28 16:04:41 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-28 16:04:41 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-28 16:04:41 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-02-28 16:04:41 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-02-28 16:05:00 |INFO  |main |StartupInfoLogger.java:55 |ljl.user_center.CenterEditApplication |Starting CenterEditApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 5724 (E:\bilibili\user_center\target\classes started by Administrator in E:\bilibili)
+2024-02-28 16:05:00 |INFO  |main |SpringApplication.java:645 |ljl.user_center.CenterEditApplication |No active profile set, falling back to 1 default profile: "default"
+2024-02-28 16:05:02 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=c54bc169-09c4-34aa-8ab7-2aa245c76d85
+2024-02-28 16:05:03 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 3000 (http)
+2024-02-28 16:05:03 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-3000"]
+2024-02-28 16:05:03 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-02-28 16:05:03 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-28 16:05:03 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-02-28 16:05:03 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 3539 ms
+2024-02-28 16:05:04 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-28 16:05:04 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-28 16:05:07 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-02-28 16:05:08 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of e37efaef-5d46-4500-8e86-94eb3e082933
+2024-02-28 16:05:08 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 49 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-28 16:05:08 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 18 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-28 16:05:08 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 12 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-28 16:05:08 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 163 ms to scan 197 urls, producing 0 keys and 0 values 
+2024-02-28 16:05:08 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 11 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-28 16:05:08 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 11 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-28 16:05:08 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 11 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-28 16:05:08 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 142 ms to scan 197 urls, producing 0 keys and 0 values 
+2024-02-28 16:05:08 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e37efaef-5d46-4500-8e86-94eb3e082933] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-28 16:05:08 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e37efaef-5d46-4500-8e86-94eb3e082933] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-28 16:05:08 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e37efaef-5d46-4500-8e86-94eb3e082933] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-28 16:05:08 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e37efaef-5d46-4500-8e86-94eb3e082933] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-28 16:05:08 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e37efaef-5d46-4500-8e86-94eb3e082933] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-28 16:05:10 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e37efaef-5d46-4500-8e86-94eb3e082933] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709107510136_120.227.129.112_46934
+2024-02-28 16:05:10 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e37efaef-5d46-4500-8e86-94eb3e082933] Notify connected event to listeners.
+2024-02-28 16:05:10 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e37efaef-5d46-4500-8e86-94eb3e082933] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-28 16:05:10 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e37efaef-5d46-4500-8e86-94eb3e082933] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$824/902894836
+2024-02-28 16:05:12 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-3000"]
+2024-02-28 16:05:12 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 3000 (http) with context path ''
+2024-02-28 16:05:12 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP user-center 192.168.10.5:3000 register finished
+2024-02-28 16:05:12 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-02-28 16:05:12 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-02-28 16:05:12 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-02-28 16:05:12 |INFO  |main |StartupInfoLogger.java:61 |ljl.user_center.CenterEditApplication |Started CenterEditApplication in 13.937 seconds (JVM running for 15.343)
+2024-02-28 16:09:07 |INFO  |http-nio-3000-exec-1 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-28 16:09:07 |INFO  |http-nio-3000-exec-1 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-02-28 16:09:07 |INFO  |http-nio-3000-exec-1 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 6 ms
+2024-02-28 16:09:07 |INFO  |http-nio-3000-exec-1 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-02-28 16:28:48 |INFO  |Thread-14 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-28 16:28:48 |INFO  |Thread-14 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-02-28 16:28:48 |INFO  |Thread-27 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-28 16:28:49 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-28 16:28:49 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-28 16:28:49 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-02-28 16:28:49 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-02-28 16:47:52 |INFO  |main |StartupInfoLogger.java:55 |ljl.user_center.CenterEditApplication |Starting CenterEditApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 7704 (E:\bilibili\user_center\target\classes started by Administrator in E:\bilibili)
+2024-02-28 16:47:52 |INFO  |main |SpringApplication.java:645 |ljl.user_center.CenterEditApplication |No active profile set, falling back to 1 default profile: "default"
+2024-02-28 16:47:56 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=c54bc169-09c4-34aa-8ab7-2aa245c76d85
+2024-02-28 16:48:00 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 3000 (http)
+2024-02-28 16:48:00 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-3000"]
+2024-02-28 16:48:00 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-02-28 16:48:00 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-28 16:48:01 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-02-28 16:48:01 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 8209 ms
+2024-02-28 16:48:02 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-28 16:48:03 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-28 16:48:09 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-02-28 16:48:11 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of be0ee47f-3c11-4266-995d-7ea657eff0ca
+2024-02-28 16:48:12 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 388 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-28 16:48:12 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 40 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-28 16:48:12 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 68 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-28 16:48:13 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 728 ms to scan 198 urls, producing 0 keys and 0 values 
+2024-02-28 16:48:13 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 30 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-28 16:48:13 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 24 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-28 16:48:13 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 26 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-28 16:48:13 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 189 ms to scan 198 urls, producing 0 keys and 0 values 
+2024-02-28 16:48:13 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[be0ee47f-3c11-4266-995d-7ea657eff0ca] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-28 16:48:13 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[be0ee47f-3c11-4266-995d-7ea657eff0ca] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-28 16:48:13 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[be0ee47f-3c11-4266-995d-7ea657eff0ca] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-28 16:48:13 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[be0ee47f-3c11-4266-995d-7ea657eff0ca] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-28 16:48:13 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[be0ee47f-3c11-4266-995d-7ea657eff0ca] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-28 16:48:24 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[be0ee47f-3c11-4266-995d-7ea657eff0ca] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-28 16:48:24 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[be0ee47f-3c11-4266-995d-7ea657eff0ca] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709110104738_120.227.129.112_46639
+2024-02-28 16:48:24 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[be0ee47f-3c11-4266-995d-7ea657eff0ca] Notify connected event to listeners.
+2024-02-28 16:48:24 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[be0ee47f-3c11-4266-995d-7ea657eff0ca] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-28 16:48:24 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[be0ee47f-3c11-4266-995d-7ea657eff0ca] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$824/1387681307
+2024-02-28 16:48:28 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-3000"]
+2024-02-28 16:48:28 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 3000 (http) with context path ''
+2024-02-28 16:48:28 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP user-center 192.168.10.5:3000 register finished
+2024-02-28 16:48:29 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-02-28 16:48:29 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-02-28 16:48:29 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-02-28 16:48:29 |INFO  |main |StartupInfoLogger.java:61 |ljl.user_center.CenterEditApplication |Started CenterEditApplication in 39.496 seconds (JVM running for 46.354)
+2024-02-28 16:48:53 |INFO  |http-nio-3000-exec-1 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-28 16:48:53 |INFO  |http-nio-3000-exec-1 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-02-28 16:48:53 |INFO  |http-nio-3000-exec-1 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 5 ms
+2024-02-28 16:48:54 |INFO  |http-nio-3000-exec-1 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-02-28 17:04:24 |INFO  |Thread-51 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-28 17:04:24 |INFO  |Thread-27 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-02-28 17:04:25 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-28 17:04:26 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[be0ee47f-3c11-4266-995d-7ea657eff0ca] Server healthy check fail, currentConnection = 1709110104738_120.227.129.112_46639
+2024-02-28 17:04:26 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[be0ee47f-3c11-4266-995d-7ea657eff0ca] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-28 17:04:27 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[be0ee47f-3c11-4266-995d-7ea657eff0ca] Success to connect a server [116.62.71.84:8848], connectionId = 1709111067202_120.227.129.112_46245
+2024-02-28 17:04:27 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[be0ee47f-3c11-4266-995d-7ea657eff0ca] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1709110104738_120.227.129.112_46639
+2024-02-28 17:04:27 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1709110104738_120.227.129.112_46639
+2024-02-28 17:04:27 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[be0ee47f-3c11-4266-995d-7ea657eff0ca] Notify disconnected event to listeners
+2024-02-28 17:04:27 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[be0ee47f-3c11-4266-995d-7ea657eff0ca] Notify connected event to listeners.
+2024-02-28 17:04:27 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-28 17:04:27 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-02-28 17:04:27 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-02-28 17:04:53 |INFO  |main |StartupInfoLogger.java:55 |ljl.user_center.CenterEditApplication |Starting CenterEditApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 4276 (E:\bilibili\user_center\target\classes started by Administrator in E:\bilibili)
+2024-02-28 17:04:53 |INFO  |main |SpringApplication.java:645 |ljl.user_center.CenterEditApplication |No active profile set, falling back to 1 default profile: "default"
+2024-02-28 17:04:57 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=c54bc169-09c4-34aa-8ab7-2aa245c76d85
+2024-02-28 17:05:00 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 3000 (http)
+2024-02-28 17:05:00 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-3000"]
+2024-02-28 17:05:00 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-02-28 17:05:00 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-28 17:05:01 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-02-28 17:05:01 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 8047 ms
+2024-02-28 17:05:02 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-28 17:05:03 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-28 17:05:06 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-02-28 17:05:08 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of e49a9c93-be4e-462d-9c37-d133b43de924
+2024-02-28 17:05:08 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 175 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-28 17:05:08 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 20 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-28 17:05:08 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 23 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-28 17:05:08 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 200 ms to scan 197 urls, producing 0 keys and 0 values 
+2024-02-28 17:05:08 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 12 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-28 17:05:08 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 14 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-28 17:05:08 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 15 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-28 17:05:08 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 158 ms to scan 197 urls, producing 0 keys and 0 values 
+2024-02-28 17:05:08 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e49a9c93-be4e-462d-9c37-d133b43de924] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-28 17:05:08 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e49a9c93-be4e-462d-9c37-d133b43de924] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-28 17:05:08 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e49a9c93-be4e-462d-9c37-d133b43de924] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-28 17:05:08 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e49a9c93-be4e-462d-9c37-d133b43de924] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-28 17:05:08 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e49a9c93-be4e-462d-9c37-d133b43de924] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-28 17:05:11 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e49a9c93-be4e-462d-9c37-d133b43de924] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709111111196_120.227.129.112_46361
+2024-02-28 17:05:11 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e49a9c93-be4e-462d-9c37-d133b43de924] Notify connected event to listeners.
+2024-02-28 17:05:11 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e49a9c93-be4e-462d-9c37-d133b43de924] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-28 17:05:11 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e49a9c93-be4e-462d-9c37-d133b43de924] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$824/823672546
+2024-02-28 17:05:14 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-3000"]
+2024-02-28 17:05:14 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 3000 (http) with context path ''
+2024-02-28 17:05:14 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP user-center 192.168.10.5:3000 register finished
+2024-02-28 17:05:14 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-02-28 17:05:14 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-02-28 17:05:14 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-02-28 17:05:15 |INFO  |main |StartupInfoLogger.java:61 |ljl.user_center.CenterEditApplication |Started CenterEditApplication in 23.956 seconds (JVM running for 25.727)
+2024-02-28 17:05:20 |INFO  |http-nio-3000-exec-1 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-28 17:05:20 |INFO  |http-nio-3000-exec-1 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-02-28 17:05:20 |INFO  |http-nio-3000-exec-1 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 5 ms
+2024-02-28 17:05:21 |INFO  |http-nio-3000-exec-1 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-02-28 17:06:00 |INFO  |Thread-16 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-02-28 17:06:01 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-28 17:06:01 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-28 17:06:01 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-02-28 17:06:01 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-02-28 17:06:16 |INFO  |main |StartupInfoLogger.java:55 |ljl.user_center.CenterEditApplication |Starting CenterEditApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 12096 (E:\bilibili\user_center\target\classes started by Administrator in E:\bilibili)
+2024-02-28 17:06:16 |INFO  |main |SpringApplication.java:645 |ljl.user_center.CenterEditApplication |No active profile set, falling back to 1 default profile: "default"
+2024-02-28 17:06:18 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=c54bc169-09c4-34aa-8ab7-2aa245c76d85
+2024-02-28 17:06:19 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 3000 (http)
+2024-02-28 17:06:19 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-3000"]
+2024-02-28 17:06:19 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-02-28 17:06:19 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-28 17:06:19 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-02-28 17:06:19 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 3255 ms
+2024-02-28 17:06:20 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-28 17:06:20 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-28 17:06:22 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-02-28 17:06:23 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 4d2a02dd-f028-433e-963e-57ba996c81bd
+2024-02-28 17:06:23 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 39 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-28 17:06:23 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 17 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-28 17:06:23 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 14 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-28 17:06:24 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 180 ms to scan 197 urls, producing 0 keys and 0 values 
+2024-02-28 17:06:24 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 14 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-28 17:06:24 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 20 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-28 17:06:24 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 37 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-28 17:06:24 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 129 ms to scan 197 urls, producing 0 keys and 0 values 
+2024-02-28 17:06:24 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[4d2a02dd-f028-433e-963e-57ba996c81bd] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-28 17:06:24 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[4d2a02dd-f028-433e-963e-57ba996c81bd] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-28 17:06:24 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[4d2a02dd-f028-433e-963e-57ba996c81bd] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-28 17:06:24 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[4d2a02dd-f028-433e-963e-57ba996c81bd] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-28 17:06:24 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[4d2a02dd-f028-433e-963e-57ba996c81bd] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-28 17:06:25 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[4d2a02dd-f028-433e-963e-57ba996c81bd] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709111185669_120.227.129.112_46424
+2024-02-28 17:06:25 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[4d2a02dd-f028-433e-963e-57ba996c81bd] Notify connected event to listeners.
+2024-02-28 17:06:25 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[4d2a02dd-f028-433e-963e-57ba996c81bd] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-28 17:06:25 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[4d2a02dd-f028-433e-963e-57ba996c81bd] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$824/1003412230
+2024-02-28 17:06:27 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-3000"]
+2024-02-28 17:06:27 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 3000 (http) with context path ''
+2024-02-28 17:06:27 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP user-center 192.168.10.5:3000 register finished
+2024-02-28 17:06:28 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-02-28 17:06:28 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-02-28 17:06:28 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-02-28 17:06:28 |INFO  |main |StartupInfoLogger.java:61 |ljl.user_center.CenterEditApplication |Started CenterEditApplication in 12.995 seconds (JVM running for 14.309)
+2024-02-28 17:06:36 |INFO  |http-nio-3000-exec-2 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-28 17:06:36 |INFO  |http-nio-3000-exec-2 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-02-28 17:06:36 |INFO  |http-nio-3000-exec-2 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 5 ms
+2024-02-28 17:06:36 |INFO  |http-nio-3000-exec-2 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-02-28 18:18:33 |INFO  |Thread-26 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-28 18:18:33 |INFO  |Thread-13 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-28 18:18:33 |INFO  |Thread-13 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-02-28 18:18:33 |INFO  |Thread-23 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-28 18:18:33 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-28 18:18:33 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-28 18:18:33 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-02-28 18:18:33 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-02-28 18:19:03 |INFO  |main |StartupInfoLogger.java:55 |ljl.user_center.CenterEditApplication |Starting CenterEditApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 1956 (E:\bilibili\user_center\target\classes started by Administrator in E:\bilibili)
+2024-02-28 18:19:03 |INFO  |main |SpringApplication.java:645 |ljl.user_center.CenterEditApplication |No active profile set, falling back to 1 default profile: "default"
+2024-02-28 18:19:07 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=c54bc169-09c4-34aa-8ab7-2aa245c76d85
+2024-02-28 18:19:08 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 3000 (http)
+2024-02-28 18:19:08 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-3000"]
+2024-02-28 18:19:08 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-02-28 18:19:08 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-28 18:19:09 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-02-28 18:19:09 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 5263 ms
+2024-02-28 18:19:10 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-28 18:19:10 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-28 18:19:14 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-02-28 18:19:16 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of bde1d4b9-e3ec-492a-a564-9779c8f2abb0
+2024-02-28 18:19:16 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 81 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-28 18:19:16 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 39 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-28 18:19:16 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 39 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-28 18:19:16 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 229 ms to scan 197 urls, producing 0 keys and 0 values 
+2024-02-28 18:19:16 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 13 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-28 18:19:16 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 15 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-28 18:19:16 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 12 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-28 18:19:16 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 266 ms to scan 197 urls, producing 0 keys and 0 values 
+2024-02-28 18:19:16 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[bde1d4b9-e3ec-492a-a564-9779c8f2abb0] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-28 18:19:16 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[bde1d4b9-e3ec-492a-a564-9779c8f2abb0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-28 18:19:16 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[bde1d4b9-e3ec-492a-a564-9779c8f2abb0] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-28 18:19:16 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[bde1d4b9-e3ec-492a-a564-9779c8f2abb0] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-28 18:19:16 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[bde1d4b9-e3ec-492a-a564-9779c8f2abb0] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-28 18:19:20 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[bde1d4b9-e3ec-492a-a564-9779c8f2abb0] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709115560218_120.227.129.112_46467
+2024-02-28 18:19:20 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[bde1d4b9-e3ec-492a-a564-9779c8f2abb0] Notify connected event to listeners.
+2024-02-28 18:19:20 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[bde1d4b9-e3ec-492a-a564-9779c8f2abb0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-28 18:19:20 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[bde1d4b9-e3ec-492a-a564-9779c8f2abb0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$824/1674824156
+2024-02-28 18:19:22 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-3000"]
+2024-02-28 18:19:23 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 3000 (http) with context path ''
+2024-02-28 18:19:23 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP user-center 192.168.10.5:3000 register finished
+2024-02-28 18:19:23 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-02-28 18:19:23 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-02-28 18:19:23 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-02-28 18:19:23 |INFO  |main |StartupInfoLogger.java:61 |ljl.user_center.CenterEditApplication |Started CenterEditApplication in 20.959 seconds (JVM running for 23.877)
+2024-02-28 18:20:00 |INFO  |http-nio-3000-exec-1 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-28 18:20:00 |INFO  |http-nio-3000-exec-1 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-02-28 18:20:00 |INFO  |http-nio-3000-exec-1 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 2 ms
+2024-02-28 18:20:01 |INFO  |http-nio-3000-exec-1 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-02-28 18:22:12 |INFO  |Thread-16 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-02-28 18:22:13 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-28 18:22:13 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-28 18:22:13 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-02-28 18:22:13 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-02-28 18:22:28 |INFO  |main |StartupInfoLogger.java:55 |ljl.user_center.CenterEditApplication |Starting CenterEditApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 11000 (E:\bilibili\user_center\target\classes started by Administrator in E:\bilibili)
+2024-02-28 18:22:28 |INFO  |main |SpringApplication.java:645 |ljl.user_center.CenterEditApplication |No active profile set, falling back to 1 default profile: "default"
+2024-02-28 18:22:30 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=c54bc169-09c4-34aa-8ab7-2aa245c76d85
+2024-02-28 18:22:31 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 3000 (http)
+2024-02-28 18:22:31 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-3000"]
+2024-02-28 18:22:31 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-02-28 18:22:31 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-28 18:22:32 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-02-28 18:22:32 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 4224 ms
+2024-02-28 18:22:33 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-28 18:22:33 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-28 18:22:36 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-02-28 18:22:37 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 38e66743-a880-469a-87e9-231a1d05e133
+2024-02-28 18:22:37 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 36 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-28 18:22:37 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 16 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-28 18:22:37 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 13 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-28 18:22:37 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 216 ms to scan 197 urls, producing 0 keys and 0 values 
+2024-02-28 18:22:37 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 12 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-28 18:22:37 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 12 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-28 18:22:37 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 12 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-28 18:22:37 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 139 ms to scan 197 urls, producing 0 keys and 0 values 
+2024-02-28 18:22:37 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[38e66743-a880-469a-87e9-231a1d05e133] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-28 18:22:37 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[38e66743-a880-469a-87e9-231a1d05e133] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-28 18:22:37 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[38e66743-a880-469a-87e9-231a1d05e133] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-28 18:22:37 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[38e66743-a880-469a-87e9-231a1d05e133] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-28 18:22:37 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[38e66743-a880-469a-87e9-231a1d05e133] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-28 18:22:39 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[38e66743-a880-469a-87e9-231a1d05e133] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709115759217_120.227.129.112_46844
+2024-02-28 18:22:39 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[38e66743-a880-469a-87e9-231a1d05e133] Notify connected event to listeners.
+2024-02-28 18:22:39 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[38e66743-a880-469a-87e9-231a1d05e133] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-28 18:22:39 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[38e66743-a880-469a-87e9-231a1d05e133] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$824/1162780005
+2024-02-28 18:22:41 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-3000"]
+2024-02-28 18:22:41 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 3000 (http) with context path ''
+2024-02-28 18:22:42 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP user-center 192.168.10.5:3000 register finished
+2024-02-28 18:22:42 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-02-28 18:22:42 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-02-28 18:22:42 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-02-28 18:22:42 |INFO  |main |StartupInfoLogger.java:61 |ljl.user_center.CenterEditApplication |Started CenterEditApplication in 16.06 seconds (JVM running for 17.687)
+2024-02-28 18:23:13 |INFO  |http-nio-3000-exec-1 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-28 18:23:13 |INFO  |http-nio-3000-exec-1 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-02-28 18:23:13 |INFO  |http-nio-3000-exec-1 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 4 ms
+2024-02-28 18:23:13 |INFO  |http-nio-3000-exec-1 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-02-28 19:14:41 |INFO  |http-nio-3000-exec-2 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-28 19:14:41 |INFO  |http-nio-3000-exec-2 |FollowController.java:36 |ljl.user_center.controller.follow.FollowController |1
+2024-02-28 19:14:57 |INFO  |Thread-15 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-02-28 19:14:58 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-28 19:14:58 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-28 19:14:58 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-02-28 19:14:58 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-02-28 19:15:54 |INFO  |main |StartupInfoLogger.java:55 |ljl.user_center.CenterEditApplication |Starting CenterEditApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 14772 (E:\bilibili\user_center\target\classes started by Administrator in E:\bilibili)
+2024-02-28 19:15:54 |INFO  |main |SpringApplication.java:645 |ljl.user_center.CenterEditApplication |No active profile set, falling back to 1 default profile: "default"
+2024-02-28 19:15:58 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=c54bc169-09c4-34aa-8ab7-2aa245c76d85
+2024-02-28 19:16:00 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 3000 (http)
+2024-02-28 19:16:00 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-3000"]
+2024-02-28 19:16:00 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-02-28 19:16:00 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-28 19:16:00 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-02-28 19:16:00 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 5990 ms
+2024-02-28 19:16:02 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-28 19:16:02 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-28 19:16:07 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-02-28 19:16:09 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of a498430a-0a0d-4471-b88e-40af5c8a1486
+2024-02-28 19:16:09 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 110 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-28 19:16:10 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 73 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-28 19:16:10 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 58 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-28 19:16:11 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 1051 ms to scan 197 urls, producing 0 keys and 0 values 
+2024-02-28 19:16:11 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 84 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-28 19:16:11 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 46 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-28 19:16:11 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 46 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-28 19:16:11 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 380 ms to scan 197 urls, producing 0 keys and 0 values 
+2024-02-28 19:16:11 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[a498430a-0a0d-4471-b88e-40af5c8a1486] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-28 19:16:11 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[a498430a-0a0d-4471-b88e-40af5c8a1486] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-28 19:16:11 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[a498430a-0a0d-4471-b88e-40af5c8a1486] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-28 19:16:11 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[a498430a-0a0d-4471-b88e-40af5c8a1486] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-28 19:16:11 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[a498430a-0a0d-4471-b88e-40af5c8a1486] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-28 19:16:15 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[a498430a-0a0d-4471-b88e-40af5c8a1486] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709118975136_120.227.129.112_46833
+2024-02-28 19:16:15 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[a498430a-0a0d-4471-b88e-40af5c8a1486] Notify connected event to listeners.
+2024-02-28 19:16:15 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[a498430a-0a0d-4471-b88e-40af5c8a1486] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-28 19:16:15 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[a498430a-0a0d-4471-b88e-40af5c8a1486] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$824/914674368
+2024-02-28 19:16:20 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-3000"]
+2024-02-28 19:16:21 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 3000 (http) with context path ''
+2024-02-28 19:16:21 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP user-center 192.168.10.5:3000 register finished
+2024-02-28 19:16:21 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-02-28 19:16:21 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-02-28 19:16:21 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-02-28 19:16:21 |INFO  |main |StartupInfoLogger.java:61 |ljl.user_center.CenterEditApplication |Started CenterEditApplication in 29.279 seconds (JVM running for 31.729)
+2024-02-28 19:17:22 |INFO  |http-nio-3000-exec-1 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-28 19:17:22 |INFO  |http-nio-3000-exec-1 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-02-28 19:17:22 |INFO  |http-nio-3000-exec-1 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 3 ms
+2024-02-28 19:17:28 |INFO  |http-nio-3000-exec-4 |FollowController.java:36 |ljl.user_center.controller.follow.FollowController |1
+2024-02-28 19:17:28 |INFO  |http-nio-3000-exec-4 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-02-28 19:17:49 |INFO  |http-nio-3000-exec-5 |FollowController.java:36 |ljl.user_center.controller.follow.FollowController |1
+2024-02-28 19:17:55 |INFO  |http-nio-3000-exec-6 |FollowController.java:36 |ljl.user_center.controller.follow.FollowController |1
+2024-02-28 19:33:04 |INFO  |Thread-41 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-28 19:33:04 |INFO  |Thread-38 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-28 19:33:04 |INFO  |Thread-20 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-02-28 19:33:04 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-28 19:33:04 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-28 19:33:04 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-02-28 19:33:04 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-02-28 19:33:17 |INFO  |main |StartupInfoLogger.java:55 |ljl.user_center.CenterEditApplication |Starting CenterEditApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 4884 (E:\bilibili\user_center\target\classes started by Administrator in E:\bilibili)
+2024-02-28 19:33:17 |INFO  |main |SpringApplication.java:645 |ljl.user_center.CenterEditApplication |No active profile set, falling back to 1 default profile: "default"
+2024-02-28 19:33:20 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=c54bc169-09c4-34aa-8ab7-2aa245c76d85
+2024-02-28 19:33:22 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 3000 (http)
+2024-02-28 19:33:22 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-3000"]
+2024-02-28 19:33:22 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-02-28 19:33:22 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-28 19:33:22 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-02-28 19:33:22 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 5357 ms
+2024-02-28 19:33:23 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-28 19:33:23 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-28 19:33:26 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-02-28 19:33:27 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of bfc8251a-c08c-4882-97db-52175696ffd5
+2024-02-28 19:33:27 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 45 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-28 19:33:27 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 16 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-28 19:33:27 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 17 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-28 19:33:28 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 341 ms to scan 198 urls, producing 0 keys and 0 values 
+2024-02-28 19:33:28 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 18 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-28 19:33:28 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 18 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-28 19:33:28 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 17 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-28 19:33:28 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 176 ms to scan 198 urls, producing 0 keys and 0 values 
+2024-02-28 19:33:28 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[bfc8251a-c08c-4882-97db-52175696ffd5] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-28 19:33:28 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[bfc8251a-c08c-4882-97db-52175696ffd5] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-28 19:33:28 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[bfc8251a-c08c-4882-97db-52175696ffd5] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-28 19:33:28 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[bfc8251a-c08c-4882-97db-52175696ffd5] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-28 19:33:28 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[bfc8251a-c08c-4882-97db-52175696ffd5] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-28 19:33:40 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[bfc8251a-c08c-4882-97db-52175696ffd5] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709120019908_120.227.129.112_46516
+2024-02-28 19:33:40 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[bfc8251a-c08c-4882-97db-52175696ffd5] Notify connected event to listeners.
+2024-02-28 19:33:40 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[bfc8251a-c08c-4882-97db-52175696ffd5] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-28 19:33:40 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[bfc8251a-c08c-4882-97db-52175696ffd5] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$824/1601952112
+2024-02-28 19:33:42 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-3000"]
+2024-02-28 19:33:42 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 3000 (http) with context path ''
+2024-02-28 19:33:42 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP user-center 192.168.10.5:3000 register finished
+2024-02-28 19:33:43 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-02-28 19:33:43 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-02-28 19:33:43 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-02-28 19:33:43 |INFO  |main |StartupInfoLogger.java:61 |ljl.user_center.CenterEditApplication |Started CenterEditApplication in 27.695 seconds (JVM running for 31.012)
+2024-02-28 19:34:27 |INFO  |http-nio-3000-exec-1 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-28 19:34:27 |INFO  |http-nio-3000-exec-1 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-02-28 19:34:27 |INFO  |http-nio-3000-exec-1 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 2 ms
+2024-02-28 19:34:27 |INFO  |http-nio-3000-exec-1 |FollowController.java:36 |ljl.user_center.controller.follow.FollowController |1
+2024-02-28 19:34:27 |INFO  |http-nio-3000-exec-1 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-02-28 19:38:26 |INFO  |http-nio-3000-exec-2 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-28 19:38:26 |INFO  |http-nio-3000-exec-2 |FollowController.java:36 |ljl.user_center.controller.follow.FollowController |1
+2024-02-28 19:39:19 |INFO  |http-nio-3000-exec-3 |FollowController.java:36 |ljl.user_center.controller.follow.FollowController |1
+2024-02-28 19:50:40 |INFO  |Thread-18 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-28 19:50:40 |INFO  |Thread-29 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-28 19:50:40 |INFO  |Thread-18 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-02-28 19:50:40 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-28 19:50:40 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-28 19:50:40 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-02-28 19:50:41 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-02-28 19:50:57 |INFO  |main |StartupInfoLogger.java:55 |ljl.user_center.CenterEditApplication |Starting CenterEditApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 5076 (E:\bilibili\user_center\target\classes started by Administrator in E:\bilibili)
+2024-02-28 19:50:57 |INFO  |main |SpringApplication.java:645 |ljl.user_center.CenterEditApplication |No active profile set, falling back to 1 default profile: "default"
+2024-02-28 19:51:00 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=c54bc169-09c4-34aa-8ab7-2aa245c76d85
+2024-02-28 19:51:01 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 3000 (http)
+2024-02-28 19:51:01 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-3000"]
+2024-02-28 19:51:01 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-02-28 19:51:01 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-28 19:51:01 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-02-28 19:51:01 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 4419 ms
+2024-02-28 19:51:02 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-28 19:51:03 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-28 19:51:05 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-02-28 19:51:06 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 515ceb4f-7546-442a-be8f-dff86bf93ff7
+2024-02-28 19:51:06 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 75 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-28 19:51:06 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 26 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-28 19:51:06 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 37 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-28 19:51:07 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 194 ms to scan 198 urls, producing 0 keys and 0 values 
+2024-02-28 19:51:07 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 14 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-28 19:51:07 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 14 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-28 19:51:07 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 13 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-28 19:51:07 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 129 ms to scan 198 urls, producing 0 keys and 0 values 
+2024-02-28 19:51:07 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[515ceb4f-7546-442a-be8f-dff86bf93ff7] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-28 19:51:07 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[515ceb4f-7546-442a-be8f-dff86bf93ff7] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-28 19:51:07 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[515ceb4f-7546-442a-be8f-dff86bf93ff7] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-28 19:51:07 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[515ceb4f-7546-442a-be8f-dff86bf93ff7] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-28 19:51:07 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[515ceb4f-7546-442a-be8f-dff86bf93ff7] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-28 19:51:13 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[515ceb4f-7546-442a-be8f-dff86bf93ff7] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709121073004_120.227.129.112_46463
+2024-02-28 19:51:13 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[515ceb4f-7546-442a-be8f-dff86bf93ff7] Notify connected event to listeners.
+2024-02-28 19:51:13 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[515ceb4f-7546-442a-be8f-dff86bf93ff7] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-28 19:51:13 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[515ceb4f-7546-442a-be8f-dff86bf93ff7] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$824/1162358658
+2024-02-28 19:51:15 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-3000"]
+2024-02-28 19:51:15 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 3000 (http) with context path ''
+2024-02-28 19:51:15 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP user-center 192.168.10.5:3000 register finished
+2024-02-28 19:51:15 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-02-28 19:51:15 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-02-28 19:51:16 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-02-28 19:51:16 |INFO  |main |StartupInfoLogger.java:61 |ljl.user_center.CenterEditApplication |Started CenterEditApplication in 20.355 seconds (JVM running for 22.213)
+2024-02-28 19:51:22 |INFO  |http-nio-3000-exec-1 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-28 19:51:22 |INFO  |http-nio-3000-exec-1 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-02-28 19:51:22 |INFO  |http-nio-3000-exec-1 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 2 ms
+2024-02-28 19:51:22 |INFO  |http-nio-3000-exec-1 |FollowController.java:36 |ljl.user_center.controller.follow.FollowController |1
+2024-02-28 19:51:22 |INFO  |http-nio-3000-exec-1 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-02-28 19:51:57 |INFO  |Thread-16 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-02-28 19:51:57 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-28 19:51:57 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-28 19:51:57 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-02-28 19:51:57 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-02-28 19:52:10 |INFO  |main |StartupInfoLogger.java:55 |ljl.user_center.CenterEditApplication |Starting CenterEditApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 15904 (E:\bilibili\user_center\target\classes started by Administrator in E:\bilibili)
+2024-02-28 19:52:10 |INFO  |main |SpringApplication.java:645 |ljl.user_center.CenterEditApplication |No active profile set, falling back to 1 default profile: "default"
+2024-02-28 19:52:12 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=c54bc169-09c4-34aa-8ab7-2aa245c76d85
+2024-02-28 19:52:13 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 3000 (http)
+2024-02-28 19:52:13 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-3000"]
+2024-02-28 19:52:13 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-02-28 19:52:13 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-28 19:52:13 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-02-28 19:52:13 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 3547 ms
+2024-02-28 19:52:14 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-28 19:52:14 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-28 19:52:17 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-02-28 19:52:18 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 0867e138-d84c-42e1-ad4f-cdd281986536
+2024-02-28 19:52:18 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 56 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-28 19:52:18 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 27 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-28 19:52:18 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 21 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-28 19:52:18 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 175 ms to scan 197 urls, producing 0 keys and 0 values 
+2024-02-28 19:52:18 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 12 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-28 19:52:18 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 32 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-28 19:52:18 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 20 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-28 19:52:19 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 208 ms to scan 197 urls, producing 0 keys and 0 values 
+2024-02-28 19:52:19 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0867e138-d84c-42e1-ad4f-cdd281986536] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-28 19:52:19 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0867e138-d84c-42e1-ad4f-cdd281986536] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-28 19:52:19 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0867e138-d84c-42e1-ad4f-cdd281986536] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-28 19:52:19 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0867e138-d84c-42e1-ad4f-cdd281986536] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-28 19:52:19 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0867e138-d84c-42e1-ad4f-cdd281986536] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-28 19:52:20 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0867e138-d84c-42e1-ad4f-cdd281986536] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709121140780_120.227.129.112_46559
+2024-02-28 19:52:20 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0867e138-d84c-42e1-ad4f-cdd281986536] Notify connected event to listeners.
+2024-02-28 19:52:20 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0867e138-d84c-42e1-ad4f-cdd281986536] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-28 19:52:20 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[0867e138-d84c-42e1-ad4f-cdd281986536] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$824/914674368
+2024-02-28 19:52:23 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-3000"]
+2024-02-28 19:52:23 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 3000 (http) with context path ''
+2024-02-28 19:52:23 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP user-center 192.168.10.5:3000 register finished
+2024-02-28 19:52:24 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-02-28 19:52:24 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-02-28 19:52:24 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-02-28 19:52:24 |INFO  |main |StartupInfoLogger.java:61 |ljl.user_center.CenterEditApplication |Started CenterEditApplication in 15.614 seconds (JVM running for 17.353)
+2024-02-28 19:52:27 |INFO  |http-nio-3000-exec-1 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-28 19:52:27 |INFO  |http-nio-3000-exec-1 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-02-28 19:52:27 |INFO  |http-nio-3000-exec-1 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 5 ms
+2024-02-28 19:52:27 |INFO  |http-nio-3000-exec-1 |FollowController.java:36 |ljl.user_center.controller.follow.FollowController |1
+2024-02-28 19:52:27 |INFO  |http-nio-3000-exec-1 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-02-28 19:55:27 |INFO  |Thread-12 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-02-28 19:55:27 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-28 19:55:27 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-28 19:55:27 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-02-28 19:55:27 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-02-28 19:55:52 |INFO  |main |StartupInfoLogger.java:55 |ljl.user_center.CenterEditApplication |Starting CenterEditApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 3208 (E:\bilibili\user_center\target\classes started by Administrator in E:\bilibili)
+2024-02-28 19:55:52 |INFO  |main |SpringApplication.java:645 |ljl.user_center.CenterEditApplication |No active profile set, falling back to 1 default profile: "default"
+2024-02-28 19:55:55 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=c54bc169-09c4-34aa-8ab7-2aa245c76d85
+2024-02-28 19:55:56 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 3000 (http)
+2024-02-28 19:55:56 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-3000"]
+2024-02-28 19:55:56 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-02-28 19:55:56 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-28 19:55:56 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-02-28 19:55:56 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 4275 ms
+2024-02-28 19:55:57 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-28 19:55:57 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-28 19:55:59 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-02-28 19:56:00 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 9304860d-18eb-4a93-aefa-d6658cf090bb
+2024-02-28 19:56:00 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 53 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-28 19:56:00 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 39 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-28 19:56:00 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 13 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-28 19:56:00 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 157 ms to scan 198 urls, producing 0 keys and 0 values 
+2024-02-28 19:56:01 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 11 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-28 19:56:01 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 12 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-28 19:56:01 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 11 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-28 19:56:01 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 139 ms to scan 198 urls, producing 0 keys and 0 values 
+2024-02-28 19:56:01 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[9304860d-18eb-4a93-aefa-d6658cf090bb] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-28 19:56:01 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[9304860d-18eb-4a93-aefa-d6658cf090bb] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-28 19:56:01 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[9304860d-18eb-4a93-aefa-d6658cf090bb] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-28 19:56:01 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[9304860d-18eb-4a93-aefa-d6658cf090bb] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-28 19:56:01 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[9304860d-18eb-4a93-aefa-d6658cf090bb] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-28 19:56:06 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[9304860d-18eb-4a93-aefa-d6658cf090bb] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709121366131_120.227.129.112_46726
+2024-02-28 19:56:06 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[9304860d-18eb-4a93-aefa-d6658cf090bb] Notify connected event to listeners.
+2024-02-28 19:56:06 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[9304860d-18eb-4a93-aefa-d6658cf090bb] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-28 19:56:06 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[9304860d-18eb-4a93-aefa-d6658cf090bb] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$824/999685353
+2024-02-28 19:56:08 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-3000"]
+2024-02-28 19:56:08 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 3000 (http) with context path ''
+2024-02-28 19:56:08 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP user-center 192.168.10.5:3000 register finished
+2024-02-28 19:56:08 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-02-28 19:56:08 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-02-28 19:56:08 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-02-28 19:56:08 |INFO  |main |StartupInfoLogger.java:61 |ljl.user_center.CenterEditApplication |Started CenterEditApplication in 18.256 seconds (JVM running for 19.912)
+2024-02-28 19:56:37 |INFO  |http-nio-3000-exec-1 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-28 19:56:37 |INFO  |http-nio-3000-exec-1 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-02-28 19:56:37 |INFO  |http-nio-3000-exec-1 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 5 ms
+2024-02-28 19:56:37 |INFO  |http-nio-3000-exec-1 |FollowController.java:36 |ljl.user_center.controller.follow.FollowController |1
+2024-02-28 19:56:38 |INFO  |http-nio-3000-exec-1 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-02-28 19:57:11 |INFO  |Thread-15 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-02-28 19:57:12 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-28 19:57:12 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-28 19:57:12 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-02-28 19:57:12 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-02-28 19:57:25 |INFO  |main |StartupInfoLogger.java:55 |ljl.user_center.CenterEditApplication |Starting CenterEditApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 2712 (E:\bilibili\user_center\target\classes started by Administrator in E:\bilibili)
+2024-02-28 19:57:25 |INFO  |main |SpringApplication.java:645 |ljl.user_center.CenterEditApplication |No active profile set, falling back to 1 default profile: "default"
+2024-02-28 19:57:27 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=c54bc169-09c4-34aa-8ab7-2aa245c76d85
+2024-02-28 19:57:28 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 3000 (http)
+2024-02-28 19:57:28 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-3000"]
+2024-02-28 19:57:28 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-02-28 19:57:28 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-28 19:57:28 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-02-28 19:57:28 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 3102 ms
+2024-02-28 19:57:29 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-28 19:57:29 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-28 19:57:31 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-02-28 19:57:32 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 10b4e5cd-b8c6-4444-94c4-c035e4626022
+2024-02-28 19:57:32 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 60 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-28 19:57:32 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 32 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-28 19:57:32 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 21 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-28 19:57:33 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 312 ms to scan 197 urls, producing 0 keys and 0 values 
+2024-02-28 19:57:33 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 16 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-28 19:57:33 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 12 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-28 19:57:33 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 19 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-28 19:57:33 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 187 ms to scan 197 urls, producing 0 keys and 0 values 
+2024-02-28 19:57:33 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[10b4e5cd-b8c6-4444-94c4-c035e4626022] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-28 19:57:33 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[10b4e5cd-b8c6-4444-94c4-c035e4626022] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-28 19:57:33 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[10b4e5cd-b8c6-4444-94c4-c035e4626022] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-28 19:57:33 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[10b4e5cd-b8c6-4444-94c4-c035e4626022] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-28 19:57:33 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[10b4e5cd-b8c6-4444-94c4-c035e4626022] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-28 19:57:35 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[10b4e5cd-b8c6-4444-94c4-c035e4626022] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709121454978_120.227.129.112_46816
+2024-02-28 19:57:35 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[10b4e5cd-b8c6-4444-94c4-c035e4626022] Notify connected event to listeners.
+2024-02-28 19:57:35 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[10b4e5cd-b8c6-4444-94c4-c035e4626022] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-28 19:57:35 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[10b4e5cd-b8c6-4444-94c4-c035e4626022] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$824/644323208
+2024-02-28 19:57:37 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-3000"]
+2024-02-28 19:57:37 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 3000 (http) with context path ''
+2024-02-28 19:57:37 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP user-center 192.168.10.5:3000 register finished
+2024-02-28 19:57:37 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-02-28 19:57:37 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-02-28 19:57:37 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-02-28 19:57:37 |INFO  |main |StartupInfoLogger.java:61 |ljl.user_center.CenterEditApplication |Started CenterEditApplication in 13.426 seconds (JVM running for 15.109)
+2024-02-28 19:58:43 |INFO  |http-nio-3000-exec-2 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-28 19:58:43 |INFO  |http-nio-3000-exec-2 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-02-28 19:58:43 |INFO  |http-nio-3000-exec-2 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 5 ms
+2024-02-28 19:58:43 |INFO  |http-nio-3000-exec-2 |FollowController.java:36 |ljl.user_center.controller.follow.FollowController |1
+2024-02-28 19:58:44 |INFO  |http-nio-3000-exec-2 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-02-28 20:09:49 |INFO  |Thread-13 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-28 20:09:49 |INFO  |Thread-23 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-28 20:09:49 |INFO  |Thread-26 |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-28 20:09:49 |INFO  |Thread-13 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-02-28 20:09:49 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-28 20:09:49 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-28 20:09:49 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-02-28 20:09:49 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-02-28 20:10:18 |INFO  |main |StartupInfoLogger.java:55 |ljl.user_center.CenterEditApplication |Starting CenterEditApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 15240 (E:\bilibili\user_center\target\classes started by Administrator in E:\bilibili)
+2024-02-28 20:10:18 |INFO  |main |SpringApplication.java:645 |ljl.user_center.CenterEditApplication |No active profile set, falling back to 1 default profile: "default"
+2024-02-28 20:10:21 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=c54bc169-09c4-34aa-8ab7-2aa245c76d85
+2024-02-28 20:10:22 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 3000 (http)
+2024-02-28 20:10:22 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-3000"]
+2024-02-28 20:10:22 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-02-28 20:10:22 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-28 20:10:22 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-02-28 20:10:22 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 3973 ms
+2024-02-28 20:10:23 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-02-28 20:10:23 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-02-28 20:10:26 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-02-28 20:10:27 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 4e6b25e9-ed10-4464-8aa0-397582ef03fb
+2024-02-28 20:10:28 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 42 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-02-28 20:10:28 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 16 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-02-28 20:10:28 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 34 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-02-28 20:10:28 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 216 ms to scan 197 urls, producing 0 keys and 0 values 
+2024-02-28 20:10:28 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 11 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-02-28 20:10:28 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 15 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-02-28 20:10:28 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 12 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-02-28 20:10:28 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 160 ms to scan 197 urls, producing 0 keys and 0 values 
+2024-02-28 20:10:28 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[4e6b25e9-ed10-4464-8aa0-397582ef03fb] RpcClient init label, labels = {module=naming, source=sdk}
+2024-02-28 20:10:28 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[4e6b25e9-ed10-4464-8aa0-397582ef03fb] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-02-28 20:10:28 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[4e6b25e9-ed10-4464-8aa0-397582ef03fb] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-02-28 20:10:28 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[4e6b25e9-ed10-4464-8aa0-397582ef03fb] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-02-28 20:10:28 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[4e6b25e9-ed10-4464-8aa0-397582ef03fb] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-02-28 20:10:31 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[4e6b25e9-ed10-4464-8aa0-397582ef03fb] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709122230835_120.227.129.112_46448
+2024-02-28 20:10:31 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[4e6b25e9-ed10-4464-8aa0-397582ef03fb] Notify connected event to listeners.
+2024-02-28 20:10:31 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[4e6b25e9-ed10-4464-8aa0-397582ef03fb] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-02-28 20:10:31 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[4e6b25e9-ed10-4464-8aa0-397582ef03fb] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$824/1850630389
+2024-02-28 20:10:33 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-3000"]
+2024-02-28 20:10:33 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 3000 (http) with context path ''
+2024-02-28 20:10:33 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP user-center 192.168.10.5:3000 register finished
+2024-02-28 20:10:33 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-02-28 20:10:33 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-02-28 20:10:33 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-02-28 20:10:34 |INFO  |main |StartupInfoLogger.java:61 |ljl.user_center.CenterEditApplication |Started CenterEditApplication in 16.567 seconds (JVM running for 17.899)
+2024-02-28 20:10:39 |INFO  |http-nio-3000-exec-1 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-28 20:10:39 |INFO  |http-nio-3000-exec-1 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-02-28 20:10:39 |INFO  |http-nio-3000-exec-1 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 3 ms
+2024-02-28 20:10:39 |INFO  |http-nio-3000-exec-1 |FollowController.java:36 |ljl.user_center.controller.follow.FollowController |1
+2024-02-28 20:10:39 |INFO  |http-nio-3000-exec-1 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-02-28 20:11:40 |INFO  |Thread-13 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-02-28 20:11:40 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-28 20:11:40 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-28 20:11:40 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-02-28 20:11:40 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
