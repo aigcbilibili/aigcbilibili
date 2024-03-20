@@ -31,7 +31,7 @@
 
 3. 详情页：
     <div align=center><img src="./screenshots/视频详情.png" alt="进程与线程" style="width: 800px;"/></div>
-    ![Alt text](1710918927014.png)
+
 4. 个人主页：
     <div align=center><img src="./screenshots/个人主页-权限设置.png" alt="进程与线程" style="width: 800px;"/></div> 
 
