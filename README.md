@@ -19,23 +19,27 @@
    6. 点赞、回复消息查看，私聊（含星火大模型）
    7. 动态、历史记录、热点等的展示
    8. 用户中心权限控制
+4. 技术点：篇幅所限，在此不表
 
 <div align=center><img src="./screenshots/首屏.png" alt="进程与线程" style="width: 800px;"/></div>
 
 ### 2. 页面展示
 1. 登录页面：
-   
-   
+    <div align=center><img src="./screenshots/登录.png" alt="进程与线程" style="width: 800px;"/></div> 
 2. 搜索页面：
     <div align=center><img src="./screenshots/搜索结果页.jpg" alt="进程与线程" style="width: 800px;"/></div>
 
 3. 详情页：
-    <div align=center><img src="./screenshots/视频详情页.jpg" alt="进程与线程" style="width: 800px;"/></div>
-
+    <div align=center><img src="./screenshots/视频详情.png" alt="进程与线程" style="width: 800px;"/></div>
+    ![Alt text](1710918927014.png)
 4. 个人主页：
-   
+    <div align=center><img src="./screenshots/个人主页-权限设置.png" alt="进程与线程" style="width: 800px;"/></div> 
 
-5. 私聊页面
+5. 历史记录
+    <div align=center><img src="./screenshots/历史记录.png" alt="进程与线程" style="width: 800px;"/></div> 
+
+6. 私聊页面
+     <div align=center><img src="./screenshots/大模型聊天.png" alt="进程与线程" style="width: 800px;"/></div> 
 
 
 ### 3. 项目运行方式
