@@ -50,7 +50,7 @@
    1. 进入后端项目目录
    2. 使用`mvn spring-boot:run`命令启动Spring Boot应用
 3. 前端启动
-   前端使用yarn进行操作
+   前端使用yarn进行操作<br>
    0. 如果是在本机运行，修改vue.config.js中target/api/为`http://www.labilibili.com:80`
    1. 进入前端项目目录
    2. `yarn install` 安装所需依赖
