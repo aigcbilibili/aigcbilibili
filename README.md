@@ -1,7 +1,6 @@
 ## LABiliBili视频网站
 
 <br>
-<br>
 
 ### 1. 项目概述
 1. 技术栈：`Vue3` `ElementPlus` `Pinia` `Vue-Router` `SaSS` `WebSocket` `Axios` `Swagger` `XXL-JOB` ` ElasticSearch` `RocketMQ` `Spring Boot` `Srping Cloud` `Spring CloudAlibaba` `Redis` `Mybatis-Plus` `Druid` `MySQL`
