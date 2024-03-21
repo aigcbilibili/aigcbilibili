@@ -1,9 +1,6 @@
 ## LABiliBili视频网站
 
 <br>
-
-**Author: Alla**<br>
-文档最新修改时间：2024.3.20
 <br>
 
 ### 1. 项目概述
@@ -41,24 +38,7 @@
 6. 私聊页面
      <div align=center><img src="./screenshots/大模型聊天.png" alt="进程与线程" style="width: 800px;"/></div> 
 
-
-### 3. 项目运行方式
-1. 数据库部署
-   1.  确保MySQL服务正在运行
-   2.  创建所需的数据库，可以在项目的`sql`目录中找到初始化SQL脚本
-2. 后端启动
-   1. 进入后端项目目录
-   2. 使用`mvn spring-boot:run`命令启动Spring Boot应用
-3. 前端启动
-   前端使用yarn进行操作<br>
-   0. 如果是在本机运行，修改vue.config.js中target/api/为`http://www.labilibili.com:80`
-   1. 进入前端项目目录
-   2. `yarn install` 安装所需依赖
-   3. `yarn run serve`在本机运行
-   4. 访问`http://127.0.0.12:2023`查看应用
-
-
-### 4. 贡献指南
+### 3. 贡献指南
 项目多有不足，如果想帮助**labilibili**变得更好，请遵循以下步骤：
 
 1. Fork 本仓库。
