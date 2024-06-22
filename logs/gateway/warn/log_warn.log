@@ -1,0 +1,182 @@
+2024-03-13 15:21:07 |WARN  |pool-4-thread-1 |ZipkinAutoConfiguration.java:165 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Check result of the [WebClientSender{http://114.55.116.140:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=java.util.concurrent.TimeoutException: Timed out after 1000ms}]
+2024-03-13 15:21:32 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-03-13 15:24:50 |WARN  |Thread-55 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-03-13 15:24:50 |WARN  |Thread-55 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-03-13 15:24:50 |WARN  |Thread-51 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-03-13 15:24:50 |WARN  |Thread-51 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end
+2024-03-13 15:25:50 |WARN  |pool-4-thread-1 |ZipkinAutoConfiguration.java:165 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Check result of the [WebClientSender{http://114.55.116.140:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=java.util.concurrent.TimeoutException: Timed out after 1000ms}]
+2024-03-13 15:26:01 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-03-13 15:31:07 |WARN  |AsyncReporter{WebClientSender{http://114.55.116.140:9411/api/v2/spans}} |AsyncReporter.java:310 |zipkin2.reporter.AsyncReporter$BoundedAsyncReporter |Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2024-03-13 15:31:07 |WARN  |AsyncReporter{WebClientSender{http://114.55.116.140:9411/api/v2/spans}} |AsyncReporter.java:317 |zipkin2.reporter.AsyncReporter$BoundedAsyncReporter |Dropped 1 spans due to ReactiveException(java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 1000ms in 'flatMap' (and no fallback has been configured))
+reactor.core.Exceptions$ReactiveException: java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 1000ms in 'flatMap' (and no fallback has been configured)
+	at reactor.core.Exceptions.propagate(Exceptions.java:396)
+	at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:97)
+	at reactor.core.publisher.Mono.block(Mono.java:1707)
+	at org.springframework.cloud.sleuth.zipkin2.WebClientSender.lambda$new$0(WebClientSender.java:66)
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender.post(HttpSender.java:137)
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender$HttpPostCall.doExecute(HttpSender.java:150)
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender$HttpPostCall.doExecute(HttpSender.java:140)
+	at zipkin2.Call$Base.execute(Call.java:391)
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:299)
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378)
+	at java.lang.Thread.run(Thread.java:745)
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:99)
+		... 9 common frames omitted
+Caused by: java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 1000ms in 'flatMap' (and no fallback has been configured)
+	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.handleTimeout(FluxTimeout.java:295)
+	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.doTimeout(FluxTimeout.java:280)
+	at reactor.core.publisher.FluxTimeout$TimeoutTimeoutSubscriber.onNext(FluxTimeout.java:419)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.propagateDelay(MonoDelay.java:271)
+	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.run(MonoDelay.java:286)
+	at org.springframework.cloud.sleuth.instrument.reactor.ReactorSleuth.lambda$null$6(ReactorSleuth.java:324)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 common frames omitted
+2024-03-13 15:32:13 |WARN  |nacos-grpc-client-executor-79 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1710315089403_120.227.131.104_44966]Ignore error event,isRunning:true,isAbandon=true
+2024-03-13 15:34:25 |WARN  |nacos-grpc-client-executor-94 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1710315132356_120.227.131.104_45026]Ignore error event,isRunning:true,isAbandon=true
+2024-03-13 15:35:54 |WARN  |nacos-grpc-client-executor-114 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1710315265004_120.227.131.104_44327]Ignore error event,isRunning:true,isAbandon=true
+2024-03-13 15:39:21 |WARN  |Thread-49 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-03-13 15:39:21 |WARN  |Thread-49 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end
+2024-03-13 15:39:21 |WARN  |Thread-53 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-03-13 15:39:21 |WARN  |Thread-53 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-03-13 15:39:23 |WARN  |reactor-http-nio-2 |Loggers.java:295 |reactor.netty.http.client.HttpClientConnect |[eb8aecb7-2, L:0.0.0.0/0.0.0.0:58360 ! R:/114.55.116.140:9411] The connection observed an error
+reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+2024-03-13 15:40:54 |WARN  |pool-4-thread-1 |ZipkinAutoConfiguration.java:165 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Check result of the [WebClientSender{http://114.55.116.140:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=java.util.concurrent.TimeoutException: Timed out after 1000ms}]
+2024-03-13 15:41:52 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-03-13 15:42:54 |WARN  |nacos-grpc-client-executor-17 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1710315711467_120.227.131.104_44518]Ignore error event,isRunning:true,isAbandon=true
+2024-03-13 15:44:45 |WARN  |AsyncReporter{WebClientSender{http://114.55.116.140:9411/api/v2/spans}} |AsyncReporter.java:310 |zipkin2.reporter.AsyncReporter$BoundedAsyncReporter |Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2024-03-13 15:44:46 |WARN  |AsyncReporter{WebClientSender{http://114.55.116.140:9411/api/v2/spans}} |AsyncReporter.java:317 |zipkin2.reporter.AsyncReporter$BoundedAsyncReporter |Dropped 1 spans due to ReactiveException(java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 1000ms in 'flatMap' (and no fallback has been configured))
+reactor.core.Exceptions$ReactiveException: java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 1000ms in 'flatMap' (and no fallback has been configured)
+	at reactor.core.Exceptions.propagate(Exceptions.java:396)
+	at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:97)
+	at reactor.core.publisher.Mono.block(Mono.java:1707)
+	at org.springframework.cloud.sleuth.zipkin2.WebClientSender.lambda$new$0(WebClientSender.java:66)
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender.post(HttpSender.java:137)
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender$HttpPostCall.doExecute(HttpSender.java:150)
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender$HttpPostCall.doExecute(HttpSender.java:140)
+	at zipkin2.Call$Base.execute(Call.java:391)
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:299)
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378)
+	at java.lang.Thread.run(Thread.java:745)
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:99)
+		... 9 common frames omitted
+Caused by: java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 1000ms in 'flatMap' (and no fallback has been configured)
+	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.handleTimeout(FluxTimeout.java:295)
+	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.doTimeout(FluxTimeout.java:280)
+	at reactor.core.publisher.FluxTimeout$TimeoutTimeoutSubscriber.onNext(FluxTimeout.java:419)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.propagateDelay(MonoDelay.java:271)
+	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.run(MonoDelay.java:286)
+	at org.springframework.cloud.sleuth.instrument.reactor.ReactorSleuth.lambda$null$6(ReactorSleuth.java:324)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 common frames omitted
+2024-03-13 15:45:05 |WARN  |Thread-63 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-03-13 15:45:05 |WARN  |Thread-63 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-03-13 15:45:05 |WARN  |Thread-60 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-03-13 15:45:05 |WARN  |Thread-60 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end
+2024-03-13 15:46:06 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-03-13 15:48:44 |WARN  |Thread-47 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-03-13 15:48:44 |WARN  |Thread-47 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end
+2024-03-13 15:48:44 |WARN  |Thread-50 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-03-13 15:48:44 |WARN  |Thread-50 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-03-13 21:05:09 |WARN  |pool-4-thread-1 |ZipkinAutoConfiguration.java:165 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Check result of the [WebClientSender{http://114.55.116.140:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=java.util.concurrent.TimeoutException: Timed out after 1000ms}]
+2024-03-13 21:05:18 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-03-13 21:08:18 |WARN  |Thread-73 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-03-13 21:08:18 |WARN  |Thread-73 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end
+2024-03-13 21:08:18 |WARN  |Thread-76 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-03-13 21:08:18 |WARN  |Thread-76 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-03-13 21:13:56 |WARN  |pool-4-thread-1 |ZipkinAutoConfiguration.java:165 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Check result of the [WebClientSender{http://114.55.116.140:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=java.util.concurrent.TimeoutException: Timed out after 1000ms}]
+2024-03-13 21:14:05 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-03-13 21:15:00 |WARN  |AsyncReporter{WebClientSender{http://114.55.116.140:9411/api/v2/spans}} |AsyncReporter.java:310 |zipkin2.reporter.AsyncReporter$BoundedAsyncReporter |Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2024-03-13 21:15:00 |WARN  |AsyncReporter{WebClientSender{http://114.55.116.140:9411/api/v2/spans}} |AsyncReporter.java:317 |zipkin2.reporter.AsyncReporter$BoundedAsyncReporter |Dropped 1 spans due to ReactiveException(java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 1000ms in 'flatMap' (and no fallback has been configured))
+reactor.core.Exceptions$ReactiveException: java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 1000ms in 'flatMap' (and no fallback has been configured)
+	at reactor.core.Exceptions.propagate(Exceptions.java:396)
+	at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:97)
+	at reactor.core.publisher.Mono.block(Mono.java:1707)
+	at org.springframework.cloud.sleuth.zipkin2.WebClientSender.lambda$new$0(WebClientSender.java:66)
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender.post(HttpSender.java:137)
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender$HttpPostCall.doExecute(HttpSender.java:150)
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender$HttpPostCall.doExecute(HttpSender.java:140)
+	at zipkin2.Call$Base.execute(Call.java:391)
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:299)
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378)
+	at java.lang.Thread.run(Thread.java:745)
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:99)
+		... 9 common frames omitted
+Caused by: java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 1000ms in 'flatMap' (and no fallback has been configured)
+	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.handleTimeout(FluxTimeout.java:295)
+	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.doTimeout(FluxTimeout.java:280)
+	at reactor.core.publisher.FluxTimeout$TimeoutTimeoutSubscriber.onNext(FluxTimeout.java:419)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.propagateDelay(MonoDelay.java:271)
+	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.run(MonoDelay.java:286)
+	at org.springframework.cloud.sleuth.instrument.reactor.ReactorSleuth.lambda$null$6(ReactorSleuth.java:324)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 common frames omitted
+2024-03-13 21:22:07 |WARN  |Thread-51 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-03-13 21:22:07 |WARN  |Thread-48 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-03-13 21:22:07 |WARN  |Thread-48 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end
+2024-03-13 21:22:07 |WARN  |Thread-51 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-03-13 21:22:56 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-03-13 21:23:20 |WARN  |AsyncReporter{WebClientSender{http://114.55.116.140:9411/api/v2/spans}} |AsyncReporter.java:310 |zipkin2.reporter.AsyncReporter$BoundedAsyncReporter |Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2024-03-13 21:23:20 |WARN  |AsyncReporter{WebClientSender{http://114.55.116.140:9411/api/v2/spans}} |AsyncReporter.java:317 |zipkin2.reporter.AsyncReporter$BoundedAsyncReporter |Dropped 1 spans due to ReactiveException(java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 1000ms in 'flatMap' (and no fallback has been configured))
+reactor.core.Exceptions$ReactiveException: java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 1000ms in 'flatMap' (and no fallback has been configured)
+	at reactor.core.Exceptions.propagate(Exceptions.java:396)
+	at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:97)
+	at reactor.core.publisher.Mono.block(Mono.java:1707)
+	at org.springframework.cloud.sleuth.zipkin2.WebClientSender.lambda$new$0(WebClientSender.java:66)
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender.post(HttpSender.java:137)
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender$HttpPostCall.doExecute(HttpSender.java:150)
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender$HttpPostCall.doExecute(HttpSender.java:140)
+	at zipkin2.Call$Base.execute(Call.java:391)
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:299)
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378)
+	at java.lang.Thread.run(Thread.java:745)
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:99)
+		... 9 common frames omitted
+Caused by: java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 1000ms in 'flatMap' (and no fallback has been configured)
+	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.handleTimeout(FluxTimeout.java:295)
+	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.doTimeout(FluxTimeout.java:280)
+	at reactor.core.publisher.FluxTimeout$TimeoutTimeoutSubscriber.onNext(FluxTimeout.java:419)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.propagateDelay(MonoDelay.java:271)
+	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.run(MonoDelay.java:286)
+	at org.springframework.cloud.sleuth.instrument.reactor.ReactorSleuth.lambda$null$6(ReactorSleuth.java:324)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 common frames omitted
+2024-03-13 21:33:04 |WARN  |Thread-43 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-03-13 21:33:04 |WARN  |Thread-43 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-03-13 21:33:04 |WARN  |Thread-40 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-03-13 21:33:04 |WARN  |Thread-40 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end

@@ -1,0 +1,9 @@
+2024-05-11 06:25:20 |INFO  |Thread-23 |TimeBasedFilter.java:24 |ljl.bilibili.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-05-11 06:25:20 |INFO  |Thread-23 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-05-11 06:25:22 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-0} closing ...

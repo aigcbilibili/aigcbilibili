@@ -1,0 +1,24 @@
+server:
+  port: 1688
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    name: datasource
+
+    url: jdbc:mysql://xxx:3306/bilibili?useUnicode=true&allowPublicKeyRetrieval=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
+    username: xxx
+    password: xxx
+  zipkin:
+    base-url: http://xxx:9411
+    sender:
+      type: web
+    sleuth:
+      sampler:
+        probability: 1
+  application:
+    name: chat
+  cloud:
+    nacos:
+      discovery:
+        server-addr: xxx:8848
+module-name: chat

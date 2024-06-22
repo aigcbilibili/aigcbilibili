@@ -1,0 +1,47 @@
+server:
+  tomcat:
+    connection-timeout: 300000
+  port: 8201
+elasticsearch-client:
+    hosts: http://xxx:9200
+module-name: search
+spring:
+  redis:
+    host: xxx.84
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    #    hikari:
+    #      max-lifetime: 2520000  7 小时
+    #      idle-timeout: 21600000   6 小时
+    #      validation-timeout: 5000  5 秒
+    name: datasource
+    url: jdbc:mysql://xxx:3306/bilibili?useUnicode=true&allowPublicKeyRetrieval=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
+    username: xxx
+    password: xxx
+  zipkin:
+    base-url: http://xxx:9411
+    sender:
+      type: web
+    sleuth:
+      sampler:
+        probability: 1
+  application:
+    name: search
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 116.62.71.84:8848
+#logging:
+#  level:
+#    springfox.documentation.spring.web: DEBUG
+xxl:
+  job:
+    admin:
+      addresses: http://xxx:8120/xxl-job-admin
+    accessToken: default_token
+    executor:
+      port: 9916
+      appname: demo-service-impl
+      logpath: /data/applogs/xxl-job/jobhandler
+global-exception-handler:
+  enabled: true

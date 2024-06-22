@@ -1,0 +1,1118 @@
+2024-03-05 18:36:18 |INFO  |background-preinit |Version.java:21 |org.hibernate.validator.internal.util.Version |HV000001: Hibernate Validator 6.2.4.Final
+2024-03-05 18:36:18 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.GateWayApplication |Starting GateWayApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 1612 (E:\bilibili\gateway\target\classes started by Administrator in E:\bilibili)
+2024-03-05 18:36:18 |INFO  |main |SpringApplication.java:651 |ljl.bilibili.GateWayApplication |The following 1 profile is active: "dev"
+2024-03-05 18:36:24 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-05 18:36:24 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-05 18:36:24 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 44 ms. Found 0 Redis repository interfaces.
+2024-03-05 18:36:26 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=6caafac9-f85a-36b3-8d69-7010ad0e6ecb
+2024-03-05 18:36:28 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-05 18:36:28 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-05 18:36:28 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-05 18:36:32 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-03-05 18:36:33 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-03-05 18:36:39 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [After]
+2024-03-05 18:36:39 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Before]
+2024-03-05 18:36:39 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Between]
+2024-03-05 18:36:39 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Cookie]
+2024-03-05 18:36:39 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Header]
+2024-03-05 18:36:39 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Host]
+2024-03-05 18:36:39 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Method]
+2024-03-05 18:36:39 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Path]
+2024-03-05 18:36:39 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Query]
+2024-03-05 18:36:39 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [ReadBody]
+2024-03-05 18:36:39 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [RemoteAddr]
+2024-03-05 18:36:39 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-03-05 18:36:39 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Weight]
+2024-03-05 18:36:39 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-03-05 18:36:41 |INFO  |main |ReactiveUserDetailsServiceAutoConfiguration.java:88 |org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration |
+
+Using generated security password: f2f17097-8027-4d3f-a53c-94a76c3294ef
+
+2024-03-05 18:36:42 |WARN  |pool-4-thread-1 |ZipkinAutoConfiguration.java:165 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Check result of the [WebClientSender{http://114.55.116.140:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=java.util.concurrent.TimeoutException: Timed out after 1000ms}]
+2024-03-05 18:36:44 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of be7d74ce-5a33-48d1-b205-fbd576835292
+2024-03-05 18:36:44 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 76 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-03-05 18:36:44 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 21 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-03-05 18:36:44 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 27 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-03-05 18:36:44 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 251 ms to scan 238 urls, producing 0 keys and 0 values 
+2024-03-05 18:36:44 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 21 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-03-05 18:36:44 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 28 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-03-05 18:36:44 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 28 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-03-05 18:36:45 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 319 ms to scan 238 urls, producing 0 keys and 0 values 
+2024-03-05 18:36:45 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[be7d74ce-5a33-48d1-b205-fbd576835292] RpcClient init label, labels = {module=naming, source=sdk}
+2024-03-05 18:36:45 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[be7d74ce-5a33-48d1-b205-fbd576835292] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-03-05 18:36:45 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[be7d74ce-5a33-48d1-b205-fbd576835292] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-03-05 18:36:45 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[be7d74ce-5a33-48d1-b205-fbd576835292] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-03-05 18:36:45 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[be7d74ce-5a33-48d1-b205-fbd576835292] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-03-05 18:36:47 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[be7d74ce-5a33-48d1-b205-fbd576835292] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709635008509_120.227.131.104_44700
+2024-03-05 18:36:47 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[be7d74ce-5a33-48d1-b205-fbd576835292] Notify connected event to listeners.
+2024-03-05 18:36:47 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[be7d74ce-5a33-48d1-b205-fbd576835292] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-03-05 18:36:47 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[be7d74ce-5a33-48d1-b205-fbd576835292] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1091/1044945601
+2024-03-05 18:36:48 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-03-05 18:36:50 |INFO  |main |NettyWebServer.java:111 |org.springframework.boot.web.embedded.netty.NettyWebServer |Netty started on port 8200
+2024-03-05 18:36:50 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP gateway 192.168.10.9:8200 register finished
+2024-03-05 18:36:50 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.GateWayApplication |Started GateWayApplication in 36.994 seconds (JVM running for 39.259)
+2024-03-05 18:40:24 |INFO  |parallel-2 |JwtAuthorizationFilter.java:27 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/login/passwordLogin
+2024-03-05 18:40:34 |INFO  |parallel-4 |JwtAuthorizationFilter.java:27 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/login/passwordLogin
+2024-03-05 18:40:34 |ERROR |reactor-http-nio-1 |CompositeLog.java:102 |org.springframework.boot.autoconfigure.web.reactive.error.AbstractErrorWebExceptionHandler |[1129974b-2]  500 Server Error for HTTP POST "/login/passwordLogin"
+java.lang.NullPointerException: null
+	at ljl.bilibili.gateway.controller.LoginController.passwordLogin(LoginController.java:30)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ljl.bilibili.gateway.filter.JwtAuthorizationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authentication.logout.LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.savedrequest.ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.sleuth.instrument.web.TraceWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP POST "/login/passwordLogin" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at ljl.bilibili.gateway.controller.LoginController.passwordLogin(LoginController.java:30)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:497)
+		at org.springframework.web.reactive.result.method.InvocableHandlerMethod.lambda$invoke$0(InvocableHandlerMethod.java:144)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:125)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+		at reactor.core.publisher.MonoZip$ZipCoordinator.signal(MonoZip.java:251)
+		at reactor.core.publisher.MonoZip$ZipInner.onNext(MonoZip.java:336)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:89)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:101)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:151)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:160)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onComplete(ScopePassingSpanSubscriber.java:103)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onComplete(ScopePassingSpanSubscriber.java:103)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onComplete(ScopePassingSpanSubscriber.java:103)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.netty.channel.FluxReceive.terminateReceiver(FluxReceive.java:468)
+		at reactor.netty.channel.FluxReceive.drainReceiver(FluxReceive.java:260)
+		at reactor.netty.channel.FluxReceive.request(FluxReceive.java:129)
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.request(ScopePassingSpanSubscriber.java:75)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.request(FluxPeek.java:138)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.request(ScopePassingSpanSubscriber.java:75)
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.request(ScopePassingSpanSubscriber.java:75)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onSubscribe(MonoCollect.java:104)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onSubscribe(ScopePassingSpanSubscriber.java:68)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onSubscribe(FluxMap.java:92)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onSubscribe(ScopePassingSpanSubscriber.java:68)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onSubscribe(FluxPeek.java:171)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onSubscribe(ScopePassingSpanSubscriber.java:68)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onSubscribe(FluxMap.java:92)
+		at reactor.netty.channel.FluxReceive.startReceiver(FluxReceive.java:167)
+		at reactor.netty.channel.FluxReceive.lambda$subscribe$2(FluxReceive.java:146)
+		at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+		at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+		at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:503)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.lang.Thread.run(Thread.java:745)
+2024-03-05 18:41:00 |INFO  |parallel-2 |JwtAuthorizationFilter.java:27 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/login/getCaptcha
+2024-03-05 18:41:06 |INFO  |parallel-1 |JwtAuthorizationFilter.java:27 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/login/passwordLogin
+2024-03-05 18:41:06 |ERROR |reactor-http-nio-1 |CompositeLog.java:102 |org.springframework.boot.autoconfigure.web.reactive.error.AbstractErrorWebExceptionHandler |[1129974b-4]  500 Server Error for HTTP POST "/login/passwordLogin"
+java.lang.NullPointerException: null
+	at ljl.bilibili.gateway.service.impl.LoginServiceImpl.passwordLogin(LoginServiceImpl.java:45)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ljl.bilibili.gateway.filter.JwtAuthorizationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authentication.logout.LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.savedrequest.ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.sleuth.instrument.web.TraceWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP POST "/login/passwordLogin" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at ljl.bilibili.gateway.service.impl.LoginServiceImpl.passwordLogin(LoginServiceImpl.java:45)
+		at ljl.bilibili.gateway.service.impl.LoginServiceImpl$$FastClassBySpringCGLIB$$881b0b1.invoke(<generated>)
+		at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+		at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+		at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+		at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704)
+		at ljl.bilibili.gateway.service.impl.LoginServiceImpl$$EnhancerBySpringCGLIB$$a29bd553.passwordLogin(<generated>)
+		at ljl.bilibili.gateway.controller.LoginController.passwordLogin(LoginController.java:31)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:497)
+		at org.springframework.web.reactive.result.method.InvocableHandlerMethod.lambda$invoke$0(InvocableHandlerMethod.java:144)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:125)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+		at reactor.core.publisher.MonoZip$ZipCoordinator.signal(MonoZip.java:251)
+		at reactor.core.publisher.MonoZip$ZipInner.onNext(MonoZip.java:336)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:89)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:101)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:151)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:160)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onComplete(ScopePassingSpanSubscriber.java:103)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onComplete(ScopePassingSpanSubscriber.java:103)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onComplete(ScopePassingSpanSubscriber.java:103)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.netty.channel.FluxReceive.terminateReceiver(FluxReceive.java:468)
+		at reactor.netty.channel.FluxReceive.drainReceiver(FluxReceive.java:260)
+		at reactor.netty.channel.FluxReceive.request(FluxReceive.java:129)
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.request(ScopePassingSpanSubscriber.java:75)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.request(FluxPeek.java:138)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.request(ScopePassingSpanSubscriber.java:75)
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.request(ScopePassingSpanSubscriber.java:75)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onSubscribe(MonoCollect.java:104)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onSubscribe(ScopePassingSpanSubscriber.java:68)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onSubscribe(FluxMap.java:92)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onSubscribe(ScopePassingSpanSubscriber.java:68)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onSubscribe(FluxPeek.java:171)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onSubscribe(ScopePassingSpanSubscriber.java:68)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onSubscribe(FluxMap.java:92)
+		at reactor.netty.channel.FluxReceive.startReceiver(FluxReceive.java:167)
+		at reactor.netty.channel.FluxReceive.lambda$subscribe$2(FluxReceive.java:146)
+		at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+		at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+		at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:503)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.lang.Thread.run(Thread.java:745)
+2024-03-05 18:41:38 |INFO  |parallel-3 |TimeBasedFilter.java:24 |ljl.bilibili.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-03-05 18:41:38 |INFO  |parallel-3 |JwtAuthorizationFilter.java:27 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/login/phoneNumberLogin
+2024-03-05 18:41:38 |INFO  |parallel-3 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-03-05 18:41:39 |ERROR |parallel-3 |CompositeLog.java:102 |org.springframework.boot.autoconfigure.web.reactive.error.AbstractErrorWebExceptionHandler |[1129974b-5]  500 Server Error for HTTP POST "/login/phoneNumberLogin"
+java.lang.NullPointerException: null
+	at ljl.bilibili.gateway.service.impl.LoginServiceImpl.phoneNumberLogin(LoginServiceImpl.java:87)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ljl.bilibili.gateway.filter.JwtAuthorizationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authentication.logout.LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.savedrequest.ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.sleuth.instrument.web.TraceWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP POST "/login/phoneNumberLogin" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at ljl.bilibili.gateway.service.impl.LoginServiceImpl.phoneNumberLogin(LoginServiceImpl.java:87)
+		at ljl.bilibili.gateway.service.impl.LoginServiceImpl$$FastClassBySpringCGLIB$$881b0b1.invoke(<generated>)
+		at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+		at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+		at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+		at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+		at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+		at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+		at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+		at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+		at ljl.bilibili.gateway.service.impl.LoginServiceImpl$$EnhancerBySpringCGLIB$$a29bd553.phoneNumberLogin(<generated>)
+		at ljl.bilibili.gateway.controller.LoginController.phoneNumberLogin(LoginController.java:50)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:497)
+		at org.springframework.web.reactive.result.method.InvocableHandlerMethod.lambda$invoke$0(InvocableHandlerMethod.java:144)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:125)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+		at reactor.core.publisher.MonoZip$ZipCoordinator.signal(MonoZip.java:251)
+		at reactor.core.publisher.MonoZip$ZipInner.onNext(MonoZip.java:336)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:89)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2398)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.request(MonoPeekTerminal.java:139)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.request(ScopePassingSpanSubscriber.java:75)
+		at reactor.core.publisher.MonoZip$ZipInner.onSubscribe(MonoZip.java:325)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onSubscribe(ScopePassingSpanSubscriber.java:68)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onSubscribe(MonoPeekTerminal.java:152)
+		at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:55)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4397)
+		at reactor.core.publisher.MonoZip.subscribe(MonoZip.java:128)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:240)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:203)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onComplete(ScopePassingSpanSubscriber.java:103)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onComplete(MonoFlatMap.java:181)
+		at reactor.core.publisher.Operators.complete(Operators.java:137)
+		at reactor.core.publisher.MonoZip.subscribe(MonoZip.java:120)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4397)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:263)
+		at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:157)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.innerNext(FluxConcatMap.java:282)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:863)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:89)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2398)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.request(MonoPeekTerminal.java:139)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.request(FluxMapFuseable.java:171)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.request(ScopePassingSpanSubscriber.java:75)
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2194)
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onSubscribe(Operators.java:2068)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onSubscribe(ScopePassingSpanSubscriber.java:68)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onSubscribe(FluxMapFuseable.java:96)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onSubscribe(MonoPeekTerminal.java:152)
+		at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:55)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4397)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:451)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onSubscribe(FluxConcatMap.java:219)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4397)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onComplete(FluxSwitchIfEmpty.java:82)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:299)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:299)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:148)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.FluxFilter$FilterSubscriber.onNext(FluxFilter.java:113)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:101)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.innerNext(FluxConcatMap.java:282)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:863)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:89)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onNext(MonoFlatMap.java:249)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:101)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+		at reactor.core.publisher.MonoAny$AnySubscriber.onNext(MonoAny.java:117)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drainAsync(FluxFlattenIterable.java:421)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drain(FluxFlattenIterable.java:686)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.onNext(FluxFlattenIterable.java:250)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.onNext(FluxFilterFuseable.java:94)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:272)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:313)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1798)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:151)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.onNext(FluxFilterFuseable.java:118)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:89)
+		at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2398)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.request(ScopePassingSpanSubscriber.java:75)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.request(FluxFilterFuseable.java:191)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onSubscribe(MonoFlatMap.java:110)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.onSubscribe(FluxFilterFuseable.java:87)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onSubscribe(ScopePassingSpanSubscriber.java:68)
+		at reactor.core.publisher.MonoCurrentContext.subscribe(MonoCurrentContext.java:36)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:157)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.onNext(FluxFilterFuseable.java:118)
+		at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2398)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.request(FluxFilterFuseable.java:191)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.request(FluxMapFuseable.java:171)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onSubscribe(MonoFlatMap.java:110)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onSubscribe(FluxMapFuseable.java:96)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.onSubscribe(FluxFilterFuseable.java:87)
+		at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:55)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4397)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:451)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onSubscribe(FluxConcatMap.java:219)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4397)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:263)
+		at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4397)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onComplete(FluxSwitchIfEmpty.java:82)
+		at reactor.core.publisher.FluxFilter$FilterSubscriber.onComplete(FluxFilter.java:166)
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onComplete(FluxPeekFuseable.java:940)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onComplete(FluxSwitchIfEmpty.java:85)
+		at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2400)
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2194)
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onSubscribe(Operators.java:2068)
+		at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:55)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4397)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onComplete(FluxSwitchIfEmpty.java:82)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onComplete(MonoNext.java:102)
+		at reactor.core.publisher.FluxFilter$FilterSubscriber.onComplete(FluxFilter.java:166)
+		at reactor.core.publisher.FluxFlatMap$FlatMapMain.checkTerminated(FluxFlatMap.java:846)
+		at reactor.core.publisher.FluxFlatMap$FlatMapMain.drainLoop(FluxFlatMap.java:608)
+		at reactor.core.publisher.FluxFlatMap$FlatMapMain.drain(FluxFlatMap.java:588)
+		at reactor.core.publisher.FluxFlatMap$FlatMapMain.onComplete(FluxFlatMap.java:465)
+		at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onComplete(FluxPeekFuseable.java:277)
+		at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:294)
+		at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:230)
+		at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.request(FluxPeekFuseable.java:144)
+		at reactor.core.publisher.FluxFlatMap$FlatMapMain.onSubscribe(FluxFlatMap.java:371)
+		at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onSubscribe(FluxPeekFuseable.java:178)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:157)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onComplete(FluxDefaultIfEmpty.java:109)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.core.publisher.FluxFilter$FilterSubscriber.onComplete(FluxFilter.java:166)
+		at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onComplete(FluxMap.java:275)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1817)
+		at reactor.core.publisher.MonoCacheTime$CoordinatorSubscriber.signalCached(MonoCacheTime.java:337)
+		at reactor.core.publisher.MonoCacheTime$CoordinatorSubscriber.onNext(MonoCacheTime.java:354)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:89)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:89)
+		at reactor.core.publisher.MonoPublishOn$PublishOnSubscriber.run(MonoPublishOn.java:181)
+		at org.springframework.cloud.sleuth.instrument.reactor.ReactorSleuth.lambda$null$6(ReactorSleuth.java:324)
+		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+		at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+		at java.lang.Thread.run(Thread.java:745)
+2024-03-05 18:42:56 |INFO  |parallel-2 |JwtAuthorizationFilter.java:27 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/login/phoneNumberLogin
+2024-03-05 18:42:57 |WARN  |AsyncReporter{WebClientSender{http://114.55.116.140:9411/api/v2/spans}} |AsyncReporter.java:310 |zipkin2.reporter.AsyncReporter$BoundedAsyncReporter |Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2024-03-05 18:42:57 |WARN  |AsyncReporter{WebClientSender{http://114.55.116.140:9411/api/v2/spans}} |AsyncReporter.java:317 |zipkin2.reporter.AsyncReporter$BoundedAsyncReporter |Dropped 1 spans due to ReactiveException(java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 1000ms in 'flatMap' (and no fallback has been configured))
+reactor.core.Exceptions$ReactiveException: java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 1000ms in 'flatMap' (and no fallback has been configured)
+	at reactor.core.Exceptions.propagate(Exceptions.java:396)
+	at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:97)
+	at reactor.core.publisher.Mono.block(Mono.java:1707)
+	at org.springframework.cloud.sleuth.zipkin2.WebClientSender.lambda$new$0(WebClientSender.java:66)
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender.post(HttpSender.java:137)
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender$HttpPostCall.doExecute(HttpSender.java:150)
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender$HttpPostCall.doExecute(HttpSender.java:140)
+	at zipkin2.Call$Base.execute(Call.java:391)
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:299)
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378)
+	at java.lang.Thread.run(Thread.java:745)
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:99)
+		... 9 common frames omitted
+Caused by: java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 1000ms in 'flatMap' (and no fallback has been configured)
+	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.handleTimeout(FluxTimeout.java:295)
+	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.doTimeout(FluxTimeout.java:280)
+	at reactor.core.publisher.FluxTimeout$TimeoutTimeoutSubscriber.onNext(FluxTimeout.java:419)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.propagateDelay(MonoDelay.java:271)
+	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.run(MonoDelay.java:286)
+	at org.springframework.cloud.sleuth.instrument.reactor.ReactorSleuth.lambda$null$6(ReactorSleuth.java:324)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 common frames omitted
+2024-03-05 18:43:06 |INFO  |parallel-1 |JwtAuthorizationFilter.java:27 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/login/phoneNumberLogin
+2024-03-05 18:43:06 |ERROR |parallel-1 |CompositeLog.java:102 |org.springframework.boot.autoconfigure.web.reactive.error.AbstractErrorWebExceptionHandler |[1129974b-7]  500 Server Error for HTTP POST "/login/phoneNumberLogin"
+java.lang.NullPointerException: null
+	at ljl.bilibili.gateway.service.impl.LoginServiceImpl.phoneNumberLogin(LoginServiceImpl.java:87)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ljl.bilibili.gateway.filter.JwtAuthorizationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authentication.logout.LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.savedrequest.ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.sleuth.instrument.web.TraceWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP POST "/login/phoneNumberLogin" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at ljl.bilibili.gateway.service.impl.LoginServiceImpl.phoneNumberLogin(LoginServiceImpl.java:87)
+		at ljl.bilibili.gateway.service.impl.LoginServiceImpl$$FastClassBySpringCGLIB$$881b0b1.invoke(<generated>)
+		at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+		at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+		at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+		at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+		at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+		at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+		at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+		at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+		at ljl.bilibili.gateway.service.impl.LoginServiceImpl$$EnhancerBySpringCGLIB$$a29bd553.phoneNumberLogin(<generated>)
+		at ljl.bilibili.gateway.controller.LoginController.phoneNumberLogin(LoginController.java:50)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:497)
+		at org.springframework.web.reactive.result.method.InvocableHandlerMethod.lambda$invoke$0(InvocableHandlerMethod.java:144)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:125)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+		at reactor.core.publisher.MonoZip$ZipCoordinator.signal(MonoZip.java:251)
+		at reactor.core.publisher.MonoZip$ZipInner.onNext(MonoZip.java:336)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:89)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2398)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.request(MonoPeekTerminal.java:139)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.request(ScopePassingSpanSubscriber.java:75)
+		at reactor.core.publisher.MonoZip$ZipInner.onSubscribe(MonoZip.java:325)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onSubscribe(ScopePassingSpanSubscriber.java:68)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onSubscribe(MonoPeekTerminal.java:152)
+		at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:55)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4397)
+		at reactor.core.publisher.MonoZip.subscribe(MonoZip.java:128)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:240)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:203)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onComplete(ScopePassingSpanSubscriber.java:103)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onComplete(MonoFlatMap.java:181)
+		at reactor.core.publisher.Operators.complete(Operators.java:137)
+		at reactor.core.publisher.MonoZip.subscribe(MonoZip.java:120)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4397)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:263)
+		at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:157)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.innerNext(FluxConcatMap.java:282)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:863)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:89)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2398)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.request(MonoPeekTerminal.java:139)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.request(FluxMapFuseable.java:171)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.request(ScopePassingSpanSubscriber.java:75)
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2194)
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onSubscribe(Operators.java:2068)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onSubscribe(ScopePassingSpanSubscriber.java:68)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onSubscribe(FluxMapFuseable.java:96)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onSubscribe(MonoPeekTerminal.java:152)
+		at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:55)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4397)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:451)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onSubscribe(FluxConcatMap.java:219)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4397)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onComplete(FluxSwitchIfEmpty.java:82)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:299)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:299)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:148)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.FluxFilter$FilterSubscriber.onNext(FluxFilter.java:113)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:101)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.innerNext(FluxConcatMap.java:282)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:863)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:89)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onNext(MonoFlatMap.java:249)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:101)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+		at reactor.core.publisher.MonoAny$AnySubscriber.onNext(MonoAny.java:117)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drainAsync(FluxFlattenIterable.java:421)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drain(FluxFlattenIterable.java:686)
+		at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.onNext(FluxFlattenIterable.java:250)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.onNext(FluxFilterFuseable.java:94)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:272)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:313)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1798)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:151)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.onNext(FluxFilterFuseable.java:118)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:89)
+		at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2398)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.request(ScopePassingSpanSubscriber.java:75)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.request(FluxFilterFuseable.java:191)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onSubscribe(MonoFlatMap.java:110)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.onSubscribe(FluxFilterFuseable.java:87)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onSubscribe(ScopePassingSpanSubscriber.java:68)
+		at reactor.core.publisher.MonoCurrentContext.subscribe(MonoCurrentContext.java:36)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:157)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.onNext(FluxFilterFuseable.java:118)
+		at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2398)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.request(FluxFilterFuseable.java:191)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.request(FluxMapFuseable.java:171)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onSubscribe(MonoFlatMap.java:110)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onSubscribe(FluxMapFuseable.java:96)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.onSubscribe(FluxFilterFuseable.java:87)
+		at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:55)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4397)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:451)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onSubscribe(FluxConcatMap.java:219)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4397)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:263)
+		at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4397)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onComplete(FluxSwitchIfEmpty.java:82)
+		at reactor.core.publisher.FluxFilter$FilterSubscriber.onComplete(FluxFilter.java:166)
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onComplete(FluxPeekFuseable.java:940)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onComplete(FluxSwitchIfEmpty.java:85)
+		at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2400)
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2194)
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onSubscribe(Operators.java:2068)
+		at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:55)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4397)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onComplete(FluxSwitchIfEmpty.java:82)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onComplete(MonoNext.java:102)
+		at reactor.core.publisher.FluxFilter$FilterSubscriber.onComplete(FluxFilter.java:166)
+		at reactor.core.publisher.FluxFlatMap$FlatMapMain.checkTerminated(FluxFlatMap.java:846)
+		at reactor.core.publisher.FluxFlatMap$FlatMapMain.drainLoop(FluxFlatMap.java:608)
+		at reactor.core.publisher.FluxFlatMap$FlatMapMain.drain(FluxFlatMap.java:588)
+		at reactor.core.publisher.FluxFlatMap$FlatMapMain.onComplete(FluxFlatMap.java:465)
+		at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onComplete(FluxPeekFuseable.java:277)
+		at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:294)
+		at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:230)
+		at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.request(FluxPeekFuseable.java:144)
+		at reactor.core.publisher.FluxFlatMap$FlatMapMain.onSubscribe(FluxFlatMap.java:371)
+		at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onSubscribe(FluxPeekFuseable.java:178)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:157)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onComplete(FluxDefaultIfEmpty.java:109)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.core.publisher.FluxFilter$FilterSubscriber.onComplete(FluxFilter.java:166)
+		at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onComplete(FluxMap.java:275)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1817)
+		at reactor.core.publisher.MonoCacheTime$CoordinatorSubscriber.signalCached(MonoCacheTime.java:337)
+		at reactor.core.publisher.MonoCacheTime$CoordinatorSubscriber.onNext(MonoCacheTime.java:354)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:89)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:89)
+		at reactor.core.publisher.MonoPublishOn$PublishOnSubscriber.run(MonoPublishOn.java:181)
+		at org.springframework.cloud.sleuth.instrument.reactor.ReactorSleuth.lambda$null$6(ReactorSleuth.java:324)
+		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+		at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+		at java.lang.Thread.run(Thread.java:745)
+2024-03-05 18:43:37 |WARN  |Thread-55 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-03-05 18:43:37 |INFO  |Thread-24 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-03-05 18:43:37 |WARN  |Thread-58 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-03-05 18:43:37 |WARN  |Thread-55 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end
+2024-03-05 18:43:37 |WARN  |Thread-58 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-03-05 18:43:37 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-03-05 18:43:37 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-03-05 18:43:37 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-03-05 18:43:37 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-03-05 18:44:04 |INFO  |background-preinit |Version.java:21 |org.hibernate.validator.internal.util.Version |HV000001: Hibernate Validator 6.2.4.Final
+2024-03-05 18:44:04 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.GateWayApplication |Starting GateWayApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 6132 (E:\bilibili\gateway\target\classes started by Administrator in E:\bilibili)
+2024-03-05 18:44:04 |INFO  |main |SpringApplication.java:651 |ljl.bilibili.GateWayApplication |The following 1 profile is active: "dev"
+2024-03-05 18:44:06 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-05 18:44:06 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-05 18:44:06 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+2024-03-05 18:44:06 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=6caafac9-f85a-36b3-8d69-7010ad0e6ecb
+2024-03-05 18:44:07 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-05 18:44:07 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-05 18:44:07 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-05 18:44:19 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-03-05 18:44:19 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-03-05 18:44:23 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [After]
+2024-03-05 18:44:23 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Before]
+2024-03-05 18:44:23 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Between]
+2024-03-05 18:44:23 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Cookie]
+2024-03-05 18:44:23 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Header]
+2024-03-05 18:44:23 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Host]
+2024-03-05 18:44:23 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Method]
+2024-03-05 18:44:23 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Path]
+2024-03-05 18:44:23 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Query]
+2024-03-05 18:44:23 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [ReadBody]
+2024-03-05 18:44:23 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [RemoteAddr]
+2024-03-05 18:44:23 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-03-05 18:44:23 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Weight]
+2024-03-05 18:44:23 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-03-05 18:44:24 |INFO  |main |ReactiveUserDetailsServiceAutoConfiguration.java:88 |org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration |
+
+Using generated security password: 19ff344c-78e2-452a-a3fd-20600a401c1e
+
+2024-03-05 18:44:25 |WARN  |pool-4-thread-1 |ZipkinAutoConfiguration.java:165 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Check result of the [WebClientSender{http://114.55.116.140:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=java.util.concurrent.TimeoutException: Timed out after 1000ms}]
+2024-03-05 18:44:26 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 7be5805f-284c-4372-8afe-0a978f9078d5
+2024-03-05 18:44:26 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 143 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-03-05 18:44:27 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 44 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-03-05 18:44:27 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 31 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-03-05 18:44:27 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 363 ms to scan 239 urls, producing 0 keys and 0 values 
+2024-03-05 18:44:27 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 21 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-03-05 18:44:27 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 25 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-03-05 18:44:27 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 67 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-03-05 18:44:28 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 1141 ms to scan 239 urls, producing 0 keys and 0 values 
+2024-03-05 18:44:28 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[7be5805f-284c-4372-8afe-0a978f9078d5] RpcClient init label, labels = {module=naming, source=sdk}
+2024-03-05 18:44:28 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[7be5805f-284c-4372-8afe-0a978f9078d5] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-03-05 18:44:28 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[7be5805f-284c-4372-8afe-0a978f9078d5] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-03-05 18:44:28 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[7be5805f-284c-4372-8afe-0a978f9078d5] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-03-05 18:44:28 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[7be5805f-284c-4372-8afe-0a978f9078d5] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-03-05 18:44:34 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[7be5805f-284c-4372-8afe-0a978f9078d5] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709635474687_120.227.131.104_44374
+2024-03-05 18:44:34 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[7be5805f-284c-4372-8afe-0a978f9078d5] Notify connected event to listeners.
+2024-03-05 18:44:34 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[7be5805f-284c-4372-8afe-0a978f9078d5] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-03-05 18:44:34 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[7be5805f-284c-4372-8afe-0a978f9078d5] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1105/552015146
+2024-03-05 18:44:34 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-03-05 18:44:35 |INFO  |main |NettyWebServer.java:111 |org.springframework.boot.web.embedded.netty.NettyWebServer |Netty started on port 8200
+2024-03-05 18:44:36 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP gateway 192.168.10.9:8200 register finished
+2024-03-05 18:44:36 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.GateWayApplication |Started GateWayApplication in 33.719 seconds (JVM running for 36.264)
+2024-03-05 18:46:43 |INFO  |parallel-2 |JwtAuthorizationFilter.java:27 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/login/phoneNumberLogin
+2024-03-05 18:46:44 |INFO  |reactor-http-nio-1 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-03-05 18:47:02 |INFO  |parallel-4 |JwtAuthorizationFilter.java:27 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/login/phoneNumberLogin
+2024-03-05 18:47:21 |ERROR |reactor-http-nio-1 |CompositeLog.java:102 |org.springframework.boot.autoconfigure.web.reactive.error.AbstractErrorWebExceptionHandler |[c82c4c04-2]  500 Server Error for HTTP POST "/login/phoneNumberLogin"
+java.lang.NullPointerException: null
+	at ljl.bilibili.gateway.service.impl.LoginServiceImpl.phoneNumberLogin(LoginServiceImpl.java:87)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ljl.bilibili.gateway.filter.JwtAuthorizationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authentication.logout.LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.savedrequest.ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.sleuth.instrument.web.TraceWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP POST "/login/phoneNumberLogin" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at ljl.bilibili.gateway.service.impl.LoginServiceImpl.phoneNumberLogin(LoginServiceImpl.java:87)
+		at ljl.bilibili.gateway.service.impl.LoginServiceImpl$$FastClassBySpringCGLIB$$881b0b1.invoke(<generated>)
+		at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+		at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+		at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+		at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+		at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+		at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+		at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+		at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+		at ljl.bilibili.gateway.service.impl.LoginServiceImpl$$EnhancerBySpringCGLIB$$263c1e82.phoneNumberLogin(<generated>)
+		at ljl.bilibili.gateway.controller.LoginController.phoneNumberLogin(LoginController.java:50)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:497)
+		at org.springframework.web.reactive.result.method.InvocableHandlerMethod.lambda$invoke$0(InvocableHandlerMethod.java:144)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:125)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+		at reactor.core.publisher.MonoZip$ZipCoordinator.signal(MonoZip.java:251)
+		at reactor.core.publisher.MonoZip$ZipInner.onNext(MonoZip.java:336)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:89)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:101)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:151)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:160)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onComplete(ScopePassingSpanSubscriber.java:103)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onComplete(ScopePassingSpanSubscriber.java:103)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onComplete(ScopePassingSpanSubscriber.java:103)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.netty.channel.FluxReceive.terminateReceiver(FluxReceive.java:468)
+		at reactor.netty.channel.FluxReceive.drainReceiver(FluxReceive.java:260)
+		at reactor.netty.channel.FluxReceive.request(FluxReceive.java:129)
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.request(ScopePassingSpanSubscriber.java:75)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.request(FluxPeek.java:138)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.request(ScopePassingSpanSubscriber.java:75)
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.request(ScopePassingSpanSubscriber.java:75)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onSubscribe(MonoCollect.java:104)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onSubscribe(ScopePassingSpanSubscriber.java:68)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onSubscribe(FluxMap.java:92)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onSubscribe(ScopePassingSpanSubscriber.java:68)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onSubscribe(FluxPeek.java:171)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onSubscribe(ScopePassingSpanSubscriber.java:68)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onSubscribe(FluxMap.java:92)
+		at reactor.netty.channel.FluxReceive.startReceiver(FluxReceive.java:167)
+		at reactor.netty.channel.FluxReceive.lambda$subscribe$2(FluxReceive.java:146)
+		at io.netty.util.concurrent.AbstractEventExecutor.runTask$$$capture(AbstractEventExecutor.java:174)
+		at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java)
+		at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:167)
+		at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java)
+		at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:503)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.lang.Thread.run(Thread.java:745)
+2024-03-05 18:52:56 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.bilibili.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-03-05 18:52:56 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[7be5805f-284c-4372-8afe-0a978f9078d5] Server healthy check fail, currentConnection = 1709635474687_120.227.131.104_44374
+2024-03-05 18:52:56 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[7be5805f-284c-4372-8afe-0a978f9078d5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-03-05 18:52:56 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[7be5805f-284c-4372-8afe-0a978f9078d5] Success to connect a server [116.62.71.84:8848], connectionId = 1709635977662_120.227.131.104_44156
+2024-03-05 18:52:56 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[7be5805f-284c-4372-8afe-0a978f9078d5] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1709635474687_120.227.131.104_44374
+2024-03-05 18:52:56 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1709635474687_120.227.131.104_44374
+2024-03-05 18:52:56 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[7be5805f-284c-4372-8afe-0a978f9078d5] Notify disconnected event to listeners
+2024-03-05 18:52:56 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[7be5805f-284c-4372-8afe-0a978f9078d5] Notify connected event to listeners.
+2024-03-05 18:52:56 |WARN  |nacos-grpc-client-executor-38 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1709635474687_120.227.131.104_44374]Ignore error event,isRunning:true,isAbandon=true
+2024-03-05 18:53:01 |INFO  |Thread-18 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-03-05 18:53:01 |WARN  |Thread-39 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-03-05 18:53:01 |WARN  |Thread-39 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end
+2024-03-05 18:53:01 |WARN  |Thread-43 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-03-05 18:53:01 |WARN  |Thread-43 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-03-05 18:53:02 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-03-05 18:53:02 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-03-05 18:53:02 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-03-05 18:53:02 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-03-05 18:53:17 |INFO  |background-preinit |Version.java:21 |org.hibernate.validator.internal.util.Version |HV000001: Hibernate Validator 6.2.4.Final
+2024-03-05 18:53:17 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.GateWayApplication |Starting GateWayApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 16280 (E:\bilibili\gateway\target\classes started by Administrator in E:\bilibili)
+2024-03-05 18:53:17 |INFO  |main |SpringApplication.java:651 |ljl.bilibili.GateWayApplication |The following 1 profile is active: "dev"
+2024-03-05 18:53:19 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-05 18:53:19 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-05 18:53:19 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 38 ms. Found 0 Redis repository interfaces.
+2024-03-05 18:53:20 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=6caafac9-f85a-36b3-8d69-7010ad0e6ecb
+2024-03-05 18:53:20 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-05 18:53:20 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-05 18:53:20 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-05 18:53:27 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-03-05 18:53:27 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-03-05 18:53:30 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [After]
+2024-03-05 18:53:30 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Before]
+2024-03-05 18:53:30 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Between]
+2024-03-05 18:53:30 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Cookie]
+2024-03-05 18:53:30 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Header]
+2024-03-05 18:53:30 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Host]
+2024-03-05 18:53:30 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Method]
+2024-03-05 18:53:30 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Path]
+2024-03-05 18:53:30 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Query]
+2024-03-05 18:53:30 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [ReadBody]
+2024-03-05 18:53:30 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [RemoteAddr]
+2024-03-05 18:53:30 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-03-05 18:53:30 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Weight]
+2024-03-05 18:53:30 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-03-05 18:53:31 |INFO  |main |ReactiveUserDetailsServiceAutoConfiguration.java:88 |org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration |
+
+Using generated security password: 6d5e4486-de66-4f6a-b4db-dd85b51721c4
+
+2024-03-05 18:53:32 |WARN  |pool-4-thread-1 |ZipkinAutoConfiguration.java:165 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Check result of the [WebClientSender{http://114.55.116.140:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=java.util.concurrent.TimeoutException: Timed out after 1000ms}]
+2024-03-05 18:53:33 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of e562e01f-53dc-4142-af17-f0dbadaa2410
+2024-03-05 18:53:33 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 50 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-03-05 18:53:33 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 21 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-03-05 18:53:33 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 14 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-03-05 18:53:34 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 210 ms to scan 239 urls, producing 0 keys and 0 values 
+2024-03-05 18:53:34 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 15 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-03-05 18:53:34 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 15 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-03-05 18:53:34 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 11 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-03-05 18:53:34 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 155 ms to scan 239 urls, producing 0 keys and 0 values 
+2024-03-05 18:53:34 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e562e01f-53dc-4142-af17-f0dbadaa2410] RpcClient init label, labels = {module=naming, source=sdk}
+2024-03-05 18:53:34 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e562e01f-53dc-4142-af17-f0dbadaa2410] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-03-05 18:53:34 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e562e01f-53dc-4142-af17-f0dbadaa2410] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-03-05 18:53:34 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e562e01f-53dc-4142-af17-f0dbadaa2410] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-03-05 18:53:34 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e562e01f-53dc-4142-af17-f0dbadaa2410] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-03-05 18:53:39 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e562e01f-53dc-4142-af17-f0dbadaa2410] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1709636019761_120.227.131.104_44184
+2024-03-05 18:53:39 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e562e01f-53dc-4142-af17-f0dbadaa2410] Notify connected event to listeners.
+2024-03-05 18:53:39 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e562e01f-53dc-4142-af17-f0dbadaa2410] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-03-05 18:53:39 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e562e01f-53dc-4142-af17-f0dbadaa2410] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1105/841323501
+2024-03-05 18:53:39 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-03-05 18:53:41 |INFO  |main |NettyWebServer.java:111 |org.springframework.boot.web.embedded.netty.NettyWebServer |Netty started on port 8200
+2024-03-05 18:53:41 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP gateway 192.168.10.9:8200 register finished
+2024-03-05 18:53:41 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.GateWayApplication |Started GateWayApplication in 25.952 seconds (JVM running for 27.948)
+2024-03-05 18:53:53 |INFO  |parallel-2 |JwtAuthorizationFilter.java:27 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/login/phoneNumberLogin
+2024-03-05 18:53:54 |INFO  |reactor-http-nio-1 |DruidDataSource.java:975 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-03-05 18:54:17 |ERROR |reactor-http-nio-1 |CompositeLog.java:102 |org.springframework.boot.autoconfigure.web.reactive.error.AbstractErrorWebExceptionHandler |[0bcc2c0b-1]  500 Server Error for HTTP POST "/login/phoneNumberLogin"
+java.lang.NullPointerException: null
+	at ljl.bilibili.gateway.service.impl.LoginServiceImpl.phoneNumberLogin(LoginServiceImpl.java:91)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ljl.bilibili.gateway.filter.JwtAuthorizationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authentication.logout.LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.savedrequest.ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.sleuth.instrument.web.TraceWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP POST "/login/phoneNumberLogin" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at ljl.bilibili.gateway.service.impl.LoginServiceImpl.phoneNumberLogin(LoginServiceImpl.java:91)
+		at ljl.bilibili.gateway.service.impl.LoginServiceImpl$$FastClassBySpringCGLIB$$881b0b1.invoke(<generated>)
+		at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+		at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+		at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+		at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+		at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+		at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+		at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+		at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+		at ljl.bilibili.gateway.service.impl.LoginServiceImpl$$EnhancerBySpringCGLIB$$9c84b625.phoneNumberLogin(<generated>)
+		at ljl.bilibili.gateway.controller.LoginController.phoneNumberLogin(LoginController.java:50)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:497)
+		at org.springframework.web.reactive.result.method.InvocableHandlerMethod.lambda$invoke$0(InvocableHandlerMethod.java:144)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:125)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+		at reactor.core.publisher.MonoZip$ZipCoordinator.signal(MonoZip.java:251)
+		at reactor.core.publisher.MonoZip$ZipInner.onNext(MonoZip.java:336)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:89)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:101)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:151)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:160)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onComplete(ScopePassingSpanSubscriber.java:103)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onComplete(ScopePassingSpanSubscriber.java:103)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onComplete(ScopePassingSpanSubscriber.java:103)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.netty.channel.FluxReceive.terminateReceiver(FluxReceive.java:468)
+		at reactor.netty.channel.FluxReceive.drainReceiver(FluxReceive.java:260)
+		at reactor.netty.channel.FluxReceive.request(FluxReceive.java:129)
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.request(ScopePassingSpanSubscriber.java:75)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.request(FluxPeek.java:138)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.request(ScopePassingSpanSubscriber.java:75)
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.request(ScopePassingSpanSubscriber.java:75)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onSubscribe(MonoCollect.java:104)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onSubscribe(ScopePassingSpanSubscriber.java:68)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onSubscribe(FluxMap.java:92)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onSubscribe(ScopePassingSpanSubscriber.java:68)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onSubscribe(FluxPeek.java:171)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onSubscribe(ScopePassingSpanSubscriber.java:68)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onSubscribe(FluxMap.java:92)
+		at reactor.netty.channel.FluxReceive.startReceiver(FluxReceive.java:167)
+		at reactor.netty.channel.FluxReceive.lambda$subscribe$2(FluxReceive.java:146)
+		at io.netty.util.concurrent.AbstractEventExecutor.runTask$$$capture(AbstractEventExecutor.java:174)
+		at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java)
+		at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:167)
+		at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java)
+		at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:503)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.lang.Thread.run(Thread.java:745)
+2024-03-05 18:56:07 |INFO  |parallel-2 |JwtAuthorizationFilter.java:27 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/login/phoneNumberLogin
+2024-03-05 18:56:09 |ERROR |reactor-http-nio-1 |CompositeLog.java:102 |org.springframework.boot.autoconfigure.web.reactive.error.AbstractErrorWebExceptionHandler |[0bcc2c0b-2]  500 Server Error for HTTP POST "/login/phoneNumberLogin"
+java.lang.NullPointerException: null
+	at ljl.bilibili.gateway.service.impl.LoginServiceImpl.phoneNumberLogin(LoginServiceImpl.java:91)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ljl.bilibili.gateway.filter.JwtAuthorizationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authentication.logout.LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.savedrequest.ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.sleuth.instrument.web.TraceWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP POST "/login/phoneNumberLogin" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at ljl.bilibili.gateway.service.impl.LoginServiceImpl.phoneNumberLogin(LoginServiceImpl.java:91)
+		at ljl.bilibili.gateway.service.impl.LoginServiceImpl$$FastClassBySpringCGLIB$$881b0b1.invoke(<generated>)
+		at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+		at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+		at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+		at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+		at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+		at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+		at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+		at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+		at ljl.bilibili.gateway.service.impl.LoginServiceImpl$$EnhancerBySpringCGLIB$$9c84b625.phoneNumberLogin(<generated>)
+		at ljl.bilibili.gateway.controller.LoginController.phoneNumberLogin(LoginController.java:50)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:497)
+		at org.springframework.web.reactive.result.method.InvocableHandlerMethod.lambda$invoke$0(InvocableHandlerMethod.java:144)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:125)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+		at reactor.core.publisher.MonoZip$ZipCoordinator.signal(MonoZip.java:251)
+		at reactor.core.publisher.MonoZip$ZipInner.onNext(MonoZip.java:336)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:89)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:101)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:151)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:160)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onComplete(ScopePassingSpanSubscriber.java:103)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onComplete(ScopePassingSpanSubscriber.java:103)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onComplete(ScopePassingSpanSubscriber.java:103)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.netty.channel.FluxReceive.terminateReceiver(FluxReceive.java:468)
+		at reactor.netty.channel.FluxReceive.drainReceiver(FluxReceive.java:260)
+		at reactor.netty.channel.FluxReceive.request(FluxReceive.java:129)
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.request(ScopePassingSpanSubscriber.java:75)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.request(FluxPeek.java:138)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.request(ScopePassingSpanSubscriber.java:75)
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.request(ScopePassingSpanSubscriber.java:75)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onSubscribe(MonoCollect.java:104)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onSubscribe(ScopePassingSpanSubscriber.java:68)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onSubscribe(FluxMap.java:92)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onSubscribe(ScopePassingSpanSubscriber.java:68)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onSubscribe(FluxPeek.java:171)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onSubscribe(ScopePassingSpanSubscriber.java:68)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onSubscribe(FluxMap.java:92)
+		at reactor.netty.channel.FluxReceive.startReceiver(FluxReceive.java:167)
+		at reactor.netty.channel.FluxReceive.lambda$subscribe$2(FluxReceive.java:146)
+		at io.netty.util.concurrent.AbstractEventExecutor.runTask$$$capture(AbstractEventExecutor.java:174)
+		at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java)
+		at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:167)
+		at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java)
+		at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:503)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.lang.Thread.run(Thread.java:745)
+2024-03-05 18:56:09 |WARN  |AsyncReporter{WebClientSender{http://114.55.116.140:9411/api/v2/spans}} |AsyncReporter.java:310 |zipkin2.reporter.AsyncReporter$BoundedAsyncReporter |Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2024-03-05 18:56:10 |WARN  |AsyncReporter{WebClientSender{http://114.55.116.140:9411/api/v2/spans}} |AsyncReporter.java:317 |zipkin2.reporter.AsyncReporter$BoundedAsyncReporter |Dropped 1 spans due to ReactiveException(java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 1000ms in 'flatMap' (and no fallback has been configured))
+reactor.core.Exceptions$ReactiveException: java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 1000ms in 'flatMap' (and no fallback has been configured)
+	at reactor.core.Exceptions.propagate(Exceptions.java:396)
+	at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:97)
+	at reactor.core.publisher.Mono.block(Mono.java:1707)
+	at org.springframework.cloud.sleuth.zipkin2.WebClientSender.lambda$new$0(WebClientSender.java:66)
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender.post(HttpSender.java:137)
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender$HttpPostCall.doExecute(HttpSender.java:150)
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender$HttpPostCall.doExecute(HttpSender.java:140)
+	at zipkin2.Call$Base.execute(Call.java:391)
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:299)
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378)
+	at java.lang.Thread.run(Thread.java:745)
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:99)
+		... 9 common frames omitted
+Caused by: java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 1000ms in 'flatMap' (and no fallback has been configured)
+	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.handleTimeout(FluxTimeout.java:295)
+	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.doTimeout(FluxTimeout.java:280)
+	at reactor.core.publisher.FluxTimeout$TimeoutTimeoutSubscriber.onNext(FluxTimeout.java:419)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.propagateDelay(MonoDelay.java:271)
+	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.run(MonoDelay.java:286)
+	at org.springframework.cloud.sleuth.instrument.reactor.ReactorSleuth.lambda$null$6(ReactorSleuth.java:324)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 common frames omitted
+2024-03-05 18:56:52 |INFO  |Thread-17 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-03-05 18:56:52 |WARN  |Thread-41 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-03-05 18:56:52 |WARN  |Thread-41 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-03-05 18:56:52 |WARN  |Thread-38 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-03-05 18:56:52 |WARN  |Thread-38 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end
+2024-03-05 18:56:52 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-03-05 18:56:52 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-03-05 18:56:52 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closing ...
+2024-03-05 18:56:52 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2136 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed

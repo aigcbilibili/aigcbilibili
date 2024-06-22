@@ -1,0 +1,23 @@
+2024-02-27 00:06:29 |INFO  |com.alibaba.nacos.client.remote.worker |TimeBasedFilter.java:24 |ljl.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-02-27 00:06:29 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[5f73ef02-9b6d-4c30-9d6c-84b5c4afe0d1] Server healthy check fail, currentConnection = 1708962380660_120.227.129.112_46285
+2024-02-27 00:06:29 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[5f73ef02-9b6d-4c30-9d6c-84b5c4afe0d1] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-02-27 00:06:30 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[5f73ef02-9b6d-4c30-9d6c-84b5c4afe0d1] Success to connect a server [116.62.71.84:8848], connectionId = 1708963590630_120.227.129.112_46106
+2024-02-27 00:06:30 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[5f73ef02-9b6d-4c30-9d6c-84b5c4afe0d1] Abandon prev connection, server is 116.62.71.84:8848, connectionId is 1708962380660_120.227.129.112_46285
+2024-02-27 00:06:30 |INFO  |com.alibaba.nacos.client.remote.worker |RpcClient.java:591 |com.alibaba.nacos.common.remote.client |Close current connection 1708962380660_120.227.129.112_46285
+2024-02-27 00:06:30 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[5f73ef02-9b6d-4c30-9d6c-84b5c4afe0d1] Notify disconnected event to listeners
+2024-02-27 00:06:30 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[5f73ef02-9b6d-4c30-9d6c-84b5c4afe0d1] Notify connected event to listeners.
+2024-02-27 00:06:30 |WARN  |nacos-grpc-client-executor-964 |LoggerUtils.java:86 |com.alibaba.nacos.common.remote.client.grpc.GrpcClient |[1708962380660_120.227.129.112_46285]Ignore error event,isRunning:true,isAbandon=true
+2024-02-27 00:10:34 |WARN  |Thread-30 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-02-27 00:10:34 |WARN  |Thread-27 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-02-27 00:10:34 |INFO  |Thread-16 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-02-27 00:10:34 |WARN  |Thread-27 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end
+2024-02-27 00:10:34 |WARN  |Thread-30 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-02-27 00:10:36 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-02-27 00:10:36 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-02-27 00:10:36 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-0} closing ...

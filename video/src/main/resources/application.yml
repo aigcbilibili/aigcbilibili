@@ -1,0 +1,58 @@
+server:
+  port: 10201
+spring:
+  redis:
+    host: xxx.84
+  application:
+    name: video
+  zipkin:
+    base-url: http://xxx:9411 # zipkin服务地址
+    sender:
+      type: web
+    sleuth:
+      sampler:
+        probability: 1 # sleuth 日志记录采样率，1为100%，默认为0.1即10%
+  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 116.62.71.84:8848
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 150MB
+      max-request-size: 350MB
+      location: var/temp
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    #    hikari:
+    #      max-lifetime: 2520000  7 小时
+    #      idle-timeout: 21600000   6 小时
+    #      validation-timeout: 5000  5 秒
+    name: datasource
+    url: jdbc:mysql://xxx:3306/bilibili?useUnicode=true&allowPublicKeyRetrieval=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
+    username: xxx
+    password: xxx
+
+
+
+minio:
+  url: http://xxx:9000
+  access.name: xxx
+  access.secret: xxx
+  bucket.name: video
+rocketmq:
+  name-server: xxx:9876
+  producer:
+    group: producer
+module-name: video
+global-exception-handler:
+  enabled: true
+
+#logging:
+#  level:
+#    root: debug
+
+
+
+
+

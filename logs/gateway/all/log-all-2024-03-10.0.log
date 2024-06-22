@@ -1,0 +1,535 @@
+2024-03-10 04:01:44 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.GateWayApplication |Starting GateWayApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 13296 (E:\bilibili\gateway\target\classes started by Administrator in E:\bilibili)
+2024-03-10 04:01:44 |INFO  |main |SpringApplication.java:651 |ljl.bilibili.GateWayApplication |The following 1 profile is active: "dev"
+2024-03-10 04:01:44 |INFO  |background-preinit |Version.java:21 |org.hibernate.validator.internal.util.Version |HV000001: Hibernate Validator 6.2.4.Final
+2024-03-10 04:01:47 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-10 04:01:47 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-10 04:01:47 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 27 ms. Found 0 Redis repository interfaces.
+2024-03-10 04:01:48 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=cbf279ea-f2f9-381a-a606-ad9b71f0f84a
+2024-03-10 04:01:48 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-10 04:01:48 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-10 04:01:48 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-10 04:01:50 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-03-10 04:01:50 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-03-10 04:01:53 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [After]
+2024-03-10 04:01:53 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Before]
+2024-03-10 04:01:53 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Between]
+2024-03-10 04:01:53 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Cookie]
+2024-03-10 04:01:53 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Header]
+2024-03-10 04:01:53 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Host]
+2024-03-10 04:01:53 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Method]
+2024-03-10 04:01:53 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Path]
+2024-03-10 04:01:53 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Query]
+2024-03-10 04:01:53 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [ReadBody]
+2024-03-10 04:01:53 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [RemoteAddr]
+2024-03-10 04:01:53 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-03-10 04:01:53 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Weight]
+2024-03-10 04:01:53 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-03-10 04:01:53 |WARN  |main |AbstractApplicationContext.java:591 |org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext |Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginController': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.mail.username' in value "${spring.mail.username}"
+2024-03-10 04:01:53 |INFO  |main |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-0} closing ...
+2024-03-10 04:01:54 |WARN  |main |AsyncReporter.java:342 |zipkin2.reporter.AsyncReporter$BoundedAsyncReporter |Timed out waiting for in-flight spans to send
+2024-03-10 04:01:56 |INFO  |main |ConditionEvaluationReportLoggingListener.java:136 |org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener |
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-03-10 04:01:56 |ERROR |main |SpringApplication.java:835 |org.springframework.boot.SpringApplication |Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginController': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.mail.username' in value "${spring.mail.username}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at ljl.bilibili.GateWayApplication.main(GateWayApplication.java:12)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.mail.username' in value "${spring.mail.username}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1332)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 17 common frames omitted
+2024-03-10 04:01:57 |INFO  |Thread-18 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-03-10 04:06:21 |INFO  |background-preinit |Version.java:21 |org.hibernate.validator.internal.util.Version |HV000001: Hibernate Validator 6.2.4.Final
+2024-03-10 04:06:21 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.GateWayApplication |Starting GateWayApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 12932 (E:\bilibili\gateway\target\classes started by Administrator in E:\bilibili)
+2024-03-10 04:06:21 |INFO  |main |SpringApplication.java:651 |ljl.bilibili.GateWayApplication |The following 1 profile is active: "dev"
+2024-03-10 04:06:22 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-10 04:06:22 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-10 04:06:23 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 31 ms. Found 0 Redis repository interfaces.
+2024-03-10 04:06:23 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=cbf279ea-f2f9-381a-a606-ad9b71f0f84a
+2024-03-10 04:06:23 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-10 04:06:23 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-10 04:06:23 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-10 04:06:25 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-03-10 04:06:25 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-03-10 04:06:27 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [After]
+2024-03-10 04:06:27 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Before]
+2024-03-10 04:06:27 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Between]
+2024-03-10 04:06:27 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Cookie]
+2024-03-10 04:06:27 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Header]
+2024-03-10 04:06:27 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Host]
+2024-03-10 04:06:27 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Method]
+2024-03-10 04:06:27 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Path]
+2024-03-10 04:06:27 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Query]
+2024-03-10 04:06:27 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [ReadBody]
+2024-03-10 04:06:27 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [RemoteAddr]
+2024-03-10 04:06:27 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-03-10 04:06:27 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Weight]
+2024-03-10 04:06:27 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-03-10 04:06:27 |INFO  |main |ReactiveUserDetailsServiceAutoConfiguration.java:88 |org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration |
+
+Using generated security password: 0e03b1e6-b6b1-47d1-a0ac-d852bb76bb71
+
+2024-03-10 04:06:28 |WARN  |main |AbstractApplicationContext.java:591 |org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext |Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webHandler' defined in class path resource [org/springframework/boot/autoconfigure/web/reactive/WebFluxAutoConfiguration$EnableWebFluxConfiguration.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/reactive/WebFluxAutoConfiguration$EnableWebFluxConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'loginController' method 
+ljl.bilibili.gateway.controller.LoginController#sendMailNumberCpatcha()
+to {POST /login/phoneNumberCpatcha}: There is already 'loginController' bean method
+ljl.bilibili.gateway.controller.LoginController#sendPhoneNumberCpatcha() mapped.
+2024-03-10 04:06:28 |INFO  |main |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-0} closing ...
+2024-03-10 04:06:29 |WARN  |main |AsyncReporter.java:342 |zipkin2.reporter.AsyncReporter$BoundedAsyncReporter |Timed out waiting for in-flight spans to send
+2024-03-10 04:06:31 |INFO  |main |ConditionEvaluationReportLoggingListener.java:136 |org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener |
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-03-10 04:06:31 |ERROR |main |SpringApplication.java:835 |org.springframework.boot.SpringApplication |Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webHandler' defined in class path resource [org/springframework/boot/autoconfigure/web/reactive/WebFluxAutoConfiguration$EnableWebFluxConfiguration.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/reactive/WebFluxAutoConfiguration$EnableWebFluxConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'loginController' method 
+ljl.bilibili.gateway.controller.LoginController#sendMailNumberCpatcha()
+to {POST /login/phoneNumberCpatcha}: There is already 'loginController' bean method
+ljl.bilibili.gateway.controller.LoginController#sendPhoneNumberCpatcha() mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at ljl.bilibili.GateWayApplication.main(GateWayApplication.java:12)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/reactive/WebFluxAutoConfiguration$EnableWebFluxConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'loginController' method 
+ljl.bilibili.gateway.controller.LoginController#sendMailNumberCpatcha()
+to {POST /login/phoneNumberCpatcha}: There is already 'loginController' bean method
+ljl.bilibili.gateway.controller.LoginController#sendPhoneNumberCpatcha() mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:673)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1308)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:378)
+	at org.springframework.web.reactive.DispatcherHandler.initStrategies(DispatcherHandler.java:120)
+	at org.springframework.web.reactive.DispatcherHandler.setApplicationContext(DispatcherHandler.java:115)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.invokeAwareInterfaces(ApplicationContextAwareProcessor.java:128)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.postProcessBeforeInitialization(ApplicationContextAwareProcessor.java:102)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:440)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	... 15 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'loginController' method 
+ljl.bilibili.gateway.controller.LoginController#sendMailNumberCpatcha()
+to {POST /login/phoneNumberCpatcha}: There is already 'loginController' bean method
+ljl.bilibili.gateway.controller.LoginController#sendPhoneNumberCpatcha() mapped.
+	at org.springframework.web.reactive.result.method.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:555)
+	at org.springframework.web.reactive.result.method.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+	at org.springframework.web.reactive.result.method.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:251)
+	at org.springframework.web.reactive.result.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:272)
+	at org.springframework.web.reactive.result.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:59)
+	at org.springframework.web.reactive.result.method.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:218)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:676)
+	at org.springframework.web.reactive.result.method.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:216)
+	at org.springframework.web.reactive.result.method.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:191)
+	at org.springframework.web.reactive.result.method.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:160)
+	at org.springframework.web.reactive.result.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:126)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 31 common frames omitted
+2024-03-10 04:06:32 |INFO  |Thread-14 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-03-10 14:22:36 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.GateWayApplication |Starting GateWayApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 14880 (E:\bilibili\gateway\target\classes started by Administrator in E:\bilibili)
+2024-03-10 14:22:36 |INFO  |background-preinit |Version.java:21 |org.hibernate.validator.internal.util.Version |HV000001: Hibernate Validator 6.2.4.Final
+2024-03-10 14:22:36 |INFO  |main |SpringApplication.java:651 |ljl.bilibili.GateWayApplication |The following 1 profile is active: "dev"
+2024-03-10 14:22:39 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-10 14:22:39 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-10 14:22:39 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 32 ms. Found 0 Redis repository interfaces.
+2024-03-10 14:22:40 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=cbf279ea-f2f9-381a-a606-ad9b71f0f84a
+2024-03-10 14:22:40 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-10 14:22:40 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-10 14:22:40 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-10 14:22:42 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-03-10 14:22:43 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-03-10 14:22:45 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [After]
+2024-03-10 14:22:45 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Before]
+2024-03-10 14:22:45 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Between]
+2024-03-10 14:22:45 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Cookie]
+2024-03-10 14:22:45 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Header]
+2024-03-10 14:22:45 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Host]
+2024-03-10 14:22:45 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Method]
+2024-03-10 14:22:45 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Path]
+2024-03-10 14:22:45 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Query]
+2024-03-10 14:22:45 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [ReadBody]
+2024-03-10 14:22:45 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [RemoteAddr]
+2024-03-10 14:22:45 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-03-10 14:22:45 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Weight]
+2024-03-10 14:22:45 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-03-10 14:22:45 |INFO  |main |ReactiveUserDetailsServiceAutoConfiguration.java:88 |org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration |
+
+Using generated security password: 5cfc2cce-6260-4532-a75a-f77110cf6a7c
+
+2024-03-10 14:22:47 |WARN  |pool-4-thread-1 |ZipkinAutoConfiguration.java:165 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Check result of the [WebClientSender{http://114.55.116.140:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=java.util.concurrent.TimeoutException: Timed out after 1000ms}]
+2024-03-10 14:22:47 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 41ad5178-3646-477e-91df-12b34ff1f2a2
+2024-03-10 14:22:48 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 66 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-03-10 14:22:48 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 24 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-03-10 14:22:48 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 22 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-03-10 14:22:48 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 296 ms to scan 241 urls, producing 0 keys and 0 values 
+2024-03-10 14:22:48 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 14 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-03-10 14:22:48 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 13 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-03-10 14:22:48 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 19 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-03-10 14:22:48 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 153 ms to scan 241 urls, producing 0 keys and 0 values 
+2024-03-10 14:22:48 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[41ad5178-3646-477e-91df-12b34ff1f2a2] RpcClient init label, labels = {module=naming, source=sdk}
+2024-03-10 14:22:48 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[41ad5178-3646-477e-91df-12b34ff1f2a2] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-03-10 14:22:48 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[41ad5178-3646-477e-91df-12b34ff1f2a2] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-03-10 14:22:48 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[41ad5178-3646-477e-91df-12b34ff1f2a2] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-03-10 14:22:48 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[41ad5178-3646-477e-91df-12b34ff1f2a2] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-03-10 14:22:50 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[41ad5178-3646-477e-91df-12b34ff1f2a2] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1710051769240_120.227.131.104_44883
+2024-03-10 14:22:50 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[41ad5178-3646-477e-91df-12b34ff1f2a2] Notify connected event to listeners.
+2024-03-10 14:22:50 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[41ad5178-3646-477e-91df-12b34ff1f2a2] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-03-10 14:22:50 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[41ad5178-3646-477e-91df-12b34ff1f2a2] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1103/1731036016
+2024-03-10 14:22:51 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-03-10 14:22:52 |INFO  |main |NettyWebServer.java:111 |org.springframework.boot.web.embedded.netty.NettyWebServer |Netty started on port 8200
+2024-03-10 14:22:53 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP gateway 192.168.10.9:8200 register finished
+2024-03-10 14:22:53 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.GateWayApplication |Started GateWayApplication in 17.928 seconds (JVM running for 20.236)
+2024-03-10 14:23:28 |WARN  |Thread-39 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-03-10 14:23:28 |INFO  |Thread-19 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-03-10 14:23:28 |WARN  |Thread-39 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-03-10 14:23:28 |WARN  |Thread-36 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-03-10 14:23:28 |WARN  |Thread-36 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end
+2024-03-10 14:23:28 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-03-10 14:23:28 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-03-10 14:23:28 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-0} closing ...
+2024-03-10 15:57:44 |INFO  |background-preinit |Version.java:21 |org.hibernate.validator.internal.util.Version |HV000001: Hibernate Validator 6.2.4.Final
+2024-03-10 15:57:44 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.GateWayApplication |Starting GateWayApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 11704 (E:\bilibili\gateway\target\classes started by Administrator in E:\bilibili)
+2024-03-10 15:57:44 |INFO  |main |SpringApplication.java:651 |ljl.bilibili.GateWayApplication |The following 1 profile is active: "dev"
+2024-03-10 15:57:49 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-10 15:57:49 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-10 15:57:49 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 30 ms. Found 0 Redis repository interfaces.
+2024-03-10 15:57:50 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=cbf279ea-f2f9-381a-a606-ad9b71f0f84a
+2024-03-10 15:57:51 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-10 15:57:51 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-10 15:57:51 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-10 15:57:53 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-03-10 15:57:53 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-03-10 15:57:56 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [After]
+2024-03-10 15:57:56 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Before]
+2024-03-10 15:57:56 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Between]
+2024-03-10 15:57:56 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Cookie]
+2024-03-10 15:57:56 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Header]
+2024-03-10 15:57:56 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Host]
+2024-03-10 15:57:56 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Method]
+2024-03-10 15:57:56 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Path]
+2024-03-10 15:57:56 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Query]
+2024-03-10 15:57:56 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [ReadBody]
+2024-03-10 15:57:56 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [RemoteAddr]
+2024-03-10 15:57:56 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-03-10 15:57:56 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Weight]
+2024-03-10 15:57:56 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-03-10 15:57:57 |INFO  |main |ReactiveUserDetailsServiceAutoConfiguration.java:88 |org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration |
+
+Using generated security password: ce11a71f-e300-4524-bde5-a7a472adb6d4
+
+2024-03-10 15:57:58 |WARN  |pool-4-thread-1 |ZipkinAutoConfiguration.java:165 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Check result of the [WebClientSender{http://114.55.116.140:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=java.util.concurrent.TimeoutException: Timed out after 1000ms}]
+2024-03-10 15:58:00 |WARN  |main |AbstractApplicationContext.java:591 |org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext |Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webHandler' defined in class path resource [org/springframework/boot/autoconfigure/web/reactive/WebFluxAutoConfiguration$EnableWebFluxConfiguration.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/reactive/WebFluxAutoConfiguration$EnableWebFluxConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'loginController' method 
+ljl.bilibili.gateway.controller.LoginController#sendMailNumberCpatcha()
+to {POST /login/phoneNumberCpatcha}: There is already 'loginController' bean method
+ljl.bilibili.gateway.controller.LoginController#sendPhoneNumberCpatcha() mapped.
+2024-03-10 15:58:00 |INFO  |main |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-0} closing ...
+2024-03-10 15:58:02 |WARN  |main |AsyncReporter.java:342 |zipkin2.reporter.AsyncReporter$BoundedAsyncReporter |Timed out waiting for in-flight spans to send
+2024-03-10 15:58:04 |INFO  |main |ConditionEvaluationReportLoggingListener.java:136 |org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener |
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-03-10 15:58:04 |ERROR |main |SpringApplication.java:835 |org.springframework.boot.SpringApplication |Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webHandler' defined in class path resource [org/springframework/boot/autoconfigure/web/reactive/WebFluxAutoConfiguration$EnableWebFluxConfiguration.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/reactive/WebFluxAutoConfiguration$EnableWebFluxConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'loginController' method 
+ljl.bilibili.gateway.controller.LoginController#sendMailNumberCpatcha()
+to {POST /login/phoneNumberCpatcha}: There is already 'loginController' bean method
+ljl.bilibili.gateway.controller.LoginController#sendPhoneNumberCpatcha() mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at ljl.bilibili.GateWayApplication.main(GateWayApplication.java:12)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/reactive/WebFluxAutoConfiguration$EnableWebFluxConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'loginController' method 
+ljl.bilibili.gateway.controller.LoginController#sendMailNumberCpatcha()
+to {POST /login/phoneNumberCpatcha}: There is already 'loginController' bean method
+ljl.bilibili.gateway.controller.LoginController#sendPhoneNumberCpatcha() mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:673)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1308)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:378)
+	at org.springframework.web.reactive.DispatcherHandler.initStrategies(DispatcherHandler.java:120)
+	at org.springframework.web.reactive.DispatcherHandler.setApplicationContext(DispatcherHandler.java:115)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.invokeAwareInterfaces(ApplicationContextAwareProcessor.java:128)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.postProcessBeforeInitialization(ApplicationContextAwareProcessor.java:102)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:440)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	... 15 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'loginController' method 
+ljl.bilibili.gateway.controller.LoginController#sendMailNumberCpatcha()
+to {POST /login/phoneNumberCpatcha}: There is already 'loginController' bean method
+ljl.bilibili.gateway.controller.LoginController#sendPhoneNumberCpatcha() mapped.
+	at org.springframework.web.reactive.result.method.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:555)
+	at org.springframework.web.reactive.result.method.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+	at org.springframework.web.reactive.result.method.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:251)
+	at org.springframework.web.reactive.result.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:272)
+	at org.springframework.web.reactive.result.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:59)
+	at org.springframework.web.reactive.result.method.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:218)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:676)
+	at org.springframework.web.reactive.result.method.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:216)
+	at org.springframework.web.reactive.result.method.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:191)
+	at org.springframework.web.reactive.result.method.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:160)
+	at org.springframework.web.reactive.result.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:126)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 31 common frames omitted
+2024-03-10 15:58:05 |INFO  |Thread-22 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-03-10 15:59:04 |INFO  |background-preinit |Version.java:21 |org.hibernate.validator.internal.util.Version |HV000001: Hibernate Validator 6.2.4.Final
+2024-03-10 15:59:04 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.GateWayApplication |Starting GateWayApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 1600 (E:\bilibili\gateway\target\classes started by Administrator in E:\bilibili)
+2024-03-10 15:59:04 |INFO  |main |SpringApplication.java:651 |ljl.bilibili.GateWayApplication |The following 1 profile is active: "dev"
+2024-03-10 15:59:06 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-10 15:59:06 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-10 15:59:06 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 35 ms. Found 0 Redis repository interfaces.
+2024-03-10 15:59:07 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=cbf279ea-f2f9-381a-a606-ad9b71f0f84a
+2024-03-10 15:59:08 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-10 15:59:08 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-10 15:59:08 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-10 15:59:10 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-03-10 15:59:10 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-03-10 15:59:13 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [After]
+2024-03-10 15:59:13 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Before]
+2024-03-10 15:59:13 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Between]
+2024-03-10 15:59:13 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Cookie]
+2024-03-10 15:59:13 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Header]
+2024-03-10 15:59:13 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Host]
+2024-03-10 15:59:13 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Method]
+2024-03-10 15:59:13 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Path]
+2024-03-10 15:59:13 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Query]
+2024-03-10 15:59:13 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [ReadBody]
+2024-03-10 15:59:13 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [RemoteAddr]
+2024-03-10 15:59:13 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-03-10 15:59:13 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Weight]
+2024-03-10 15:59:13 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-03-10 15:59:13 |INFO  |main |ReactiveUserDetailsServiceAutoConfiguration.java:88 |org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration |
+
+Using generated security password: 784cd4d2-7456-4857-8336-da5522d84669
+
+2024-03-10 15:59:15 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of e6a5d6d0-e39e-45da-9d4b-10ff0c07202c
+2024-03-10 15:59:16 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 86 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-03-10 15:59:16 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 19 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-03-10 15:59:16 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 13 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-03-10 15:59:16 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 220 ms to scan 241 urls, producing 0 keys and 0 values 
+2024-03-10 15:59:16 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 31 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-03-10 15:59:16 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 26 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-03-10 15:59:16 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 35 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-03-10 15:59:16 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 328 ms to scan 241 urls, producing 0 keys and 0 values 
+2024-03-10 15:59:16 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e6a5d6d0-e39e-45da-9d4b-10ff0c07202c] RpcClient init label, labels = {module=naming, source=sdk}
+2024-03-10 15:59:16 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e6a5d6d0-e39e-45da-9d4b-10ff0c07202c] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-03-10 15:59:16 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e6a5d6d0-e39e-45da-9d4b-10ff0c07202c] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-03-10 15:59:16 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e6a5d6d0-e39e-45da-9d4b-10ff0c07202c] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-03-10 15:59:16 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e6a5d6d0-e39e-45da-9d4b-10ff0c07202c] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-03-10 15:59:19 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e6a5d6d0-e39e-45da-9d4b-10ff0c07202c] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1710057557792_120.227.131.104_44059
+2024-03-10 15:59:19 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e6a5d6d0-e39e-45da-9d4b-10ff0c07202c] Notify connected event to listeners.
+2024-03-10 15:59:19 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e6a5d6d0-e39e-45da-9d4b-10ff0c07202c] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-03-10 15:59:19 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[e6a5d6d0-e39e-45da-9d4b-10ff0c07202c] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1111/1400132053
+2024-03-10 15:59:20 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-03-10 15:59:21 |INFO  |main |NettyWebServer.java:111 |org.springframework.boot.web.embedded.netty.NettyWebServer |Netty started on port 8200
+2024-03-10 15:59:22 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP gateway 192.168.10.9:8200 register finished
+2024-03-10 15:59:22 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.GateWayApplication |Started GateWayApplication in 19.745 seconds (JVM running for 21.56)
+2024-03-10 16:00:15 |INFO  |parallel-2 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/login/mailNumberCpatcha
+2024-03-10 16:02:29 |WARN  |Thread-38 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-03-10 16:02:29 |WARN  |Thread-35 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-03-10 16:02:29 |INFO  |Thread-17 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-03-10 16:02:29 |WARN  |Thread-35 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end
+2024-03-10 16:02:29 |WARN  |Thread-38 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-03-10 16:02:29 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-03-10 16:02:30 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-03-10 16:02:30 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-0} closing ...
+2024-03-10 16:03:17 |INFO  |background-preinit |Version.java:21 |org.hibernate.validator.internal.util.Version |HV000001: Hibernate Validator 6.2.4.Final
+2024-03-10 16:03:17 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.GateWayApplication |Starting GateWayApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 11592 (E:\bilibili\gateway\target\classes started by Administrator in E:\bilibili)
+2024-03-10 16:03:17 |INFO  |main |SpringApplication.java:651 |ljl.bilibili.GateWayApplication |The following 1 profile is active: "dev"
+2024-03-10 16:03:19 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-10 16:03:19 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-10 16:03:19 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 42 ms. Found 0 Redis repository interfaces.
+2024-03-10 16:03:19 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=cbf279ea-f2f9-381a-a606-ad9b71f0f84a
+2024-03-10 16:03:20 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-10 16:03:20 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-10 16:03:20 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-10 16:03:21 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-03-10 16:03:21 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-03-10 16:03:24 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [After]
+2024-03-10 16:03:24 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Before]
+2024-03-10 16:03:24 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Between]
+2024-03-10 16:03:24 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Cookie]
+2024-03-10 16:03:24 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Header]
+2024-03-10 16:03:24 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Host]
+2024-03-10 16:03:24 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Method]
+2024-03-10 16:03:24 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Path]
+2024-03-10 16:03:24 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Query]
+2024-03-10 16:03:24 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [ReadBody]
+2024-03-10 16:03:24 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [RemoteAddr]
+2024-03-10 16:03:24 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-03-10 16:03:24 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Weight]
+2024-03-10 16:03:24 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-03-10 16:03:24 |INFO  |main |ReactiveUserDetailsServiceAutoConfiguration.java:88 |org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration |
+
+Using generated security password: 622f7f63-eae2-414e-b505-76a6913b58f5
+
+2024-03-10 16:03:26 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of b19d8b8f-f396-4f97-a451-c6d3e3cb7eb8
+2024-03-10 16:03:26 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 78 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-03-10 16:03:26 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 30 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-03-10 16:03:26 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 35 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-03-10 16:03:26 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 242 ms to scan 241 urls, producing 0 keys and 0 values 
+2024-03-10 16:03:26 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 11 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-03-10 16:03:26 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 13 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-03-10 16:03:26 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 12 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-03-10 16:03:26 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 160 ms to scan 241 urls, producing 0 keys and 0 values 
+2024-03-10 16:03:26 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[b19d8b8f-f396-4f97-a451-c6d3e3cb7eb8] RpcClient init label, labels = {module=naming, source=sdk}
+2024-03-10 16:03:27 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[b19d8b8f-f396-4f97-a451-c6d3e3cb7eb8] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-03-10 16:03:27 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[b19d8b8f-f396-4f97-a451-c6d3e3cb7eb8] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-03-10 16:03:27 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[b19d8b8f-f396-4f97-a451-c6d3e3cb7eb8] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-03-10 16:03:27 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[b19d8b8f-f396-4f97-a451-c6d3e3cb7eb8] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-03-10 16:03:28 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[b19d8b8f-f396-4f97-a451-c6d3e3cb7eb8] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1710057807463_120.227.131.104_44576
+2024-03-10 16:03:28 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[b19d8b8f-f396-4f97-a451-c6d3e3cb7eb8] Notify connected event to listeners.
+2024-03-10 16:03:28 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[b19d8b8f-f396-4f97-a451-c6d3e3cb7eb8] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-03-10 16:03:28 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[b19d8b8f-f396-4f97-a451-c6d3e3cb7eb8] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1111/1587454848
+2024-03-10 16:03:29 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-03-10 16:03:30 |INFO  |main |NettyWebServer.java:111 |org.springframework.boot.web.embedded.netty.NettyWebServer |Netty started on port 8200
+2024-03-10 16:03:30 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP gateway 192.168.10.9:8200 register finished
+2024-03-10 16:03:30 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.GateWayApplication |Started GateWayApplication in 15.089 seconds (JVM running for 16.823)
+2024-03-10 16:03:52 |INFO  |parallel-2 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/login/mailNumberCpatcha
+2024-03-10 16:04:37 |WARN  |Thread-32 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-03-10 16:04:37 |WARN  |Thread-32 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end
+2024-03-10 16:04:37 |INFO  |Thread-16 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-03-10 16:04:37 |WARN  |Thread-35 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-03-10 16:04:37 |WARN  |Thread-35 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-03-10 16:04:37 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-03-10 16:04:38 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-03-10 16:04:38 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-0} closing ...
+2024-03-10 16:04:58 |INFO  |background-preinit |Version.java:21 |org.hibernate.validator.internal.util.Version |HV000001: Hibernate Validator 6.2.4.Final
+2024-03-10 16:04:58 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.GateWayApplication |Starting GateWayApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 3808 (E:\bilibili\gateway\target\classes started by Administrator in E:\bilibili)
+2024-03-10 16:04:58 |INFO  |main |SpringApplication.java:651 |ljl.bilibili.GateWayApplication |The following 1 profile is active: "dev"
+2024-03-10 16:05:01 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-10 16:05:01 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-10 16:05:01 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 39 ms. Found 0 Redis repository interfaces.
+2024-03-10 16:05:03 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=cbf279ea-f2f9-381a-a606-ad9b71f0f84a
+2024-03-10 16:05:04 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-10 16:05:04 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-10 16:05:04 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-10 16:05:08 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-03-10 16:05:08 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-03-10 16:05:11 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [After]
+2024-03-10 16:05:11 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Before]
+2024-03-10 16:05:11 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Between]
+2024-03-10 16:05:11 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Cookie]
+2024-03-10 16:05:11 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Header]
+2024-03-10 16:05:11 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Host]
+2024-03-10 16:05:11 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Method]
+2024-03-10 16:05:11 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Path]
+2024-03-10 16:05:11 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Query]
+2024-03-10 16:05:11 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [ReadBody]
+2024-03-10 16:05:11 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [RemoteAddr]
+2024-03-10 16:05:11 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-03-10 16:05:11 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Weight]
+2024-03-10 16:05:11 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-03-10 16:05:12 |INFO  |main |ReactiveUserDetailsServiceAutoConfiguration.java:88 |org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration |
+
+Using generated security password: 80e636d7-8529-4481-956a-a57b3c89fc4e
+
+2024-03-10 16:05:13 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 2c6f3d16-0f3c-4293-8d77-f0115ed6951c
+2024-03-10 16:05:13 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 297 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-03-10 16:05:13 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 43 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-03-10 16:05:14 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 30 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-03-10 16:05:14 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 250 ms to scan 241 urls, producing 0 keys and 0 values 
+2024-03-10 16:05:14 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 13 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-03-10 16:05:14 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 20 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-03-10 16:05:14 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 14 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-03-10 16:05:14 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 156 ms to scan 241 urls, producing 0 keys and 0 values 
+2024-03-10 16:05:14 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[2c6f3d16-0f3c-4293-8d77-f0115ed6951c] RpcClient init label, labels = {module=naming, source=sdk}
+2024-03-10 16:05:14 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[2c6f3d16-0f3c-4293-8d77-f0115ed6951c] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-03-10 16:05:14 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[2c6f3d16-0f3c-4293-8d77-f0115ed6951c] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-03-10 16:05:14 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[2c6f3d16-0f3c-4293-8d77-f0115ed6951c] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-03-10 16:05:14 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[2c6f3d16-0f3c-4293-8d77-f0115ed6951c] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-03-10 16:05:16 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[2c6f3d16-0f3c-4293-8d77-f0115ed6951c] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1710057914830_120.227.131.104_44801
+2024-03-10 16:05:16 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[2c6f3d16-0f3c-4293-8d77-f0115ed6951c] Notify connected event to listeners.
+2024-03-10 16:05:16 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[2c6f3d16-0f3c-4293-8d77-f0115ed6951c] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-03-10 16:05:16 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[2c6f3d16-0f3c-4293-8d77-f0115ed6951c] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1111/754910159
+2024-03-10 16:05:16 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-03-10 16:05:17 |INFO  |main |NettyWebServer.java:111 |org.springframework.boot.web.embedded.netty.NettyWebServer |Netty started on port 8200
+2024-03-10 16:05:18 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP gateway 192.168.10.9:8200 register finished
+2024-03-10 16:05:18 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.GateWayApplication |Started GateWayApplication in 21.306 seconds (JVM running for 22.975)
+2024-03-10 16:08:17 |INFO  |parallel-2 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/login/mailNumberCpatcha
+2024-03-10 16:12:13 |INFO  |Thread-35 |TimeBasedFilter.java:24 |ljl.bilibili.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-03-10 16:12:13 |INFO  |Thread-18 |TimeBasedFilter.java:24 |ljl.bilibili.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-03-10 16:12:13 |INFO  |Thread-38 |TimeBasedFilter.java:24 |ljl.bilibili.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-03-10 16:12:13 |INFO  |Thread-18 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-03-10 16:12:13 |WARN  |Thread-35 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-03-10 16:12:13 |WARN  |Thread-35 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end
+2024-03-10 16:12:13 |WARN  |Thread-38 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-03-10 16:12:13 |WARN  |Thread-38 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-03-10 16:12:13 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-03-10 16:12:13 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-03-10 16:12:13 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-0} closing ...

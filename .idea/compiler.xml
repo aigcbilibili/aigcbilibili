@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-service" />
+        <module name="AAA" />
+        <module name="video" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="AAA" target="1.8" />
+      <module name="api" target="1.8" />
+      <module name="authority" target="1.8" />
+      <module name="authorize" target="1.8" />
+      <module name="chats" target="1.8" />
+      <module name="commontest" target="1.8" />
+      <module name="demo" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="gatewaytest" target="1.8" />
+      <module name="infoedit" target="1.8" />
+      <module name="live_broadcast" target="1.8" />
+      <module name="pay" target="1.8" />
+      <module name="sensitive" target="1.8" />
+      <module name="test" target="1.8" />
+      <module name="user_center2" target="1.8" />
+      <module name="user_centers" target="1.8" />
+      <module name="video2" target="1.8" />
+      <module name="videos" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="AAA" options="-parameters" />
+      <module name="api" options="-parameters" />
+      <module name="authority" options="-parameters" />
+      <module name="authorize" options="-parameters" />
+      <module name="chat" options="-parameters" />
+      <module name="chats" options="-parameters" />
+      <module name="common" options="-parameters" />
+      <module name="commontest" options="-parameters" />
+      <module name="demo" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="gatewaytest" options="-parameters" />
+      <module name="infoedit" options="-parameters" />
+      <module name="live_broadcast" options="-parameters" />
+      <module name="notice" options="-parameters" />
+      <module name="pay" options="-parameters" />
+      <module name="search" options="-parameters" />
+      <module name="sensitive" options="-parameters" />
+      <module name="test" options="-parameters" />
+      <module name="user_center" options="-parameters" />
+      <module name="user_center2" options="-parameters" />
+      <module name="user_centers" options="-parameters" />
+      <module name="video" options="-parameters" />
+      <module name="video2" options="-parameters" />
+      <module name="videos" options="-parameters" />
+    </option>
+  </component>
+</project>

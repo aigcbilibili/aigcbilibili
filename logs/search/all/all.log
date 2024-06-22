@@ -1,0 +1,265 @@
+2024-04-02 12:14:08 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.search.SearchApplication |Starting SearchApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 12360 (E:\bilibili\search\target\classes started by Administrator in E:\bilibili)
+2024-04-02 12:14:08 |INFO  |main |SpringApplication.java:645 |ljl.bilibili.search.SearchApplication |No active profile set, falling back to 1 default profile: "default"
+2024-04-02 12:14:11 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-02 12:14:11 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2024-04-02 12:14:11 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 8 ms. Found 0 Elasticsearch repository interfaces.
+2024-04-02 12:14:11 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-02 12:14:11 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2024-04-02 12:14:11 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2024-04-02 12:14:11 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-02 12:14:11 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-02 12:14:11 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2024-04-02 12:14:12 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=20aff51d-5265-313d-adf0-3c95e5cc4ca3
+2024-04-02 12:14:13 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 8201 (http)
+2024-04-02 12:14:13 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-8201"]
+2024-04-02 12:14:13 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-04-02 12:14:13 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-04-02 12:14:14 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-04-02 12:14:14 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 5526 ms
+2024-04-02 12:14:16 |INFO  |main |ElasticsearchClientConfig.java:59 |ljl.bilibili.search.config.ElasticsearchClientConfig |Connecting Elasticsearch...
+2024-04-02 12:14:16 |INFO  |main |ElasticsearchClientConfig.java:74 |ljl.bilibili.search.config.ElasticsearchClientConfig |Elasticsearch Connected!
+2024-04-02 12:14:16 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-04-02 12:14:16 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-04-02 12:14:20 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-04-02 12:14:20 |INFO  |main |XxlJobConfig.java:46 |ljl.bilibili.search.config.XxlJobConfig |>>>>>>>>>>> xxl-job config init.
+2024-04-02 12:14:21 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 1b28ef36-ab23-4310-ae26-ceafdaf2c294
+2024-04-02 12:14:21 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 90 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-04-02 12:14:21 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 30 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-04-02 12:14:21 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 24 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-04-02 12:14:21 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 205 ms to scan 275 urls, producing 0 keys and 0 values 
+2024-04-02 12:14:21 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 13 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-04-02 12:14:21 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 12 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-04-02 12:14:21 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 11 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-04-02 12:14:22 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 222 ms to scan 275 urls, producing 0 keys and 0 values 
+2024-04-02 12:14:22 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[1b28ef36-ab23-4310-ae26-ceafdaf2c294] RpcClient init label, labels = {module=naming, source=sdk}
+2024-04-02 12:14:22 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[1b28ef36-ab23-4310-ae26-ceafdaf2c294] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-04-02 12:14:22 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[1b28ef36-ab23-4310-ae26-ceafdaf2c294] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-04-02 12:14:22 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[1b28ef36-ab23-4310-ae26-ceafdaf2c294] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-04-02 12:14:22 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[1b28ef36-ab23-4310-ae26-ceafdaf2c294] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-04-02 12:14:24 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[1b28ef36-ab23-4310-ae26-ceafdaf2c294] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1712031264422_120.227.128.116_11141
+2024-04-02 12:14:24 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[1b28ef36-ab23-4310-ae26-ceafdaf2c294] Notify connected event to listeners.
+2024-04-02 12:14:24 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[1b28ef36-ab23-4310-ae26-ceafdaf2c294] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-04-02 12:14:24 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[1b28ef36-ab23-4310-ae26-ceafdaf2c294] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1205/227935585
+2024-04-02 12:14:26 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-02 12:14:29 |INFO  |main |XxlJobExecutor.java:183 |com.xxl.job.core.executor.XxlJobExecutor |>>>>>>>>>>> xxl-job register jobhandler success, name:mysqlToEs, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@7bc4ac3e[class ljl.bilibili.search.handler.MysqlToEsHandler#mysqlToEsHandler]
+2024-04-02 12:14:30 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-8201"]
+2024-04-02 12:14:30 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 8201 (http) with context path ''
+2024-04-02 12:14:30 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP search 192.168.0.100:8201 register finished
+2024-04-02 12:14:31 |INFO  |Thread-70 |EmbedServer.java:82 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9916
+2024-04-02 12:14:31 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-04-02 12:14:31 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-04-02 12:14:32 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-04-02 12:14:32 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.search.SearchApplication |Started SearchApplication in 29.694 seconds (JVM running for 60.166)
+2024-04-02 12:14:45 |INFO  |http-nio-8201-exec-1 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-02 12:14:45 |INFO  |http-nio-8201-exec-1 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-04-02 12:14:45 |INFO  |http-nio-8201-exec-1 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 2 ms
+2024-04-02 12:16:11 |INFO  |http-nio-8201-exec-2 |SearchController.java:67 |ljl.bilibili.search.controller.SearchController |1
+2024-04-02 12:17:21 |INFO  |http-nio-8201-exec-9 |SearchController.java:67 |ljl.bilibili.search.controller.SearchController |1
+2024-04-02 12:21:20 |INFO  |http-nio-8201-exec-5 |TimeBasedFilter.java:24 |ljl.bilibili.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-04-02 12:21:20 |INFO  |http-nio-8201-exec-5 |SearchController.java:67 |ljl.bilibili.search.controller.SearchController |1
+2024-04-02 12:23:05 |ERROR |xxl-job, executor ExecutorRegistryThread |XxlJobRemotingUtil.java:143 |com.xxl.job.core.util.XxlJobRemotingUtil |Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:704)
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:647)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1536)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1441)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at com.xxl.job.core.util.XxlJobRemotingUtil.postBody(XxlJobRemotingUtil.java:119)
+	at com.xxl.job.core.biz.client.AdminBizClient.registry(AdminBizClient.java:42)
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:48)
+	at java.lang.Thread.run(Thread.java:745)
+2024-04-02 12:23:05 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:54 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.100:9916/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Read timed out), for url : http://114.55.116.140:8120/xxl-job-admin/api/registry, content=null]
+2024-04-02 12:24:04 |INFO  |http-nio-8201-exec-7 |SearchController.java:67 |ljl.bilibili.search.controller.SearchController |1
+2024-04-02 12:24:11 |INFO  |Thread-27 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-04-02 12:24:11 |WARN  |Thread-47 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-04-02 12:24:11 |WARN  |Thread-44 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-04-02 12:24:11 |WARN  |Thread-47 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-04-02 12:24:11 |WARN  |Thread-44 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end
+2024-04-02 12:24:12 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-04-02 12:24:12 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-04-02 12:24:12 |INFO  |Thread-70 |EmbedServer.java:91 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server stop.
+2024-04-02 12:24:12 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:87 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.100:9916/'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2024-04-02 12:24:12 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:105 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job, executor registry thread destroy.
+2024-04-02 12:24:12 |INFO  |SpringApplicationShutdownHook |EmbedServer.java:117 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server destroy success.
+2024-04-02 12:24:12 |INFO  |xxl-job, executor TriggerCallbackThread |TriggerCallbackThread.java:98 |com.xxl.job.core.thread.TriggerCallbackThread |>>>>>>>>>>> xxl-job, executor callback thread destroy.
+2024-04-02 12:24:12 |INFO  |Thread-69 |TriggerCallbackThread.java:128 |com.xxl.job.core.thread.TriggerCallbackThread |>>>>>>>>>>> xxl-job, executor retry callback thread destroy.
+2024-04-02 12:24:12 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-0} closing ...
+2024-04-02 12:24:29 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.search.SearchApplication |Starting SearchApplication using Java 1.8.0_65 on DESKTOP-4C1V07J with PID 8420 (E:\bilibili\search\target\classes started by Administrator in E:\bilibili)
+2024-04-02 12:24:29 |INFO  |main |SpringApplication.java:645 |ljl.bilibili.search.SearchApplication |No active profile set, falling back to 1 default profile: "default"
+2024-04-02 12:24:32 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-02 12:24:32 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2024-04-02 12:24:32 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 13 ms. Found 0 Elasticsearch repository interfaces.
+2024-04-02 12:24:32 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-02 12:24:32 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2024-04-02 12:24:32 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 4 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2024-04-02 12:24:32 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-02 12:24:32 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-02 12:24:32 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2024-04-02 12:24:33 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=20aff51d-5265-313d-adf0-3c95e5cc4ca3
+2024-04-02 12:24:34 |INFO  |main |TomcatWebServer.java:108 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port(s): 8201 (http)
+2024-04-02 12:24:34 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-8201"]
+2024-04-02 12:24:34 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-04-02 12:24:34 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-04-02 12:24:34 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-04-02 12:24:34 |INFO  |main |ServletWebServerApplicationContext.java:290 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 5098 ms
+2024-04-02 12:24:36 |INFO  |main |ElasticsearchClientConfig.java:59 |ljl.bilibili.search.config.ElasticsearchClientConfig |Connecting Elasticsearch...
+2024-04-02 12:24:36 |INFO  |main |ElasticsearchClientConfig.java:74 |ljl.bilibili.search.config.ElasticsearchClientConfig |Elasticsearch Connected!
+2024-04-02 12:24:36 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-04-02 12:24:36 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-04-02 12:24:39 |INFO  |main |WebMvcPropertySourcedRequestMappingHandlerMapping.java:69 |springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping |Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2024-04-02 12:24:39 |INFO  |main |XxlJobConfig.java:46 |ljl.bilibili.search.config.XxlJobConfig |>>>>>>>>>>> xxl-job config init.
+2024-04-02 12:24:40 |INFO  |main |RpcClientFactory.java:80 |com.alibaba.nacos.common.remote.client |[RpcClientFactory] create a new rpc client of 8a04867e-7b40-4086-af29-a3ea9e58066b
+2024-04-02 12:24:40 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 35 ms to scan 1 urls, producing 3 keys and 6 values 
+2024-04-02 12:24:40 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 18 ms to scan 1 urls, producing 4 keys and 9 values 
+2024-04-02 12:24:40 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 12 ms to scan 1 urls, producing 3 keys and 10 values 
+2024-04-02 12:24:40 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 210 ms to scan 275 urls, producing 0 keys and 0 values 
+2024-04-02 12:24:40 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 13 ms to scan 1 urls, producing 1 keys and 5 values 
+2024-04-02 12:24:40 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 14 ms to scan 1 urls, producing 1 keys and 7 values 
+2024-04-02 12:24:40 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 22 ms to scan 1 urls, producing 2 keys and 8 values 
+2024-04-02 12:24:40 |INFO  |main |Reflections.java:232 |org.reflections.Reflections |Reflections took 190 ms to scan 275 urls, producing 0 keys and 0 values 
+2024-04-02 12:24:40 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8a04867e-7b40-4086-af29-a3ea9e58066b] RpcClient init label, labels = {module=naming, source=sdk}
+2024-04-02 12:24:40 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8a04867e-7b40-4086-af29-a3ea9e58066b] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-04-02 12:24:40 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8a04867e-7b40-4086-af29-a3ea9e58066b] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-04-02 12:24:40 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8a04867e-7b40-4086-af29-a3ea9e58066b] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-04-02 12:24:40 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8a04867e-7b40-4086-af29-a3ea9e58066b] Try to connect to server on start up, server: {serverIp = '116.62.71.84', server main port = 8848}
+2024-04-02 12:24:42 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8a04867e-7b40-4086-af29-a3ea9e58066b] Success to connect to server [116.62.71.84:8848] on start up, connectionId = 1712031882220_120.227.128.116_10871
+2024-04-02 12:24:42 |INFO  |com.alibaba.nacos.client.remote.worker |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8a04867e-7b40-4086-af29-a3ea9e58066b] Notify connected event to listeners.
+2024-04-02 12:24:42 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8a04867e-7b40-4086-af29-a3ea9e58066b] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-04-02 12:24:42 |INFO  |main |LoggerUtils.java:60 |com.alibaba.nacos.common.remote.client |[8a04867e-7b40-4086-af29-a3ea9e58066b] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1205/1016893923
+2024-04-02 12:24:43 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-02 12:24:44 |INFO  |main |XxlJobExecutor.java:183 |com.xxl.job.core.executor.XxlJobExecutor |>>>>>>>>>>> xxl-job register jobhandler success, name:mysqlToEs, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@44723d95[class ljl.bilibili.search.handler.MysqlToEsHandler#mysqlToEsHandler]
+2024-04-02 12:24:44 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-8201"]
+2024-04-02 12:24:45 |INFO  |main |TomcatWebServer.java:220 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port(s): 8201 (http) with context path ''
+2024-04-02 12:24:45 |INFO  |main |NacosServiceRegistry.java:65 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |nacos registry, DEFAULT_GROUP search 192.168.0.100:8201 register finished
+2024-04-02 12:24:45 |INFO  |Thread-43 |EmbedServer.java:82 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9916
+2024-04-02 12:24:45 |INFO  |main |DocumentationPluginsBootstrapper.java:93 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Documentation plugins bootstrapped
+2024-04-02 12:24:45 |INFO  |main |AbstractDocumentationPluginsBootstrapper.java:79 |springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper |Found 1 custom documentation plugin(s)
+2024-04-02 12:24:45 |INFO  |main |ApiListingReferenceScanner.java:44 |springfox.documentation.spring.web.scanners.ApiListingReferenceScanner |Scanning for api listing references
+2024-04-02 12:24:45 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.search.SearchApplication |Started SearchApplication in 18.283 seconds (JVM running for 27.214)
+2024-04-02 12:24:49 |INFO  |http-nio-8201-exec-9 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-02 12:24:49 |INFO  |http-nio-8201-exec-9 |FrameworkServlet.java:525 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-04-02 12:24:49 |INFO  |http-nio-8201-exec-9 |FrameworkServlet.java:547 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 2 ms
+2024-04-02 12:24:49 |INFO  |http-nio-8201-exec-9 |SearchController.java:67 |ljl.bilibili.search.controller.SearchController |1
+2024-04-02 12:24:54 |INFO  |http-nio-8201-exec-8 |SearchController.java:67 |ljl.bilibili.search.controller.SearchController |1
+2024-04-02 12:33:11 |INFO  |http-nio-8201-exec-4 |TimeBasedFilter.java:24 |ljl.bilibili.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-04-02 12:33:11 |INFO  |http-nio-8201-exec-4 |SearchController.java:67 |ljl.bilibili.search.controller.SearchController |1
+2024-04-02 12:33:20 |INFO  |http-nio-8201-exec-2 |SearchController.java:67 |ljl.bilibili.search.controller.SearchController |1
+2024-04-02 12:33:27 |INFO  |http-nio-8201-exec-1 |SearchController.java:67 |ljl.bilibili.search.controller.SearchController |1
+2024-04-02 12:33:33 |ERROR |http-nio-8201-exec-4 |GlobalExceptionHandler.java:22 |ljl.bilibili.handler.GlobalExceptionHandler |
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at org.elasticsearch.client.RestClient.extractAndWrapCause(RestClient.java:886)
+	at org.elasticsearch.client.RestClient.performRequest(RestClient.java:283)
+	at org.elasticsearch.client.RestClient.performRequest(RestClient.java:270)
+	at org.elasticsearch.client.RestHighLevelClient.internalPerformRequest(RestHighLevelClient.java:1654)
+	at org.elasticsearch.client.RestHighLevelClient.performRequest(RestHighLevelClient.java:1624)
+	at org.elasticsearch.client.RestHighLevelClient.performRequestAndParseEntity(RestHighLevelClient.java:1594)
+	at org.elasticsearch.client.RestHighLevelClient.search(RestHighLevelClient.java:1110)
+	at ljl.bilibili.search.service.impl.SearchServiceImpl.likelyVideoRecommend(SearchServiceImpl.java:230)
+	at ljl.bilibili.search.controller.SearchController.likelyVideoRecommend(SearchController.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.cloud.sleuth.instrument.web.servlet.TracingFilter.doFilter(TracingFilter.java:68)
+	at org.springframework.cloud.sleuth.autoconfig.instrument.web.TraceWebServletConfiguration$LazyTracingFilter.doFilter(TraceWebServletConfiguration.java:131)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.springframework.cloud.sleuth.instrument.web.tomcat.TraceValve.invoke(TraceValve.java:103)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at org.apache.http.impl.nio.reactor.SessionInputBufferImpl.fill(SessionInputBufferImpl.java:231)
+	at org.apache.http.impl.nio.codecs.AbstractMessageParser.fillBuffer(AbstractMessageParser.java:136)
+	at org.apache.http.impl.nio.DefaultNHttpClientConnection.consumeInput(DefaultNHttpClientConnection.java:241)
+	at org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:87)
+	at org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:40)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:114)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.readable(BaseIOReactor.java:162)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:337)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:315)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:276)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:591)
+	... 1 common frames omitted
+2024-04-02 12:33:56 |INFO  |Thread-11 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-04-02 12:33:56 |WARN  |Thread-27 |HttpClientBeanHolder.java:108 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Start destroying common HttpClient
+2024-04-02 12:33:56 |WARN  |Thread-24 |NotifyCenter.java:136 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Start destroying Publisher
+2024-04-02 12:33:56 |WARN  |Thread-24 |NotifyCenter.java:153 |com.alibaba.nacos.common.notify.NotifyCenter |[NotifyCenter] Destruction of the end
+2024-04-02 12:33:56 |WARN  |Thread-27 |HttpClientBeanHolder.java:114 |com.alibaba.nacos.common.http.HttpClientBeanHolder |[HttpClientBeanHolder] Destruction of the end
+2024-04-02 12:33:57 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:80 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registering from Nacos Server now...
+2024-04-02 12:33:57 |INFO  |SpringApplicationShutdownHook |NacosServiceRegistry.java:100 |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |De-registration finished.
+2024-04-02 12:33:57 |INFO  |Thread-43 |EmbedServer.java:91 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server stop.
+2024-04-02 12:33:57 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:87 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='demo-service-impl', registryValue='http://192.168.0.100:9916/'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2024-04-02 12:33:57 |INFO  |xxl-job, executor ExecutorRegistryThread |ExecutorRegistryThread.java:105 |com.xxl.job.core.thread.ExecutorRegistryThread |>>>>>>>>>>> xxl-job, executor registry thread destroy.
+2024-04-02 12:33:57 |INFO  |SpringApplicationShutdownHook |EmbedServer.java:117 |com.xxl.job.core.server.EmbedServer |>>>>>>>>>>> xxl-job remoting server destroy success.
+2024-04-02 12:33:57 |INFO  |xxl-job, executor TriggerCallbackThread |TriggerCallbackThread.java:98 |com.xxl.job.core.thread.TriggerCallbackThread |>>>>>>>>>>> xxl-job, executor callback thread destroy.
+2024-04-02 12:33:57 |INFO  |Thread-42 |TriggerCallbackThread.java:128 |com.xxl.job.core.thread.TriggerCallbackThread |>>>>>>>>>>> xxl-job, executor retry callback thread destroy.
+2024-04-02 12:33:57 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-0} closing ...

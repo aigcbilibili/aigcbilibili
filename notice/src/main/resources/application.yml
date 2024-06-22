@@ -1,0 +1,46 @@
+server:
+  port: 30000
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 500MB
+      max-request-size: 500MB
+      location: /path
+  redis:
+    host: xxx
+  cloud:
+    nacos:
+      discovery:
+        server-addr: xxx:8848
+        register-enabled: true
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    #    hikari:
+    #      max-lifetime: 2520000  7 小时
+    #      idle-timeout: 21600000   6 小时
+    #      validation-timeout: 5000  5 秒
+    name: datasource
+    url: jdbc:mysql://xxx:3306/bilibili?useUnicode=true&allowPublicKeyRetrieval=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
+    username: xxx
+    password: xxx
+  application:
+    name: notice
+  zipkin:
+    base-url: http://xxx:9411
+    sender:
+      type: web
+    sleuth:
+      sampler:
+        probability: 1
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+rocketmq:
+  name-server: xxx:9876
+  producer:
+    group: test
+module-name: notice
+global-exception-handler:
+  enabled: true
