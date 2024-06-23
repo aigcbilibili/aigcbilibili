@@ -1,0 +1,63 @@
+/* menu样式修改 */
+.el-sidebar {
+    height: calc(87vh) !important;
+}
+.el-menu{
+    border-radius: 5px;
+    height: calc(87vh);
+}
+.el-sub-menu {
+    width: 5rem;
+}
+.el-menu-item{
+    font-size: 1.3rem !important;
+    font-weight: 500 !important;
+    /* margin: 1rem 0.1rem; */
+    width: 5rem;
+    .el-icon{
+        margin-right: 1.4rem !important;
+    }   
+    &:first-child {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    &:hover, &:hover::after, &:focus {
+        width: 5rem !important;
+    }
+}
+.el-menu--vertical {
+    padding-right: 0.9rem;
+}
+.el-menu--popup {
+    width: 6rem !important;
+    height: 15rem !important;
+}
+.el-popuper { /*el-menu--popup*/
+    .el-menu-item {
+        width: 13rem;
+        height: 2rem;
+        text-align: center;
+        &:first-child{
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        &:hover {
+            width: 10rem;
+            height: 2rem;
+        }
+    }
+}
+.el-icon{
+    font-size: 1.6rem !important;
+}
+.el-menu--collapse{
+    width: 4.9rem !important;
+}
+@media screen and (min-width:1020px) {
+    .el-menu-item{
+        width: 13rem;
+        &:hover,&:hover::after, &:visited {
+            width: 13rem !important;
+        }
+    }
+}

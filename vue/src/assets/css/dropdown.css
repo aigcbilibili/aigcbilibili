@@ -1,0 +1,21 @@
+/* dropdown样式修改 */
+.el-dropdown{
+    img{
+        outline: none; /* 去除active的黑框 */
+    }
+}
+.el-dropdown-menu{
+    border-radius: 5rem !important;
+} 
+.el-dropdown-menu__item--devided, .el-dropdown-menu__item{
+    color: #11457da9 !important; 
+    font-weight: 400;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.el-dropdown-menu__item--devided:hover,  .el-dropdown-menu__item:hover{
+    background-color: #79b1ec6e !important;
+    color: #fff !important;
+}

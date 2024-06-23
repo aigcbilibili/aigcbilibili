@@ -1,0 +1,488 @@
+// 全局样式
+$detail-first-color: #79b1ec;
+$detail-second-color: #76ace5e6;
+$detail-third-color: #587ba1fc;
+$textarea-focus-color: #093957;
+$textarea-srcoller-color:rgb(67, 112, 139);
+$light-blue-color: #9ac9fb;
+$gray-color: #0b0b0b;
+$gray-light-color: #646464;
+/// 原来main.css中内容
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*手机端*/
+@media (min-width: 400px){
+    html{
+    font-size: 10px;
+    }
+}
+/*PC端*/
+@media (min-width: 600px){
+    html{
+    font-size: 14px;
+    }
+}
+h2{
+    font-weight: 400;
+    font-size: 10rem;
+}
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+body {
+    font-family: 'PingFang SC', "Helvetica Neue", Helvetica, "microsoft yahei", arial, STHeiTi, sans-serif;
+}
+a {
+    text-decoration: none
+}
+// 禁用手势
+[role=button], a, area, button, input:not([type=range]), label, select, summary, textarea {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+// 组件的颜色
+.based-box{
+    box-shadow: -5px 2px 25px 0 #79b1eca9;
+    border-radius: 10px;
+}
+.common-box {
+    @extend .based-box;
+    background-color: #fff;
+    padding: 1rem;
+}
+.left-box{
+    border-radius: 20px;
+    box-shadow: 0 -3px 25px 0 #79b1eca9;;
+}
+// 字体的颜色
+.title-font-color{
+    color: #093957;;
+}
+.content-font-color{
+    color: #052b54a9;
+}
+// flex布局的组件：默认以行为主轴
+.flex-based-container{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.flex-center-container{
+    @extend .flex-based-container;
+    justify-content: center;
+}
+.flex-between-container{
+    @extend .flex-based-container;
+    justify-content: space-between;
+}
+.flex-left-container{
+    @extend .flex-based-container;
+    justify-content: left;
+}
+.flex-baseline-container{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: baseline;
+}
+.flex-column-container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.flex-column-center-container{
+    @extend .flex-column-container;
+    justify-content: center;
+}
+.flex-column-left-container{
+    @extend .flex-column-container;
+    justify-content: left;   
+}
+.flex-column-left-max-container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: baseline;
+    justify-content:  flex-start;
+}
+.flex-column-between-container{
+    @extend .flex-column-container;
+    justify-content: space-between;   
+}
+.self-center-box-first {
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, 20%);
+}
+.self-center-box-second {
+    position: absolute;
+    left: 50%; /* 将容器的左边距设为 相较于父容器 的50% */
+    transform: translateX(-50%);
+}
+.self-center-box-third {
+    text-align: center;
+}
+.basic-btn{ 
+    width: 5.5rem;
+}
+/*input相关*/
+input{
+    border-radius: 20px;    
+    outline: none;
+}
+input::placeholder {
+    padding-left: 1rem;
+    box-sizing: border-box;
+    color: $gray-light-color;
+}
+/* WebKit, Blink, Edge浏览器，带input，双冒号 */
+input::-webkit-input-placeholder{ 
+    padding-left: 5px;
+    box-sizing: border-box;
+    color: $gray-light-color;
+}
+/* 火狐浏览器高版本（19+），不用带input，双冒号 */
+input::-moz-placeholder{ 
+    padding-left: 5px;
+    box-sizing: border-box;
+    color: $gray-light-color;
+}
+/* 火狐浏览器底版本（4 to 18），不用带input，单冒号 */
+input:-moz-placeholder{ 
+    padding-left: 5px;
+    box-sizing: border-box;
+    color: $gray-light-color;
+}
+/* IE浏览器底版本（10-11），带input，单冒号 */
+input:-ms-input-placeholder{  
+    padding-left: 5px;
+    box-sizing: border-box;
+    color: $gray-light-color;
+}
+/* 修改input获取焦点后的样式 */
+input:focus{
+    border:none;
+}
+/* 修改input获取焦点后占位符消失 */
+input:focus::-webkit-input-placeholder{
+    color:transparent;
+}
+.based-input {
+    width: 100%;
+    height: 2rem;
+    line-height: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+}
+.basic-input{
+    @extend .based-input;
+    text-align: center;
+}
+/*input复选框*/
+input[type=checkbox] {
+    display: none; // 隐藏原生复选框
+}
+.common-checkbox {
+    border: 1px solid $detail-first-color; /* 边框样式 */
+    background-color: #fff; /* 背景色 */
+    cursor: pointer; /* 光标指向手型 */
+}
+/*用在主页之后的缩小按钮，hover需要重定义*/
+.change-color-btn{
+    cursor: pointer;
+    &:hover, &:active{
+        color:#1f73a7;
+    }
+}
+.common-based-btn{
+    cursor: pointer;
+    border: none;
+    font-weight: 500;
+    border-radius: 12px;
+    &:active{
+        /*缩小的动效*/
+        transition: 0.02s;
+        transform: scale(0.9, 0.9);
+        -webkit-transform: scale(0.9, 0.9);
+        -o-transform: scale(0.9, 0.9);
+        -ms-transform: scale(0.9, 0.9);
+    }
+}
+.common-btn-center{
+    @extend .flex-center-container;
+    @extend .common-based-btn;
+}
+.common-btn-between{
+    @extend .flex-between-container;
+    @extend .common-based-btn;
+}
+.detail-btn{
+    color: #ffffff;
+    background-color: $light-blue-color;
+    border: 1px solid $light-blue-color;
+    &:hover{
+        background-color:$detail-second-color;
+    }
+    &:active{
+        background-color:$detail-third-color;
+    }
+    &:visited{
+        background-color: lighten($detail-first-color, 12%);    
+    }
+}
+.detail-btn-chosen{
+    color: $light-blue-color;
+    background-color: #fff;
+    border: 1px solid $light-blue-color;
+}
+/* 登录页的color */
+.login-first-color{
+    color: #74ace8;
+}
+/*组件的UI color*/
+.main-first-color{ 
+    background-color: lighten($detail-first-color, 12%);
+}
+.main-second-color{
+    background-color: #4e7caea9;
+}
+.main-third-color{
+    background-color: #2c3e50;
+}
+/*文字的UI color*/
+.font-first-color{
+    color: #11457da9; /*文字浅蓝*/
+}
+.font-second-color{
+    color: #0f4379a9; /*数量符号蓝*/
+}
+.font-third-color{
+    color: #02111b;
+}
+.font-forth-color{
+    color: #77a0c68d;
+}   
+.font-fifth-color{
+    color: #1a4562;
+}
+/*分割线*/
+.vertical-divided-line{ /*纵轴*/
+    width: 0.15rem;
+    height: 100%;
+    background: lighten($detail-first-color, 12%);
+}
+.horizontal-divided-line{ /*横轴*/
+    width: 100%;
+    height: 0.1rem;
+    background: lighten($detail-first-color, 12%);
+} 
+/*文字框*/
+textarea{
+    border-radius: 10px;
+    padding: 0.5rem;
+    border: 0.11rem solid $detail-third-color;
+    color: $gray-color;
+    min-height: 2rem;
+    height: auto;
+    max-height: 20rem;
+    resize: none; /* 在用户输入时，textarea自动调整高度 */
+    &:focus{
+        outline: none;
+        border: 0.12rem solid lighten($textarea-focus-color,20%);
+        font-weight: 500;
+        line-height: 1.2rem;
+    }
+}
+*+html textarea { // IE浏览器兼容
+    padding: 8px;
+}
+textarea::-webkit-scrollbar { // 滚动条
+    width: 6px;
+}
+textarea::-webkit-scrollbar-thumb {
+    background: lighten($textarea-srcoller-color, 20%);
+    border-radius: 5px;
+}
+/*头像*/
+.common-avatar{
+    border-radius: 50%;
+}
+.first-common-avatar{
+    @extend .common-avatar;
+    width: 3rem;
+    height: 3rem;
+}
+.second-common-avatar{
+    @extend .common-avatar;
+    vertical-align: -0.6rem;
+    width: 2rem;
+    height: 2rem;
+}
+.third-common-avatar{ 
+    @extend .common-avatar;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+/*标签和小按钮*/
+.tags-and-labels {
+    background: $light-blue-color;
+    color: #fff;
+}
+/*长文本*/
+.long-text-collapsed { // 折叠状态
+    overflow: hidden; //超出部分影藏
+    -webkit-line-clamp: 1; //限制行数
+    text-overflow: ellipsis; //超过部分用省略号显示
+    display: -webkit-box; //盒子模型
+    -webkit-box-orient: vertical; //从顶部向底部垂直布置子元素
+}
+.long-text-expanded {
+    white-space:pre-line;
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+/*侧栏*/
+/*用在组件中*/
+.common-sidebar {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow-y: scroll;
+}
+.common-sidebar::-webkit-scrollbar {
+    width: 0;
+}
+
+.common-sidebar-el-menu:not(.el-menu--collapse) {
+    width: 250px;
+}
+/*左右栏*/
+/*用在扩展页：热点，论坛等*/
+.common-page {
+    margin: 2rem 1.5rem;
+    width: auto; //96%
+    height: auto; // 100%
+}
+.left-right-panel{
+    @extend .flex-baseline-container;
+    @extend .common-page;
+    .left-content {
+        @extend .based-box;
+        width: 100%;
+        height: 100%;
+    }
+    .right-content {
+        @extend .based-box;
+        @extend .flex-column-left-max-container;
+        display: none;
+    }
+}
+@media screen and (min-width: 1020px){
+    .left-right-panel {
+        .left-content {
+            flex: 7;
+        }
+        .right-content {
+            display: flex;
+            margin-left: 2rem;
+            padding: 1rem;
+            flex: 2;
+        }
+    }
+}
+// 逐字出现的动画
+// 效果
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+// 子元素
+.fade-son-box {
+    display: inline-block;
+    opacity: 0; /* 初始时将所有文字设置为透明 */
+    animation: fadeInText 0.5s ease-in-out forwards; /* 调整出现速度 */
+    animation-delay: calc(0.1s * var(--char-index)); /* 每个字之间的延迟 */
+}
+// 父元素
+.fade-father-box {
+    animation: fadeInText 1s forwards;
+    white-space: nowrap; /* 防止文字换行 */
+    overflow: hidden; /* 隐藏溢出的文字 */
+    display: inline-block; /* 使文本容器与文字内容宽度一致 */
+}
+/* 使用figure组合图像和文字 */
+figure {
+    max-width: 100%;
+    margin: 0; /* 可以去掉 figure 默认的外边距 */
+    position: relative;
+}
+/* 控制图像的样式，比如大小、边框等 */
+figure img {
+    display: block; /* 确保图像在 figure 元素内部占据完整的空间 */
+    max-width: 100%; /* 图像的最大宽度 */
+    height: auto; /* 图像高度自适应 */
+    border: 1px solid #ddd; /* 图像边框样式 */
+    z-index: 1;
+}
+/* 控制标题（figcaption）的样式，比如字体、颜色、间距等 */
+figcaption {
+    @extend .self-center-box-first;
+    margin-top: -2rem;
+    font-size: 16px; /* 标题字体大小 */
+    color: #333; /* 标题颜色 */
+    position: absolute;
+    z-index: 5;
+}
+/*通知数量标志*/
+.notice-bubble-whole {
+    @extend .flex-center-container;
+    position: absolute; 
+    border-radius: 50%;
+    z-index: 99;
+    background-color: rgb(218 128 128);   
+    p {
+        z-index: 999; 
+    }
+}
+// 滑动按钮
+.user-content-slide-btn {
+    @extend .flex-center-container;
+    border-radius: 20px;
+    position: relative;
+    padding: 0 0.5rem;
+    .slider {
+        @extend .based-box;
+        @extend .flex-center-container;
+        cursor: pointer;
+        transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 0.2s ease-in-out;
+        will-change: transform, opacity;
+        margin: 0;
+        font-weight: 700;
+    }
+    .slider::before {
+        content: "";
+    }
+    span:first-child{
+        margin-right: 1.5rem;
+    }
+    span {
+        cursor: pointer;
+    }
+}

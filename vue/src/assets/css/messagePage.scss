@@ -1,0 +1,57 @@
+.wrap {
+    height: 99%; /* NOTE el-scrollbar需要父级也有高度 */
+    padding: 1.5rem;
+}
+.main-title {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.content {
+    margin-top: 2rem;
+}
+.component {
+    text-align: left;
+}
+.item {
+    min-height: 5rem; 
+}
+.item-content {
+    margin-left: 0.5rem;
+}
+.item-title {
+    font-weight: 600;
+    margin-right: 0.3rem;
+}
+.decoration-box {
+    border: 1px solid rgb(169, 157, 244);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    min-height: 12rem;
+}
+.message-vertical-divided {
+    width: 0.15rem;
+    height: 100%;
+    background: rgb(169, 157, 244);
+}
+.message-horizental-divided {
+    height: 0.15rem;
+    width: 100%;
+    background: rgb(169, 157, 244);
+}
+.send-based-btn {
+    background-color: rgb(203 184 235) !important;
+    border: none !important;
+    border-radius: 15px !important;
+    &:hover, &:active {
+        background-color: #beb7eb !important;
+    } 
+}
+@media screen and (min-width: 1020px) {
+    .item {
+        min-height: 6rem;
+    }
+    .decoration-box {
+        min-height: 10rem;
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "len": 4,
+    "eachLength": 1000,
+    "data": [{
+        "id":1,
+        "name": "旅行",
+        "": "",
+        "num": 13
+    },{
+        "id":2,
+        "name": "生活",
+        "": "",
+        "num": 1
+    },{
+        "id":3,
+        "name": "目标",
+        "": "",
+        "num": 21
+    },{
+        "id":4,
+        "name": "技能",
+        "": "",
+        "num": 99
+    }],
+    "newData": [{
+        "id":1,
+        "name": "旅行",
+        "": "",
+        "num": 13,
+        "isCollected": false 
+    },{
+        "id":2,
+        "name": "生活",
+        "": "",
+        "num": 1,
+        "isCollected": false
+    },{
+        "id":3,
+        "name": "目标",
+        "": "",
+        "num": 21,
+        "isCollected": false
+    },{
+        "id":4,
+        "name": "技能",
+        "": "",
+        "num": 99,
+        "isCollected": false
+    }]
+}
