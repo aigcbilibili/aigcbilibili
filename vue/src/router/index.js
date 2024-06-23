@@ -158,6 +158,13 @@ const router = createRouter({
         },
         name: '403',
         component: () => import('@/pages/403Pages.vue')
+    }, {
+        path: '/monitor',
+        meta: {
+            title: "监控"
+        },
+        name: 'monitor',
+        component: () => import('@/pages/Monitoring.vue')
     }
     ]
 })

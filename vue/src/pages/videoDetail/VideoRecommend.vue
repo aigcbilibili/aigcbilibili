@@ -10,7 +10,6 @@
             <div v-else class="video-episodes-panel flex-column-center-container based-box">
                 <!--视频标题-->
                 <div class="">
-
                 </div>
                 <p @click="isExpanseExposides = false" class="common-based-btn collapse-btn change-color-btn">收起</p>
             </div>
@@ -27,9 +26,10 @@
                 </div>
                 <div class="main">
                     {{ upInfo.text }}
+
                 </div>
-                <div class="bottom">
-                    <el-button type="primary" icon="Plus">关注</el-button>
+                <div class="bottom" v-if="userId !== +route.query.upId">
+                    <el-button :type=" upInfo.isFollowing ? 'info' : 'primary'" :icon="upInfo.isFollowing ? '' : 'Plus'" @click="changeFollow">{{ upInfo.isFollowing?'已关注' :'关注'}}</el-button>
                 </div>
             </div>
 
@@ -48,7 +48,7 @@
 
 <script setup>
 import { ref, onMounted, computed, defineAsyncComponent } from "vue"
-import { getRecommendVideos, fetchVideosFromCompilations } from "@/api/video"
+import { getRecommendVideos, fetchVideosFromCompilations,removeFollowing ,addFollowing} from "@/api/video"
 import { useUserInfo } from "@/store/userInfo"
 import { aCarousel } from "@/components/public/aCarousel.vue"
 import { useRoute, useRouter } from 'vue-router'
@@ -110,6 +110,16 @@ const handleMessage = () => {
     router.push({ path: `/message/MyChat/${userId}` })
 }
 
+const changeFollow =async ()=>{
+    if(upInfo.value.isFollowing){
+       await removeFollowing(userId,+route.query.upId)
+    }else {
+        await addFollowing(userId,+route.query.upId)
+    }
+    upInfo.value.isFollowing = !upInfo.value.isFollowing
+
+}
+
 
 /**
  * 如果滚动到直播，则固定住
@@ -121,13 +131,14 @@ onMounted(async () => {
     recommendVideos.value = await getRecommendVideos(videoId)
     console.log('route', route);
     let id = +route.query.upId
-    let res = await fetchUserInfo(id, id)
+    let res = await fetchUserInfo(userId, id)
     console.log('44444', res);
     upInfo.value = {
         name: res.name,
         img: res.avatar,
         text: res.intro,
-        id: res.id
+        id: res.id,
+        isFollowing: res.isFollowing
     }
 
 })

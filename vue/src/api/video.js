@@ -443,3 +443,24 @@ export const getUserInfoVideo = async (selfId, visitedId) => {
     console.log('getUserInfoVideo', res);
     return res;
 }
+
+
+
+//取关
+export const removeFollowing = async (userId, upId) => {
+    const res = await request.post(`/follow/recallFollow`, {
+        fansId: Number(userId),
+        idolId: Number(upId)
+    });
+    return res;
+}
+
+
+//关注
+export const addFollowing = async (userId, upId) => {
+    const res = await request.get(`/follow/follow`, {
+        fansId: Number(userId),
+        idolId: Number(upId)
+    });
+    return res;
+}
