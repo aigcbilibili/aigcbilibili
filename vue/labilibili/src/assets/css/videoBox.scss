@@ -1,0 +1,23 @@
+.video-box {
+    margin: 2rem 2rem;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+video-small-wrap {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width:1020px) {
+    video-small-wrap {
+        margin-left: 2.6rem;
+        margin-right: 2.6rem;
+    }
+}
