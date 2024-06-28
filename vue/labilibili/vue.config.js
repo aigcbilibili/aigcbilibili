@@ -15,23 +15,7 @@ module.exports = defineConfig({
     }
   },
   assetsDir: './',
-  // configureWebpack: (config) => {
-  //   // vue骨架屏插件配置
-  //   config.plugins.push(new SkeletonWebpackPlugin({
-  //     webpackConfig: {
-  //       entry:{
-  //         app: path.join(__dirname, './src/components/skeleton/skeleton-entry.js')
-  //       }  
-  //     },
-  //     minimize: true,
-  //     quiet: true,
-  //     router:{
-  //       mode:'hash',
-  //       routes:[{ path: '/main', skeletonId: 'skeleton' }]
-  //     }
-  //   }))
-  // },
-  // productionSourceMap: false,
+
   devServer: {
     host: 'localhost',
     port: 2023,
@@ -45,15 +29,9 @@ module.exports = defineConfig({
     // NOTE 跨域配置
     proxy: {
       '/api': {
-        // target: "yjgbfgsb.beesnat.com:13324", // 搜索
-        // target: 'http://zsriw8kz.beesnat.com', // 视频
-        target: "XXXX", // https://www.labilibili.com:82
-        // target: 'http://114.55.116.140:10201/', 
+        target: "XXXX",
         // 允许跨域：如果不开的话，会拦截响应
         changeOrigin: true,
-        // pathRewrite: {
-        //   '^/api': ''
-        // }
       },
       '/video-test': {
         target: 'http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4',
@@ -62,15 +40,6 @@ module.exports = defineConfig({
           '^/video-show': ''
         }
       },
-      '/apis/': {
-        target: 'https://www.labilibili.com/api',
-        changeOrigin: true,
-        pathRewrite: {
-          '^/apis': ''
-        }
-      },
-
-
 
     }
   }
