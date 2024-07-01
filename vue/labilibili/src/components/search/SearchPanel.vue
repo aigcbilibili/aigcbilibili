@@ -3,10 +3,10 @@
     <div class="search-wrap">
       <input class="search-input" type="text" placeholder="请输入视频标题/UP主名称" @mouseover="isShow = true" v-model="searchRes"
         @input="isShow = true" @keyup.enter="searchFinal()" />
-      <!-- <Transition name="search">
+      <Transition name="search">
         <searchView v-if="isShow" class="search-recommend" :isInput="isInput" :keyword="searchRes"
           :recommendData="recommendData" />
-      </Transition> -->
+      </Transition>
     </div>
     <button class="search-btn flex-center-container">
       <div class="search-btn-font" @click="searchFinal()">搜索</div>

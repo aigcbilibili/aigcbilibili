@@ -63,7 +63,7 @@
 import { ref, onMounted, computed, defineAsyncComponent } from "vue"
 import { getRecommendVideos, fetchVideosFromCompilations, removeFollowing, addFollowing } from "@/api/video"
 import { useUserInfo } from "@/store/userInfo"
-import { aCarousel } from "@/components/public/aCarousel.vue"
+import aCarousel from "@/components/public/aCarousel.vue"
 import { useRoute, useRouter } from 'vue-router'
 import {
     ChatLineRound, Message, Plus
