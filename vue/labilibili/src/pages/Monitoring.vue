@@ -50,7 +50,7 @@ onMounted(async () => {
             data: data_x_6
         },
         yAxis: {
-            interval: 1
+            interval: 5
         },
         series: [
             {
@@ -75,7 +75,7 @@ onMounted(async () => {
             data: data_x_7
         },
         yAxis: {
-            interval: 1
+            interval: 5
         },
         series: [
             {

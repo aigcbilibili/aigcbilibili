@@ -44,7 +44,7 @@
             <el-upload drag action="#" class="cover-uploader" auto-upload="false"
                 accept="image/bmp,image/jpeg,image/jpg,image/png,image/webp" v-model:file="upData.cover" :limit="1"
                 :http-request="handleCoverUpload" :on-change="handleChange" :on-exceed="onExceed"
-                :on-remove="handleRemove">
+                :on-remove="handleRemove" :show-file-list="false">
                 <img v-if="upData.cover" :src="coverData" class="img-cover" />
                 <div v-else>
                     <div class="el-upload__text" style="margin-top: -1.5rem;">将封面文件拖到此处，或<em>点击这里上传</em></div>
@@ -55,12 +55,12 @@
                 </div>
             </el-upload>
             <!--视频的前3帧-->
-            <div v-if="threeCoversData.length > 0" style="margin-left: 2rem;">
+            <!-- <div v-if="threeCoversData.length > 0" style="margin-left: 2rem;">
                 <div v-for="(item, index) in threeCoversData" :key="index">
                     <img :src="item" class="video-alternate-cover" style="width: 14rem; height: 8rem;"
                         alt="webp cover" />
                 </div>
-            </div>
+            </div> -->
         </div>
         <!--视频类型-->
         <!-- <div class="upload-item flex-left-container">
@@ -319,7 +319,11 @@ const handleChange = async (file) => {
         ElMessage.error('上传的图片格式错误！请检查是否为png/jpeg/jpg')
         return false
     }
-    upData.value.cover = await fileToBase64(file.raw)
+    // upData.value.cover = await fileToBase64(file.raw);
+    let res = await fileToBase64(file.raw);
+    upData.value.cover = res.slice(23)
+
+    // console.log('33333', upData.value.cover.slice(23));
     coverData.value = convertToWebP(file.raw)
     // upData.value.cover = await convertToWebP(file.raw)
 }
@@ -351,9 +355,9 @@ const upRes = async () => {
         upData.value.title, userId, upData.value.cover)
     if (res) {
         ElMessage.success(`${upData.value.title}视频上传成功！`)
-        setTimeout(async () => { // 1s后页面强制刷新，刷新太快会导致异步上传丢失     
-            window.location.reload()
-        }, 1000)
+        // setTimeout(async () => { // 1s后页面强制刷新，刷新太快会导致异步上传丢失     
+        //     window.location.reload()
+        // }, 1000)
     }
 }
 // 监听
