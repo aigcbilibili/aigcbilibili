@@ -2,11 +2,11 @@ server:
   port: 10201
 spring:
   redis:
-    host: xxx.84
+    host: localhost:84
   application:
     name: video
   zipkin:
-    base-url: http://xxx:9411 # zipkin服务地址
+    base-url: http://localhost:9411 # zipkin服务地址
     sender:
       type: web
     sleuth:
@@ -29,19 +29,19 @@ spring:
     #      idle-timeout: 21600000   6 小时
     #      validation-timeout: 5000  5 秒
     name: datasource
-    url: jdbc:mysql://xxx:3306/bilibili?useUnicode=true&allowPublicKeyRetrieval=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
-    username: xxx
-    password: xxx
+    url: jdbc:mysql://localhost:3306/bilibili?useUnicode=true&allowPublicKeyRetrieval=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: user
 
 
 
 minio:
-  url: http://xxx:9000
-  access.name: xxx
-  access.secret: xxx
+  url: http://localhost:9000
+  access.name: localhost
+  access.secret: localhost
   bucket.name: video
 rocketmq:
-  name-server: xxx:9876
+  name-server: localhost:9876
   producer:
     group: producer
 module-name: video
