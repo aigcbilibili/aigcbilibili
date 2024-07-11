@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.Map;
 
-@FeignClient(name = "notice",url="http://114.55.232.106:30000")
+@FeignClient(name = "notice",url="http://localhost:30000")
 @Component
 public interface SendNoticeClient {
     @PostMapping("/notice/sendDynamicNotice")

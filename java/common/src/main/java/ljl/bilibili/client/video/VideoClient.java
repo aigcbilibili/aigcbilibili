@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 @Component
-@FeignClient(name = "video",url = "http://114.55.232.106:10201")
+@FeignClient(name = "video",url = "http://localhost:10201")
 public interface VideoClient {
     @PostMapping(value = "/videoEncode/uploadVideo",consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     void uploadVideo(@RequestPart("multipartFile") MultipartFile multipartFile);
