@@ -4,8 +4,8 @@ spring:
   mail:
     host: smtp.qq.com
     default-encoding: UTF-8
-    username: xxx@qq.com
-    password: xxx
+    username: localhost@qq.com
+    password: localhost
     properties:
       mail:
         smtp:
@@ -20,11 +20,11 @@ spring:
 
 
   redis:
-    host: xxx.84
+    host: localhost:84
   application:
     name: gateway
   zipkin:
-    base-url: http://xxx:9411
+    base-url: http://localhost:9411
     sender:
       type: web
     sleuth:
@@ -35,15 +35,15 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     name: datasource
-    url: jdbc:mysql://xxx:3306/bilibili?useUnicode=true&allowPublicKeyRetrieval=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
-    username: xxx
-    password: xxx
+    url: jdbc:mysql://localhost:3306/bilibili?useUnicode=true&allowPublicKeyRetrieval=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: user
   cloud:
     loadbalancer:
       enabled: true
     nacos:
       discovery:
-        server-addr: xxx:8848
+        server-addr: localhost:8848
     gateway:
       discovery:
         locator:
@@ -51,11 +51,11 @@ spring:
           lower-case-service-id: true
       routes:
         - id: websocket
-          uri: ws://xxx:1688
+          uri: ws://localhost:1688
           predicates:
             - Path=/ljl/chat
         - id: route1
-          uri: http://xxx:30000
+          uri: http://localhost:30000
           predicates:
             - Path=/changeNoticeStatus/**,/getNotice/**
         - id: route2
@@ -63,15 +63,15 @@ spring:
           predicates:
             - Path=/ensemble/**,/follow/**,/selfCenter/**,/userInfo/**
         - id: route3
-          uri: http://xxx:10201
+          uri: http://localhost:10201
           predicates:
             - Path=/collect/**,/comment/**,/danmaku/**,/videoToEnsemble/**,/like/**,/createCenter/**,/play/**
         - id: route4
-          uri: http://xxx:1688
+          uri: http://localhost:1688
           predicates:
             - Path=/chat/**
         - id: route5
-          uri: http://xxx:8201
+          uri: http://localhost:8201
           predicates:
             - Path=/search/**
 
