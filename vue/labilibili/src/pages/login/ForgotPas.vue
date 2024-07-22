@@ -11,7 +11,7 @@
       z-index: 10;
     " append-to-body>
         <template #header>
-            <p class="title">注册</p>
+            <p class="title">忘记密码</p>
         </template>
         <template #default>
             <!--注册表格-->
@@ -19,11 +19,8 @@
                 <div v-for="(item, index) in enrollInfo" :key="index" class="input-box flex-based-container">
                     <p class="input-name">{{ item.name }}</p>
                     <el-input class="login-input input-content" v-model="enrollInfo[index].data"
-                        :placeholder="item.placeholder" :style="{ 'width': item.name === '绑定手机号' ? '16rem' : '' }"></el-input>
-                    <div v-if="item.name === '绑定手机号'">
-                        <el-button type="primary" class="basic-btn get-message-captcha 
-                        common-based-btn enroll-message-captcha" @click="enrollCaptcha()">验证码</el-button>
-                    </div>
+                        :placeholder="item.placeholder"></el-input>
+
                 </div>
             </div>
         </template>
@@ -36,7 +33,7 @@
 
 <script setup>
 import { ref, watch, onBeforeUnmount, inject } from 'vue'
-import { enroll } from '@/api/login'
+import { enroll, forget } from '@/api/login'
 import { useUserInfo } from "@/store/userInfo"
 import { ElMessage } from 'element-plus'
 const userInfo = useUserInfo() // 使用登录信息
@@ -47,15 +44,10 @@ const enrollStatusFlag = inject('enrollStatus')
 // 获取到注册信息
 const enrollEmitValue = inject('enrollData')
 const emits = defineEmits('update:enrollValue')
-const isShow = ref(isEnrollProcess.getIsEnroll())
+const isShow = ref(false)
 const enrollInfo = ref([{
     name: "用户名",
     placeholder: "请输入含字母/符号或汉字的2-10个字符",
-    data: "",
-    required: true
-}, {
-    name: "昵称",
-    placeholder: "请输入包含唯一的8位数字",
     data: "",
     required: true
 }, {
@@ -70,21 +62,19 @@ const enrollInfo = ref([{
     required: true
 },])
 // 
-// 注册验证码获取
-const enrollCaptcha = () => {
-    ElMessage.info("此处待开发，可直接绑定手机号。请输入6位数验证码")
-}
+
 // 注册确认：enrollData外除了
 const enrollConfirm = async () => {
     // 注册
-    const res = await enroll(
+    const res = await forget(
         enrollInfo.value[0].data,
         enrollInfo.value[1].data,
         enrollInfo.value[2].data,
     )
+    console.log(res);
     if (res) {
         // 带着信息进入首页
-        ElMessage.success("注册成功")
+        ElMessage.success("重制成功")
         const enrollValueData = {
             username: enrollInfo.value[0].data,
             password: enrollInfo.value[2].data,
@@ -92,8 +82,7 @@ const enrollConfirm = async () => {
         }
         enrollEmitValue.setEnrollData(enrollValueData)
         userInfo.setId(res.data)
-
-        isEnrollProcess.setIsEnroll(false)
+        handerOpen()
         return
     }
 }
@@ -108,6 +97,15 @@ onBeforeUnmount(() => {
 })
 watch(isEnrollProcess.isEnroll, (newValue) => {
     isShow.value = newValue
+})
+const handerOpen = () => {
+    isShow.value = true
+    for (let i of enrollInfo.value) {
+        i.data = ""
+    }
+}
+defineExpose({
+    handerOpen
 })
 </script>
 
