@@ -82,7 +82,10 @@ const enrollConfirm = async () => {
         }
         enrollEmitValue.setEnrollData(enrollValueData)
         userInfo.setId(res.data)
-        handerOpen()
+        isShow.value = false
+        for (let i of enrollInfo.value) {
+            i.data = ""
+        }
         return
     }
 }

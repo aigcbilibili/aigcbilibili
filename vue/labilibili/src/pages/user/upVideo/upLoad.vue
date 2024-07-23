@@ -1,6 +1,21 @@
 <template>
-    <div>
-        <input type="file" @change="startUpload" />
+    <div id="file">
+        <div id="up_file" style="cursor: pointer;">点击上传文件
+        </div>
+        <!-- <div id="up_progress" style="width: 80%;">
+            <el-progress :percentage="50" />
+            <el-button style="margin-top: 30px;">暂停</el-button>
+            <el-button style="margin-top: 30px;">继续</el-button>
+        </div> -->
+        <!-- <div id="up_success" style="width: 80%;">
+            <div>上传成功</div>
+            <el-button style="margin-top: 30px;">重新上传</el-button>
+        </div> -->
+        <!-- <div id="up_error" style="width: 80%;">
+            <div>上传失败</div>
+            <el-button style="margin-top: 30px;">重新上传</el-button>
+        </div> -->
+
     </div>
 </template>
 
@@ -12,10 +27,11 @@ const resumable = ref(null);
 
 onMounted(() => {
     resumable.value = new Resumable({
-        target: '/api/createCenter/getVideoCover', // 上传的服务器地址
-        chunkSize: 1 * 1024 * 1024, // 分块大小，这里是1MB
+        target: '/api/createCenter/uploadPart', // 上传的服务器地址
+        chunkSize: 5 * 1024 * 1024, // 分块大小，这里是1MB
         testChunks: true, // 在上传前测试分块是否已存在
     });
+    resumable.value.assignBrowse(document.getElementById('up_file'));
 
     // 监听文件添加事件
     resumable.value.on('fileAdded', (file) => {
