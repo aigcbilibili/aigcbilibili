@@ -70,15 +70,13 @@ export const verifyLogin = async (userName, password, captcha) => {
 /**
  * 请求注册
  */
-export const enroll = async (username, nickName, password, phoneNum, captcha, avatar) => {
+export const enroll = async (username, nickName, password) => {
     try {
         const postURL = '/register/passwordRegister'
         const response = await request.post(postURL, {
-            username: username,
+            userName: username,
             nickName: nickName,
             password: password,
-            phoneNum: phoneNum,
-            captcha: captcha,
         })
 
         return response
@@ -86,6 +84,26 @@ export const enroll = async (username, nickName, password, phoneNum, captcha, av
         console.error('注册错误', e)
     }
 }
+
+/**
+ * 忘记密码
+ */
+export const forget = async (userName, password, makeSurePassword) => {
+    try {
+        const postURL = '/forgetPassword/remakePassword'
+        const response = await request.post(postURL, {
+            userName,
+            password,
+            makeSurePassword,
+
+        })
+
+        return response
+    } catch (e) {
+        console.error('错误', e)
+    }
+}
+
 
 /**
  * 手机号获取验证码

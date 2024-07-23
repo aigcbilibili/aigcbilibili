@@ -27,6 +27,7 @@
 			<div class="login-area">
 				<el-button type="primary" class="basic-btn login-btn common-based-btn" @click="TrueEnroll()">注
 					册</el-button>
+				<el-button type="primary" class="basic-btn login-btn common-based-btn" @click="forget">忘记密码</el-button>
 				<el-button type="primary" class="basic-btn login-btn common-based-btn" @click="submitForm()">登
 					录</el-button>
 			</div>
@@ -34,6 +35,8 @@
 	</el-form>
 	<!--注册弹窗-->
 	<enrollCard /><!--v-model:enrollConfirm=XXX-->
+	<ForgotPas ref="forgotPas" />
+
 </template>
 
 <script setup>
@@ -48,11 +51,13 @@ import { useUserInfo } from '@/store/userInfo'
 import { ElMessage } from "element-plus"
 import Debounce from '@/static/debounce'
 import Throttle from '@/static/throttle'
+import ForgotPas from './ForgotPas.vue'
 let captcha = ref('')
 // const isEnrollProcess = inject('isEnrollVal') // 选择注册
 const isEnrollUpdate = ref(false) // 注册转递结果
 // const enrollEmitValue = inject('enrollData') // 注册信息
 // const enrollEmitValueData = ref(enrollEmitValue.getEnrollData())
+const forgotPas = ref(null)
 const userInfo = useUserInfo() // 保存登录信息
 const _captcha = ref('') // 验证码输入的值
 const router = useRouter()
@@ -73,6 +78,9 @@ provide('isEnrollVal', {
 		return isEnroll.value
 	}
 })
+const forget = () => {
+	forgotPas.value.handerOpen()
+}
 
 // 注册信息
 const enrollData = ref({
@@ -140,11 +148,11 @@ const submitForm = async () => {
 		return
 	}
 	// 发送请求到后端，获取响应数据
-	const _captcha_ = window.JSON.stringify(_captcha.value)
-	const username_ = window.JSON.stringify(param.value.username) // window.JSON.stringify(xxx)
-	const password_ = window.JSON.stringify(param.value.password)
+	const _captcha_ = _captcha.value
+	const username_ = param.value.username // window.JSON.stringify(xxx)
+	const password_ = param.value.password
 	console.log(`这里怎么处理的${username_}, ${password_}`)
-	const loginRes = await verifyLogin(username_, password_, _captcha_)
+	const loginRes = await verifyLogin(username_, password_, _captcha_);
 	// 如果传递了注册信息
 	let val = await setUser(loginRes)
 	if (!val) {
@@ -209,9 +217,5 @@ $small-border-radius: 10px;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-}
-
-.login-area .login-btn:first-child {
-	margin-right: 20%;
 }
 </style>

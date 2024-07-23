@@ -10,14 +10,15 @@
         <!--文件上传位置-->
         <div class="upload-item video-here">
             <div v-if="isUploadedVideo === 0"><!--XXX multiple参数是多选文件，用不到-->
-                <el-upload class="video-uploader" drag action="/api/createCenter/getVideoCover" auto-upload="true"
+                <!-- <el-upload class="video-uploader" drag action="/api/createCenter/getVideoCover" auto-upload="true"
                     :headers="thisHeaders" :data="upData.file" :limit="1" :accept="acceptFileType"
                     :before-upload="handleVideoUpload" :on-progress="handleProgress" :on-success="handleVideoSuccess"
                     :before-remove="beforeVideoRemove">
                     <div class="el-upload__text">将视频文件拖到此处，或<em>点击这里上传</em></div>
                     <div class="el-upload__tip">只能上传.mp4, .wmv, .avi视频，视频最大是2GB</div>
-                </el-upload>
+                </el-upload> -->
                 <!-- <input type="file" id="upload-video" @input="handleVideoTest"> -->
+                <upLoad />
             </div>
             <div v-else-if="isUploadedVideo === 2"> <!--已经传完-->
                 <div class="flex-between-container"><!--如果-->
@@ -62,32 +63,6 @@
                 </div>
             </div> -->
         </div>
-        <!--视频类型-->
-        <!-- <div class="upload-item flex-left-container">
-            <p class="upload-item-text">视频类型</p>
-            <div class="user-content-slide-btn video-type-wrap">
-                <span class="slider-tip flex-center-container" :class="{
-                    'slider': upData.type === 0
-                }" style="margin-right: 0.3rem;" @click.stop="changeType()">原创</span>
-                <span class="slider-tip flex-center-container" :class="{
-                    'slider': upData.type === 1
-                }" @click.stop="changeType()">连载</span>
-            </div>
-        </div> -->
-        <!--视频标签-->
-        <!-- <div class="upload-item video-cover flex-left-container">
-            <p class="upload-item-text">标签</p>
-            <div class="flex-column-left-max-container">
-
-                <aInput v-model="upData.tag" :definedPlaceholder="'输入视频标签'" />
-                <div style="display: flex; flex-flow: row wrap;">
-                    <div v-for="(item, index) in tagsRecData" :key="index" class="tags-and-labels" style="padding: 0.2rem 0.5rem; 
-                    border-radius: 10px;margin-right: 1rem;">
-                        {{ item }}
-                    </div>
-                </div>
-            </div>
-        </div> -->
         <!--视频简介-->
         <div class="upload-item flex-left-container video-profile">
             <p class="upload-item-text">简介</p>
@@ -108,9 +83,9 @@
 </template>
 
 <script setup>
+import upLoad from './upLoad.vue'
 import aInput from '@/components/public/aInput'
 import aTextarea from '@/components/public/aTextarea.vue'
-import axios from "axios"
 import { ref, watchEffect, onUpdated } from "vue"
 import { addUpVideo } from "@/api/video"
 import { useUserInfo } from "@/store/userInfo"
@@ -327,14 +302,8 @@ const handleChange = async (file) => {
     coverData.value = convertToWebP(file.raw)
     // upData.value.cover = await convertToWebP(file.raw)
 }
-// 放大预览
-const handlePicPreview = () => {
 
-}
-// 文件下载
-const handleDownload = () => {
 
-}
 // 获取图片上传
 const handleCoverUpload = (file) => {
     if (file.size > acceptCoverMaxSize) {
@@ -360,25 +329,14 @@ const upRes = async () => {
         // }, 1000)
     }
 }
-// 监听
-// watchEffect(async() => { // NOTE watchEffect组件初始化立即执行，watch惰性执行
-//     const promises = threeCoversData.value.map(file=> convertToWebP(file))
-//     webpImages.value = (await Promise.all(promises)).filter(url=>url!==null)
-// })
+
 /** 超出最大上传数时触发 当超出限制时*/
 const onExceed = () => {
     ElMessage.error("最多上传1张图片，请先删除在上传")
 }
-// 更换类型
-const changeType = () => {
-    upData.value.type = upData.value.type === 1 ? 0 : 1
-}
-onUpdated(() => {
-    console.log(`看下更新：${upData.value.intro}`)
-})
-</script>
 
-<style lang="scss"></style>
+
+</script>
 
 <style lang="scss" scoped>
 $share-font-size: 1.1rem; // 本页面的字体统一大小
