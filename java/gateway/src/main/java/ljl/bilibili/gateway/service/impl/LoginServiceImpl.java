@@ -93,7 +93,7 @@ public class LoginServiceImpl implements LoginService {
             map.put(USERIDENTITY, user.getId());
         }
         if(user ==null){
-            User newUser =phoneNumberLoginRequest.toEntity();
+            User newUser =phoneNumberLoginRequest.toEntity().setCover("https://labilibili.com/user-cover/default.png");
             userMapper.insert(newUser);
             privilegeMapper.insert(new Privilege().setUserId(newUser.getId()));
             id= newUser.getId();
@@ -132,7 +132,7 @@ public class LoginServiceImpl implements LoginService {
 
         }
         if(user ==null){
-            User newUser =mailLoginRequest.toEntity();
+            User newUser =mailLoginRequest.toEntity().setCover("https://labilibili.com/user-cover/default.png");
             userMapper.insert(newUser);
             privilegeMapper.insert(new Privilege().setUserId(newUser.getId()));
             id= newUser.getId();

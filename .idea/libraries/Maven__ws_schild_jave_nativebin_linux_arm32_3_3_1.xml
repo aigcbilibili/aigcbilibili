@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: ws.schild:jave-nativebin-linux-arm32:3.3.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/ws/schild/jave-nativebin-linux-arm32/3.3.1/jave-nativebin-linux-arm32-3.3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/ws/schild/jave-nativebin-linux-arm32/3.3.1/jave-nativebin-linux-arm32-3.3.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/ws/schild/jave-nativebin-linux-arm32/3.3.1/jave-nativebin-linux-arm32-3.3.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

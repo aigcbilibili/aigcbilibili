@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="60509243-e245-4409-8e0d-0435ae2de432" name="更改" comment="上传完整目录">
+      <change beforePath="$PROJECT_DIR$/java/chat/src/main/java/ljl/bilibili/chat/constant/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/chat/src/main/java/ljl/bilibili/chat/constant/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/chat/src/main/java/ljl/bilibili/chat/controller/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/chat/src/main/java/ljl/bilibili/chat/controller/ChatController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/chat/src/main/java/ljl/bilibili/chat/entity/BigModelToken.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/chat/src/main/java/ljl/bilibili/chat/example/ApiAuthAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/chat/src/main/java/ljl/bilibili/chat/ppt/ApiAuthAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/chat/src/main/java/ljl/bilibili/chat/example/ApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/chat/src/main/java/ljl/bilibili/chat/ppt/ApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/chat/src/main/java/ljl/bilibili/chat/example/CreateResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/chat/src/main/java/ljl/bilibili/chat/ppt/CreateResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/chat/src/main/java/ljl/bilibili/chat/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/chat/src/main/java/ljl/bilibili/chat/ppt/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/chat/src/main/java/ljl/bilibili/chat/example/MyUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/chat/src/main/java/ljl/bilibili/chat/ppt/MyUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/chat/src/main/java/ljl/bilibili/chat/example/OutlineVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/chat/src/main/java/ljl/bilibili/chat/ppt/OutlineVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/chat/src/main/java/ljl/bilibili/chat/example/ProgressResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/chat/src/main/java/ljl/bilibili/chat/ppt/ProgressResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/chat/src/main/java/ljl/bilibili/chat/handler/BigModelHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/chat/src/main/java/ljl/bilibili/chat/handler/BigModelHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/chat/src/main/java/ljl/bilibili/chat/handler/PPTHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/chat/src/main/java/ljl/bilibili/chat/handler/PPTHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/chat/src/main/java/ljl/bilibili/chat/mapper/ChatsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/chat/src/main/java/ljl/bilibili/chat/mapper/ChatServiceMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/chat/src/main/java/ljl/bilibili/chat/service/impl/ChatServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/chat/src/main/java/ljl/bilibili/chat/service/impl/ChatServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/chat/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/java/chat/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/common/src/main/java/ljl/bilibili/entity/user_center/user_info/Privilege.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/common/src/main/java/ljl/bilibili/entity/user_center/user_info/Privilege.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/common/src/main/java/ljl/bilibili/handler/MyMetaObjectHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/common/src/main/java/ljl/bilibili/handler/MyMetaObjectHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/gateway/src/main/java/ljl/bilibili/gateway/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/gateway/src/main/java/ljl/bilibili/gateway/service/impl/LoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/user_center/src/main/java/ljl/bilibili/user_center/service/ensemble/impl/EnsembleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/user_center/src/main/java/ljl/bilibili/user_center/service/ensemble/impl/EnsembleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/mapper/GetCommentMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/controller/video_production/UploadAndEditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/controller/video_production/UploadAndEditController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/service/audience_reactions/collect/CollectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/service/audience_reactions/collect/CollectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/service/audience_reactions/collect/impl/CollectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/service/audience_reactions/collect/impl/CollectServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/service/audience_reactions/comment/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/service/audience_reactions/comment/impl/CommentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/service/audience_reactions/like/impl/LikeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/service/audience_reactions/like/impl/LikeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/service/audience_reactions/play/impl/PlayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/service/audience_reactions/play/impl/PlayServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/service/video_production/MinioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/service/video_production/MinioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/service/video_production/UploadAndEditService.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/service/video_production/UploadAndEditService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/service/video_production/impl/MinioServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/service/video_production/impl/MinioServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/service/video_production/impl/UploadAndEditServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/service/video_production/impl/UploadAndEditServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/vo/request/video_production/UploadVideoRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/vo/request/video_production/UploadVideoRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/vo/response/RegisterResponse.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\apache-maven-3.8.6\maven_repository" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.8.6\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2SxDJnEGAHq6k8nRXCRO3PCjomL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/bilibili&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;5ca057726e40ce84dd41c9260bc2acae&quot;
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\bilibili\chat\src\main\java\ljl\bilibili\chat\example" />
+      <recent name="E:\bilibili\chat\src\main\java\ljl\bilibili\chat" />
+      <recent name="E:\bilibili\video\src\main\java\ljl\bilibili\video\service\audience_reactions\play" />
+      <recent name="E:\bilibili\video\src\main\java\ljl\bilibili\video\service\audience_reactions\like" />
+      <recent name="E:\bilibili\video\src\main\java\ljl\bilibili\video\service\audience_reactions\danmaku" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\cilicili\video\src\main\resources\static" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.video" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ljl.bilibili.mapper" />
+      <recent name="ljl.bilibili.video.mapper" />
+      <recent name="ljl.bilibili.video.pojo" />
+      <recent name="ljl.bilibili.video.vo.request.video_production" />
+      <recent name="ljl.bilibili.video.vo.response.video_production" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.video">
+    <configuration name="SendMessage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ljl.bilibili.gateway.util.SendMessage" />
+      <module name="gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ljl.bilibili.gateway.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="generated-requests中的所有" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="bilibili" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="bilibili" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="chat" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="chat" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ljl.bilibili.ChatApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gateway" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ljl.bilibili.GateWayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="notice" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="notice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ljl.bilibili.notice.MessageApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="search" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="search" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ljl.bilibili.search.SearchApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="user_center" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="user_center" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ljl.bilibili.user_center.CenterEditApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="video" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="video" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ljl.bilibili.video.VideoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="HTTP 请求.generated-requests中的所有" />
+      <item itemvalue="Spring Boot.video" />
+      <item itemvalue="Spring Boot.gateway" />
+      <item itemvalue="Spring Boot.user_center" />
+      <item itemvalue="Spring Boot.notice" />
+      <item itemvalue="Spring Boot.chat" />
+      <item itemvalue="Spring Boot.search" />
+      <item itemvalue="应用程序.SendMessage" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.SendMessage" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBeansView">
+    <option name="beanDetailsProportion" value="0.3" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="60509243-e245-4409-8e0d-0435ae2de432" name="更改" comment="" />
+      <created>1690079271987</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1690079271987</updated>
+      <workItem from="1690079273411" duration="4913000" />
+      <workItem from="1690086778143" duration="11560000" />
+      <workItem from="1690115543787" duration="5875000" />
+      <workItem from="1690162708686" duration="8994000" />
+      <workItem from="1690187464234" duration="6020000" />
+      <workItem from="1690276063269" duration="1343000" />
+      <workItem from="1690282157816" duration="3280000" />
+      <workItem from="1690346217148" duration="1885000" />
+      <workItem from="1690630326492" duration="1303000" />
+      <workItem from="1690700552944" duration="5544000" />
+      <workItem from="1690867243002" duration="2225000" />
+      <workItem from="1690879279167" duration="9046000" />
+      <workItem from="1690932580045" duration="1301000" />
+      <workItem from="1690966342358" duration="4825000" />
+      <workItem from="1691030815442" duration="7877000" />
+      <workItem from="1691484565667" duration="5415000" />
+      <workItem from="1691578831607" duration="1763000" />
+      <workItem from="1691654955896" duration="1953000" />
+      <workItem from="1691741664560" duration="11264000" />
+      <workItem from="1691809694993" duration="1767000" />
+      <workItem from="1691814982227" duration="58000" />
+      <workItem from="1691823463518" duration="1197000" />
+      <workItem from="1692276232893" duration="2457000" />
+      <workItem from="1692490560091" duration="5803000" />
+      <workItem from="1692709281485" duration="2164000" />
+      <workItem from="1693067027958" duration="287000" />
+      <workItem from="1693067462053" duration="1486000" />
+      <workItem from="1693306239193" duration="7526000" />
+      <workItem from="1693356553788" duration="10782000" />
+      <workItem from="1693444386108" duration="3818000" />
+      <workItem from="1693537053420" duration="6244000" />
+      <workItem from="1693663739976" duration="772000" />
+      <workItem from="1693701746544" duration="11585000" />
+      <workItem from="1693912107081" duration="4768000" />
+      <workItem from="1693966816603" duration="12974000" />
+      <workItem from="1693996833194" duration="5826000" />
+      <workItem from="1694068294153" duration="2400000" />
+      <workItem from="1694160295091" duration="1454000" />
+      <workItem from="1694255387072" duration="7921000" />
+      <workItem from="1694315200797" duration="3070000" />
+      <workItem from="1694609697248" duration="1645000" />
+      <workItem from="1694786433089" duration="2405000" />
+      <workItem from="1694833315365" duration="11313000" />
+      <workItem from="1694954329606" duration="6221000" />
+      <workItem from="1695007002028" duration="11105000" />
+      <workItem from="1695091813444" duration="8917000" />
+      <workItem from="1695190790075" duration="10903000" />
+      <workItem from="1695530835239" duration="267000" />
+      <workItem from="1695653517962" duration="724000" />
+      <workItem from="1695714835268" duration="24000" />
+      <workItem from="1695723605543" duration="5000" />
+      <workItem from="1696730101633" duration="502000" />
+      <workItem from="1696732240308" duration="520000" />
+      <workItem from="1696737484496" duration="25000" />
+      <workItem from="1696755760084" duration="9000" />
+      <workItem from="1696815549027" duration="10675000" />
+      <workItem from="1696833513628" duration="1864000" />
+      <workItem from="1696841253509" duration="5414000" />
+      <workItem from="1696901119505" duration="6571000" />
+      <workItem from="1697430617162" duration="397000" />
+      <workItem from="1697519047508" duration="846000" />
+      <workItem from="1697806139702" duration="966000" />
+      <workItem from="1697808376397" duration="1743000" />
+      <workItem from="1697810143965" duration="30000" />
+      <workItem from="1700578653761" duration="456000" />
+      <workItem from="1700579191446" duration="3166000" />
+      <workItem from="1700635038578" duration="1961000" />
+      <workItem from="1700735118773" duration="4046000" />
+      <workItem from="1700969589872" duration="2723000" />
+      <workItem from="1700998805997" duration="2107000" />
+      <workItem from="1701058089934" duration="2717000" />
+      <workItem from="1701148634546" duration="2729000" />
+      <workItem from="1701160983026" duration="2444000" />
+      <workItem from="1701347471737" duration="2183000" />
+      <workItem from="1701386294520" duration="740000" />
+      <workItem from="1701405410158" duration="1834000" />
+      <workItem from="1701431197022" duration="1297000" />
+      <workItem from="1701482588662" duration="13502000" />
+      <workItem from="1701567703763" duration="13944000" />
+      <workItem from="1701656014111" duration="8403000" />
+      <workItem from="1701682173200" duration="14736000" />
+      <workItem from="1701965981558" duration="1080000" />
+      <workItem from="1702014926749" duration="8375000" />
+      <workItem from="1702055103427" duration="1104000" />
+      <workItem from="1702087801486" duration="3222000" />
+      <workItem from="1702091092633" duration="15799000" />
+      <workItem from="1702175010880" duration="9224000" />
+      <workItem from="1702226754007" duration="1769000" />
+      <workItem from="1702261764598" duration="4792000" />
+      <workItem from="1702355679094" duration="714000" />
+      <workItem from="1702356720549" duration="8470000" />
+      <workItem from="1702448997264" duration="12915000" />
+      <workItem from="1702528685036" duration="11540000" />
+      <workItem from="1702565346937" duration="12000" />
+      <workItem from="1702632505874" duration="3060000" />
+      <workItem from="1702708171655" duration="21556000" />
+      <workItem from="1702779712701" duration="20493000" />
+      <workItem from="1702867189025" duration="11981000" />
+      <workItem from="1702887759616" duration="21552000" />
+      <workItem from="1702953445041" duration="6936000" />
+      <workItem from="1702971744732" duration="16446000" />
+      <workItem from="1703040104868" duration="2340000" />
+      <workItem from="1703046278687" duration="24316000" />
+      <workItem from="1703139758867" duration="20926000" />
+      <workItem from="1703215306107" duration="30409000" />
+      <workItem from="1703303263201" duration="28396000" />
+      <workItem from="1703385434979" duration="21110000" />
+      <workItem from="1703421514758" duration="12103000" />
+      <workItem from="1703472453462" duration="16562000" />
+      <workItem from="1703502785753" duration="15850000" />
+      <workItem from="1703557707683" duration="15962000" />
+      <workItem from="1703589896532" duration="13988000" />
+      <workItem from="1703643941860" duration="8011000" />
+      <workItem from="1703664789116" duration="16628000" />
+      <workItem from="1703733685153" duration="13332000" />
+      <workItem from="1703818133633" duration="6353000" />
+      <workItem from="1703839698019" duration="851000" />
+      <workItem from="1703905843167" duration="10639000" />
+      <workItem from="1703931191536" duration="10971000" />
+      <workItem from="1703989905884" duration="3800000" />
+      <workItem from="1704001478680" duration="2162000" />
+      <workItem from="1704084159600" duration="1030000" />
+      <workItem from="1704163529927" duration="2301000" />
+      <workItem from="1704246138145" duration="1485000" />
+      <workItem from="1704382559646" duration="1746000" />
+      <workItem from="1704424447418" duration="1375000" />
+      <workItem from="1704444928223" duration="20498000" />
+      <workItem from="1704508578527" duration="23972000" />
+      <workItem from="1704559757882" duration="4483000" />
+      <workItem from="1704594610495" duration="7383000" />
+      <workItem from="1704605951355" duration="21742000" />
+      <workItem from="1704647493013" duration="856000" />
+      <workItem from="1704680908815" duration="23021000" />
+      <workItem from="1704767854868" duration="17918000" />
+      <workItem from="1704821472244" duration="1189000" />
+      <workItem from="1704856287130" duration="30662000" />
+      <workItem from="1704936966499" duration="45927000" />
+      <workItem from="1705024922634" duration="10592000" />
+      <workItem from="1705120738985" duration="8379000" />
+      <workItem from="1705201272004" duration="12100000" />
+      <workItem from="1705240492041" duration="738000" />
+      <workItem from="1705287790286" duration="14473000" />
+      <workItem from="1705373129945" duration="15223000" />
+      <workItem from="1705465118040" duration="22913000" />
+      <workItem from="1705547364270" duration="14776000" />
+      <workItem from="1705634791533" duration="31757000" />
+      <workItem from="1705719903348" duration="23705000" />
+      <workItem from="1705805616229" duration="21373000" />
+      <workItem from="1705896247853" duration="34558000" />
+      <workItem from="1705979423443" duration="36995000" />
+      <workItem from="1706068496609" duration="32718000" />
+      <workItem from="1706156244944" duration="44552000" />
+      <workItem from="1706241422908" duration="32527000" />
+      <workItem from="1706330076131" duration="30149000" />
+      <workItem from="1706414478041" duration="25937000" />
+      <workItem from="1706502331887" duration="21000000" />
+      <workItem from="1706589639783" duration="19832000" />
+      <workItem from="1706630458847" duration="6920000" />
+      <workItem from="1706667782850" duration="18564000" />
+      <workItem from="1706704310567" duration="4370000" />
+      <workItem from="1706756125445" duration="25036000" />
+      <workItem from="1706807419243" duration="5127000" />
+      <workItem from="1706841256945" duration="8044000" />
+      <workItem from="1706859588404" duration="9385000" />
+      <workItem from="1706885761583" duration="1093000" />
+      <workItem from="1706898123405" duration="761000" />
+      <workItem from="1706927697878" duration="6743000" />
+      <workItem from="1706940111219" duration="4802000" />
+      <workItem from="1707104679063" duration="1203000" />
+      <workItem from="1707131842953" duration="16838000" />
+      <workItem from="1707187744110" duration="6422000" />
+      <workItem from="1707208575863" duration="15781000" />
+      <workItem from="1707279899702" duration="30463000" />
+      <workItem from="1707366412101" duration="646000" />
+      <workItem from="1707367288117" duration="38997000" />
+      <workItem from="1707440458606" duration="8174000" />
+      <workItem from="1707455969308" duration="21295000" />
+      <workItem from="1707537851507" duration="191000" />
+      <workItem from="1707552082320" duration="25325000" />
+      <workItem from="1707584167954" duration="5000000" />
+      <workItem from="1707621848399" duration="36474000" />
+      <workItem from="1707669317713" duration="1692000" />
+      <workItem from="1707715733555" duration="31885000" />
+      <workItem from="1707784817639" duration="5433000" />
+      <workItem from="1707791363864" duration="11634000" />
+      <workItem from="1707806519530" duration="23362000" />
+      <workItem from="1707838683830" duration="8366000" />
+      <workItem from="1707877922372" duration="20097000" />
+      <workItem from="1707928317993" duration="875000" />
+      <workItem from="1707932604391" duration="2116000" />
+      <workItem from="1707990721289" duration="8605000" />
+      <workItem from="1708016391179" duration="802000" />
+      <workItem from="1708049817764" duration="1955000" />
+      <workItem from="1708055993464" duration="19989000" />
+      <workItem from="1708137021631" duration="33662000" />
+      <workItem from="1708185127399" duration="9872000" />
+      <workItem from="1708195512939" duration="487000" />
+      <workItem from="1708224938179" duration="24107000" />
+      <workItem from="1708309640922" duration="5924000" />
+      <workItem from="1708361717216" duration="2347000" />
+      <workItem from="1708408168925" duration="8556000" />
+      <workItem from="1708496596677" duration="11960000" />
+      <workItem from="1708574541276" duration="13028000" />
+      <workItem from="1708664354330" duration="7318000" />
+      <workItem from="1708706470985" duration="2097000" />
+      <workItem from="1708746665787" duration="19891000" />
+      <workItem from="1708833314344" duration="41712000" />
+      <workItem from="1708914204494" duration="36779000" />
+      <workItem from="1709001195543" duration="34567000" />
+      <workItem from="1709087960676" duration="332000" />
+      <workItem from="1709098361547" duration="42678000" />
+      <workItem from="1709173357123" duration="1732000" />
+      <workItem from="1709180367585" duration="25303000" />
+      <workItem from="1709231074294" duration="2691000" />
+      <workItem from="1709259354372" duration="3590000" />
+      <workItem from="1709265987139" duration="34012000" />
+      <workItem from="1709346014913" duration="3476000" />
+      <workItem from="1709351520827" duration="10210000" />
+      <workItem from="1709368546242" duration="2369000" />
+      <workItem from="1709387515756" duration="10104000" />
+      <workItem from="1709437901312" duration="29133000" />
+      <workItem from="1709492883908" duration="85000" />
+      <workItem from="1709519065033" duration="3647000" />
+      <workItem from="1709526542284" duration="25282000" />
+      <workItem from="1709563987562" duration="50000" />
+      <workItem from="1709570393444" duration="1101000" />
+      <workItem from="1709571566575" duration="1442000" />
+      <workItem from="1709573306194" duration="1856000" />
+      <workItem from="1709604993602" duration="3376000" />
+      <workItem from="1709610614482" duration="14620000" />
+      <workItem from="1709633685158" duration="17582000" />
+      <workItem from="1709692060456" duration="2783000" />
+      <workItem from="1709696917574" duration="1455000" />
+      <workItem from="1709702482283" duration="32000" />
+      <workItem from="1709704163180" duration="3056000" />
+      <workItem from="1709731641334" duration="9038000" />
+      <workItem from="1709751504870" duration="105000" />
+      <workItem from="1709790333840" duration="3189000" />
+      <workItem from="1709817868318" duration="610000" />
+      <workItem from="1709821881985" duration="2726000" />
+      <workItem from="1709831258448" duration="3041000" />
+      <workItem from="1709895318853" duration="669000" />
+      <workItem from="1709902929569" duration="8405000" />
+      <workItem from="1709957949556" duration="853000" />
+      <workItem from="1709971876733" duration="2339000" />
+      <workItem from="1709984731389" duration="2135000" />
+      <workItem from="1709991106180" duration="2591000" />
+      <workItem from="1709995935618" duration="15071000" />
+      <workItem from="1710046601243" duration="9223000" />
+      <workItem from="1710070355648" duration="6359000" />
+      <workItem from="1710095143310" duration="234000" />
+      <workItem from="1710095933853" duration="151000" />
+      <workItem from="1710096181665" duration="24000" />
+      <workItem from="1710097186794" duration="2517000" />
+      <workItem from="1710131322070" duration="5055000" />
+      <workItem from="1710148949949" duration="2649000" />
+      <workItem from="1710162338676" duration="2223000" />
+      <workItem from="1710177007161" duration="1174000" />
+      <workItem from="1710181280858" duration="2328000" />
+      <workItem from="1710184863162" duration="119000" />
+      <workItem from="1710185219377" duration="528000" />
+      <workItem from="1710186308233" duration="58000" />
+      <workItem from="1710216819873" duration="5152000" />
+      <workItem from="1710240473358" duration="812000" />
+      <workItem from="1710252142956" duration="396000" />
+      <workItem from="1710265426506" duration="3687000" />
+      <workItem from="1710302797212" duration="17771000" />
+      <workItem from="1710355166910" duration="216000" />
+      <workItem from="1710485023162" duration="6699000" />
+      <workItem from="1710571129431" duration="688000" />
+      <workItem from="1710589153724" duration="3651000" />
+      <workItem from="1710675502649" duration="6960000" />
+      <workItem from="1711281205140" duration="887000" />
+      <workItem from="1711350877632" duration="602000" />
+      <workItem from="1711425303149" duration="9392000" />
+      <workItem from="1711519395652" duration="35000" />
+      <workItem from="1711895033421" duration="600000" />
+      <workItem from="1711910730006" duration="1187000" />
+      <workItem from="1712031144436" duration="3203000" />
+      <workItem from="1712058069522" duration="2678000" />
+      <workItem from="1712948639238" duration="36000" />
+      <workItem from="1713414728155" duration="2865000" />
+      <workItem from="1713501976501" duration="1379000" />
+      <workItem from="1713895755589" duration="1059000" />
+      <workItem from="1714935106613" duration="1238000" />
+      <workItem from="1715104841709" duration="715000" />
+      <workItem from="1715138277774" duration="619000" />
+      <workItem from="1715295652030" duration="1658000" />
+      <workItem from="1715301883937" duration="2009000" />
+      <workItem from="1715375620373" duration="1069000" />
+      <workItem from="1715378880461" duration="3718000" />
+      <workItem from="1715524747456" duration="2172000" />
+      <workItem from="1716245540875" duration="1489000" />
+      <workItem from="1716375943053" duration="44000" />
+      <workItem from="1716534899561" duration="673000" />
+      <workItem from="1716909218069" duration="1257000" />
+      <workItem from="1716913216793" duration="1962000" />
+      <workItem from="1717021148761" duration="1508000" />
+      <workItem from="1717288175633" duration="1010000" />
+      <workItem from="1717321899496" duration="840000" />
+      <workItem from="1717358319357" duration="604000" />
+      <workItem from="1717367808423" duration="10599000" />
+      <workItem from="1717436242623" duration="3042000" />
+      <workItem from="1717454721218" duration="2730000" />
+      <workItem from="1717736168408" duration="13000" />
+      <workItem from="1717784519498" duration="14131000" />
+      <workItem from="1717806837458" duration="24694000" />
+      <workItem from="1717895233501" duration="7253000" />
+      <workItem from="1717978098388" duration="10394000" />
+      <workItem from="1718010941260" duration="666000" />
+      <workItem from="1718167900417" duration="3710000" />
+      <workItem from="1718174460737" duration="3511000" />
+      <workItem from="1718228359226" duration="4238000" />
+      <workItem from="1718256361980" duration="2591000" />
+      <workItem from="1718365649394" duration="2080000" />
+      <workItem from="1718417057100" duration="3516000" />
+      <workItem from="1718552030566" duration="1248000" />
+      <workItem from="1718601431677" duration="17212000" />
+      <workItem from="1718672764533" duration="4819000" />
+      <workItem from="1718702275372" duration="16860000" />
+      <workItem from="1718763196480" duration="5806000" />
+      <workItem from="1718795203148" duration="8835000" />
+      <workItem from="1718870082103" duration="19712000" />
+      <workItem from="1718950493388" duration="496000" />
+      <workItem from="1718963162231" duration="3365000" />
+      <workItem from="1719004718655" duration="692000" />
+      <workItem from="1719040979419" duration="7377000" />
+      <workItem from="1719050763476" duration="36000" />
+      <workItem from="1719053187708" duration="1076000" />
+      <workItem from="1719054492421" duration="376000" />
+      <workItem from="1719056755045" duration="50000" />
+      <workItem from="1719057073840" duration="235000" />
+      <workItem from="1719378923902" duration="658000" />
+      <workItem from="1719379666854" duration="1329000" />
+      <workItem from="1719399023299" duration="14000" />
+      <workItem from="1720387032966" duration="949000" />
+      <workItem from="1720649888939" duration="66000" />
+      <workItem from="1720649963002" duration="4147000" />
+      <workItem from="1720659657811" duration="85000" />
+      <workItem from="1720663604969" duration="17000" />
+      <workItem from="1720958670856" duration="752000" />
+      <workItem from="1720959433223" duration="1629000" />
+      <workItem from="1721236143541" duration="52000" />
+      <workItem from="1721440121870" duration="5245000" />
+      <workItem from="1721536344227" duration="11000" />
+      <workItem from="1721540151154" duration="5319000" />
+      <workItem from="1721745647961" duration="574000" />
+      <workItem from="1721747991463" duration="482000" />
+      <workItem from="1721755107207" duration="1695000" />
+    </task>
+    <task id="LOCAL-00001" summary="上传所有代码">
+      <created>1697809219683</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697809219683</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="上传所有代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="上传所有代码" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ExceptionInInitializerError" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/chat/src/main/java/ljl/producer/VideoNotificationService.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/video/src/main/java/ljl/video/consumer/chat/ChatConsumer.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/notice/src/main/java/ljl/bilibili/notice/service/get_notice/impl/GetNoticeServiceImpl.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/notice/src/main/java/ljl/bilibili/notice/service/get_notice/impl/GetNoticeServiceImpl.java</url>
+          <line>124</line>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/notice/src/main/java/ljl/bilibili/notice/service/get_notice/impl/GetNoticeServiceImpl.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/notice/src/main/java/ljl/bilibili/notice/service/get_notice/impl/GetNoticeServiceImpl.java</url>
+          <line>139</line>
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gateway/src/main/java/ljl/bilibili/gateway/controller/LoginController.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="155" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/chat/src/main/java/ljl/bilibili/chat/handler/BigModelHandler.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="157" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user_center/src/main/java/ljl/bilibili/user_center/controller/user_info/UserInfoController.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="180" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/search/src/main/java/ljl/bilibili/search/service/impl/SearchServiceImpl.java</url>
+          <line>233</line>
+          <option name="timeStamp" value="197" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/video/src/main/java/ljl/bilibili/video/service/audience_reactions/play/impl/PlayServiceImpl.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="200" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/notice/src/main/java/ljl/bilibili/notice/service/get_notice/impl/GetNoticeServiceImpl.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="209" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/notice/src/main/java/ljl/bilibili/notice/consumer/like/LikeConsumer.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="216" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/notice/src/main/java/ljl/bilibili/notice/consumer/like/LikeConsumer.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="217" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gateway/src/main/java/ljl/bilibili/gateway/controller/LoginController.java</url>
+          <line>117</line>
+          <option name="timeStamp" value="220" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gateway/src/main/java/ljl/bilibili/gateway/service/impl/LoginServiceImpl.java</url>
+          <line>157</line>
+          <option name="timeStamp" value="221" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gateway/src/main/java/ljl/bilibili/gateway/service/impl/LoginServiceImpl.java</url>
+          <line>181</line>
+          <option name="timeStamp" value="222" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gateway/src/main/java/ljl/bilibili/gateway/controller/LoginController.java</url>
+          <line>119</line>
+          <option name="timeStamp" value="223" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gateway/src/main/java/ljl/bilibili/gateway/controller/LoginController.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="233" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/video/src/main/java/ljl/bilibili/video/service/video_production/impl/UploadAndEditServiceImpl.java</url>
+          <line>202</line>
+          <option name="timeStamp" value="240" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/search/src/main/java/ljl/bilibili/search/service/impl/MysqlToEsServiceImpl.java</url>
+          <line>131</line>
+          <option name="timeStamp" value="268" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/search/src/main/java/ljl/bilibili/search/service/impl/SearchServiceImpl.java</url>
+          <line>228</line>
+          <option name="timeStamp" value="269" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/notice/src/main/java/ljl/bilibili/notice/consumer/mysql_es/MysqlToEsConsumer.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="274" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gateway/src/main/java/ljl/bilibili/gateway/service/impl/LoginServiceImpl.java</url>
+          <line>103</line>
+          <option name="timeStamp" value="275" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/notice/src/main/java/ljl/bilibili/notice/consumer/mysql_es/MysqlToEsConsumer.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="276" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/video/src/main/java/ljl/bilibili/video/service/video_production/impl/UploadAndEditServiceImpl.java</url>
+          <line>272</line>
+          <option name="timeStamp" value="277" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/chat/src/main/java/ljl/bilibili/chat/handler/WebSocketHandler.java</url>
+          <line>121</line>
+          <option name="timeStamp" value="283" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/chat/src/main/java/ljl/bilibili/chat/handler/WebSocketHandler.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="284" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/chat/src/main/java/ljl/bilibili/chat/handler/BigModelHandler.java</url>
+          <line>325</line>
+          <option name="timeStamp" value="285" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/notice/src/main/java/ljl/bilibili/notice/service/get_notice/impl/GetNoticeServiceImpl.java</url>
+          <line>147</line>
+          <option name="timeStamp" value="286" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/notice/src/main/java/ljl/bilibili/notice/service/get_notice/impl/GetNoticeServiceImpl.java</url>
+          <line>157</line>
+          <option name="timeStamp" value="287" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/notice/src/main/java/ljl/bilibili/notice/consumer/dynamic/DynamicConsumer.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="289" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gateway/src/main/java/ljl/bilibili/gateway/controller/LoginController.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="291" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gateway/src/main/java/ljl/bilibili/gateway/service/impl/LoginServiceImpl.java</url>
+          <line>119</line>
+          <option name="timeStamp" value="292" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/video/src/main/java/ljl/bilibili/video/service/audience_reactions/play/impl/PlayServiceImpl.java</url>
+          <line>123</line>
+          <option name="timeStamp" value="294" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/chat/src/main/java/ljl/bilibili/chat/example/MyUtil.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="303" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/chat/src/main/java/ljl/bilibili/chat/handler/PPTHandler.java</url>
+          <line>111</line>
+          <option name="timeStamp" value="320" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/chat/src/main/java/ljl/bilibili/chat/controller/ChatController.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="326" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/video/src/main/java/ljl/bilibili/video/service/audience_reactions/comment/impl/CommentServiceImpl.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="328" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/video/src/main/java/ljl/bilibili/video/service/audience_reactions/collect/impl/CollectServiceImpl.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="329" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/chat/src/main/java/ljl/bilibili/chat/service/impl/ChatServiceImpl.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="331" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/chat/src/main/java/ljl/bilibili/chat/service/impl/ChatServiceImpl.java</url>
+          <line>183</line>
+          <option name="timeStamp" value="336" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/chat/src/main/java/ljl/bilibili/chat/service/impl/ChatServiceImpl.java</url>
+          <line>170</line>
+          <option name="timeStamp" value="340" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user_center/src/main/java/ljl/bilibili/user_center/service/user_info/impl/UserInfoServiceImpl.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="342" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/video/src/main/java/ljl/video/controller/send_notice/SendController.java</url>
+          <line>34</line>
+          <properties class="ljl.video.controller.send_notice.SendController">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/chat/src/main/java/ljl/bilibili/chat/controller/ChatController.java</url>
+          <line>44</line>
+          <properties class="ljl.bilibili.chat.controller.ChatController">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="323" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/controller/audience_reactions/play/PlayController.java</url>
+          <line>47</line>
+          <properties class="ljl.bilibili.video.controller.audience_reactions.play.PlayController" method="getHistoryVideo">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="344" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="ljl.bilibili.chat.example.OutlineVo$Chapter" memberName="chapterContents" />
+        <PinnedItemInfo parentTag="ljl.bilibili.chat.entity.ImageResponse$Payload$Choices$Text" memberName="role" />
+        <PinnedItemInfo parentTag="ljl.bilibili.chat.handler.PPTHandler$JsonParse" memberName="header" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="text.value[99]" />
+        <watch expression="commentLikeNoticeResponse.get(3)" />
+        <watch expression="list.get(5)" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

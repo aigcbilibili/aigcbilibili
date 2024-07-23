@@ -15,6 +15,7 @@ import ljl.bilibili.mapper.video.audience_reactions.like.LikeMapper;
 import ljl.bilibili.mapper.video.audience_reactions.play.PlayMapper;
 import ljl.bilibili.mapper.video.video_production.upload.VideoMapper;
 import ljl.bilibili.util.Result;
+import ljl.bilibili.video.mapper.VideoServiceMapper;
 import ljl.bilibili.video.service.audience_reactions.play.PlayService;
 import ljl.bilibili.video.vo.request.audience_reactions.play.DeleteHistoryVideoRequest;
 import ljl.bilibili.video.vo.response.audience_reactions.play.CommendVideoResponse;
@@ -48,6 +49,8 @@ public class PlayServiceImpl implements PlayService {
     LikeMapper likeMapper;
     @Resource
     RedisTemplate objectRedisTemplate;
+    @Resource
+    VideoServiceMapper videoServiceMapper;
     @Override
     public Result<Boolean> addPlayRecord(int videoId, int userId){
         LambdaQueryWrapper<Play> wrapper=new LambdaQueryWrapper<>();
@@ -109,39 +112,15 @@ public class PlayServiceImpl implements PlayService {
     }
     @Override
     public Result<List<FirstPageVideoResponse>> getFirstPageVideoResponse(Integer count) {
-//        if(map.get(count)!=null){
-//            return Result.data(map.get(count));
-//        }
-        MPJLambdaWrapper<Video> wrapper = new MPJLambdaWrapper<>();
-        wrapper.select(Video::getName, Video::getLength, Video::getCreateTime, Video::getCover, Video::getUrl);
-        wrapper.selectAs(User::getUserName, FirstPageVideoResponse::getAuthorName);
-        wrapper.selectAs(Video::getId, FirstPageVideoResponse::getVideoId);
-        wrapper.selectAs(User::getId, FirstPageVideoResponse::getAuthorId);
-        wrapper.select(VideoData::getPlayCount, VideoData::getDanmakuCount);
-        wrapper.leftJoin(User.class, User::getId, Video::getUserId);
-        wrapper.leftJoin(VideoData.class, VideoData::getVideoId, Video::getId);
-        wrapper.orderByDesc(Video::getId);
-        wrapper.last(SQL+" "+ (count-1)+","+LIMIT);
-        List<FirstPageVideoResponse> responses = videoMapper.selectJoinList(FirstPageVideoResponse.class, wrapper);
-       map.put(count,responses);
+        if(map.get(count)!=null){
+            return Result.data(map.get(count));
+        }
+        List<FirstPageVideoResponse> responses=videoServiceMapper.getFirstPageVideo(count-1);
+        map.put(count,responses);
         return Result.data(responses);
     }
     @Override
     public Result<List<HistoryVideoResponse>> getHistoryVideo(int userId) {
-        MPJLambdaWrapper<Play> wrapper=new MPJLambdaWrapper<>();
-        wrapper.eq(Play::getUserId,userId);
-        wrapper.orderByDesc(Play::getCreateTime);
-        wrapper.select(Play::getCreateTime);
-        wrapper.selectAs(Video::getName, HistoryVideoResponse::getVideoName);
-        wrapper.select(Video::getLength);
-        wrapper.selectAs(Video::getId,HistoryVideoResponse::getVideoId);
-        wrapper.selectAs(Video::getCover,HistoryVideoResponse::getVideoCover);
-        wrapper.selectAs(User::getId,HistoryVideoResponse::getAuthorId);
-        wrapper.selectAs(User::getCover,HistoryVideoResponse::getAuthorCover);
-        wrapper.selectAs(User::getNickname, HistoryVideoResponse::getAuthorName);
-        wrapper.innerJoin(Video.class,Video::getId,Play::getVideoId);
-        wrapper.innerJoin(User.class, User::getId,Video::getUserId);
-        List<HistoryVideoResponse> responses= playMapper.selectJoinList(HistoryVideoResponse.class,wrapper);
-        return Result.data(responses);
+        return Result.data(videoServiceMapper.getHistoryVideo(userId));
     }
 }

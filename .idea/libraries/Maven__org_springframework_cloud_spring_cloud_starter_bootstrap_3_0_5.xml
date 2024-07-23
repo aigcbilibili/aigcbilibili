@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.springframework.cloud:spring-cloud-starter-bootstrap:3.0.5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/org/springframework/cloud/spring-cloud-starter-bootstrap/3.0.5/spring-cloud-starter-bootstrap-3.0.5.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/org/springframework/cloud/spring-cloud-starter-bootstrap/3.0.5/spring-cloud-starter-bootstrap-3.0.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/org/springframework/cloud/spring-cloud-starter-bootstrap/3.0.5/spring-cloud-starter-bootstrap-3.0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

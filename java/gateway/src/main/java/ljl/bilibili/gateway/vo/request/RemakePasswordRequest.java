@@ -7,6 +7,5 @@ import lombok.Data;
 public class RemakePasswordRequest {
     private String userName;
     private String password;
-    private String surePassword;
-    private String captcha;
+    private String makeSurePassword;
 }

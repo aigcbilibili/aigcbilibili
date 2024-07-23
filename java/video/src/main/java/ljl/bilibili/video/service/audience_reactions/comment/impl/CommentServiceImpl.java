@@ -7,7 +7,7 @@ import ljl.bilibili.entity.video.audience_reactions.comment.Comment;
 import ljl.bilibili.entity.video.audience_reactions.like.Like;
 import ljl.bilibili.entity.video.video_production.upload.Video;
 import ljl.bilibili.entity.video.video_production.upload.VideoData;
-import ljl.bilibili.mapper.GetCommentMapper;
+import ljl.bilibili.video.mapper.VideoServiceMapper;
 import ljl.bilibili.mapper.video.audience_reactions.like.LikeMapper;
 import ljl.bilibili.mapper.video.audience_reactions.comment.CommentMapper;
 import ljl.bilibili.mapper.video.video_production.upload.VideoDataMapper;
@@ -39,8 +39,8 @@ public class CommentServiceImpl implements CommentService {
     @Resource
     VideoDataMapper videoDataMapper;
     @Resource
-    GetCommentMapper getCommentMapper;
-@Override
+    VideoServiceMapper videoServiceMapper;
+    @Override
     public Result<Boolean> commentToComment(CommentRequest commentRequest) {
         Comment comment = commentRequest.toEntity();
         commentMapper.insert(comment);
@@ -55,11 +55,11 @@ public class CommentServiceImpl implements CommentService {
     public Result<VideoCommentResponse> getComment(Integer videoId, Integer userId, Integer type) {
         LambdaQueryWrapper<VideoData> commentCountWrapper = new LambdaQueryWrapper<>();
         commentCountWrapper.eq(VideoData::getVideoId,videoId);
-        List<CommentDetailResponse> responses = getCommentMapper.getComment(videoId);
-        List<CommentDetailResponse> responses1=getCommentMapper.getComment2(videoId);
-        responses.addAll(responses1);
-        if (responses.size() > 0) {
-            Set<Integer> commentIds = responses.stream()
+        List<CommentDetailResponse> commentToVideoResponses = videoServiceMapper.getCommentToVideo(videoId);
+        List<CommentDetailResponse> commentToCommentResponses= videoServiceMapper.getCommentToComment(videoId);
+        commentToVideoResponses.addAll(commentToCommentResponses);
+        if (commentToVideoResponses.size() > 0) {
+            Set<Integer> commentIds = commentToVideoResponses.stream()
                     .map(CommentDetailResponse::getId)
                     .collect(Collectors.toSet());
             LambdaQueryWrapper<Like> likeLambdaQueryWrapper = new LambdaQueryWrapper<>();
@@ -69,32 +69,32 @@ public class CommentServiceImpl implements CommentService {
             List<Like> likes = likeMapper.selectList(likeLambdaQueryWrapper);
             Map<Integer, Boolean> likeMap = likes.stream()
                     .collect(Collectors.toMap(Like::getCommentId, like -> true, (existing, replacement) -> existing));
-            responses.forEach(response -> {
+            commentToVideoResponses.forEach(response -> {
                 response.setIsLiked(likeMap.getOrDefault(response.getId(), false));
             });
-           List<IdCount> ids= commentMapper.getCommentCount(commentIds);
-           Map<Integer, Integer> idCount=new HashMap<>(10);
-           for(IdCount id : ids){
-               idCount.put(id.getId(),id.getCount());
-           }
-            responses.forEach(response -> {
+            List<IdCount> ids= commentMapper.getCommentCount(commentIds);
+            Map<Integer, Integer> idCount=new HashMap<>(10);
+            for(IdCount id : ids){
+                idCount.put(id.getId(),id.getCount());
+            }
+            commentToVideoResponses.forEach(response -> {
                 response.setLikeCount(idCount.getOrDefault(response.getId(), 0));
             });
         }
         if(type==1){
-            responses.sort(Comparator.comparingInt(CommentDetailResponse::getLikeCount).reversed());
+            commentToVideoResponses.sort(Comparator.comparingInt(CommentDetailResponse::getLikeCount).reversed());
 //            Collections.sort(responses, (p1, p2) -> p2.getLikeCount() - p1.getLikeCount());
         }
-       long count= videoDataMapper.selectOne(commentCountWrapper).getCommentCount();
+        long count= videoDataMapper.selectOne(commentCountWrapper).getCommentCount();
         Map<Integer, CommentResponse> responseMap=new HashMap<>();
-        for(CommentDetailResponse response : responses){
+        for(CommentDetailResponse response : commentToVideoResponses){
             if(response.getTopId()==null){
                 CommentResponse commentResponse=new CommentResponse();
                 commentResponse.setTopCommentResponse(new TopCommentResponse().setCreateTime(response.getCreateTime()).setId(response.getId()).setContent(response.getContent()).setSenderId(response.getSenderId()).setLikeCount(response.getLikeCount()).setIsLiked(response.getIsLiked()).setSenderName(response.getSenderName()).setSenderCoverUrl(response.getSenderCoverUrl()));
                 responseMap.put(response.getId(),commentResponse);
             }
         }
-        for(CommentDetailResponse response : responses){
+        for(CommentDetailResponse response : commentToVideoResponses){
             if(response.getTopId()!=null){
                 CommentResponse commentResponse=responseMap.getOrDefault(response.getTopId(),new CommentResponse());
                 commentResponse.getCommentDetailResponses().add(response);
@@ -105,6 +105,6 @@ public class CommentServiceImpl implements CommentService {
             commentResponseList.add(responseEntry.getValue());
         }
         return Result.data(new VideoCommentResponse().setCommentResponseList(commentResponseList).setCommentCount(count
-));
+        ));
     }
 }

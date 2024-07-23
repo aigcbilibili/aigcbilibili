@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.mysql:mysql-connector-j:8.0.31">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/com/mysql/mysql-connector-j/8.0.31/mysql-connector-j-8.0.31.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/com/mysql/mysql-connector-j/8.0.31/mysql-connector-j-8.0.31-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/com/mysql/mysql-connector-j/8.0.31/mysql-connector-j-8.0.31-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

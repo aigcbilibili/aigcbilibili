@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.rocketmq:rocketmq-common:4.5.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/org/apache/rocketmq/rocketmq-common/4.5.2/rocketmq-common-4.5.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/org/apache/rocketmq/rocketmq-common/4.5.2/rocketmq-common-4.5.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/org/apache/rocketmq/rocketmq-common/4.5.2/rocketmq-common-4.5.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.swagger:swagger-annotations:1.6.6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/io/swagger/swagger-annotations/1.6.6/swagger-annotations-1.6.6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/io/swagger/swagger-annotations/1.6.6/swagger-annotations-1.6.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/io/swagger/swagger-annotations/1.6.6/swagger-annotations-1.6.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

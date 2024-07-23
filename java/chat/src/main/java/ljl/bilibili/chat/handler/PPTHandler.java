@@ -292,13 +292,5 @@ public class PPTHandler extends WebSocketListener {
             e.printStackTrace();
         }
     }
-    /**
-     *清空用户会话内容
-     */
-    public Boolean removeSession(){
-        for(int i=0;i< historyList.size();i++){
-            historyList.remove(i);
-        }
-        return true;
-    }
+
 }

@@ -21,7 +21,7 @@ import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-
+//该类后续会补上对应前端
 @Service
 public class EnsembleServiceImpl implements EnsembleService {
     @Resource

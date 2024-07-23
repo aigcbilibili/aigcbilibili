@@ -1,0 +1,34 @@
+{
+    "": "",
+    "data": [{
+        "tunnelId": 36,
+        "userId": 2, 
+        "name": "鱼鱼", 
+        "intro": "不要吃我",
+        "avatar": "@/assets/img/avater.png",
+        "leastMessage": "欢迎你的关注~",
+        "leastMessageFrom": 2, 
+        "updatedUnreadFlag": true, 
+        "unreadNum": 1
+    },{
+        "tunnelId": 88,
+        "userId": 30,
+        "name": "王阳明谈古说今",
+        "intro": "学道法自然，享人文历史",
+        "avatar": "@/assets/img/avater.png",
+        "leastMessage": "",
+        "leastMessageFrom": 1, 
+        "updatedUnreadFlag": false, 
+        "unreadNum": 1
+    },{
+        "tunnelId": 99,
+        "userId": 31,
+        "name": "清空清空表清空清空表",
+        "intro": "看到月亮",
+        "avatar": "@/assets/img/avater.png",
+        "leastMessage": "哥，你的钱什么时候还",
+        "leastMessageFrom": 1,
+        "updatedUnreadFlag": false, 
+        "unreadNum": 0
+    }]
+}

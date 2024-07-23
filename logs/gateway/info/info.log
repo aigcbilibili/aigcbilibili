@@ -1,0 +1,130 @@
+2024-07-11 06:22:37 |INFO  |background-preinit |Version.java:21 |org.hibernate.validator.internal.util.Version |HV000001: Hibernate Validator 6.2.4.Final
+2024-07-11 06:22:37 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.GateWayApplication |Starting GateWayApplication using Java 17.0.6 on DESKTOP-4C1V07J with PID 15344 (D:\bilibili\java\gateway\target\classes started by Administrator in D:\bilibili)
+2024-07-11 06:22:37 |INFO  |main |SpringApplication.java:651 |ljl.bilibili.GateWayApplication |The following 1 profile is active: "dev"
+2024-07-11 06:22:40 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-11 06:22:40 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-11 06:22:40 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+2024-07-11 06:22:41 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=188cd356-80cb-34fd-b80a-4c3183660a98
+2024-07-11 06:22:42 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-11 06:22:42 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-11 06:22:42 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-11 06:22:45 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-07-11 06:22:46 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-07-11 06:22:48 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [After]
+2024-07-11 06:22:48 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Before]
+2024-07-11 06:22:48 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Between]
+2024-07-11 06:22:48 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Cookie]
+2024-07-11 06:22:48 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Header]
+2024-07-11 06:22:48 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Host]
+2024-07-11 06:22:48 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Method]
+2024-07-11 06:22:48 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Path]
+2024-07-11 06:22:48 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Query]
+2024-07-11 06:22:48 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [ReadBody]
+2024-07-11 06:22:48 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [RemoteAddr]
+2024-07-11 06:22:48 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-07-11 06:22:48 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Weight]
+2024-07-11 06:22:48 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-07-11 06:22:49 |INFO  |main |ReactiveUserDetailsServiceAutoConfiguration.java:88 |org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration |
+
+Using generated security password: eb3c1073-99f0-4e56-9678-0b57a4fc076d
+
+2024-07-11 06:22:52 |INFO  |main |NettyWebServer.java:111 |org.springframework.boot.web.embedded.netty.NettyWebServer |Netty started on port 8200
+2024-07-11 06:22:52 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.GateWayApplication |Started GateWayApplication in 16.831 seconds (JVM running for 19.842)
+2024-07-11 06:35:07 |INFO  |Thread-3 |TimeBasedFilter.java:24 |ljl.bilibili.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-07-11 06:35:07 |INFO  |Thread-3 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-07-11 06:35:07 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-0} closing ...
+2024-07-11 06:48:43 |INFO  |background-preinit |Version.java:21 |org.hibernate.validator.internal.util.Version |HV000001: Hibernate Validator 6.2.4.Final
+2024-07-11 06:48:43 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.GateWayApplication |Starting GateWayApplication using Java 17.0.6 on DESKTOP-4C1V07J with PID 1348 (D:\bilibili\java\gateway\target\classes started by Administrator in D:\bilibili)
+2024-07-11 06:48:43 |INFO  |main |SpringApplication.java:651 |ljl.bilibili.GateWayApplication |The following 1 profile is active: "dev"
+2024-07-11 06:48:47 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-11 06:48:47 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-11 06:48:47 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 100 ms. Found 0 Redis repository interfaces.
+2024-07-11 06:48:49 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=188cd356-80cb-34fd-b80a-4c3183660a98
+2024-07-11 06:48:51 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-11 06:48:51 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-11 06:48:51 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-11 06:49:18 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-07-11 06:49:18 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-07-11 06:49:22 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [After]
+2024-07-11 06:49:22 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Before]
+2024-07-11 06:49:22 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Between]
+2024-07-11 06:49:22 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Cookie]
+2024-07-11 06:49:22 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Header]
+2024-07-11 06:49:22 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Host]
+2024-07-11 06:49:22 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Method]
+2024-07-11 06:49:22 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Path]
+2024-07-11 06:49:22 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Query]
+2024-07-11 06:49:22 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [ReadBody]
+2024-07-11 06:49:22 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [RemoteAddr]
+2024-07-11 06:49:22 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-07-11 06:49:22 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Weight]
+2024-07-11 06:49:22 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-07-11 06:49:23 |INFO  |main |ReactiveUserDetailsServiceAutoConfiguration.java:88 |org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration |
+
+Using generated security password: 00843eef-8954-4d1f-839d-c05858eb803e
+
+2024-07-11 06:49:27 |INFO  |main |NettyWebServer.java:111 |org.springframework.boot.web.embedded.netty.NettyWebServer |Netty started on port 8200
+2024-07-11 06:49:27 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.GateWayApplication |Started GateWayApplication in 46.359 seconds (JVM running for 53.667)
+2024-07-11 06:50:29 |INFO  |parallel-1 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/notice/getNotice/getDynamicVideo/0
+2024-07-11 06:50:29 |INFO  |parallel-2 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/changeNoticeStatus/changeDynamicVideoStatus
+2024-07-11 06:50:29 |INFO  |parallel-3 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/play/getFirstPageVideo/1
+2024-07-11 06:50:29 |INFO  |parallel-4 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/getNotice/getNoticeCount/0
+2024-07-11 06:50:29 |INFO  |parallel-3 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/play/getHistoryVideo/0
+2024-07-11 06:50:29 |INFO  |parallel-2 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/collect/getCollectGroup/0
+2024-07-11 06:50:29 |INFO  |parallel-4 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/play/getHistoryVideo/0
+2024-07-11 06:52:57 |INFO  |Thread-3 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-07-11 06:52:57 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-0} closing ...
+2024-07-11 06:53:08 |INFO  |background-preinit |Version.java:21 |org.hibernate.validator.internal.util.Version |HV000001: Hibernate Validator 6.2.4.Final
+2024-07-11 06:53:08 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.GateWayApplication |Starting GateWayApplication using Java 17.0.6 on DESKTOP-4C1V07J with PID 4020 (D:\bilibili\java\gateway\target\classes started by Administrator in D:\bilibili)
+2024-07-11 06:53:08 |INFO  |main |SpringApplication.java:651 |ljl.bilibili.GateWayApplication |The following 1 profile is active: "dev"
+2024-07-11 06:53:11 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-11 06:53:11 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-11 06:53:11 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 41 ms. Found 0 Redis repository interfaces.
+2024-07-11 06:53:12 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=188cd356-80cb-34fd-b80a-4c3183660a98
+2024-07-11 06:53:13 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-11 06:53:13 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-11 06:53:13 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-11 06:53:18 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-07-11 06:53:18 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-07-11 06:53:21 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [After]
+2024-07-11 06:53:21 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Before]
+2024-07-11 06:53:21 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Between]
+2024-07-11 06:53:21 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Cookie]
+2024-07-11 06:53:21 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Header]
+2024-07-11 06:53:21 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Host]
+2024-07-11 06:53:21 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Method]
+2024-07-11 06:53:21 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Path]
+2024-07-11 06:53:21 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Query]
+2024-07-11 06:53:21 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [ReadBody]
+2024-07-11 06:53:21 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [RemoteAddr]
+2024-07-11 06:53:21 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-07-11 06:53:21 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Weight]
+2024-07-11 06:53:21 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-07-11 06:53:21 |INFO  |main |ReactiveUserDetailsServiceAutoConfiguration.java:88 |org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration |
+
+Using generated security password: 505c5a6a-40ac-4bb2-8b7b-a8e6cb057ff6
+
+2024-07-11 06:53:25 |INFO  |main |NettyWebServer.java:111 |org.springframework.boot.web.embedded.netty.NettyWebServer |Netty started on port 8200
+2024-07-11 06:53:25 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.GateWayApplication |Started GateWayApplication in 18.506 seconds (JVM running for 20.337)
+2024-07-11 06:53:45 |INFO  |parallel-1 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/changeNoticeStatus/changeDynamicVideoStatus
+2024-07-11 06:53:45 |INFO  |parallel-2 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/play/getFirstPageVideo/1
+2024-07-11 06:53:45 |INFO  |parallel-3 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/getNotice/getNoticeCount/0
+2024-07-11 06:53:45 |INFO  |parallel-4 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/notice/getNotice/getDynamicVideo/0
+2024-07-11 06:53:45 |INFO  |parallel-3 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/play/getHistoryVideo/0
+2024-07-11 06:53:45 |INFO  |parallel-2 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/collect/getCollectGroup/0
+2024-07-11 06:53:46 |INFO  |parallel-4 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/play/getHistoryVideo/0
+2024-07-11 08:10:53 |INFO  |Thread-3 |TimeBasedFilter.java:24 |ljl.bilibili.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-07-11 08:10:53 |INFO  |Thread-3 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-07-11 08:10:53 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-0} closing ...

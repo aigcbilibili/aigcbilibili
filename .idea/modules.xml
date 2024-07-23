@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/java/bilibili.iml" filepath="$PROJECT_DIR$/java/bilibili.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/chat/chat.iml" filepath="$PROJECT_DIR$/java/chat/chat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/common/common.iml" filepath="$PROJECT_DIR$/java/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/gateway/gateway.iml" filepath="$PROJECT_DIR$/java/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/notice/notice.iml" filepath="$PROJECT_DIR$/java/notice/notice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/search/search.iml" filepath="$PROJECT_DIR$/java/search/search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/user_center/user_center.iml" filepath="$PROJECT_DIR$/java/user_center/user_center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/video/video.iml" filepath="$PROJECT_DIR$/java/video/video.iml" />
+    </modules>
+  </component>
+</project>

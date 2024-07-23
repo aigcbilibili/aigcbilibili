@@ -5,15 +5,12 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
-import ljl.bilibili.chat.entity.BigModelToken;
-import ljl.bilibili.chat.event.MessageEvent;
 import ljl.bilibili.chat.entity.ChatMessage;
 import lombok.extern.slf4j.Slf4j;
 import okhttp3.*;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.web.socket.TextMessage;
 
-import javax.annotation.Resource;
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 import java.io.IOException;
@@ -39,12 +36,7 @@ public class BigModelHandler extends WebSocketListener {
     public String NewQuestion = "";
     public static final Gson gson = new Gson();
     private String userId;
-    private String appId;
-    private String apiKey;
-    private String apiSecret;
     private ApplicationEventPublisher applicationEventPublisher;
-    @Resource
-    WebSocketHandler webSocketHandler;
 
     public BigModelHandler(ApplicationEventPublisher applicationEventPublisher) {
         this.applicationEventPublisher = applicationEventPublisher;
@@ -65,16 +57,6 @@ public class BigModelHandler extends WebSocketListener {
         userId = id;
         System.out.print("我：");
         NewQuestion = text;
-        for (BigModelToken token : textTokenSet) {
-            if (!token.getUsedStatus()) {
-                apiKey = token.getApiKey();
-                apiSecret = token.getApiSecret();
-                appId = token.getAppId();
-                token.setUsedStatus(true);
-                log.info(token.getOwner());
-                break;
-            }
-        }
         String authUrl = getAuthUrl(hostUrl, apiKey, apiSecret);
         OkHttpClient client = new OkHttpClient.Builder().build();
         String url = authUrl.replace("http://", "ws://").replace("https://", "wss://");

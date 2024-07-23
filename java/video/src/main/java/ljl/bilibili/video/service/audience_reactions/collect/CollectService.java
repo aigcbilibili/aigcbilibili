@@ -15,6 +15,6 @@ public interface CollectService {
     Result<Boolean> editCollectGroup(CollectGroupRequest createCollectGroupRequest);
     Result<Boolean> deleteCollectGroup(CollectGroupRequest createCollectGroupRequest);
     Result<List<CollectGroup>> getCollectGroup(Integer userId);
-    Result<List<CollectVideoResponse>> getCollectVideo(int userId);
-     Result<List<CollectGroupResponse>> getVideoToCollectGroup(Integer userId, Integer videoId);
+    Result<List<CollectVideoResponse>> getCollectVideo(Integer userId);
+    Result<List<CollectGroupResponse>> getVideoToCollectGroup(Integer userId, Integer videoId);
 }

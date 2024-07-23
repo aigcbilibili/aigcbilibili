@@ -1,12 +1,5 @@
 package ljl.bilibili.chat.constant;
 
-import ljl.bilibili.chat.entity.BigModelToken;
-
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-
 public class Constant {
     public static final String WEBSOCKET_CONNECT_PATH = "/ljl/bilibili/chat";
     public static final String MESSAGE_TYPE = "type";
@@ -21,7 +14,7 @@ public class Constant {
     public static final String RECEIVER_IDENTITY = "receiverId";
     public static final String MESSAGE_STATUS = "status";
     public static final String hostUrl = "wss://spark-api.xf-yun.com/v3.5/chat";
-    public static final String appid = "xxx";
+    public static final String appId = "xxx";
     public static final String apiSecret = "xxx";
     public static final String apiKey = "xxx";
     public static final String ASSISTANT_ROLE = "assistant";
@@ -38,8 +31,4 @@ public class Constant {
     public static final String REQUEST_HEADER = "header";
     public static final String REQUEST_PARAMTER = "parameter";
     public static final String REQUEST_PAYLOAD = "payload";
-    public static final Set<BigModelToken> textTokenSet = new HashSet<>();
-    public static final Set<BigModelToken> imageTokenSet = new HashSet<>();
-    public static final Set<BigModelToken> pptTokenSet = new HashSet<>();
-
 }

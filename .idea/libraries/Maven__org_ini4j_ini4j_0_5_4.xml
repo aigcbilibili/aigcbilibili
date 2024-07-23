@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.ini4j:ini4j:0.5.4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/org/ini4j/ini4j/0.5.4/ini4j-0.5.4.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/org/ini4j/ini4j/0.5.4/ini4j-0.5.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/org/ini4j/ini4j/0.5.4/ini4j-0.5.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

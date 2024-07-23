@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.zipkin.brave:brave-instrumentation-mongodb:5.13.9">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/io/zipkin/brave/brave-instrumentation-mongodb/5.13.9/brave-instrumentation-mongodb-5.13.9.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/io/zipkin/brave/brave-instrumentation-mongodb/5.13.9/brave-instrumentation-mongodb-5.13.9-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/io/zipkin/brave/brave-instrumentation-mongodb/5.13.9/brave-instrumentation-mongodb-5.13.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -22,16 +22,16 @@ public class LikeServiceImpl implements LikeService {
     LikeMapper likeMapper;
     @Resource
     SendNoticeClient client;
-@Override
+    @Override
     public Result<Boolean> like(LikeRequest likeRequest) {
         likeMapper.insert(likeRequest.toEntity());
         LambdaQueryWrapper<Video> wrapper=new LambdaQueryWrapper<>();
         wrapper.eq(Video::getId,likeRequest.getVideoId());
-       CompletableFuture<Void> completableFuture=CompletableFuture.runAsync(()->{
-           LambdaQueryWrapper<VideoData> videoDataLambdaQueryWrapper=new LambdaQueryWrapper<>();
-           videoDataLambdaQueryWrapper.eq(VideoData::getId,likeRequest.getVideoId());
-           client.sendLikeNotice(likeRequest.toAddOrDeleteNotice().setType(0));
-       });
+        CompletableFuture<Void> completableFuture=CompletableFuture.runAsync(()->{
+            LambdaQueryWrapper<VideoData> videoDataLambdaQueryWrapper=new LambdaQueryWrapper<>();
+            videoDataLambdaQueryWrapper.eq(VideoData::getId,likeRequest.getVideoId());
+            client.sendLikeNotice(likeRequest.toAddOrDeleteNotice().setType(0));
+        });
         return Result.success(true);
     }
     @Override

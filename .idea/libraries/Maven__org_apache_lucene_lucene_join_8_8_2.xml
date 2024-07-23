@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.lucene:lucene-join:8.8.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/org/apache/lucene/lucene-join/8.8.2/lucene-join-8.8.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/org/apache/lucene/lucene-join/8.8.2/lucene-join-8.8.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/org/apache/lucene/lucene-join/8.8.2/lucene-join-8.8.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

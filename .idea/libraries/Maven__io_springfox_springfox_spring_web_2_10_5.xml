@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.springfox:springfox-spring-web:2.10.5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/io/springfox/springfox-spring-web/2.10.5/springfox-spring-web-2.10.5.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/io/springfox/springfox-spring-web/2.10.5/springfox-spring-web-2.10.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/io/springfox/springfox-spring-web/2.10.5/springfox-spring-web-2.10.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

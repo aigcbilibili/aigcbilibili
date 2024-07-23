@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.netty:netty-transport-rxtx:4.1.79.Final">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/io/netty/netty-transport-rxtx/4.1.79.Final/netty-transport-rxtx-4.1.79.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/io/netty/netty-transport-rxtx/4.1.79.Final/netty-transport-rxtx-4.1.79.Final-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/io/netty/netty-transport-rxtx/4.1.79.Final/netty-transport-rxtx-4.1.79.Final-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

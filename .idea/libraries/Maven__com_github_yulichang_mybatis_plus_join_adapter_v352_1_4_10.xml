@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.github.yulichang:mybatis-plus-join-adapter-v352:1.4.10">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/com/github/yulichang/mybatis-plus-join-adapter-v352/1.4.10/mybatis-plus-join-adapter-v352-1.4.10.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/com/github/yulichang/mybatis-plus-join-adapter-v352/1.4.10/mybatis-plus-join-adapter-v352-1.4.10-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/com/github/yulichang/mybatis-plus-join-adapter-v352/1.4.10/mybatis-plus-join-adapter-v352-1.4.10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.springframework.boot:spring-boot-starter-tomcat:2.6.11">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/org/springframework/boot/spring-boot-starter-tomcat/2.6.11/spring-boot-starter-tomcat-2.6.11.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/org/springframework/boot/spring-boot-starter-tomcat/2.6.11/spring-boot-starter-tomcat-2.6.11-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/org/springframework/boot/spring-boot-starter-tomcat/2.6.11/spring-boot-starter-tomcat-2.6.11-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

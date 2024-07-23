@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/java/chat/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/chat/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/notice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/notice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/search/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/search/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/user_center/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/user_center/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/video/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/video/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

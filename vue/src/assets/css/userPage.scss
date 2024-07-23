@@ -1,0 +1,46 @@
+// 通用格式
+$two-column-height: 2.5rem;
+.user-content-wrap {
+    margin: 1rem;
+}
+.user-content-title {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+// 切换按钮
+.user-based-btn {
+    background-color: #f5f2f7;
+    border: 2px solid #ead2fc;
+    box-shadow: 2px 2px 25px 0 rgba(229, 207, 245, 0.1843137255);    
+    border-radius: 10px;
+    width: 12rem;
+    height: $two-column-height;
+    cursor: pointer;
+}
+.user-slide-detail-btn {
+    animation: 0.5s ease-in-out forwards;
+}
+@mixin flex-btn {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.user-content-slide-btn {
+    @extend .user-based-btn;
+    @include flex-btn;
+    font-weight: 600;
+    color: #a456dd;
+    .btn-based {
+        @extend .user-slide-detail-btn;
+        width: 5.7rem;
+    }
+    .btn-chose {
+        width: 5.7rem;
+        background-color: #fff;
+        height: $two-column-height - 0.5rem;
+        border-radius: 10px;
+        @include flex-btn;
+        @extend .user-slide-detail-btn;
+    }
+}

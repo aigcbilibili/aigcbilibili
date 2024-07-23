@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.elasticsearch:elasticsearch-secure-sm:7.13.3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/org/elasticsearch/elasticsearch-secure-sm/7.13.3/elasticsearch-secure-sm-7.13.3.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/org/elasticsearch/elasticsearch-secure-sm/7.13.3/elasticsearch-secure-sm-7.13.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/org/elasticsearch/elasticsearch-secure-sm/7.13.3/elasticsearch-secure-sm-7.13.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

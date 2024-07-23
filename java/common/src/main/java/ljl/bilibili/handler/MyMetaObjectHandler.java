@@ -17,11 +17,10 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
  
     @Override
     public void insertFill(MetaObject metaObject) {
-        this.setFieldValByName("cover", "https://labilibili.com/user-cover/defualt.png", metaObject);
         this.setFieldValByName("nickname", "新用户"+ UUID.randomUUID().toString().substring(0,10), metaObject);
         this.setFieldValByName("createTime", LocalDateTime.now(), metaObject);
         this.setFieldValByName("danmakuCount", 0, metaObject);
-        this.setFieldValByName("playCo unt",0, metaObject);
+        this.setFieldValByName("playCount",0, metaObject);
         this.setFieldValByName("likeCount",0, metaObject);
         this.setFieldValByName("collectCount",0, metaObject);
         this.setFieldValByName("commentCount",0, metaObject);

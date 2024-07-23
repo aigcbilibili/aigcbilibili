@@ -1,9 +1,6 @@
 package ljl.bilibili.entity.user_center.user_info;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
@@ -15,12 +12,12 @@ public class Privilege {
     Integer id;
     @TableField("user_id")
     Integer userId;
-    @TableField("collect_group")
+    @TableField(value = "collect_group",fill = FieldFill.INSERT)
     Integer collectGroup;
-    @TableField("remotely_like")
+    @TableField(value = "remotely_like",fill = FieldFill.INSERT)
     Integer remotelyLike;
-    @TableField("fans_list")
+    @TableField(value = "fans_list",fill = FieldFill.INSERT)
     Integer fansList;
-    @TableField("idol_list")
+    @TableField(value = "idol_list",fill = FieldFill.INSERT)
     Integer idolList;
 }

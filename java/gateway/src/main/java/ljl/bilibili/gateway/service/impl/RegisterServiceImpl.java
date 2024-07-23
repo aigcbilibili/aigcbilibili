@@ -3,14 +3,15 @@ package ljl.bilibili.gateway.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import ljl.bilibili.client.notice.SendNoticeClient;
-import ljl.bilibili.entity.user_center.user_info.User;
 import ljl.bilibili.entity.user_center.user_info.Privilege;
+import ljl.bilibili.entity.user_center.user_info.User;
 import ljl.bilibili.gateway.constant.Constant;
 import ljl.bilibili.gateway.service.RegisterService;
 import ljl.bilibili.gateway.vo.request.PasswordRegisterRequest;
 import ljl.bilibili.mapper.user_center.user_info.PrivilegeMapper;
 import ljl.bilibili.mapper.user_center.user_info.UserMapper;
 import ljl.bilibili.util.Result;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -19,6 +20,7 @@ import javax.annotation.Resource;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 
+@Slf4j
 @Service
 public class RegisterServiceImpl implements RegisterService {
     @Resource
@@ -35,15 +37,17 @@ public class RegisterServiceImpl implements RegisterService {
     @Transactional
     @Override
     public Result<Integer> passwordRegister(PasswordRegisterRequest passwordRegisterRequest){
-
         LambdaQueryWrapper<User> wrapper=new LambdaQueryWrapper<>();
-        wrapper.eq(User::getPhoneNumber,passwordRegisterRequest.getPhoneNumber());
+        wrapper.eq(User::getUserName,passwordRegisterRequest.getUserName());
         if(userMapper.selectOne(wrapper)!=null){
-            return Result.data(userMapper.selectOne(wrapper).getId());
+            return Result.error("该用户已存在");
         }else {
             User user =passwordRegisterRequest.toEntity();
-//            user.setPassword(passwordEncoder.encode(user.getPassword()));
+            log.info(user.getPassword());
+            user.setPassword(passwordEncoder.encode(user.getPassword()));
+            log.info(user.getPassword());
             userMapper.insert(user);
+            log.info(user.getPassword());
             CompletableFuture<Void> sendDBChangeNotice = CompletableFuture.runAsync(() -> {
                 ObjectMapper objectMapper = new ObjectMapper();
                 Map<String, Object> map = objectMapper.convertValue(user, Map.class);

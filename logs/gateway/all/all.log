@@ -1,0 +1,892 @@
+2024-07-11 06:22:37 |INFO  |background-preinit |Version.java:21 |org.hibernate.validator.internal.util.Version |HV000001: Hibernate Validator 6.2.4.Final
+2024-07-11 06:22:37 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.GateWayApplication |Starting GateWayApplication using Java 17.0.6 on DESKTOP-4C1V07J with PID 15344 (D:\bilibili\java\gateway\target\classes started by Administrator in D:\bilibili)
+2024-07-11 06:22:37 |INFO  |main |SpringApplication.java:651 |ljl.bilibili.GateWayApplication |The following 1 profile is active: "dev"
+2024-07-11 06:22:40 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-11 06:22:40 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-11 06:22:40 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+2024-07-11 06:22:41 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=188cd356-80cb-34fd-b80a-4c3183660a98
+2024-07-11 06:22:42 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-11 06:22:42 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-11 06:22:42 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-11 06:22:45 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-07-11 06:22:46 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-07-11 06:22:46 |WARN  |pool-4-thread-1 |ZipkinAutoConfiguration.java:165 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Check result of the [WebClientSender{http://xxx:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.reactive.function.client.WebClientRequestException: Failed to resolve 'xxx' after 2 queries ; nested exception is java.net.UnknownHostException: Failed to resolve 'xxx' after 2 queries }]
+2024-07-11 06:22:48 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [After]
+2024-07-11 06:22:48 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Before]
+2024-07-11 06:22:48 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Between]
+2024-07-11 06:22:48 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Cookie]
+2024-07-11 06:22:48 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Header]
+2024-07-11 06:22:48 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Host]
+2024-07-11 06:22:48 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Method]
+2024-07-11 06:22:48 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Path]
+2024-07-11 06:22:48 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Query]
+2024-07-11 06:22:48 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [ReadBody]
+2024-07-11 06:22:48 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [RemoteAddr]
+2024-07-11 06:22:48 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-07-11 06:22:48 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Weight]
+2024-07-11 06:22:48 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-07-11 06:22:49 |INFO  |main |ReactiveUserDetailsServiceAutoConfiguration.java:88 |org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration |
+
+Using generated security password: eb3c1073-99f0-4e56-9678-0b57a4fc076d
+
+2024-07-11 06:22:51 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-07-11 06:22:52 |INFO  |main |NettyWebServer.java:111 |org.springframework.boot.web.embedded.netty.NettyWebServer |Netty started on port 8200
+2024-07-11 06:22:52 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.GateWayApplication |Started GateWayApplication in 16.831 seconds (JVM running for 19.842)
+2024-07-11 06:35:07 |INFO  |Thread-3 |TimeBasedFilter.java:24 |ljl.bilibili.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-07-11 06:35:07 |INFO  |Thread-3 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-07-11 06:35:07 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-0} closing ...
+2024-07-11 06:48:43 |INFO  |background-preinit |Version.java:21 |org.hibernate.validator.internal.util.Version |HV000001: Hibernate Validator 6.2.4.Final
+2024-07-11 06:48:43 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.GateWayApplication |Starting GateWayApplication using Java 17.0.6 on DESKTOP-4C1V07J with PID 1348 (D:\bilibili\java\gateway\target\classes started by Administrator in D:\bilibili)
+2024-07-11 06:48:43 |INFO  |main |SpringApplication.java:651 |ljl.bilibili.GateWayApplication |The following 1 profile is active: "dev"
+2024-07-11 06:48:47 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-11 06:48:47 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-11 06:48:47 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 100 ms. Found 0 Redis repository interfaces.
+2024-07-11 06:48:49 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=188cd356-80cb-34fd-b80a-4c3183660a98
+2024-07-11 06:48:51 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-11 06:48:51 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-11 06:48:51 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-11 06:49:18 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-07-11 06:49:18 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-07-11 06:49:22 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [After]
+2024-07-11 06:49:22 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Before]
+2024-07-11 06:49:22 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Between]
+2024-07-11 06:49:22 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Cookie]
+2024-07-11 06:49:22 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Header]
+2024-07-11 06:49:22 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Host]
+2024-07-11 06:49:22 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Method]
+2024-07-11 06:49:22 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Path]
+2024-07-11 06:49:22 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Query]
+2024-07-11 06:49:22 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [ReadBody]
+2024-07-11 06:49:22 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [RemoteAddr]
+2024-07-11 06:49:22 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-07-11 06:49:22 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Weight]
+2024-07-11 06:49:22 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-07-11 06:49:23 |INFO  |main |ReactiveUserDetailsServiceAutoConfiguration.java:88 |org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration |
+
+Using generated security password: 00843eef-8954-4d1f-839d-c05858eb803e
+
+2024-07-11 06:49:24 |WARN  |pool-4-thread-1 |ZipkinAutoConfiguration.java:165 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Check result of the [WebClientSender{http://xxx:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=java.util.concurrent.TimeoutException: Timed out after 1000ms}]
+2024-07-11 06:49:26 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-07-11 06:49:27 |INFO  |main |NettyWebServer.java:111 |org.springframework.boot.web.embedded.netty.NettyWebServer |Netty started on port 8200
+2024-07-11 06:49:27 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.GateWayApplication |Started GateWayApplication in 46.359 seconds (JVM running for 53.667)
+2024-07-11 06:50:29 |INFO  |parallel-1 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/notice/getNotice/getDynamicVideo/0
+2024-07-11 06:50:29 |INFO  |parallel-2 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/changeNoticeStatus/changeDynamicVideoStatus
+2024-07-11 06:50:29 |INFO  |parallel-3 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/play/getFirstPageVideo/1
+2024-07-11 06:50:29 |INFO  |parallel-4 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/getNotice/getNoticeCount/0
+2024-07-11 06:50:29 |INFO  |parallel-3 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/play/getHistoryVideo/0
+2024-07-11 06:50:29 |INFO  |parallel-2 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/collect/getCollectGroup/0
+2024-07-11 06:50:29 |ERROR |reactor-http-nio-1 |CompositeLog.java:102 |org.springframework.boot.autoconfigure.web.reactive.error.AbstractErrorWebExceptionHandler |[a206c40c-4]  500 Server Error for HTTP GET "/play/getFirstPageVideo/1"
+java.net.UnknownHostException: Failed to resolve 'xxx' after 2 queries 
+	at io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1047)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ljl.bilibili.gateway.filter.JwtAuthorizationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authentication.logout.LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.savedrequest.ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.sleuth.instrument.web.TraceWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP GET "/play/getFirstPageVideo/1" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1047)
+		at io.netty.resolver.dns.DnsResolveContext.tryToFinishResolve(DnsResolveContext.java:1000)
+		at io.netty.resolver.dns.DnsResolveContext.query(DnsResolveContext.java:418)
+		at io.netty.resolver.dns.DnsResolveContext.tryToFinishResolve(DnsResolveContext.java:971)
+		at io.netty.resolver.dns.DnsResolveContext.access$700(DnsResolveContext.java:66)
+		at io.netty.resolver.dns.DnsResolveContext$2.operationComplete(DnsResolveContext.java:471)
+		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
+		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+		at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:605)
+		at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+		at io.netty.resolver.dns.DnsQueryContext.trySuccess(DnsQueryContext.java:232)
+		at io.netty.resolver.dns.DnsQueryContext.finish(DnsQueryContext.java:224)
+		at io.netty.resolver.dns.DnsNameResolver$DnsResponseHandler.channelRead(DnsNameResolver.java:1314)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+		at io.netty.channel.nio.AbstractNioMessageChannel$NioMessageUnsafe.read(AbstractNioMessageChannel.java:97)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+2024-07-11 06:50:29 |ERROR |reactor-http-nio-1 |CompositeLog.java:102 |org.springframework.boot.autoconfigure.web.reactive.error.AbstractErrorWebExceptionHandler |[b50e75a3-3]  500 Server Error for HTTP POST "/changeNoticeStatus/changeDynamicVideoStatus"
+java.net.UnknownHostException: Failed to resolve 'xxx' after 2 queries 
+	at io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1047)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ljl.bilibili.gateway.filter.JwtAuthorizationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authentication.logout.LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.savedrequest.ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.sleuth.instrument.web.TraceWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP GET "/play/getFirstPageVideo/1" [ExceptionHandlingWebHandler]
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ljl.bilibili.gateway.filter.JwtAuthorizationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authentication.logout.LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.savedrequest.ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.sleuth.instrument.web.TraceWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP POST "/changeNoticeStatus/changeDynamicVideoStatus" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1047)
+		at io.netty.resolver.dns.DnsResolveContext.tryToFinishResolve(DnsResolveContext.java:1000)
+		at io.netty.resolver.dns.DnsResolveContext.query(DnsResolveContext.java:418)
+		at io.netty.resolver.dns.DnsResolveContext.tryToFinishResolve(DnsResolveContext.java:971)
+		at io.netty.resolver.dns.DnsResolveContext.access$700(DnsResolveContext.java:66)
+		at io.netty.resolver.dns.DnsResolveContext$2.operationComplete(DnsResolveContext.java:471)
+		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
+		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+		at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:605)
+		at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+		at io.netty.resolver.dns.DnsQueryContext.trySuccess(DnsQueryContext.java:232)
+		at io.netty.resolver.dns.DnsQueryContext.finish(DnsQueryContext.java:224)
+		at io.netty.resolver.dns.DnsNameResolver$DnsResponseHandler.channelRead(DnsNameResolver.java:1314)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+		at io.netty.channel.nio.AbstractNioMessageChannel$NioMessageUnsafe.read(AbstractNioMessageChannel.java:97)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+2024-07-11 06:50:29 |INFO  |parallel-4 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/play/getHistoryVideo/0
+2024-07-11 06:50:29 |ERROR |reactor-http-nio-1 |CompositeLog.java:102 |org.springframework.boot.autoconfigure.web.reactive.error.AbstractErrorWebExceptionHandler |[1d37b26f-2]  500 Server Error for HTTP GET "/getNotice/getNoticeCount/0"
+java.net.UnknownHostException: Failed to resolve 'xxx' after 2 queries 
+	at io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1047)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ljl.bilibili.gateway.filter.JwtAuthorizationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authentication.logout.LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.savedrequest.ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.sleuth.instrument.web.TraceWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP GET "/play/getFirstPageVideo/1" [ExceptionHandlingWebHandler]
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ljl.bilibili.gateway.filter.JwtAuthorizationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authentication.logout.LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.savedrequest.ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.sleuth.instrument.web.TraceWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP POST "/changeNoticeStatus/changeDynamicVideoStatus" [ExceptionHandlingWebHandler]
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ljl.bilibili.gateway.filter.JwtAuthorizationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authentication.logout.LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.savedrequest.ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.sleuth.instrument.web.TraceWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP GET "/getNotice/getNoticeCount/0" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1047)
+		at io.netty.resolver.dns.DnsResolveContext.tryToFinishResolve(DnsResolveContext.java:1000)
+		at io.netty.resolver.dns.DnsResolveContext.query(DnsResolveContext.java:418)
+		at io.netty.resolver.dns.DnsResolveContext.tryToFinishResolve(DnsResolveContext.java:971)
+		at io.netty.resolver.dns.DnsResolveContext.access$700(DnsResolveContext.java:66)
+		at io.netty.resolver.dns.DnsResolveContext$2.operationComplete(DnsResolveContext.java:471)
+		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
+		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+		at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:605)
+		at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+		at io.netty.resolver.dns.DnsQueryContext.trySuccess(DnsQueryContext.java:232)
+		at io.netty.resolver.dns.DnsQueryContext.finish(DnsQueryContext.java:224)
+		at io.netty.resolver.dns.DnsNameResolver$DnsResponseHandler.channelRead(DnsNameResolver.java:1314)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+		at io.netty.channel.nio.AbstractNioMessageChannel$NioMessageUnsafe.read(AbstractNioMessageChannel.java:97)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+2024-07-11 06:50:29 |ERROR |reactor-http-nio-1 |CompositeLog.java:102 |org.springframework.boot.autoconfigure.web.reactive.error.AbstractErrorWebExceptionHandler |[111c751b-5]  500 Server Error for HTTP GET "/collect/getCollectGroup/0"
+java.net.UnknownHostException: Failed to resolve 'xxx' after 2 queries 
+	at io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1047)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ljl.bilibili.gateway.filter.JwtAuthorizationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authentication.logout.LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.savedrequest.ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.sleuth.instrument.web.TraceWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP GET "/play/getFirstPageVideo/1" [ExceptionHandlingWebHandler]
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ljl.bilibili.gateway.filter.JwtAuthorizationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authentication.logout.LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.savedrequest.ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.sleuth.instrument.web.TraceWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP POST "/changeNoticeStatus/changeDynamicVideoStatus" [ExceptionHandlingWebHandler]
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ljl.bilibili.gateway.filter.JwtAuthorizationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authentication.logout.LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.savedrequest.ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.sleuth.instrument.web.TraceWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP GET "/getNotice/getNoticeCount/0" [ExceptionHandlingWebHandler]
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ljl.bilibili.gateway.filter.JwtAuthorizationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authentication.logout.LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.savedrequest.ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.sleuth.instrument.web.TraceWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP GET "/collect/getCollectGroup/0" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1047)
+		at io.netty.resolver.dns.DnsResolveContext.tryToFinishResolve(DnsResolveContext.java:1000)
+		at io.netty.resolver.dns.DnsResolveContext.query(DnsResolveContext.java:418)
+		at io.netty.resolver.dns.DnsResolveContext.tryToFinishResolve(DnsResolveContext.java:971)
+		at io.netty.resolver.dns.DnsResolveContext.access$700(DnsResolveContext.java:66)
+		at io.netty.resolver.dns.DnsResolveContext$2.operationComplete(DnsResolveContext.java:471)
+		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
+		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+		at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:605)
+		at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+		at io.netty.resolver.dns.DnsQueryContext.trySuccess(DnsQueryContext.java:232)
+		at io.netty.resolver.dns.DnsQueryContext.finish(DnsQueryContext.java:224)
+		at io.netty.resolver.dns.DnsNameResolver$DnsResponseHandler.channelRead(DnsNameResolver.java:1314)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+		at io.netty.channel.nio.AbstractNioMessageChannel$NioMessageUnsafe.read(AbstractNioMessageChannel.java:97)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+2024-07-11 06:50:29 |ERROR |reactor-http-nio-1 |CompositeLog.java:102 |org.springframework.boot.autoconfigure.web.reactive.error.AbstractErrorWebExceptionHandler |[92e19e7e-6]  500 Server Error for HTTP GET "/play/getHistoryVideo/0"
+java.net.UnknownHostException: Failed to resolve 'xxx' after 2 queries 
+	at io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1047)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ljl.bilibili.gateway.filter.JwtAuthorizationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authentication.logout.LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.savedrequest.ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.sleuth.instrument.web.TraceWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP GET "/play/getFirstPageVideo/1" [ExceptionHandlingWebHandler]
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ljl.bilibili.gateway.filter.JwtAuthorizationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authentication.logout.LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.savedrequest.ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.sleuth.instrument.web.TraceWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP POST "/changeNoticeStatus/changeDynamicVideoStatus" [ExceptionHandlingWebHandler]
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ljl.bilibili.gateway.filter.JwtAuthorizationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authentication.logout.LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.savedrequest.ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.sleuth.instrument.web.TraceWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP GET "/getNotice/getNoticeCount/0" [ExceptionHandlingWebHandler]
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ljl.bilibili.gateway.filter.JwtAuthorizationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authentication.logout.LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.savedrequest.ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.sleuth.instrument.web.TraceWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP GET "/collect/getCollectGroup/0" [ExceptionHandlingWebHandler]
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ljl.bilibili.gateway.filter.JwtAuthorizationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authentication.logout.LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.savedrequest.ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.sleuth.instrument.web.TraceWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP GET "/play/getHistoryVideo/0" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1047)
+		at io.netty.resolver.dns.DnsResolveContext.tryToFinishResolve(DnsResolveContext.java:1000)
+		at io.netty.resolver.dns.DnsResolveContext.query(DnsResolveContext.java:418)
+		at io.netty.resolver.dns.DnsResolveContext.tryToFinishResolve(DnsResolveContext.java:971)
+		at io.netty.resolver.dns.DnsResolveContext.access$700(DnsResolveContext.java:66)
+		at io.netty.resolver.dns.DnsResolveContext$2.operationComplete(DnsResolveContext.java:471)
+		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
+		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+		at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:605)
+		at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+		at io.netty.resolver.dns.DnsQueryContext.trySuccess(DnsQueryContext.java:232)
+		at io.netty.resolver.dns.DnsQueryContext.finish(DnsQueryContext.java:224)
+		at io.netty.resolver.dns.DnsNameResolver$DnsResponseHandler.channelRead(DnsNameResolver.java:1314)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+		at io.netty.channel.nio.AbstractNioMessageChannel$NioMessageUnsafe.read(AbstractNioMessageChannel.java:97)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+2024-07-11 06:50:29 |ERROR |reactor-http-nio-1 |CompositeLog.java:102 |org.springframework.boot.autoconfigure.web.reactive.error.AbstractErrorWebExceptionHandler |[6d7958f9-7]  500 Server Error for HTTP GET "/play/getHistoryVideo/0"
+java.net.UnknownHostException: Failed to resolve 'xxx' after 2 queries 
+	at io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1047)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ljl.bilibili.gateway.filter.JwtAuthorizationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authentication.logout.LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.savedrequest.ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.sleuth.instrument.web.TraceWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP GET "/play/getHistoryVideo/0" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1047)
+		at io.netty.resolver.dns.DnsResolveContext.tryToFinishResolve(DnsResolveContext.java:1000)
+		at io.netty.resolver.dns.DnsResolveContext.query(DnsResolveContext.java:418)
+		at io.netty.resolver.dns.DnsResolveContext.tryToFinishResolve(DnsResolveContext.java:971)
+		at io.netty.resolver.dns.DnsResolveContext.access$700(DnsResolveContext.java:66)
+		at io.netty.resolver.dns.DnsResolveContext$2.operationComplete(DnsResolveContext.java:471)
+		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
+		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+		at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:605)
+		at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+		at io.netty.resolver.dns.DnsQueryContext.trySuccess(DnsQueryContext.java:232)
+		at io.netty.resolver.dns.DnsQueryContext.finish(DnsQueryContext.java:224)
+		at io.netty.resolver.dns.DnsNameResolver$DnsResponseHandler.channelRead(DnsNameResolver.java:1314)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+		at io.netty.channel.nio.AbstractNioMessageChannel$NioMessageUnsafe.read(AbstractNioMessageChannel.java:97)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+2024-07-11 06:50:30 |WARN  |AsyncReporter{WebClientSender{http://xxx:9411/api/v2/spans}} |AsyncReporter.java:310 |zipkin2.reporter.AsyncReporter$BoundedAsyncReporter |Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2024-07-11 06:50:30 |WARN  |AsyncReporter{WebClientSender{http://xxx:9411/api/v2/spans}} |AsyncReporter.java:317 |zipkin2.reporter.AsyncReporter$BoundedAsyncReporter |Dropped 3 spans due to WebClientRequestException(Failed to resolve 'xxx' after 2 queries ; nested exception is java.net.UnknownHostException: Failed to resolve 'xxx' after 2 queries )
+org.springframework.web.reactive.function.client.WebClientRequestException: Failed to resolve 'xxx' after 2 queries ; nested exception is java.net.UnknownHostException: Failed to resolve 'xxx' after 2 queries 
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:141)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ Request to POST http://xxx:9411/api/v2/spans [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:141)
+		at reactor.core.publisher.MonoErrorSupplied.subscribe(MonoErrorSupplied.java:55)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4397)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onError(MonoNext.java:93)
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onError(MonoFlatMapMany.java:204)
+		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.whenError(FluxRetryWhen.java:225)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenOtherSubscriber.onError(FluxRetryWhen.java:274)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:415)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onNext(FluxConcatMap.java:251)
+		at reactor.core.publisher.EmitterProcessor.drain(EmitterProcessor.java:537)
+		at reactor.core.publisher.EmitterProcessor.tryEmitNext(EmitterProcessor.java:343)
+		at reactor.core.publisher.SinkManySerialized.tryEmitNext(SinkManySerialized.java:100)
+		at reactor.core.publisher.InternalManySink.emitNext(InternalManySink.java:27)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:190)
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:201)
+		at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect$ClientTransportSubscriber.onError(HttpClientConnect.java:308)
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:201)
+		at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onError(DefaultPooledConnectionProvider.java:158)
+		at reactor.netty.internal.shaded.reactor.pool.AbstractPool$Borrower.fail(AbstractPool.java:475)
+		at reactor.netty.internal.shaded.reactor.pool.SimpleDequePool.lambda$drainLoop$9(SimpleDequePool.java:431)
+		at reactor.core.publisher.FluxDoOnEach$DoOnEachSubscriber.onError(FluxDoOnEach.java:186)
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:201)
+		at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnectionAllocator$PooledConnectionInitializer.onError(DefaultPooledConnectionProvider.java:548)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:192)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:259)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:106)
+		at reactor.core.publisher.Operators.error(Operators.java:198)
+		at reactor.core.publisher.MonoError.subscribe(MonoError.java:53)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4397)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103)
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise.tryFailure(TransportConnector.java:534)
+		at reactor.netty.transport.TransportConnector.lambda$doResolveAndConnect$11(TransportConnector.java:341)
+		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:552)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+		at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609)
+		at io.netty.util.concurrent.DefaultPromise.setFailure(DefaultPromise.java:109)
+		at io.netty.resolver.InetSocketAddressResolver$2.operationComplete(InetSocketAddressResolver.java:86)
+		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
+		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+		at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609)
+		at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)
+		at io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1055)
+		at io.netty.resolver.dns.DnsResolveContext.tryToFinishResolve(DnsResolveContext.java:1000)
+		at io.netty.resolver.dns.DnsResolveContext.query(DnsResolveContext.java:418)
+		at io.netty.resolver.dns.DnsResolveContext.tryToFinishResolve(DnsResolveContext.java:971)
+		at io.netty.resolver.dns.DnsResolveContext.access$700(DnsResolveContext.java:66)
+		at io.netty.resolver.dns.DnsResolveContext$2.operationComplete(DnsResolveContext.java:471)
+		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
+		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+		at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:605)
+		at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+		at io.netty.resolver.dns.DnsQueryContext.trySuccess(DnsQueryContext.java:232)
+		at io.netty.resolver.dns.DnsQueryContext.finish(DnsQueryContext.java:224)
+		at io.netty.resolver.dns.DnsNameResolver$DnsResponseHandler.channelRead(DnsNameResolver.java:1314)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+		at io.netty.channel.nio.AbstractNioMessageChannel$NioMessageUnsafe.read(AbstractNioMessageChannel.java:97)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:99)
+		at reactor.core.publisher.Mono.block(Mono.java:1707)
+		at org.springframework.cloud.sleuth.zipkin2.WebClientSender.lambda$new$0(WebClientSender.java:66)
+		at org.springframework.cloud.sleuth.zipkin2.HttpSender.post(HttpSender.java:137)
+		at org.springframework.cloud.sleuth.zipkin2.HttpSender$HttpPostCall.doExecute(HttpSender.java:150)
+		at org.springframework.cloud.sleuth.zipkin2.HttpSender$HttpPostCall.doExecute(HttpSender.java:140)
+		at zipkin2.Call$Base.execute(Call.java:391)
+		at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:299)
+		at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.UnknownHostException: Failed to resolve 'xxx' after 2 queries 
+	at io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1047)
+	at io.netty.resolver.dns.DnsResolveContext.tryToFinishResolve(DnsResolveContext.java:1000)
+	at io.netty.resolver.dns.DnsResolveContext.query(DnsResolveContext.java:418)
+	at io.netty.resolver.dns.DnsResolveContext.tryToFinishResolve(DnsResolveContext.java:971)
+	at io.netty.resolver.dns.DnsResolveContext.access$700(DnsResolveContext.java:66)
+	at io.netty.resolver.dns.DnsResolveContext$2.operationComplete(DnsResolveContext.java:471)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:605)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+	at io.netty.resolver.dns.DnsQueryContext.trySuccess(DnsQueryContext.java:232)
+	at io.netty.resolver.dns.DnsQueryContext.finish(DnsQueryContext.java:224)
+	at io.netty.resolver.dns.DnsNameResolver$DnsResponseHandler.channelRead(DnsNameResolver.java:1314)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioMessageChannel$NioMessageUnsafe.read(AbstractNioMessageChannel.java:97)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-07-11 06:52:57 |INFO  |Thread-3 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-07-11 06:52:57 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-0} closing ...
+2024-07-11 06:53:08 |INFO  |background-preinit |Version.java:21 |org.hibernate.validator.internal.util.Version |HV000001: Hibernate Validator 6.2.4.Final
+2024-07-11 06:53:08 |INFO  |main |StartupInfoLogger.java:55 |ljl.bilibili.GateWayApplication |Starting GateWayApplication using Java 17.0.6 on DESKTOP-4C1V07J with PID 4020 (D:\bilibili\java\gateway\target\classes started by Administrator in D:\bilibili)
+2024-07-11 06:53:08 |INFO  |main |SpringApplication.java:651 |ljl.bilibili.GateWayApplication |The following 1 profile is active: "dev"
+2024-07-11 06:53:11 |INFO  |main |RepositoryConfigurationDelegate.java:262 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-11 06:53:11 |INFO  |main |RepositoryConfigurationDelegate.java:132 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-11 06:53:11 |INFO  |main |RepositoryConfigurationDelegate.java:201 |org.springframework.data.repository.config.RepositoryConfigurationDelegate |Finished Spring Data repository scanning in 41 ms. Found 0 Redis repository interfaces.
+2024-07-11 06:53:12 |INFO  |main |GenericScope.java:283 |org.springframework.cloud.context.scope.GenericScope |BeanFactory id=188cd356-80cb-34fd-b80a-4c3183660a98
+2024-07-11 06:53:13 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-11 06:53:13 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-11 06:53:13 |INFO  |main |PostProcessorRegistrationDelegate.java:376 |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-11 06:53:18 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join properties config complete
+2024-07-11 06:53:18 |INFO  |main |MybatisPlusJoinAutoConfiguration.java:140 |com.github.yulichang.autoconfigure.MybatisPlusJoinAutoConfiguration |mybatis plus join SqlInjector init
+2024-07-11 06:53:21 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [After]
+2024-07-11 06:53:21 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Before]
+2024-07-11 06:53:21 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Between]
+2024-07-11 06:53:21 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Cookie]
+2024-07-11 06:53:21 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Header]
+2024-07-11 06:53:21 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Host]
+2024-07-11 06:53:21 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Method]
+2024-07-11 06:53:21 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Path]
+2024-07-11 06:53:21 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Query]
+2024-07-11 06:53:21 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [ReadBody]
+2024-07-11 06:53:21 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [RemoteAddr]
+2024-07-11 06:53:21 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-07-11 06:53:21 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [Weight]
+2024-07-11 06:53:21 |INFO  |main |RouteDefinitionRouteLocator.java:88 |org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator |Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-07-11 06:53:21 |INFO  |main |ReactiveUserDetailsServiceAutoConfiguration.java:88 |org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration |
+
+Using generated security password: 505c5a6a-40ac-4bb2-8b7b-a8e6cb057ff6
+
+2024-07-11 06:53:22 |WARN  |pool-4-thread-1 |ZipkinAutoConfiguration.java:165 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Check result of the [WebClientSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: no further information: localhost/127.0.0.1:9411; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:9411}]
+2024-07-11 06:53:23 |WARN  |main |LoadBalancerCacheAutoConfiguration.java:82 |org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger |Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-07-11 06:53:25 |INFO  |main |NettyWebServer.java:111 |org.springframework.boot.web.embedded.netty.NettyWebServer |Netty started on port 8200
+2024-07-11 06:53:25 |INFO  |main |StartupInfoLogger.java:61 |ljl.bilibili.GateWayApplication |Started GateWayApplication in 18.506 seconds (JVM running for 20.337)
+2024-07-11 06:53:45 |INFO  |parallel-1 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/changeNoticeStatus/changeDynamicVideoStatus
+2024-07-11 06:53:45 |INFO  |parallel-2 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/play/getFirstPageVideo/1
+2024-07-11 06:53:45 |INFO  |parallel-3 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/getNotice/getNoticeCount/0
+2024-07-11 06:53:45 |INFO  |parallel-4 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/notice/getNotice/getDynamicVideo/0
+2024-07-11 06:53:45 |INFO  |parallel-3 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/play/getHistoryVideo/0
+2024-07-11 06:53:45 |ERROR |reactor-http-nio-4 |CompositeLog.java:102 |org.springframework.boot.autoconfigure.web.reactive.error.AbstractErrorWebExceptionHandler |[819f4643-4]  500 Server Error for HTTP GET "/getNotice/getNoticeCount/0"
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:30000
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ljl.bilibili.gateway.filter.JwtAuthorizationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authentication.logout.LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.savedrequest.ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.sleuth.instrument.web.TraceWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP GET "/getNotice/getNoticeCount/0" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-07-11 06:53:45 |INFO  |parallel-2 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/collect/getCollectGroup/0
+2024-07-11 06:53:45 |ERROR |reactor-http-nio-3 |CompositeLog.java:102 |org.springframework.boot.autoconfigure.web.reactive.error.AbstractErrorWebExceptionHandler |[1203fcde-2]  500 Server Error for HTTP POST "/changeNoticeStatus/changeDynamicVideoStatus"
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:30000
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ljl.bilibili.gateway.filter.JwtAuthorizationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authentication.logout.LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.savedrequest.ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.sleuth.instrument.web.TraceWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP POST "/changeNoticeStatus/changeDynamicVideoStatus" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-07-11 06:53:46 |INFO  |parallel-4 |JwtAuthorizationFilter.java:34 |ljl.bilibili.gateway.filter.JwtAuthorizationFilter |/play/getHistoryVideo/0
+2024-07-11 06:53:47 |WARN  |AsyncReporter{WebClientSender{http://localhost:9411/api/v2/spans}} |AsyncReporter.java:310 |zipkin2.reporter.AsyncReporter$BoundedAsyncReporter |Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2024-07-11 06:53:47 |WARN  |AsyncReporter{WebClientSender{http://localhost:9411/api/v2/spans}} |AsyncReporter.java:317 |zipkin2.reporter.AsyncReporter$BoundedAsyncReporter |Dropped 1 spans due to WebClientRequestException(Connection refused: no further information: localhost/127.0.0.1:9411; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:9411)
+org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: no further information: localhost/127.0.0.1:9411; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:9411
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:141)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ Request to POST http://localhost:9411/api/v2/spans [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:141)
+		at reactor.core.publisher.MonoErrorSupplied.subscribe(MonoErrorSupplied.java:55)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4397)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onError(MonoNext.java:93)
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onError(MonoFlatMapMany.java:204)
+		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.whenError(FluxRetryWhen.java:225)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenOtherSubscriber.onError(FluxRetryWhen.java:274)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:415)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onNext(FluxConcatMap.java:251)
+		at reactor.core.publisher.EmitterProcessor.drain(EmitterProcessor.java:537)
+		at reactor.core.publisher.EmitterProcessor.tryEmitNext(EmitterProcessor.java:343)
+		at reactor.core.publisher.SinkManySerialized.tryEmitNext(SinkManySerialized.java:100)
+		at reactor.core.publisher.InternalManySink.emitNext(InternalManySink.java:27)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:190)
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:201)
+		at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect$ClientTransportSubscriber.onError(HttpClientConnect.java:308)
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:201)
+		at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onError(DefaultPooledConnectionProvider.java:158)
+		at reactor.netty.internal.shaded.reactor.pool.AbstractPool$Borrower.fail(AbstractPool.java:475)
+		at reactor.netty.internal.shaded.reactor.pool.SimpleDequePool.lambda$drainLoop$9(SimpleDequePool.java:431)
+		at reactor.core.publisher.FluxDoOnEach$DoOnEachSubscriber.onError(FluxDoOnEach.java:186)
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:201)
+		at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnectionAllocator$PooledConnectionInitializer.onError(DefaultPooledConnectionProvider.java:548)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:192)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:259)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:106)
+		at reactor.core.publisher.Operators.error(Operators.java:198)
+		at reactor.core.publisher.MonoError.subscribe(MonoError.java:53)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4397)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103)
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise.tryFailure(TransportConnector.java:534)
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise.setFailure(TransportConnector.java:488)
+		at reactor.netty.transport.TransportConnector.lambda$doConnect$7(TransportConnector.java:223)
+		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
+		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+		at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609)
+		at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:99)
+		at reactor.core.publisher.Mono.block(Mono.java:1707)
+		at org.springframework.cloud.sleuth.zipkin2.WebClientSender.lambda$new$0(WebClientSender.java:66)
+		at org.springframework.cloud.sleuth.zipkin2.HttpSender.post(HttpSender.java:137)
+		at org.springframework.cloud.sleuth.zipkin2.HttpSender$HttpPostCall.doExecute(HttpSender.java:150)
+		at org.springframework.cloud.sleuth.zipkin2.HttpSender$HttpPostCall.doExecute(HttpSender.java:140)
+		at zipkin2.Call$Base.execute(Call.java:391)
+		at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:299)
+		at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:9411
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-07-11 08:10:53 |INFO  |Thread-3 |TimeBasedFilter.java:24 |ljl.bilibili.filter.TimeBasedFilter |
+
+
+
+
+
+
+2024-07-11 08:10:53 |INFO  |Thread-3 |ZipkinAutoConfiguration.java:144 |org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration |Flushing remaining spans on shutdown
+2024-07-11 08:10:53 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:2063 |com.alibaba.druid.pool.DruidDataSource |{dataSource-0} closing ...

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="search" />
+        <module name="common" />
+        <module name="user_center" />
+        <module name="chat" />
+        <module name="video" />
+        <module name="gateway" />
+        <module name="notice" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bilibili" target="1.8" />
+      <module name="chat" target="1.8" />
+      <module name="common" target="1.8" />
+      <module name="gateway" target="1.8" />
+      <module name="notice" target="1.8" />
+      <module name="search" target="1.8" />
+      <module name="user_center" target="1.8" />
+      <module name="video" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="chat" options="-parameters" />
+      <module name="common" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="notice" options="-parameters" />
+      <module name="search" options="-parameters" />
+      <module name="user_center" options="-parameters" />
+      <module name="video" options="-parameters" />
+    </option>
+  </component>
+</project>

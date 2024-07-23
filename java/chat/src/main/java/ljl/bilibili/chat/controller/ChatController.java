@@ -1,16 +1,8 @@
 package ljl.bilibili.chat.controller;
-import com.alibaba.fastjson.JSON;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import ljl.bilibili.chat.entity.BigModelToken;
-import ljl.bilibili.chat.entity.PPTDetail;
-import ljl.bilibili.chat.entity.PPTWord;
-import ljl.bilibili.chat.example.*;
-import ljl.bilibili.chat.handler.PPTHandler;
 import ljl.bilibili.chat.service.ChatService;
 import ljl.bilibili.chat.vo.response.HistoryChatResponse;
-import ljl.bilibili.chat.vo.request.AddHistoryChatRequest;
 import ljl.bilibili.chat.vo.request.ChatSessionRequest;
 import ljl.bilibili.chat.vo.response.ChatSessionResponse;
 import ljl.bilibili.chat.vo.request.ChangeChatStatusRequest;
@@ -22,11 +14,6 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import java.io.IOException;
 import java.util.*;
-import java.util.concurrent.CompletableFuture;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-import static ljl.bilibili.chat.constant.Constant.*;
 
 @RestController
 @RequestMapping("/chat")

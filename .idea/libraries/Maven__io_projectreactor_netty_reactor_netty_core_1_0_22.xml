@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.projectreactor.netty:reactor-netty-core:1.0.22">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/io/projectreactor/netty/reactor-netty-core/1.0.22/reactor-netty-core-1.0.22.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/io/projectreactor/netty/reactor-netty-core/1.0.22/reactor-netty-core-1.0.22-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../apache-maven-3.8.6/maven_repository/io/projectreactor/netty/reactor-netty-core/1.0.22/reactor-netty-core-1.0.22-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
