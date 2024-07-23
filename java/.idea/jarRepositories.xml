@@ -4,6 +4,11 @@
     <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
       <option name="url" value="https://maven.aliyun.com/nexus/content/repositories/central/" />
     </remote-repository>
     <remote-repository>
@@ -29,7 +34,7 @@
     <remote-repository>
       <option name="id" value="local" />
       <option name="name" value="local" />
-      <option name="url" value="file://D:/apache-maven-3.8.6/maven_repository" />
+      <option name="url" value="file://$PROJECT_DIR$/../../../apache-maven-3.8.6/maven_repository" />
     </remote-repository>
   </component>
 </project>
