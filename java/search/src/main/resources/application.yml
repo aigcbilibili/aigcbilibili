@@ -7,7 +7,7 @@ elasticsearch-client:
 module-name: search
 spring:
   redis:
-    host: localhost:84
+    host: localhost
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     #    hikari:
@@ -37,7 +37,7 @@ spring:
 xxl:
   job:
     admin:
-      addresses: http://localhost:8120/xxl-job-admin
+      addresses: http://localhost:8080/xxl-job-admin
     accessToken: default_token
     executor:
       port: 9916

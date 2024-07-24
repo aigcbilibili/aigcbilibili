@@ -58,9 +58,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return new BCryptPasswordEncoder();
     }
 
-//    @Bean
-//    @ConditionalOnMissingBean
-//    public HttpMessageConverters messageConverters(ObjectProvider<HttpMessageConverter<?>> converters) {
-//        return new HttpMessageConverters(converters.orderedStream().collect(Collectors.toList()));
-//    }
+    @Bean
+    @ConditionalOnMissingBean
+    public HttpMessageConverters messageConverters(ObjectProvider<HttpMessageConverter<?>> converters) {
+        return new HttpMessageConverters(converters.orderedStream().collect(Collectors.toList()));
+    }
 }

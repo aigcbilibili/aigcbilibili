@@ -8,4 +8,5 @@ import lombok.experimental.Accessors;
 public class PasswordLoginRequest {
     private String userName;
     private String password;
+    private String captcha;
 }

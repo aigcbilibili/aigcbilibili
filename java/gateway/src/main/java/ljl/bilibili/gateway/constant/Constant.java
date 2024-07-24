@@ -43,5 +43,6 @@ public class Constant {
     public static final String TABLE_IGNORE_USERNAME="userName";
     public static final String TABLE_IGNORE_PASSWORD="password";
     public static final String TABLE_IGNORE_PHONE_NUMBER="phoneNumber";
+    public static final String TABLE_IGNORE_MAIL_NUMBER="mailNumber";
 
 }

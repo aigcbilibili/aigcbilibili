@@ -12,7 +12,6 @@ import ljl.bilibili.entity.video.video_production.upload.VideoData;
 import ljl.bilibili.mapper.user_center.user_info.UserMapper;
 import ljl.bilibili.mapper.user_center.user_relationships.FollowMapper;
 import ljl.bilibili.user_center.service.user_info.UserInfoService;
-import ljl.bilibili.user_center.vo.request.self_center.EditUserInfoRequest;
 import ljl.bilibili.util.Result;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -26,8 +25,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
-
-import static ljl.bilibili.user_center.constant.Constant.USER_COVER;
+import static ljl.bilibili.user_center.constant.Constant.*;
 
 @Service
 public class UserInfoServiceImpl implements UserInfoService {
@@ -44,16 +42,16 @@ public class UserInfoServiceImpl implements UserInfoService {
     @Resource
     SendNoticeClient sendNoticeClient;
 
-@Override
-    public Result<UserInfoResponse> getUserInfo(Integer userId1,Integer userId2){
+    @Override
+    public Result<UserInfoResponse> getUserInfo(Integer selfId,Integer visitedId){
         MPJLambdaWrapper<User> fansCountWrapper=new MPJLambdaWrapper<>();
         MPJLambdaWrapper<User> idolCountWrapper=new MPJLambdaWrapper<>();
-        fansCountWrapper.eq(User::getId,userId1);
+        fansCountWrapper.eq(User::getId,visitedId);
         fansCountWrapper.leftJoin(Follow.class,Follow::getIdolId, User::getId);
-        idolCountWrapper.eq(User::getId,userId1);
+        idolCountWrapper.eq(User::getId,visitedId);
         idolCountWrapper.leftJoin(Follow.class,Follow::getFansId, User::getId);
         MPJLambdaWrapper<User> userMPJLambdaWrapper=new MPJLambdaWrapper<>();
-        userMPJLambdaWrapper.eq(User::getId,userId1);
+        userMPJLambdaWrapper.eq(User::getId,visitedId);
         userMPJLambdaWrapper.select(User::getCover, User::getIntro, User::getId, User::getNickname);
         userMPJLambdaWrapper.leftJoin(Video.class,Video::getUserId, User::getId);
         userMPJLambdaWrapper.leftJoin(VideoData.class,VideoData::getVideoId,Video::getId);
@@ -62,10 +60,10 @@ public class UserInfoServiceImpl implements UserInfoService {
         UserInfoResponse userInfoResponse=userMapper.selectJoinOne(UserInfoResponse.class,userMPJLambdaWrapper)
                 .setFansCount(Math.toIntExact(userMapper.selectJoinCount(fansCountWrapper)))
                 .setIdolCount(Math.toIntExact(userMapper.selectJoinCount(idolCountWrapper)));
-        if(userId2>0){
+        if(selfId>0){
             LambdaQueryWrapper<Follow> followLambdaQueryWrapper=new LambdaQueryWrapper<>();
-            followLambdaQueryWrapper.eq(Follow::getFansId,userId1);
-            followLambdaQueryWrapper.eq(Follow::getIdolId,userId2);
+            followLambdaQueryWrapper.eq(Follow::getFansId,selfId);
+            followLambdaQueryWrapper.eq(Follow::getIdolId,visitedId);
             if(followMapper.selectList(followLambdaQueryWrapper).size()>0){
                 userInfoResponse.setIsFollowing(true);
             }else {
@@ -80,9 +78,9 @@ public class UserInfoServiceImpl implements UserInfoService {
     @Override
     public Result<Boolean> editSelfInfo(MultipartFile file, Integer userId, String nickname, String intro) throws ServerException, InsufficientDataException, ErrorResponseException, IOException, NoSuchAlgorithmException, InvalidKeyException, InvalidResponseException, XmlParserException, InternalException {
         Map<String,Object> map=new HashMap<>();
-        map.put("id",userId);
-        map.put("nickname",nickname);
-        map.put("intro",intro);
+        map.put(TABLE_ID,userId);
+        map.put(OPERATION_TYPE,OPERATION_TYPE_UPDATE);
+        map.put(TABLE_NAME,USER_TABLE_NAME);
         User user=new User();
         user.setId(userId);
         if(file!=null){
@@ -93,9 +91,11 @@ public class UserInfoServiceImpl implements UserInfoService {
             user.setCover(url);
         }
         if(nickname!=null){
+            map.put(USER_NICKNAME,nickname);
             user.setNickname(nickname);
         }
         if(intro!=null){
+            map.put(USER_INTRO,intro);
             user.setIntro(intro);
         }
         userMapper.updateById(user);

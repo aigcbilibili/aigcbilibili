@@ -77,7 +77,7 @@ public class MysqlToEsHandler {
         }
 
         if (userAddList.size() > 0) {
-            mysqlAddToEs(Constant.OPERATION_ADD, videoAddList, Constant.USER_INDEX_NAME);
+            mysqlAddToEs(Constant.OPERATION_ADD, userAddList, Constant.USER_INDEX_NAME);
         }
         SearchRequest videoSearchRequest = new SearchRequest(Constant.VIDEO_INDEX_NAME);
         videoSearchRequest.source(new SearchSourceBuilder().query(QueryBuilders.matchAllQuery()).size(10000));

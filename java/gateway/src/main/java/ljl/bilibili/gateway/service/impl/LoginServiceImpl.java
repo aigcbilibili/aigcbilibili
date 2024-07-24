@@ -61,15 +61,12 @@ public class LoginServiceImpl implements LoginService {
      **/
     @Override
     public Map<String, Object> passwordLogin(PasswordLoginRequest passwordLoginRequest, String sessionId) {
-        passwordLoginRequest.setUserName(passwordLoginRequest.getUserName().substring(1, passwordLoginRequest.getUserName().length() - 1));
-        passwordLoginRequest.setPassword(passwordLoginRequest.getPassword().substring(1, passwordLoginRequest.getPassword().length() - 1));
-        passwordLoginRequest.setCaptcha(passwordLoginRequest.getCaptcha().substring(1, passwordLoginRequest.getCaptcha().length() - 1));
         String code = (String) redisTemplate.opsForValue().get(sessionId);
         LambdaQueryWrapper<User> wrapper=new LambdaQueryWrapper<>();
         wrapper.eq(User::getUserName, passwordLoginRequest.getUserName());
         User user = userMapper.selectOne(wrapper);
         Map<String, Object> map = new HashMap<>(2);
-        if (user != null &&passwordLoginRequest.getPassword().equals(user.getPassword())&&code.equals(passwordLoginRequest.getCaptcha()) ) {
+        if (user != null &&passwordEncoder.matches(passwordLoginRequest.getPassword(),user.getPassword())&&code.equals(passwordLoginRequest.getCaptcha()) ) {
             map.put(USERIDENTITY, user.getId());
             map.put(SHORT_TOKEN, JwtUtil.generateShortToken(user.getId()));
             map.put(LONG_TOKEN, JwtUtil.generateLongToken(user.getId()));
@@ -89,15 +86,15 @@ public class LoginServiceImpl implements LoginService {
         User user = userMapper.selectOne(wrapper);
         Integer id=null;
         Map<String, Object> map = new HashMap<>(2);
-        if (user != null && user.getPhoneNumber().equals(phoneNumberLoginRequest.getPhoneNumber()) &&code.equals(phoneNumberLoginRequest.getCaptcha()) ) {
+        if (user != null && passwordEncoder.matches(phoneNumberLoginRequest.getPhoneNumber(),user.getPhoneNumber()) &&code.equals(phoneNumberLoginRequest.getCaptcha()) ) {
             map.put(USERIDENTITY, user.getId());
         }
         if(user ==null){
             User newUser =phoneNumberLoginRequest.toEntity().setCover("https://labilibili.com/user-cover/default.png");
+            passwordEncoder.encode(newUser.getPassword());
             userMapper.insert(newUser);
             privilegeMapper.insert(new Privilege().setUserId(newUser.getId()));
             id= newUser.getId();
-            CompletableFuture<Void> sendDBChangeNotice = CompletableFuture.runAsync(() -> {
                 ObjectMapper objectMapper = new ObjectMapper();
                 Map<String, Object> userMap = objectMapper.convertValue(newUser, Map.class);
                 userMap.put(TABLE_NAME, USER_TABLE_NAME);
@@ -106,7 +103,6 @@ public class LoginServiceImpl implements LoginService {
                 userMap.remove(TABLE_IGNORE_PASSWORD);
                 userMap.remove(TABLE_IGNORE_PHONE_NUMBER);
                 client.sendDBChangeNotice(userMap);
-            });
             map.put(USERIDENTITY, newUser.getId());
         }
         map.put(SHORT_TOKEN, JwtUtil.generateShortToken(id));
@@ -125,7 +121,7 @@ public class LoginServiceImpl implements LoginService {
         log.info(mailLoginRequest.getMailNumber());
         log.info(code);
         log.info(mailLoginRequest.getCaptcha());
-        if (user != null && user.getMailNumber().equals(mailLoginRequest.getMailNumber()) &&code.equals(mailLoginRequest.getCaptcha()) ) {
+        if (user != null && passwordEncoder.matches(mailLoginRequest.getMailNumber(),user.getMailNumber()) &&code.equals(mailLoginRequest.getCaptcha()) ) {
             id=user.getId();
             map.put(USERIDENTITY, id);
             log.info(id.toString());
@@ -133,10 +129,10 @@ public class LoginServiceImpl implements LoginService {
         }
         if(user ==null){
             User newUser =mailLoginRequest.toEntity().setCover("https://labilibili.com/user-cover/default.png");
+            passwordEncoder.encode(newUser.getMailNumber());
             userMapper.insert(newUser);
             privilegeMapper.insert(new Privilege().setUserId(newUser.getId()));
             id= newUser.getId();
-            CompletableFuture<Void> sendDBChangeNotice = CompletableFuture.runAsync(() -> {
                 ObjectMapper objectMapper = new ObjectMapper();
                 Map<String, Object> userMap = objectMapper.convertValue(newUser, Map.class);
                 userMap.put(TABLE_NAME, USER_TABLE_NAME);
@@ -145,7 +141,6 @@ public class LoginServiceImpl implements LoginService {
                 userMap.remove(TABLE_IGNORE_PASSWORD);
                 userMap.remove(TABLE_IGNORE_PHONE_NUMBER);
                 client.sendDBChangeNotice(userMap);
-            });
             map.put(USERIDENTITY, newUser.getId());
         }
         map.put(SHORT_TOKEN, JwtUtil.generateShortToken(id));
@@ -189,7 +184,7 @@ public class LoginServiceImpl implements LoginService {
         }else {
             redisTemplate.opsForValue().set(cookie.getValue(),code.toString());
         }
-            return captchaMap;
+        return captchaMap;
     }
     @Override
     public Result<Boolean> sendPhoneNumberCaptcha( String phoneNumber) throws ClientException{
@@ -207,7 +202,7 @@ public class LoginServiceImpl implements LoginService {
         message.setSubject("验证码");
         String captcha=""+random.nextInt(10)+random.nextInt(10)+random.nextInt(10)+random.nextInt(10)+random.nextInt(10)+random.nextInt(10);
         redisTemplate.opsForValue().set(mailNumber,captcha);
-        message.setText("labilibilibili验证码:"+captcha);
+        message.setText("aigcbilibilibili验证码:"+captcha);
         message.setFrom(from);
         log.info("send");
         log.info(from);
