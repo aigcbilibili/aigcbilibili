@@ -9,7 +9,7 @@
         <div class="upload-divided"></div>
         <!--文件上传位置-->
         <div class="upload-item video-here">
-            <div v-if="isUploadedVideo === 0"><!--XXX multiple参数是多选文件，用不到-->
+            <div><!--XXX multiple参数是多选文件，用不到-->
                 <!-- <el-upload class="video-uploader" drag action="/api/createCenter/getVideoCover" auto-upload="true"
                     :headers="thisHeaders" :data="upData.file" :limit="1" :accept="acceptFileType"
                     :before-upload="handleVideoUpload" :on-progress="handleProgress" :on-success="handleVideoSuccess"
@@ -18,26 +18,9 @@
                     <div class="el-upload__tip">只能上传.mp4, .wmv, .avi视频，视频最大是2GB</div>
                 </el-upload> -->
                 <!-- <input type="file" id="upload-video" @input="handleVideoTest"> -->
-                <upLoad />
+                <upLoad ref="upload" @handleFile="handleFile" />
             </div>
-            <div v-else-if="isUploadedVideo === 2"> <!--已经传完-->
-                <div class="flex-between-container"><!--如果-->
-                    <div class="flex-center-container">
-                        <img src="@/assets/img/video/videoFile.png" style="width: 2rem; height: 2rem;" />
-                        <p>{{ videoNameRaw }}</p>
-                    </div>
-                    <div class="flex-center-container">
-                        <div class="detail-btn-chosen common-btn-center upload-finish-btn" @click="reloadVideo()">重传
-                        </div>
-                        <div class="detail-btn-chosen common-btn-center  upload-finish-btn" @click="download()">下载</div>
-                    </div>
-                </div>
-            </div>
-            <div v-else> <!--正在上传-->
-                <el-progress :stroke-width="10" :percentage="uploadVideoProgress" style="width: 75rem;"
-                    class="video-upload-progress">
-                </el-progress>
-            </div>
+
         </div>
         <!--视频封面-->
         <div class="upload-item video-cover flex-left-container">
@@ -69,15 +52,16 @@
             <aTextarea v-model:inputData="upData.intro" :maxLen="1000" @update:modelValue="handleProfileUpdate" />
         </div>
         <!--加入合集设置-->
-        <div class="upload-item">
+        <!-- <div class="upload-item">
             <p class="upload-item-text">加入合集</p>
-            <div class=""><!--视频合集-->
+            <div class="">
             </div>
-        </div>
+        </div> -->
         <!--保存和上传-->
-        <div class="flex-center-container self-center-box-third" style="margin: 2rem 0;">
-            <div class="common-btn-center detail-btn" style="padding: 0.3rem 0.7rem; margin-right: 1rem;">保存</div>
-            <div class="common-btn-center detail-btn" @click="upRes()" style="padding: 0.3rem 0.7rem;">上传</div>
+        <div style="width: 100%;display: flex;justify-content: center;">
+            <!-- <div class="common-btn-center detail-btn" style="padding: 0.3rem 0.7rem; margin-right: 1rem;">保存</div> -->
+            <div class="common-btn-center detail-btn" @click="upRes()"
+                style="padding: 0.3rem 0.7rem;margin-bottom:20px ">上传</div>
         </div>
     </div>
 </template>
@@ -90,6 +74,44 @@ import { ref, watchEffect, onUpdated } from "vue"
 import { addUpVideo } from "@/api/video"
 import { useUserInfo } from "@/store/userInfo"
 import { ElMessage } from 'element-plus'
+
+
+const defaultData = {
+    title: "",
+    cover: undefined,
+    file: undefined, // 视频文件
+    type: 0, // 0 自制，1转载
+    tag: "",  // 分区通过一个字符串保存、使用,隔开
+    intro: "",
+    setTimeFlag: false, // 是否定时发布
+    setTime: "", // 定时发布的时间
+    setFolderFlag: false, // 是否加入合集
+    setFolder: 0, // 加入的合集id
+}
+const upData = ref(defaultData)
+/**
+ * 视频上传回调
+ */
+const upload = ref(null);
+
+
+const handleFile = (data, status) => {
+    if (status) {
+        console.log('123');
+        upData.value.file = '',
+            upData.value.cover = '',
+            coverData.value = ''
+        return
+    }
+    console.log('data', data);
+    upData.value.file = data[0];
+    upData.value.cover = data[1];
+    coverData.value = "data:image/jpg;base64," + data[1]
+}
+
+
+
+
 const userInfo = useUserInfo() // 使用登录信息
 const userId = userInfo.getId()
 const isUploadedVideo = ref(0) // 是否上传了视频，0暂未、1上传中、1已传完
@@ -110,19 +132,7 @@ const thisHeaders = { // 视频前3帧接口的头
     'authorization': 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMTEiLCJyb2xlIjoidXNlciJ9.ybuiJ87Nq7xgcWrM50P_VgAF1P74fnEN8jCSH5daqR2re4hVTMYgkzMHWZlK104guM75RGWgVxNrtfnhinjR-g',
     'laBiliBiliHeader': 'test_method_1'
 }
-const defaultData = {
-    title: "",
-    cover: undefined,
-    file: undefined, // 视频文件
-    type: 0, // 0 自制，1转载
-    tag: "",  // 分区通过一个字符串保存、使用,隔开
-    intro: "",
-    setTimeFlag: false, // 是否定时发布
-    setTime: "", // 定时发布的时间
-    setFolderFlag: false, // 是否加入合集
-    setFolder: 0, // 加入的合集id
-}
-const upData = ref(defaultData)
+
 // file转base64
 const fileToBase64 = (file) => {
     return new Promise((resolve, reject) => {
@@ -303,7 +313,6 @@ const handleChange = async (file) => {
     // upData.value.cover = await convertToWebP(file.raw)
 }
 
-
 // 获取图片上传
 const handleCoverUpload = (file) => {
     if (file.size > acceptCoverMaxSize) {
@@ -320,10 +329,18 @@ const upRes = async () => {
     // for (const pair of upFormData.entries()) {
     //     console.log(pair[0] + ', ' + JSON.stringify(pair[1]));
     // 
-    const res = addUpVideo(upData.value.file, upData.value.intro,
+    let { file, cover, title } = upData.value
+    if (!file || !cover || !title) {
+        return ElMessage.error("请先上传视频、标题和封面！")
+    }
+    const res = await addUpVideo(upData.value.file, upData.value.intro,
         upData.value.title, userId, upData.value.cover)
     if (res) {
         ElMessage.success(`${upData.value.title}视频上传成功！`)
+        upData.value.file = '',
+            upData.value.intro = '',
+            upData.value.title = '',
+            upData.value.cover = ''
         // setTimeout(async () => { // 1s后页面强制刷新，刷新太快会导致异步上传丢失     
         //     window.location.reload()
         // }, 1000)

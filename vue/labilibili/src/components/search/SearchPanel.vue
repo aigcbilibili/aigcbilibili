@@ -59,7 +59,7 @@ const getRecommend = async (keyword) => {
   if (keyword !== "") {
     // XXX 正常而言
     // const res = await fetchVideoRelatedKeywords(keyword) 
-    axios.get(`https://labilibili.com/api/search/likelyKeyWordSearch/${keyword}`, {
+    axios.get(`/api/search/likelyKeyWordSearch/${keyword}`, {
       keyword: keyword
     }, {
       headers: {

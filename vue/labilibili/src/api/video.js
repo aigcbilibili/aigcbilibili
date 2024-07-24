@@ -267,25 +267,17 @@ export const fetchRecentLikeVideo = async (userId) => {
  */
 export const addUpVideo = async (file, intro, name, userId, cover) => {
     try {
-        const formData = new FormData()
-        console.log('获取到了什么video', file, cover)
-        // // 数据结构
-        formData.append('file', file)
-        formData.append('intro', intro) // upData.value.intro
-        formData.append('name', name)
-        formData.append('userId', userId)
-        formData.append('videoCover', cover)
-        console.log('传递过程中的formData', formData)
-        const postURL = 'createCenter/upload'
-        const response = await request.post(postURL, formData
-            , {
-                headers: {
-                    'Content-Type': 'multipart/form-data',
-                    'X-Requested-With': 'XMLHttpRequest',
-                    'authorization': 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMTEiLCJyb2xlIjoidXNlciJ9.ybuiJ87Nq7xgcWrM50P_VgAF1P74fnEN8jCSH5daqR2re4hVTMYgkzMHWZlK104guM75RGWgVxNrtfnhinjR-g',
-                    'laBiliBiliHeader': 'test_method_1'
-                }
-            })
+
+        const postURL = 'createCenter/uploadTotal'
+        const response = await request.post(postURL, {
+            url: file,
+            name: name,
+            intro,
+            userId: userId,
+            videoCover: cover
+
+        }
+        )
         return response
     } catch (e) {
         ElMessage.error("上传视频失败")

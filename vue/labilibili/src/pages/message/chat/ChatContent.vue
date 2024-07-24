@@ -131,7 +131,7 @@ const currentPerson = ref(bigModelTest)
 // if(socket) {
 //     await socket.close()
 // }
-const socket = new WebSocket("wss://labilibili.com/wschat") // XXX 先用这个socket
+const socket = new WebSocket("/wschat") // XXX 先用这个socket
 let conId = ''
 console.log('uoId', props.upId);
 const getImageData = async (val) => {

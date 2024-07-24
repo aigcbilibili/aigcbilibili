@@ -29,7 +29,7 @@ module.exports = defineConfig({
     // NOTE 跨域配置
     proxy: {
       '/api': {
-        target: "https://www.labilibili.com",
+        target: "****",
         // 允许跨域：如果不开的话，会拦截响应
         changeOrigin: true,
       },
@@ -40,6 +40,11 @@ module.exports = defineConfig({
           '^/video-show': ''
         }
       },
+      '/wschat': {
+        target: '******',
+        ws: true,
+        changeOrigin: true,
+      }
 
     }
   }
