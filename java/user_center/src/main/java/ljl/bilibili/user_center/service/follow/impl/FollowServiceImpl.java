@@ -18,17 +18,22 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+//关注
 @Service
 public class FollowServiceImpl implements FollowService {
     @Resource
     FollowMapper followMapper;
+    /**
+     *关注用户
+     */
 @Override
     public Result<Boolean> follow(FollowRequest follow) {
         followMapper.insert(follow.toEntity());
         return Result.success(true);
     }
-
+    /**
+     *撤销关注
+     */
     @Override
     public Result<Boolean> recallFollow( FollowRequest follow) {
         LambdaQueryWrapper<Follow> wrapper = new LambdaQueryWrapper<>();
@@ -37,9 +42,13 @@ public class FollowServiceImpl implements FollowService {
         followMapper.delete(wrapper);
         return Result.success(true);
     }
+    /**
+     *获取关注或粉丝列表
+     */
     @Override
     public Result<List<IdolOrFansListResponse>> getIdolOrFansListResponse(int userId, int type){
       MPJLambdaWrapper<Follow> wrapper=new MPJLambdaWrapper<>();
+      //根据类型判断是要获取关注还是粉丝列表
       if(type==0){
           wrapper.eq(Follow::getFansId,userId);
           wrapper.innerJoin(User.class, User::getId,Follow::getIdolId);
@@ -57,7 +66,8 @@ public class FollowServiceImpl implements FollowService {
       for(IdolOrFansListResponse response : responses){
           ids.add(response.getUserId());
       }
-      List<IdCount> fansCountList= followMapper.getFansCount(ids);
+        //获取关注列表和粉丝列表的关注数和粉丝数并封装到响应集合里
+        List<IdCount> fansCountList= followMapper.getFansCount(ids);
       List<IdCount> idolCountList= followMapper.getIdolCount(ids);
       Map<Integer,Integer> fansCountMap=new HashMap<>(10);
       Map<Integer,Integer> idolCountMap=new HashMap<>(10);

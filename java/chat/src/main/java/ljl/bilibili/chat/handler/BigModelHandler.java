@@ -114,8 +114,6 @@ public class BigModelHandler extends WebSocketListener {
             List<Text> textList = myJsonParse.payload.choices.text;
             for (Text temp : textList) {
                 ChatMessage chatMessage = new ChatMessage(temp.content, userId, status);
-                String jsonChat = gson.toJson(chatMessage);
-//                CompletableFuture<Void> completableFuture=CompletableFuture.runAsync(()->{
                 log.info(temp.content);
                 JsonObject jsonText = new JsonObject();
                 jsonText.addProperty(MESSAGE_STATUS, chatMessage.getStatus());
@@ -168,7 +166,6 @@ public class BigModelHandler extends WebSocketListener {
                 }
             }
         } catch (IOException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }

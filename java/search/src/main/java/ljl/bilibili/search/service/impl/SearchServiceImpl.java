@@ -40,19 +40,14 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 import static ljl.bilibili.search.constant.Constant.*;
-
+/**
+ *搜索相关
+ */
 @Service
 @Slf4j
 public class SearchServiceImpl implements SearchService {
     @Resource
     public RestHighLevelClient client;
-    int corePoolSize = 10;
-    int maximumPoolSize = 10;
-    long keepAliveTime = 0L;
-    TimeUnit unit = TimeUnit.MILLISECONDS;
-    LinkedBlockingQueue<Runnable> workQueue = new LinkedBlockingQueue<>();
-    ThreadPoolExecutor executor = new ThreadPoolExecutor(corePoolSize, maximumPoolSize,
-            keepAliveTime, unit, workQueue);
     final int size = 20;
     @Resource
     FollowMapper followMapper;
@@ -213,6 +208,7 @@ public class SearchServiceImpl implements SearchService {
      */
     @Override
     public List<RecommendVideo> likelyVideoRecommend(String videoId) throws IOException {
+        //使用了特定查询query--morelikethisquery来强化对关键字匹配度的查询
         SearchRequest searchRequest = new SearchRequest(VIDEO_INDEX_NAME);
         SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();
         Item[] items = {

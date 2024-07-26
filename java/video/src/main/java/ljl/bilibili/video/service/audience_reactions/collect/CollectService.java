@@ -11,7 +11,6 @@ import java.util.List;
 
 public interface CollectService {
     Result<Boolean> collect(List<CollectRequest> collectRequest);
-    Result<Boolean> recallCollect(CollectRequest collectRequest);
     Result<Boolean> editCollectGroup(CollectGroupRequest createCollectGroupRequest);
     Result<Boolean> deleteCollectGroup(CollectGroupRequest createCollectGroupRequest);
     Result<List<CollectGroup>> getCollectGroup(Integer userId);

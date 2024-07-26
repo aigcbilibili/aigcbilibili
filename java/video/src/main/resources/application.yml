@@ -39,7 +39,6 @@ minio:
   url: http://localhost:9000
   access.name: localhost
   access.secret: localhost
-  bucket.name: video
 rocketmq:
   name-server: localhost:9876
   producer:

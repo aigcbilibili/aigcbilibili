@@ -30,18 +30,24 @@ public class MysqlToEsConsumer implements RocketMQListener<MessageExt> {
     ObjectMapper objectMapper;
     @Resource
     RedisTemplate objectRedisTemplate;
+    /**
+     *根据map的键值对不同将其存入特定redis键值对
+     */
     @Override
     public void onMessage(MessageExt messageExt){
         String json = new String(messageExt.getBody(), StandardCharsets.UTF_8);
         HashMap<String,Object> map ;
         try {
+            //将json消息转成map
             map = objectMapper.readValue(json, HashMap.class);
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
+        //如果操作类型是新增的话
         if(map.get(OPERATION_TYPE).equals(OPERATION_TYPE_ADD)){
             log.info("add");
             map.remove(OPERATION_TYPE);
+            //如果表是视频表的话
             if(map.get(TABLE_NAME).equals(VIDEO_TABLE_NAME)){
                 log.info("video");
                 map.remove(TABLE_NAME);

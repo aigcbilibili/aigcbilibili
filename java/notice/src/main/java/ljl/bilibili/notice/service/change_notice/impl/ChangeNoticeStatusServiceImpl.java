@@ -20,7 +20,7 @@ import ljl.bilibili.notice.vo.request.change_notice.LikeNoticeStatusChangeReques
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-
+//消息状态更新
 @Service
 public class ChangeNoticeStatusServiceImpl implements ChangeNoticeStatusService {
     @Resource
@@ -29,8 +29,12 @@ public class ChangeNoticeStatusServiceImpl implements ChangeNoticeStatusService 
     VideoMapper videoMapper;
     @Resource
     CommentMapper commentMapper;
+    /**
+     *修改点赞消息状态
+     */
 @Override
     public Result<Boolean> changeLikeNoticeStatus(LikeNoticeStatusChangeRequest likeNoticeStatusChangeRequest) {
+    //修改对视频的点赞消息为已读
         UpdateJoinWrapper<Video> videoUpdateJoinWrapper= JoinWrappers.update(Video.class);
         videoUpdateJoinWrapper.eq(Video::getUserId,likeNoticeStatusChangeRequest.getUserId());
         videoUpdateJoinWrapper.leftJoin(LikeNotice.class,LikeNotice::getVideoId,Video::getId);
@@ -38,6 +42,7 @@ public class ChangeNoticeStatusServiceImpl implements ChangeNoticeStatusService 
         videoUpdateJoinWrapper.eq(LikeNotice::getStatus,0);
         videoUpdateJoinWrapper.set(LikeNotice::getStatus,1);
         videoMapper.updateJoin(null,videoUpdateJoinWrapper);
+        //修改对评论的点赞消息为已读
         UpdateJoinWrapper<Comment> commentUpdateJoinWrapper=JoinWrappers.update(Comment.class);
         commentUpdateJoinWrapper.eq(Comment::getUserId,likeNoticeStatusChangeRequest.getUserId());
         commentUpdateJoinWrapper.leftJoin(LikeNotice.class,LikeNotice::getCommentId,Comment::getId);
@@ -46,8 +51,12 @@ public class ChangeNoticeStatusServiceImpl implements ChangeNoticeStatusService 
         commentMapper.updateJoin(null,commentUpdateJoinWrapper);
         return Result.success(true);
     }
+    /**
+     *修改评论消息状态
+     */
     @Override
     public Result<Boolean> changeCommentNoticeStatus(CommentNoticeStatusChangeRequest commentNoticeStatusChangeRequest) {
+        //修改对视频的评论的消息已读
         UpdateJoinWrapper<Video> videoUpdateJoinWrapper=JoinWrappers.update(Video.class);
         videoUpdateJoinWrapper.eq(Video::getUserId,commentNoticeStatusChangeRequest.getUserId());
         videoUpdateJoinWrapper.leftJoin(CommentNotice.class,CommentNotice::getVideoId,Video::getId);
@@ -55,6 +64,7 @@ public class ChangeNoticeStatusServiceImpl implements ChangeNoticeStatusService 
         videoUpdateJoinWrapper.eq(CommentNotice::getStatus,0);
         videoUpdateJoinWrapper.set(CommentNotice::getStatus,1);
         videoMapper.updateJoin(null,videoUpdateJoinWrapper);
+        //修改对评论的评论的消息已读
         UpdateJoinWrapper<Comment> commentUpdateJoinWrapper=JoinWrappers.update(Comment.class);
         commentUpdateJoinWrapper.eq(Comment::getUserId,commentNoticeStatusChangeRequest.getUserId());
         commentUpdateJoinWrapper.leftJoin(CommentNotice.class,CommentNotice::getReceiverId,Comment::getId);
@@ -63,6 +73,9 @@ public class ChangeNoticeStatusServiceImpl implements ChangeNoticeStatusService 
         commentMapper.updateJoin(null,commentUpdateJoinWrapper);
         return Result.success(true);
     }
+    /**
+     *修改推送动态状态
+     */
     @Override
     public Result<Boolean> changeDynamicVideoStatus(DynamicVideoStatusChangeRequest videoStatusChangeRequest) {
         LambdaUpdateWrapper<DynamicToUser> updateWrapper = Wrappers.lambdaUpdate();

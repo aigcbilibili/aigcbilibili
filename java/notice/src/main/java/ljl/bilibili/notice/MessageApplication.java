@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @EnableFeignClients(basePackages = "ljl.bilibili.client")
-@MapperScan(basePackages = "ljl.bilibili.mapper.*")
+@MapperScan(basePackages = {"ljl.bilibili.mapper","ljl.bilibili.notice.mapper"})
 @ComponentScan(basePackages = "ljl.*")
 public class MessageApplication {
     public static void main(String[] args) {

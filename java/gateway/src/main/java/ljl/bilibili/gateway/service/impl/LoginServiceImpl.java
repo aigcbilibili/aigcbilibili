@@ -35,7 +35,9 @@ import java.util.concurrent.CompletableFuture;
 
 import static ljl.bilibili.gateway.constant.Constant.*;
 
-
+/**
+ *登录
+ */
 @Service
 @Slf4j
 public class LoginServiceImpl implements LoginService {
@@ -54,7 +56,6 @@ public class LoginServiceImpl implements LoginService {
     private String from;
 
     @Resource
-    //用于发送文件
     public JavaMailSender mailSender;
     /**
      *解密数据库中加密后密码验证用户，登录成功返回长短token与用户id
@@ -66,6 +67,7 @@ public class LoginServiceImpl implements LoginService {
         wrapper.eq(User::getUserName, passwordLoginRequest.getUserName());
         User user = userMapper.selectOne(wrapper);
         Map<String, Object> map = new HashMap<>(2);
+        //如果用户存在且密码匹配上了验证码也和图像验证码值一致就登录成功并返回长短token和userId给controller层
         if (user != null &&passwordEncoder.matches(passwordLoginRequest.getPassword(),user.getPassword())&&code.equals(passwordLoginRequest.getCaptcha()) ) {
             map.put(USERIDENTITY, user.getId());
             map.put(SHORT_TOKEN, JwtUtil.generateShortToken(user.getId()));
@@ -86,9 +88,11 @@ public class LoginServiceImpl implements LoginService {
         User user = userMapper.selectOne(wrapper);
         Integer id=null;
         Map<String, Object> map = new HashMap<>(2);
+        //如果用户存在且手机接收的验证码和传来的验证码对上了就返回userId和长短token
         if (user != null && passwordEncoder.matches(phoneNumberLoginRequest.getPhoneNumber(),user.getPhoneNumber()) &&code.equals(phoneNumberLoginRequest.getCaptcha()) ) {
             map.put(USERIDENTITY, user.getId());
         }
+        //不存在则直接创建一个新用户
         if(user ==null){
             User newUser =phoneNumberLoginRequest.toEntity().setCover("https://labilibili.com/user-cover/default.png");
             passwordEncoder.encode(newUser.getPassword());
@@ -109,6 +113,9 @@ public class LoginServiceImpl implements LoginService {
         map.put(LONG_TOKEN, JwtUtil.generateLongToken(id));
         return map;
     }
+    /**
+     *邮箱号登录，若无该用户则新创建一个用户并发送新增用户数据同步消息
+     **/
     @Override
     public Map<String, Object> mailLogin(MailLoginRequest mailLoginRequest) {
         String code = (String) redisTemplate.opsForValue().get(mailLoginRequest.getMailNumber());
@@ -121,6 +128,7 @@ public class LoginServiceImpl implements LoginService {
         log.info(mailLoginRequest.getMailNumber());
         log.info(code);
         log.info(mailLoginRequest.getCaptcha());
+        //同手机号
         if (user != null && passwordEncoder.matches(mailLoginRequest.getMailNumber(),user.getMailNumber()) &&code.equals(mailLoginRequest.getCaptcha()) ) {
             id=user.getId();
             map.put(USERIDENTITY, id);
@@ -147,6 +155,7 @@ public class LoginServiceImpl implements LoginService {
         map.put(LONG_TOKEN, JwtUtil.generateLongToken(id));
         return map;
     }
+    //获取图像验证码
     @Override
     public Map<String, String> getCaptcha(HttpCookie cookie) throws IOException {
         Map<String, String> captchaMap = new HashMap<>(2);
@@ -186,6 +195,9 @@ public class LoginServiceImpl implements LoginService {
         }
         return captchaMap;
     }
+    /**
+     *发送手机验证码
+     **/
     @Override
     public Result<Boolean> sendPhoneNumberCaptcha( String phoneNumber) throws ClientException{
         Random random=new Random();
@@ -194,6 +206,9 @@ public class LoginServiceImpl implements LoginService {
         redisTemplate.opsForValue().set(phoneNumber,number);
         return Result.data(true);
     }
+    /**
+     *发送邮箱验证码
+     **/
     @Override
     public Result<Boolean> sendMailNumberCaptcha(String mailNumber){
         SimpleMailMessage message = new SimpleMailMessage();

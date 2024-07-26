@@ -40,31 +40,31 @@ public class ChatController {
     @GetMapping("/getHistoryChat/{userId}/{receiverId}")
     @ApiOperation("获取历史聊天记录")
     public Result<List<HistoryChatResponse>> getHistoryChat(@PathVariable Integer userId, @PathVariable Integer receiverId){
-        log.info("1");
+        
      return chatService.getHistoryChat(userId,receiverId);
     }
     @ApiOperation("获取历史聊天会话列表")
     @GetMapping("/getHistoryChatSession/{userId}")
     public Result<List<ChatSessionResponse>> getHistoryChatSession(@PathVariable Integer userId){
-        log.info("1");
+        
         return chatService.getHistoryChatSession(userId);
     }
     @ApiOperation("修改聊天记录的状态从未读到已读")
     @PostMapping("/changeChatStatus")
     public Result<Boolean> changeChatStatus(@RequestBody ChangeChatStatusRequest changeChatStatusRequest){
-        log.info("1");
+        
         return chatService.changeChatStatus(changeChatStatusRequest);
     }
     @ApiOperation("修改聊天会话的最后聊天时间和最后聊天内容")
     @PostMapping("/changeChatSessionTime")
     public Result<Boolean> changeChatSessionTime(@RequestBody ChatSessionRequest chatSessionRequest){
-        log.info("1");
+        
         return chatService.changeChatSessionTime(chatSessionRequest);
     }
     @ApiOperation("/新增聊天会话和聊天内容")
     @PostMapping("/addChatSessionAndContent")
     public Result<Boolean> addChatSessionAndContent(@RequestBody ChatSessionRequest chatSessionRequest){
-        log.info("1");
+        
         return chatService.addChatSessionAndContent(chatSessionRequest);
     }
 }

@@ -13,7 +13,7 @@ import ljl.bilibili.mapper.user_center.user_info.PrivilegeMapper;
 import ljl.bilibili.mapper.user_center.user_relationships.FollowMapper;
 import ljl.bilibili.mapper.video.audience_reactions.like.LikeMapper;
 import ljl.bilibili.mapper.video.video_production.upload.VideoMapper;
-import ljl.bilibili.user_center.mapper.UserCollectMapper;
+import ljl.bilibili.user_center.mapper.UserCenterServiceMapper;
 import ljl.bilibili.user_center.service.follow.FollowService;
 import ljl.bilibili.user_center.service.self_center.SelfCenterService;
 import ljl.bilibili.user_center.vo.request.self_center.EditUserCenterPrivilegeRequest;
@@ -27,7 +27,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+/**
+ *个人主页
+ */
 @Service
 public class SelfCenterServiceImpl implements SelfCenterService {
     String sql="limit 10";
@@ -39,14 +41,18 @@ public class SelfCenterServiceImpl implements SelfCenterService {
     @Resource
     LikeMapper likeMapper;
     @Resource
-    UserCollectMapper userCollectMapper;
+    UserCenterServiceMapper userCenterServiceMapper;
     @Resource
     FollowService followService;
     @Resource
     FollowMapper followMapper;
+    /**
+     *获取某用户个人主页权限，并根据个人主页权限决定是否要返回对应模块内容
+     */
     @Override
     public Result<SelfCenterContentResponse> getPersonalCenterContent(Integer selfId, Integer visitedId) {
         Privilege privilege=privilegeMapper.selectById(visitedId);
+        //投稿视频都公开，因此不需要查询权限后再确认是否需要返回
         SelfCenterContentResponse selfCenterContentResponse=new SelfCenterContentResponse();
         MPJLambdaWrapper<Video> wrapper=new MPJLambdaWrapper<>();
         wrapper.eq(Video::getUserId,visitedId);
@@ -57,10 +63,12 @@ public class SelfCenterServiceImpl implements SelfCenterService {
         wrapper.leftJoin(VideoData.class,VideoData::getVideoId,Video::getId);
         List<SelfVideoResponse> selfVideoResponses=videoMapper.selectJoinList(SelfVideoResponse.class,wrapper);
         selfCenterContentResponse.setSelfVideoResponse(selfVideoResponses);
+        //收藏夹
         if(privilege.getCollectGroup()==0){
-        List<SelfCollectResponse> selfCollectResponses=userCollectMapper.getSelfCollect(visitedId);
+        List<SelfCollectResponse> selfCollectResponses= userCenterServiceMapper.getSelfCollect(visitedId);
         selfCenterContentResponse.setSelfCollectResponse(selfCollectResponses);
         }
+        //粉丝列表
         if(privilege.getFansList()==0){
             MPJLambdaWrapper<Follow> fansWrapper=new MPJLambdaWrapper<>();
             fansWrapper.eq(Follow::getIdolId,visitedId);
@@ -93,7 +101,7 @@ public class SelfCenterServiceImpl implements SelfCenterService {
                selfCenterContentResponse.setFansListResponse(fansResponses);
            }
         }
-
+        //关注列表
         if(privilege.getIdolList()==0){
             MPJLambdaWrapper<Follow> idolWrapper=new MPJLambdaWrapper<>();
             idolWrapper.eq(Follow::getFansId,visitedId);
@@ -126,6 +134,7 @@ public class SelfCenterServiceImpl implements SelfCenterService {
                selfCenterContentResponse.setIdolListResponse(idolListResponses);
            }
         }
+        //最近点赞
         if(privilege.getRemotelyLike()==0){
             MPJLambdaWrapper<Like> remotelyLikeWrapper=new MPJLambdaWrapper<>();
             remotelyLikeWrapper.eq(Like::getUserId,visitedId);
@@ -142,6 +151,9 @@ public class SelfCenterServiceImpl implements SelfCenterService {
         }
         return Result.data(selfCenterContentResponse);
     }
+    /**
+     *获取个人主页权限
+     */
     @Override
     public Result<PrivilegeResponse> getUserPrivilege(Integer userId){
         LambdaQueryWrapper<Privilege> wrapper=new LambdaQueryWrapper<>();
@@ -149,7 +161,9 @@ public class SelfCenterServiceImpl implements SelfCenterService {
         Privilege privilege=privilegeMapper.selectById(userId);
         return Result.data(new PrivilegeResponse().setCollectGroup(privilege.getCollectGroup()).setFansList(privilege.getFansList()).setIdolList(privilege.getIdolList()).setRemotelyLike(privilege.getRemotelyLike()));
     }
-
+    /**
+     *编辑个人主页权限
+     */
     @Override
     public Result<Boolean> editUserPrivilege(EditUserCenterPrivilegeRequest editUserCenterPrivilegeRequest){
         privilegeMapper.updateById(editUserCenterPrivilegeRequest.toEntity());

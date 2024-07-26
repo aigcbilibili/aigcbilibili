@@ -39,16 +39,7 @@ public class CollectController {
     public Result<List<CollectGroupResponse>> getVideoToCollectGroup(@PathVariable Integer userId, @PathVariable Integer videoId){
         return collectService.getVideoToCollectGroup(userId,videoId);
     }
-    @PostMapping("/recallCollect")
-    @ApiOperation("取消收藏视频")
-    public Result<Boolean> recallCollect(@RequestBody CollectRequest collectRequest) {
-        log.info("收藏视频");
-        log.info(collectRequest.toString());
-        log.info("\n");
-        log.info("\n");
-        log.info("\n");
-        return collectService.recallCollect(collectRequest);
-    }
+
     @PostMapping("/editCollectGroup")
     @ApiOperation("创建、修改收藏夹")
     public Result<Boolean> editCollectGroup(@RequestBody CollectGroupRequest createCollectGroupRequest) {

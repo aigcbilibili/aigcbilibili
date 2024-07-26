@@ -62,13 +62,16 @@ public class ChatServiceImpl implements ChatService {
         return Result.success(true);
     }
     /**
-     *修改某聊天会话最后聊天时间和最后聊天内容
+     *创建临时会话
      */
     @Override
     public Result<TempSessionResponse> createTempSession(Integer receiverId){
         User u=userMapper.selectById(receiverId);
         return Result.data(new TempSessionResponse().setCover(u.getCover()).setNickName(u.getNickname()));
     }
+    /**
+     *修改回话的最后聊天时间和内容
+     */
     @Override
     public Result<Boolean> changeChatSessionTime(ChatSessionRequest chatSessionRequest) {
         LambdaUpdateWrapper<ChatSession> wrapper = new LambdaUpdateWrapper<>();
@@ -80,7 +83,7 @@ public class ChatServiceImpl implements ChatService {
         return Result.success(true);
     }
     /**
-     *获取历史会话列表，若发起方未发消息则发起方可以获取到会话但接收方无法获取
+     *获取历史会话列表
      */
     @Override
     public Result<List<ChatSessionResponse>> getHistoryChatSession(Integer userId) {
@@ -88,10 +91,12 @@ public class ChatServiceImpl implements ChatService {
         List<ChatSessionResponse> otherResponses= chatServiceMapper.getOtherSession(userId);
         selfResponses.addAll(otherResponses);
         List<Integer> idList=new ArrayList<>();
+        //获取会话集合的id集合
         for(ChatSessionResponse sessionResponse : selfResponses){
             idList.add(sessionResponse.getSessionId());
         }
         if(idList.size()>0){
+            //获取每个会话的未读消息数和设置每个会话的未读状态
             List<NoticeCount> noticeCounts= chatServiceMapper.getNoticeCounts(idList,userId);
             for(ChatSessionResponse sessionResponse : selfResponses){
                 for(NoticeCount noticeCount : noticeCounts){
@@ -105,6 +110,7 @@ public class ChatServiceImpl implements ChatService {
                 }
             }
         }
+        //按创建时间倒序排
         if(selfResponses.size()>0){
             selfResponses = selfResponses.stream()
                     .sorted(Comparator.comparing(ChatSessionResponse::getUpdateTime).reversed())
@@ -117,6 +123,7 @@ public class ChatServiceImpl implements ChatService {
      */
     @Override
     public Result<Boolean> addChatSessionAndContent(ChatSessionRequest chatSessionRequest) {
+        //查询之前是否存在自己向他人或他人向自己发起的会话
         LambdaQueryWrapper<ChatSession> wrapper1 = new LambdaQueryWrapper<>();
         wrapper1.eq(ChatSession::getSenderId, chatSessionRequest.getSenderId());
         wrapper1.eq(ChatSession::getReceiverId, chatSessionRequest.getReceiverId());
@@ -127,6 +134,7 @@ public class ChatServiceImpl implements ChatService {
         ChatSession c2=chatSessionMapper.selectOne(wrapper2);
         ChatSession chatSession=chatSessionRequest.toSessionEntity();
         chatSession.setUpdateTime(LocalDateTime.now());
+        //如果查询过后发现该会话之前并未存在
         if ( c1== null && c2 == null) {
             chatSessionMapper.insert(chatSession);
         }else {
@@ -164,11 +172,9 @@ public class ChatServiceImpl implements ChatService {
         // 获得鉴权信息
         ApiAuthAlgorithm auth = new ApiAuthAlgorithm();
         String signature = auth.getSignature(appId, apiSecret, timestamp);
-        System.out.println(signature);
         ApiClient client = new ApiClient("https://zwapi.xfyun.cn");
         // 大纲生成
         String outlineResp = client.createOutline(appId, ts, signature, describe);
-        System.out.println(outlineResp);
         CreateResponse outlineResponse = JSON.parseObject(outlineResp, CreateResponse.class);
         ObjectMapper objectMapper = new ObjectMapper();
         OutlineVo outlineVo = objectMapper.readValue(outlineResponse.getData().getOutline(), OutlineVo.class);
@@ -185,6 +191,7 @@ public class ChatServiceImpl implements ChatService {
             }
         }
         for (OutlineVo.Chapter chapter : outlineVo.getChapters()) {
+            //对每个大纲内部调用讯飞星火的提问api进行扩展详情
             chapterMap.put(String.valueOf(i), chapter.chapterTitle);
             chapterList.add(String.valueOf(i));
             for (OutlineVo.Chapter chapter1 : chapter.chapterContents) {
@@ -207,6 +214,7 @@ public class ChatServiceImpl implements ChatService {
             j = 1;
 //        }
         }
+        //将扩展后的ppt大纲和大纲扩展后的详情统一封装到集合对象里
         List<PPTWord> pptWords = new ArrayList<>();
         Pattern pattern = Pattern.compile("^[1-9]$");
         for (String index : chapterList) {
@@ -226,9 +234,15 @@ public class ChatServiceImpl implements ChatService {
         }
         return new PPTResponse().setPptWordList(pptWords).setCoverImgSrc(outlineResponse.getData().getCoverImgSrc());
     }
+    /**
+     *获取讯飞星火图片响应
+     */
     public String getImage(String text) throws Exception {
+        //绑定图片响应地址
         String url="https://spark-api.cn-huabei-1.xf-yun.com/v2.1/tti";
+
         String authUrl= MyUtil.getAuthUrl(url,apiKey,apiSecret);
+        //特定json格式发送请求到讯飞星火
         String json = "{\n" +
                 "  \"header\": {\n" +
                 "    \"app_id\": \"" + appId + "\",\n" +
@@ -254,9 +268,8 @@ public class ChatServiceImpl implements ChatService {
                 "    }\n" +
                 "  }\n" +
                 "}";
-
+        //获取响应的Base64编码
         String res = MyUtil.doPostJson(authUrl, null, json);
-//        System.out.println(res);
         return res;
     }
 }

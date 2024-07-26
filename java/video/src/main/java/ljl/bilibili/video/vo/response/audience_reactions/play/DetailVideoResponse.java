@@ -29,9 +29,9 @@ public class DetailVideoResponse {
     @ApiModelProperty("创建时间")
     private LocalDateTime createTime;
     @ApiModelProperty("点赞状态")
-    private Boolean isLiked;
+    private Boolean isLiked=false;
     @ApiModelProperty("收藏状态")
-    private Boolean isCollected;
+    private Boolean isCollected=false;
     @ApiModelProperty("视频播放地址")
     private String url;
 }

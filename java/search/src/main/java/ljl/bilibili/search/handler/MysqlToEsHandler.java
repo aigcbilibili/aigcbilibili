@@ -31,7 +31,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+/**
+ *MySQL到ES数据同步的定时任务执行器
+ */
 @Component
 @Slf4j
 public class MysqlToEsHandler {
@@ -52,23 +54,29 @@ public class MysqlToEsHandler {
             1000,
             0.01);
     /**
-     *每隔15分钟的定时任务，若查询状态为false则先进行全量同步再取出redis中增量消息进行数据同步
+     *同步MySQL数据到ES
      */
     @XxlJob("mysqlToEs")
     public void mysqlToEsHandler() throws Exception {
+        //查询是否已同步过视频数据，没有的话全量同步视频数据
         if (hasSynchronousVideo == false) {
             mysqlToEsService.videoMysqlToEs();
+            mysqlToEsService.updateVideoData();
             hasSynchronousVideo = true;
         }
+        //查询是否已同步过用户数据，没有的话全量同步用户数据
         if (hasSynchronousUser == false) {
             mysqlToEsService.userMysqlToEs();
+            mysqlToEsService.updateUserData();
             hasSynchronousUser = true;
         }
+        //将redis存储的视频、用户相关增删改的操作记录下来进行增量同步
         List<HashMap<String, Object>> videoAddList = objectRedisTemplate.opsForList().range(Constant.VIDEO_ADD_KEY, 0, -1);
         List<HashMap<String, Object>> videoDeleteList = objectRedisTemplate.opsForList().range(Constant.VIDEO_DELETE_KEY, 0, -1);
         List<HashMap<String, Object>> videoUpDateList = objectRedisTemplate.opsForList().range(Constant.VIDEO_UPDATE_KEY, 0, -1);
         List<HashMap<String, Object>> userAddList = objectRedisTemplate.opsForList().range(Constant.USER_ADD_KEY, 0, -1);
         List<HashMap<String, Object>> userUpDateList = objectRedisTemplate.opsForList().range(Constant.USER_UPDATE_KEY, 0, -1);
+        //先执行增删同步再进行修改同步，防止修改时该文档已删除或者还未添加
         if (videoAddList.size() > 0) {
             mysqlAddToEs(Constant.OPERATION_ADD, videoAddList, Constant.VIDEO_INDEX_NAME);
         }
@@ -89,18 +97,19 @@ public class MysqlToEsHandler {
         SearchSourceBuilder sourceBuilder = new SearchSourceBuilder().size(10000);
         userSearchRequest.source(sourceBuilder.query(QueryBuilders.matchAllQuery()));
         SearchResponse userSearchResponse = client.search(userSearchRequest, RequestOptions.DEFAULT);
+        //将当前所有文档id存储到布隆过滤器中
         for (SearchHit searchHit : userSearchResponse.getHits().getHits()) {
             int id = Integer.valueOf(searchHit.getId());
             userFilter.put(id);
         }
+        //最后再执行更新操作
         if (videoUpDateList.size() > 0) {
             mysqlAddToEs(Constant.OPERATION_UPDATE, videoUpDateList, Constant.VIDEO_INDEX_NAME);
         }
         if (userUpDateList.size() > 0) {
             mysqlAddToEs(Constant.OPERATION_UPDATE, userUpDateList, Constant.USER_INDEX_NAME);
         }
-        mysqlToEsService.updateUserData();
-        mysqlToEsService.updateVideoData();
+        //删除对应的键值对
         objectRedisTemplate.delete(Constant.VIDEO_ADD_KEY);
         objectRedisTemplate.delete(Constant.VIDEO_DELETE_KEY);
         objectRedisTemplate.delete(Constant.VIDEO_UPDATE_KEY);
@@ -112,6 +121,7 @@ public class MysqlToEsHandler {
      */
 
     public Boolean mysqlAddToEs(String requestType, List<HashMap<String, Object>> list, String indexName) throws IOException {
+        //批量添加请求
         BulkRequest bulkRequest;
         List<DocWriteRequest> docWriteRequestList = new ArrayList<>();
         if (requestType.equals("add")) {
@@ -135,6 +145,7 @@ public class MysqlToEsHandler {
             if (Constant.VIDEO_INDEX_NAME.equals(indexName)) {
                 for (Map<String, Object> map : list) {
                     int intId = (Integer) map.get(Constant.VIDEO_INDEX_ID);
+                    //利用布隆过滤器判定存在可能误判，判定不存在则一定不存在的特性反向百分百找到一定不会出错的文档id并添加到递归同步的请求集合中
                     if (!videoFilter.mightContain(intId)) {
 
                     } else {
@@ -165,16 +176,17 @@ public class MysqlToEsHandler {
                 bulkRequest.add(deleteRequest);
                 docWriteRequestList.add(deleteRequest);
             }
-
         }
+        //递归调用同步方法
         bulkOpreateUntilAllSucess(bulkRequest, docWriteRequestList, 10);
         return true;
     }
     /**
-     *递归批量操作最大程度减少失败操作，并限定最多递归10次防止递归过多栈溢出
+     *递归批量同步操作
      */
     public Boolean bulkOpreateUntilAllSucess(BulkRequest bulkRequest, List<DocWriteRequest> list, int maxRetry) throws IOException {
         BulkResponse bulkResponse = client.bulk(bulkRequest, RequestOptions.DEFAULT);
+        //递归将收集到的失败操作统一递归再调用自己方法最大程度减少失败请求次数，同时设定次数为10防止递归过多堆栈溢出
         if (bulkResponse.hasFailures() && maxRetry > 0) {
             BulkRequest bulkRequest1 = new BulkRequest();
             for (int i = 0; i < bulkResponse.getItems().length; i++) {

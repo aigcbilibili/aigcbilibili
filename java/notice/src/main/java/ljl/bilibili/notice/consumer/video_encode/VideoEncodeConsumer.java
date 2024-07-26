@@ -38,7 +38,7 @@ import java.util.UUID;
 
 import static ljl.bilibili.notice.constant.Constant.*;
 /**
- *视频转码、截取封面、获取视频时长消费者
+ *视频转码消费者
  */
 @Service
 @RocketMQMessageListener(
@@ -58,12 +58,15 @@ public class VideoEncodeConsumer implements RocketMQListener<MessageExt> {
     SendDBChangeServiceImpl sendDBChangeService;
     @Autowired
     DynamicMapper dynamicMapper;
-
+    /**
+     *转码视频、如果视频无封面则截取封面、获取视频时长
+     */
     @Override
     public void onMessage(MessageExt messageExt) {
         String jsonMessage = new String(messageExt.getBody(), StandardCharsets.UTF_8);
         try {
             UploadVideo uploadVideo = objectMapper.readValue(jsonMessage, UploadVideo.class);
+            //远程调用获取已上传minio的视频文件流
             ResponseEntity<Resource> videoInputStream = videoClient.getVideo(uploadVideo);
                         String filePath = Files.createTempDirectory(".tmp").toString();
 //            String filePath = "/var/temp";
@@ -75,6 +78,7 @@ public class VideoEncodeConsumer implements RocketMQListener<MessageExt> {
             Files.copy(videoInputStream.getBody().getInputStream(), Paths.get(file.getAbsolutePath()), StandardCopyOption.REPLACE_EXISTING);
             MultimediaObject multimediaObject = new MultimediaObject(file);
             VideoInfo videoInfo = multimediaObject.getInfo().getVideo();
+            //如果视频没有封面
             if (uploadVideo.getHasCover() == false) {
                 String contentType = "image/jpeg";
                 ScreenExtractor screenExtractor = new ScreenExtractor();
@@ -89,6 +93,7 @@ public class VideoEncodeConsumer implements RocketMQListener<MessageExt> {
                 wrapper.eq(Dynamic::getVideoId,updateVideo.getId());
                 dynamicMapper.update(null,wrapper);
             }
+            //获取视频时长
             Integer totalLength = Math.toIntExact(multimediaObject.getInfo().getDuration()) / 1000;
             String length;
             Map<String, Object> map = new HashMap<>();
@@ -116,6 +121,7 @@ public class VideoEncodeConsumer implements RocketMQListener<MessageExt> {
             sendDBChangeService.sendDBChangeNotice(map);
             videoMapper.updateById(updateVideo.setLength(length));
             String rightFormat = "h264";
+            //不符合h264的mp4文件需要转码否则浏览器中只有声音没有图像
             if (!rightFormat.equals(videoInfo.getDecoder())) {
                 String contentType = "video/mp4";
                 String outPutForMatType = "mp4";

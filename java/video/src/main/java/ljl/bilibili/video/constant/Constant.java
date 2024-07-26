@@ -1,5 +1,6 @@
 package ljl.bilibili.video.constant;
 
+import ljl.bilibili.video.pojo.UploadPart;
 import ljl.bilibili.video.vo.response.audience_reactions.play.FirstPageVideoResponse;
 
 import java.util.HashMap;
@@ -25,4 +26,5 @@ public class Constant {
     public static final String OPERATION_TYPE_DELETE="delete";
     public static final String OPERATION_TYPE_UPDATE="update";
     public static final Map<Integer, List<FirstPageVideoResponse>> map=new ConcurrentHashMap<>();
+    public static Map<String, UploadPart> uploadPartMap=new HashMap<>();
 }

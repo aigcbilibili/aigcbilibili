@@ -9,6 +9,7 @@ import ljl.bilibili.chat.event.MessageEvent;
 import ljl.bilibili.client.notice.SendNoticeClient;
 import ljl.bilibili.entity.chat.Chat;
 import ljl.bilibili.entity.user_center.user_info.User;
+import ljl.bilibili.mapper.chat.ChatMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.event.EventListener;
@@ -41,7 +42,7 @@ public class WebSocketHandler extends TextWebSocketHandler {
     public static  Map<String, String> USERID_TO_SESSIONID_MAP = new ConcurrentHashMap<>();
     public static volatile ConcurrentMap<String, BigModelHandler> BIGMODEL_MAP = new ConcurrentHashMap<>();
     @Resource
-    public SendNoticeClient client;
+    ChatMapper chatMapper;
 
     @EventListener
     @Async
@@ -61,9 +62,12 @@ public class WebSocketHandler extends TextWebSocketHandler {
      */
     @Override
     public void handleTextMessage(WebSocketSession session, TextMessage message) throws Exception {
+        //将消息json化
         JsonObject json = JsonParser.parseString(message.getPayload()).getAsJsonObject();
         String type = json.get(MESSAGE_TYPE).getAsString();
+        //接收消息后根据消息类型来处理
         switch (type) {
+            //若是大模型则是将消息中的提问部分发送给大模型然后获取到大模型响应后返回给客户端
             case MESSAGE_TYPE_BIGMODEL:
                 String question = json.get(MESSAGE_TYPE_BIGMODEL_QUESTION).getAsString();
                 String id = json.get(USER_IDENTITY).getAsString();
@@ -75,6 +79,7 @@ public class WebSocketHandler extends TextWebSocketHandler {
                     bigModelHandler.send(question, id);
                 }
                 break;
+                //若是初始化则是将userId和sessionId的映射存到map里
             case MESSAGE_TYPE_INIT:
                 log.info("初始化");
                 String sessionId = json.get(MESSAGE_TYPE_SESSIONID).getAsString();
@@ -82,6 +87,7 @@ public class WebSocketHandler extends TextWebSocketHandler {
                 USERID_TO_SESSIONID_MAP.put(userId, sessionId);
                 WEB_SOCKET_SESSION_CONCURRENT_MAP.put(sessionId, session);
                 break;
+                //若是接收消息则根据两个映射map和传来的userId把消息转发给要接收消息的客户端
             case MESSAGE_TYPE_MESSAGE:
                 String receiverId = json.get(RECEIVER_IDENTITY).getAsString();
                 JsonElement jsonElement = json.get(MESSAGE_CONTENT);
@@ -101,6 +107,7 @@ public class WebSocketHandler extends TextWebSocketHandler {
                     log.info("Key = " + entry.getKey() + ", Value = " + entry.getValue());
                 }
                 log.info(String.valueOf(USERID_TO_SESSIONID_MAP.size()));
+                //如果该用户当前在线则直接发送websocket消息
                 if (USERID_TO_SESSIONID_MAP.get(receiverId) != null) {
                     JsonObject jsonText = new JsonObject();
                     jsonText.addProperty(MESSAGE_TYPE, MESSAGE_TYPE_MESSAGE);
@@ -109,20 +116,18 @@ public class WebSocketHandler extends TextWebSocketHandler {
                     try{
                         WEB_SOCKET_SESSION_CONCURRENT_MAP.get(USERID_TO_SESSIONID_MAP.get(receiverId)).sendMessage(new TextMessage(jsonText.toString()));
                     }catch (Exception e){
-
+                    e.printStackTrace();
                     }
+                    //若不在线则直接生成消息通知
                 } else {
-                    log.info(content);
-                    log.info(Integer.valueOf(json.get(USER_IDENTITY).getAsString()).toString());
-                    log.info(Integer.valueOf(receiverId).toString());
                     Chat chat = new Chat().setContent(content).setSenderId(Integer.valueOf(json.get(USER_IDENTITY).getAsString())).setReceiverId(Integer.valueOf(receiverId));
-                    client.sendChatNotice(chat);
+                    chatMapper.insert(chat);
                 }
                 break;
+                //若是移除映射消息则移除之前存储的userId到sessionId的映射
             case MESSAGE_TYPE_REMOVE_SESSION:
                 String chatToBigModelUserId = json.get(USER_IDENTITY).getAsString();
                 BIGMODEL_MAP.get(chatToBigModelUserId).removeSession();
-
                 break;
                     default:
                 break;
@@ -133,6 +138,7 @@ public class WebSocketHandler extends TextWebSocketHandler {
      */
     @Override
     public void afterConnectionEstablished(WebSocketSession session) throws Exception {
+        //将客户端的sessionId和websocket对象绑定到一起
         WEB_SOCKET_SESSION_CONCURRENT_MAP.put(session.getId(), session);
         JsonObject json = new JsonObject();
         json.addProperty(MESSAGE_TYPE, MESSAGE_TYPE_SESSIONID);
@@ -145,6 +151,7 @@ public class WebSocketHandler extends TextWebSocketHandler {
      */
     @Override
     public void afterConnectionClosed(WebSocketSession session, CloseStatus status) {
+        //将用户id和websocket对象的映射从map中移除
         log.info("连接关闭");
         for(Map.Entry<String,String> entry : USERID_TO_SESSIONID_MAP.entrySet()){
             if(entry.getValue().equals(session.getId())){

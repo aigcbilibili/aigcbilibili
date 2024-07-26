@@ -21,8 +21,7 @@ import java.util.stream.Collectors;
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
-//    @Resource
-//    JwtAuthorizationFilter jwtAuthorizationFilter;
+
     /**
      *放行路径与权限要求，添加自定义权限校验器，不交与Spring管理解决重复经过过滤器的问题
      */
@@ -30,7 +29,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     public SecurityWebFilterChain springSecurityFilterChain(ServerHttpSecurity http) {
         http
                 .authorizeExchange()
-
+                //放行路径
                 .pathMatchers( "/webjars/","/register/**","/user-center/**",
                         "/swagger-ui.html",
                         "/webjars/**",
@@ -42,11 +41,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         "/getPersonalVideo/**","/getRemotelyLikeVideo/**","/getUserInfo/**"
                         ,"/search/**"
                 ).permitAll()
+                //其他路径需要有role:user权限
                 .anyExchange().hasAuthority("role:user")
                 .and()
+                //禁用http基础认证
                 .httpBasic().disable()
+                //禁用表单认证
                 .formLogin().disable()
+                //使用自定义过滤器替换默认过滤器
                 .addFilterAt(new JwtAuthorizationFilter(),SecurityWebFiltersOrder.AUTHORIZATION)
+                //禁止csrf令牌防护
                 .csrf().disable();
         return http.build();
     }
@@ -57,7 +61,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
-
+    /**
+     *用到openfeign远程调用则需要手动注入该bean，因为webflux和mvc风格不同，默认不注入该bean
+     **/
     @Bean
     @ConditionalOnMissingBean
     public HttpMessageConverters messageConverters(ObjectProvider<HttpMessageConverter<?>> converters) {

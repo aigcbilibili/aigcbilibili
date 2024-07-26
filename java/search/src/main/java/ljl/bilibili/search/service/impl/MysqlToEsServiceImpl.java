@@ -28,7 +28,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+/**
+ *MySQL同步数据到ES
+ */
 @Service
 public class MysqlToEsServiceImpl implements MysqlToEsService {
     @Resource
@@ -48,6 +50,7 @@ public class MysqlToEsServiceImpl implements MysqlToEsService {
      */
 @Override
     public Boolean userMysqlToEs() throws IOException {
+    //查询出所有用户并转换成map插入es
         MPJLambdaWrapper<User> wrapper = new MPJLambdaWrapper<>();
         List<Map<String, Object>> userMap = new ArrayList<>();
         wrapper.select(User::getCover, User::getNickname, User::getId, User::getIntro);
@@ -69,6 +72,7 @@ public class MysqlToEsServiceImpl implements MysqlToEsService {
      */
     @Override
     public Boolean videoMysqlToEs() throws IOException {
+        //查询出所有视频并转换成map插入es
         MPJLambdaWrapper<Video> wrapper = new MPJLambdaWrapper<>();
         wrapper.leftJoin(User.class, User::getId, Video::getUserId);
         wrapper.leftJoin(VideoData.class, VideoData::getVideoId, Video::getId);
@@ -97,6 +101,7 @@ public class MysqlToEsServiceImpl implements MysqlToEsService {
      */
     @Override
     public Boolean updateVideoData() throws IOException {
+        //查询出所有视频绑定的相关数据比如播放数评论数弹幕数然后插入es
         BulkRequest bulkRequest = new BulkRequest();
         List<VideoData> videoDataList = videoDataMapper.selectList(null);
         List<Map<String, Object>> mapList = new ArrayList<>();
@@ -120,6 +125,7 @@ public class MysqlToEsServiceImpl implements MysqlToEsService {
      */
     @Override
     public Boolean updateUserData() throws IOException {
+        //查询出所有用户的相关数据比如关注数粉丝数然后插入es
         BulkRequest bulkRequest = new BulkRequest();
         List<User> userList = userMapper.selectList(null);
         List<Integer> ids = new ArrayList<>();

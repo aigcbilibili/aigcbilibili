@@ -10,7 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients(basePackages = "ljl.bilibili.client")
-@MapperScan(basePackages = "ljl.bilibili.mapper")
+@MapperScan(basePackages = {"ljl.bilibili.mapper","ljl.bilibili.video.mapper"})
 @ComponentScan(basePackages = "ljl.*")
 public class VideoApplication {
     public static void main(String[] args) {

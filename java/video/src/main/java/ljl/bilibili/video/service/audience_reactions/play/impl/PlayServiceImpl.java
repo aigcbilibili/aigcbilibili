@@ -33,7 +33,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import static ljl.bilibili.video.constant.Constant.*;
-
+/**
+ *播放相关
+ */
 @Service
 @Slf4j
 public class PlayServiceImpl implements PlayService {
@@ -51,11 +53,15 @@ public class PlayServiceImpl implements PlayService {
     RedisTemplate objectRedisTemplate;
     @Resource
     VideoServiceMapper videoServiceMapper;
+    /**
+     *新增播放记录
+     */
     @Override
     public Result<Boolean> addPlayRecord(int videoId, int userId){
         LambdaQueryWrapper<Play> wrapper=new LambdaQueryWrapper<>();
         wrapper.eq(Play::getVideoId,videoId);
         wrapper.eq(Play::getUserId,userId);
+        //如果已经增加过了则不新增播放记录
         if(playMapper.selectList(wrapper).size()>0){
             return Result.success(HAS_PLAY);
         }else {
@@ -63,6 +69,9 @@ public class PlayServiceImpl implements PlayService {
             return Result.success(true);
         }
     }
+    /**
+     *删除历史视频
+     */
     @Override
     public Result<Boolean> deleteHistoryVideo(DeleteHistoryVideoRequest deleteHistoryVideoRequest){
         LambdaQueryWrapper<Play> wrapper=new LambdaQueryWrapper<>();
@@ -71,8 +80,12 @@ public class PlayServiceImpl implements PlayService {
         playMapper.delete(wrapper);
         return Result.success(true);
     }
+    /**
+     *获取视频相关信息
+     */
     @Override
     public Result<DetailVideoResponse> getDetailVideo(Integer videoId, Integer userId, String collectGroupId) {
+        //前端将收藏夹id用，拼接起来从而不用传集合就可以传递收藏夹集合，所以后端需要拆解成集合
         List<Integer> collectGroupIds = Arrays.stream(collectGroupId.split(","))
                 .map(Integer::parseInt)
                 .collect(Collectors.toList());
@@ -87,11 +100,10 @@ public class PlayServiceImpl implements PlayService {
         collectLambdaQueryWrapper.eq(Collect::getVideoId,videoId);
         likeLambdaQueryWrapper.eq(Like::getVideoId,videoId);
         likeLambdaQueryWrapper.eq(Like::getUserId,userId);
+        //获取视频相关信息和该视频自己是否已点赞与已收藏
         DetailVideoResponse response = videoMapper.selectJoinOne(DetailVideoResponse.class, wrapper);
         Like videoLike = likeMapper.selectOne(likeLambdaQueryWrapper);
         List<Collect> collects=collectMapper.selectList(collectLambdaQueryWrapper);
-        response.setIsCollected(false);
-        response.setIsLiked(false);
         if (videoLike != null) {
             response.setIsLiked(true);
         }
@@ -100,6 +112,9 @@ public class PlayServiceImpl implements PlayService {
         }
         return Result.data(response);
     }
+    /**
+     *获取推荐视频，远程调用es的推荐视频查询接口
+     */
     @Override
     public Result<List<CommendVideoResponse>> getRecommendVideo(String videoId) {
         List<RecommendVideo> list=searchClient.getRecommendVideo(videoId);
@@ -110,15 +125,18 @@ public class PlayServiceImpl implements PlayService {
         return Result.data(list1);
 
     }
+    /**
+     *获取首页视频
+     */
     @Override
     public Result<List<FirstPageVideoResponse>> getFirstPageVideoResponse(Integer count) {
-        if(map.get(count)!=null){
-            return Result.data(map.get(count));
-        }
+        //获取首页视频，并每次跳过前面十条防止刷出重复视频
         List<FirstPageVideoResponse> responses=videoServiceMapper.getFirstPageVideo(count-1);
-        map.put(count,responses);
         return Result.data(responses);
     }
+    /**
+     *获取历史视频
+     */
     @Override
     public Result<List<HistoryVideoResponse>> getHistoryVideo(int userId) {
         return Result.data(videoServiceMapper.getHistoryVideo(userId));

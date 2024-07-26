@@ -14,6 +14,9 @@ import org.apache.rocketmq.spring.core.RocketMQTemplate;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+/**
+ *发送异步消息
+ */
 @Service
 @Slf4j
 public class SendNoticeServiceImpl implements SendNoticeService {

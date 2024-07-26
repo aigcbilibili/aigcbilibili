@@ -23,7 +23,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 /**
- *动态消息消费者，生成动态与推送至用户的动态
+ *动态消息消费者
  */
 @Slf4j
 
@@ -44,6 +44,9 @@ public class DynamicConsumer implements RocketMQListener<MessageExt> {
     DynamicToUserMapper dynamicToUserMapper;
     @Resource
     DynamicToUserService dynamicToUserService;
+    /**
+     *生成动态与推送至用户的动态
+     */
     @Override
     public void onMessage(MessageExt messageExt) {
         String json = new String(messageExt.getBody(), StandardCharsets.UTF_8);
@@ -55,6 +58,7 @@ public class DynamicConsumer implements RocketMQListener<MessageExt> {
         }
         log.info(dynamic.getVideoId().toString());
         dynamicMapper.insert(dynamic);
+        //查询出该动态会推送给哪些人然后插入记录到中间联系表中
         LambdaQueryWrapper<Follow> wrapper = new LambdaQueryWrapper<>();
         wrapper.eq(Follow::getIdolId, dynamic.getAuthorId());
         List<Follow> list = followMapper.selectList(wrapper);

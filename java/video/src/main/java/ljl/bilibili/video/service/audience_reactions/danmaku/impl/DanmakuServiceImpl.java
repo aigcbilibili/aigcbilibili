@@ -8,26 +8,32 @@ import ljl.bilibili.mapper.video.video_production.upload.VideoDataMapper;
 import ljl.bilibili.util.Result;
 import ljl.bilibili.video.service.audience_reactions.danmaku.DanmakuService;
 import ljl.bilibili.video.vo.request.audience_reactions.danmaku.AddDanmakuRequest;
+import ljl.bilibili.video.vo.response.audience_reactions.comment.CommentResponse;
 import ljl.bilibili.video.vo.response.audience_reactions.danmaku.DanmakuResponse;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ *弹幕
+ */
 @Service
 public class DanmakuServiceImpl implements DanmakuService {
     @Resource
     DanmakuMapper danmakuMapper;
-    @Resource
-    SendNoticeClient client;
-    @Resource
-    VideoDataMapper videoDataMapper;
+    /**
+     *新增弹幕
+     */
+
     @Override
     public Result<Boolean> addDanmaku(AddDanmakuRequest addDanmakuRequest) {
         danmakuMapper.insert(addDanmakuRequest.toEntity());
         return Result.success(true);
     }
+    /**
+     *获取弹幕
+     */
     @Override
     public Result<List<DanmakuResponse>> getDanmaku(Integer videoId) {
         LambdaQueryWrapper<Danmaku> queryWrapper=new LambdaQueryWrapper<>();

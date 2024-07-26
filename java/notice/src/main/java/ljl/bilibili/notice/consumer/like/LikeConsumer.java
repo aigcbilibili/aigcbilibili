@@ -16,7 +16,7 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.nio.charset.StandardCharsets;
 /**
- *点赞与取消点赞消费者
+ *点赞与取消点赞消费者，按顺序消费避免出现取消点赞消息在点赞消息之前触发导致异常的情况，但设置为并发执行其实也可以，rocketmq有重试机制，总会等到点赞消息生成的时刻
  */
 @Service
 @RocketMQMessageListener(
@@ -29,7 +29,9 @@ public class LikeConsumer implements RocketMQListener<MessageExt> {
     LikeNoticeMapper likeNoticeMapper;
     @Resource
     ObjectMapper objectMapper;
-
+    /**
+     *生成点赞消息与取消点赞消息
+     */
     @Override
     public void onMessage(MessageExt messageExt) {
         String json = new String(messageExt.getBody(), StandardCharsets.UTF_8);
@@ -41,6 +43,7 @@ public class LikeConsumer implements RocketMQListener<MessageExt> {
             throw new RuntimeException(e);
         }
         notice=likeNotice.toNotice();
+        //根据类型做判断
         if(likeNotice.getType()==0){
             likeNoticeMapper.insert(notice);
         }else {

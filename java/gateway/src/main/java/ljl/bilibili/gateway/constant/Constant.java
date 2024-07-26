@@ -26,7 +26,7 @@ public class Constant {
     public static final String CAPTCHA_CODE="code";
 
     public static final String USERIDENTITY="userId";
-    public static final String SAFE_REQUEST_HEADER="LaBiliBiliHeader";
+    public static final String SAFE_REQUEST_HEADER="aigcBiliBiliHeader";
 
     public static final String SHORT_TOKEN="shortAuthorization";
     public static final String LONG_TOKEN="longAuthorization";

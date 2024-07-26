@@ -12,7 +12,7 @@ import javax.annotation.Resource;
 import java.nio.charset.StandardCharsets;
 
 /**
- * 评论消息消费者的
+ * 评论消息消费者
  */
 @Service
 @RocketMQMessageListener(
@@ -25,7 +25,9 @@ public class CommentConsumer implements RocketMQListener<MessageExt> {
     CommentNoticeMapper commentNoticeMapper;
     @Resource
     ObjectMapper objectMapper;
-
+    /**
+     *将评论消息通知插入数据库
+     */
     @Override
     public void onMessage(MessageExt messageExt) {
         String json = new String(messageExt.getBody(), StandardCharsets.UTF_8);
