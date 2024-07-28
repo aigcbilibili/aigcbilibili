@@ -179,7 +179,7 @@ const handleCommand = (command) => {
 onMounted(async () => {
   if (isLogin) {
     console.log('获取用户信息成功', user.avatar);
-    noticeNum.value = await fetchNoticeNum(user.id)
+    // noticeNum.value = await fetchNoticeNum(user.id)
 
     userAvatar.value = user.avatar
 

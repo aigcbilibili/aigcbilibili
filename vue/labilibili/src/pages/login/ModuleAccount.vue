@@ -128,8 +128,8 @@ const TrueEnroll = () => {
 }
 // 确认登录
 const param = ref({
-	username: 'admin',
-	password: '123456'
+	username: '',
+	password: ''
 })
 
 const submitForm = async () => {
@@ -141,12 +141,8 @@ const submitForm = async () => {
 
 	await debounce.debounceEnd(5)
 
-	// 为了快速通过本页面，使用admin + 123456
-	if (param.username === 'admin' && param.password === '123456') {
-		userInfo.setId(1)
-		router.push('/')
-		return
-	}
+
+
 	// 发送请求到后端，获取响应数据
 	const _captcha_ = _captcha.value
 	const username_ = param.value.username // window.JSON.stringify(xxx)

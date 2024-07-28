@@ -7,7 +7,7 @@ const router = createRouter({
     routes: [{
         path: '/login',
         meta: {
-            title: "登录！LABiliBili"
+            title: "登录！AIGCBILIBILI"
         },
         component: () => import('@/pages/login/LoginPage.vue')
     }, {
@@ -18,7 +18,7 @@ const router = createRouter({
             path: '/main',
             meta: { // NOTE meta路由元信息，当前路由是否需要进一步处理
                 requireAuth: false,
-                title: "LABiliBili ╰(*°▽°*)╯"
+                title: "BILIBILI ╰(*°▽°*)╯"
             },
             component: () => import('@/pages/main/MainPage.vue')
         }, {

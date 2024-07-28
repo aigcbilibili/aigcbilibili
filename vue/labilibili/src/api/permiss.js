@@ -11,7 +11,7 @@ const basic_url = 'selfCenter/'
 export const fetchPermiss = async (userId) => {
     const getURL = basic_url + `getUserPrivilege/${userId}`
     try {
-        const response = await request.post(getURL)
+        const response = await request.get(getURL)
         return response
     } catch (e) {
         ElMessage.error("获取用户权限失败")

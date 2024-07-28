@@ -67,6 +67,7 @@ const followVue = defineAsyncComponent(() =>
     import("@/components/user/FollowerRel.vue")
 )
 const editData = new FormData() // 待上传数据
+editData.append("userId", userId)
 // 用户数据
 // const defaultUpInfo = {
 //     id: 1,
@@ -105,20 +106,27 @@ const handleFileChange = (e) => {
     // 数据结构
     const fileAvatar = e.target.files[0]
     if (fileAvatar) {
+        editData.get('file') && editData.delete('file')
         editData.append("file", fileAvatar)
     }
 }
 const uploadFinal = () => {
+
     if (!isEditInfo.value) {
+
         isEditInfo.value = true
+
     } else {
         let nickname = document.getElementsByClassName("modified-input-name")[0].value;
         let intro = document.getElementsByClassName("modified-input-intro")[0].value;
-        editData.append("userId", userId)
+        if (!nickname || !intro) { return isEditInfo.value = false }
+        editData.get('intro') && editData.delete('intro')
+        editData.get('nickname') && editData.delete('nickname')
         editData.append("intro", intro)
         editData.append("nickname", nickname)
         // 上传后端
         const postURL = '/api/userInfo/editUserInfo'
+
         axios.post(postURL, editData, {
             headers: {
                 'Content-Type': 'application/multipart/form-data'

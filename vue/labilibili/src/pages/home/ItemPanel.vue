@@ -45,13 +45,17 @@
   <div v-else-if="panelType === 'message'" class="message-panel">
     <div style="margin-bottom: 10px;">
       <el-button type="text" size="large" link @click="pushMessage(1)">回复我的</el-button>
+      <span v-if="props.dataTmp.commentCount > 0" class="bg_yuan">{{ props.dataTmp.commentCount }}</span>
     </div>
 
     <div style="margin-bottom: 10px;">
-      <el-button type="text" size="large" link @click="pushMessage(2)">@我的</el-button>
+      <el-button type="text" size="large" link @click="pushMessage(2)">点赞我的</el-button>
+      <span v-if="props.dataTmp.likeCount > 0" class="bg_yuan">{{ props.dataTmp.likeCount }}</span>
     </div>
+
     <div>
       <el-button type="text" size="large" link @click="pushMessage(0)">我的消息</el-button>
+      <span v-if="props.dataTmp.chatCount > 0" class="bg_yuan">{{ props.dataTmp.chatCount }}</span>
     </div>
 
 
@@ -115,8 +119,12 @@ const props = defineProps({
   itemType: {
     type: String,
     required: true
+  },
+  dataTmp: {
+    type: Object,
   }
 })
+const emit = defineEmits(['changeDYState'])
 // 当前panel的类型
 const panelType = ref(props.itemType)
 const collectFolderData = ref([]) // 收藏夹数据
@@ -205,7 +213,8 @@ onMounted(async () => {
   getData()
   // 将动态已读
   if (panelType.value === 'trend') {
-    await editTrendToRead(userId)
+    await editTrendToRead(userId);
+    emit('changeDYState')
   }
 })
 onBeforeUnmount(() => {
@@ -363,5 +372,17 @@ $trend-and-history-width: 23rem;
   }
 
 
+}
+
+
+.bg_yuan {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(241, 133, 133);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
 }
 </style>

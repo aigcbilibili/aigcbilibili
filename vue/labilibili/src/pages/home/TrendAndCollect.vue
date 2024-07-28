@@ -15,9 +15,9 @@
           @mouseover="item.expanded = true" />
       </span>
       <!--待展开的列表-->
-      <div v-show="item.expanded" class="right-panel">
+      <div v-if="item.expanded" class="right-panel">
         <Transition>
-          <itemPanel :itemType="item.type" />
+          <itemPanel :itemType="item.type" :dataTmp="dataTmp" @changeDYState="changeDYState" />
         </Transition>
       </div>
     </div>
@@ -77,9 +77,21 @@ const sections = reactive([
   },
 
 ])
+
+/**
+ * 获得动态通知数
+ */
+const dataTmp = ref({
+
+})
+const changeDYState = () => {
+  dynamicNoticeNum.value = 0
+}
 // 获得数据
 const getDNoticeNum = async () => {
   const data_tmp = await fetchNoticeNum(userId)
+  console.log('data_tmp', data_tmp);
+  dataTmp.value = data_tmp
   dynamicNoticeNum.value = data_tmp.dynamicVideoCount
 }
 onMounted(() => {

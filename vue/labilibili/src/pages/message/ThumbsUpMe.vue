@@ -42,7 +42,7 @@
 
 <script setup>
 import { onMounted, ref } from "vue"
-import { editReplyToRead, fetchReplyNotice, fetchLikeNotice } from "@/api/notice"
+import { editReplyToRead, fetchReplyNotice, fetchLikeNotice, editLikeToRead } from "@/api/notice"
 import { useUserInfo } from "@/store/userInfo"
 import { useRouter } from 'vue-router'
 const router = useRouter()
@@ -72,7 +72,8 @@ const replyToReply = () => {
 }
 // 获取点赞通知的数据
 onMounted(async () => {
-    await editReplyToRead(userId)
+    await editLikeToRead(userId)
+
     // 获得数据
     replyList.value = await fetchLikeNotice(userId)
 })
