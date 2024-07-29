@@ -19,7 +19,7 @@
                 :class="{ 'chat-clicked': currentPerson.upId === chatPerson.upId }">
                 <img :src="chatPerson.avatar" class="first-common-avatar chat-avatar" />
                 <div class="flex-column-left-max-container">
-                    <p style="font-weight: 600;">{{ chatPerson.upName.length >= 9
+                    <p style="font-weight: 600;">{{ (chatPerson.upName && chatPerson.upName.length) >= 9
                         ? chatPerson.upName.substr(0, 8) + "..."
                         : chatPerson.upName }}</p>
                     <p style="font-size: 0.9rem;" :class="{
@@ -44,6 +44,10 @@ import { useUserInfo } from "@/store/userInfo"
 import { useChat } from "@/store/chat"
 import { useRoute } from "vue-router"
 import { ElMessage } from 'element-plus'
+import { usemessageConter } from "@/store/messageConter"
+import { fetchNoticeNum } from "@/api/notice"
+
+const messageConter = usemessageConter()
 const isAddSession = ref(false) // 是否添加会话
 const route = useRoute()
 const chatSession = useChat() // 使用聊天信息
@@ -168,6 +172,8 @@ watch(() => currentPerson.value, async (val) => {
     }
     if (!val.status) {
         await editChatToRead(userId, Number(val.upId));
+        const data_tmp = await fetchNoticeNum(userId);
+        messageConter.data = data_tmp
         personList.value.forEach((item) => {
             if (item.upId === val.upId) {
                 item.status = true

@@ -29,7 +29,7 @@ module.exports = defineConfig({
     // NOTE 跨域配置
     proxy: {
       '/api': {
-        target: "****",
+        target: "******",
         // 允许跨域：如果不开的话，会拦截响应
         changeOrigin: true,
       },
@@ -41,7 +41,7 @@ module.exports = defineConfig({
         }
       },
       '/wschat': {
-        target: '******',
+        target: '*****',
         ws: true,
         changeOrigin: true,
       }

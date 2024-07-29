@@ -1,6 +1,7 @@
 <template>
     <div id="file">
-        <div id="up_file" style="cursor: pointer;" v-show="status === 0">点击上传视频文件
+        <div id="up_file" style="cursor: pointer;width: 100%;height: 100%;line-height: 200px;" v-show="status === 0">
+            点击上传视频文件
         </div>
         <div id="up_progress" style="width: 80%;" v-show="status === 1">
             <el-progress :percentage="percentage" />
@@ -82,6 +83,7 @@ onMounted(() => {
     // 监听上传进度事件
     resumable.value.on('progress', () => {
         // 可以在这里获取上传进度
+        console.log('progress', resumable.value)
         const progress = (resumable.value.progress() * 100).toFixed(2);
         // console.log(`Progress: ${progress}%`);
         percentage.value = progress
@@ -107,7 +109,6 @@ onMounted(() => {
     // 监听完成事件
     resumable.value.on('fileSuccess', (file, data) => {
         status.value = 2
-
         emit('handleFile', JSON.parse(data).data)
     });
     // 监听错误事件
@@ -115,7 +116,11 @@ onMounted(() => {
         status.value = 3
         console.error('Upload error:', error);
     });
+    resumable.value.on('complete', (file) => {
+        console.log('complete', file);
+    })
 });
+
 
 function startUpload(event) {
     // 当文件选择变化时，开始上传

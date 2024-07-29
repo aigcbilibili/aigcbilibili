@@ -3,9 +3,15 @@
   <span v-for="(item, index) in sections" :key="index" style="position: relative;">
     <div @mouseleave="item.expanded = false">
       <!--消息通知数-->
-      <div v-if="item.type === 'trend' && dynamicNoticeNum > 0">
+      <div v-if="item.type === 'trend' && messageConter.data.dynamicVideoCount > 0">
         <div class="notice-bubble-whole notice-dynamic-bubble">
-          <p v-if="dynamicNoticeNum < 99">{{ dynamicNoticeNum }}</p>
+          <p v-if="messageConter.data.dynamicVideoCount < 99">{{ messageConter.data.dynamicVideoCount }}</p>
+          <p v-else>99+</p>
+        </div>
+      </div>
+      <div v-if="item.type === 'message' && messageConter.data.totalCount > 0">
+        <div class="notice-bubble-whole notice-dynamic-bubble">
+          <p v-if="messageConter.data.totalCount < 99">{{ messageConter.data.totalCount }}</p>
           <p v-else>99+</p>
         </div>
       </div>
@@ -17,7 +23,7 @@
       <!--待展开的列表-->
       <div v-if="item.expanded" class="right-panel">
         <Transition>
-          <itemPanel :itemType="item.type" :dataTmp="dataTmp" @changeDYState="changeDYState" />
+          <itemPanel :itemType="item.type" :dataTmp="messageConter.data" @changeDYState="changeDYState" />
         </Transition>
       </div>
     </div>
@@ -32,6 +38,10 @@ const itemPanel = defineAsyncComponent(() =>
 import { useRouter } from 'vue-router'
 import { useUserInfo } from "@/store/userInfo"
 import { fetchNoticeNum } from "@/api/notice"
+
+import { usemessageConter } from "@/store/messageConter"
+const messageConter = usemessageConter()
+
 const userInfo = useUserInfo() // 使用登录信息
 const userId = userInfo.getId()
 const dynamicNoticeNum = ref(0)
@@ -85,14 +95,15 @@ const dataTmp = ref({
 
 })
 const changeDYState = () => {
-  dynamicNoticeNum.value = 0
+  messageConter.data.dynamicNoticeNum = 0
 }
+const totalCount = ref(0)
 // 获得数据
 const getDNoticeNum = async () => {
   const data_tmp = await fetchNoticeNum(userId)
   console.log('data_tmp', data_tmp);
-  dataTmp.value = data_tmp
-  dynamicNoticeNum.value = data_tmp.dynamicVideoCount
+  messageConter.data = data_tmp
+
 }
 onMounted(() => {
   getDNoticeNum()

@@ -34,10 +34,10 @@
         </div>
         <!--个人头像-->
         <div class="person-center">
-          <div v-if="noticeNum.totalCount > 0" class=" notice-bubble-whole notice-bubble">
+          <!-- <div v-if="noticeNum.totalCount > 0" class=" notice-bubble-whole notice-bubble">
             <p v-if="noticeNum.totalCount < 99" style="color: #9ac9fb;">{{ noticeNum.totalCount }}</p>
             <p v-else>99+</p>
-          </div>
+          </div> -->
           <!--点击头像后弹出-->
           <el-dropdown class="person-dropdown" id="person-dropdown" @command="handleCommand">
             <img class="person-avater common-avatar" id="person-dropdown-trigger" :src="userAvatar" />
