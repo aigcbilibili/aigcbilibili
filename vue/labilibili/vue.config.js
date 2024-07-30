@@ -41,7 +41,7 @@ module.exports = defineConfig({
         }
       },
       '/wschat': {
-        target: '*****',
+        target: '*******',
         ws: true,
         changeOrigin: true,
       }

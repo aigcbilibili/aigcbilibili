@@ -115,6 +115,10 @@ const upInfo = ref({})
 const router = useRouter()
 
 const handleMessage = () => {
+    if (userId === 0) {
+        localStorage.setItem('path', route.fullPath)
+        return router.push({ path: '/login' })
+    }
     let obj = {
         senderCoverUrl: upInfo.value.img,
         senderName: upInfo.value.name,
@@ -125,6 +129,10 @@ const handleMessage = () => {
 }
 
 const changeFollow = async () => {
+    if (userId === 0) {
+        localStorage.setItem('path', route.fullPath)
+        return router.push({ path: '/login' })
+    }
     if (userId === +route.query.upId) return ElMessage.warning('不能关注自己哦')
     if (upInfo.value.isFollowing) {
         await removeFollowing(userId, +route.query.upId)

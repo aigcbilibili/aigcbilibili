@@ -10,11 +10,12 @@
 <script setup>
 import { onBeforeUnmount, onMounted, ref, defineProps, watch, onBeforeMount } from "vue"
 import { fetchDanMu, addDanmu, getDanmuList } from "@/api/danmu.js"
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import { useUserInfo } from '@/store/userInfo'
 import DPlayer from "dplayer"
 let videoURL_ = ""
 const route = useRoute()
+const router = useRouter()
 const dp = ref(null) // 将存储DPlayer实例
 const videoId = route.params.videoId // 当前视频Id
 const userId = useUserInfo().id
@@ -38,6 +39,10 @@ const initPlayer = () => {
         danmaku: true,
         apiBackend: {
             send: async function (endpoint) {
+                if (userId === 0) {
+                    localStorage.setItem('path', route.fullPath)
+                    return router.push({ path: '/login' })
+                }
                 console.log(endpoint);
                 let obj = {
                     content: endpoint.data.text,
@@ -56,7 +61,7 @@ const initPlayer = () => {
                 //     "author": "YU4324234234"
 
                 // })
-                 await addDanmu(obj)
+                await addDanmu(obj)
 
                 endpoint.success()
                 // draw(obj)
@@ -82,7 +87,7 @@ watch(() => props.videoUrl, (newValue, oldValue) => {
     if (newValue !== '') {
         videoURL_ = newValue
         initPlayer() // 等获取到再更新实例
-     
+
     }
 })
 

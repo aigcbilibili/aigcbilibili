@@ -6,8 +6,7 @@
 			<el-form-item prop="username">
 				<el-input class="login-input" v-model="param.username" placeholder="username">
 					<template #prepend>
-						<el-button icon="User" class="login-icon"
-							style="margin-top: -0.3rem; color: #7ec3fb;"></el-button>
+						<el-button icon="User" class="login-icon" style="margin-top: -0.3rem; color: #7ec3fb;"></el-button>
 					</template>
 				</el-input>
 			</el-form-item>
@@ -15,8 +14,7 @@
 				<el-input type="password" placeholder="password" class="login-input" v-model="param.password"
 					@keyup.enter="submitForm()">
 					<template #prepend>
-						<el-button icon="Lock" class="login-icon"
-							style="margin-top: -0.3rem; color: #7ec3fb;"></el-button>
+						<el-button icon="Lock" class="login-icon" style="margin-top: -0.3rem; color: #7ec3fb;"></el-button>
 					</template>
 				</el-input>
 			</el-form-item>
@@ -155,7 +153,13 @@ const submitForm = async () => {
 		updateCaptcha()
 	} else {
 		let path = localStorage.getItem('path') || '/'
-		router.push({ path: path }) // 跳转到首页
+		let upId = path.split('?')[1] ? path.split('?')[1].slice(5) : 0
+		if (upId) {
+			router.push({ path: path, query: { upId } })
+		} else {
+			router.push({ path: path })
+		}
+		// 跳转到首页
 		localStorage.removeItem('path')
 	}
 }
