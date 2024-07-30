@@ -10,4 +10,6 @@ import java.util.Map;
 public class UploadPart {
     Map<Integer,String> partMap=new HashMap<>();
     Integer totalCount=0;
+    Boolean hasCutImg=false;
+    String cover="";
 }

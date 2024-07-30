@@ -30,8 +30,7 @@ import java.util.List;
 public class UploadAndEditController {
     @Resource
     UploadAndEditService uploadAndEditService;
-    @Resource
-    MinioService minioService;
+
     @ApiOperation("上传视频")
     @PostMapping("/uploadTotal")
     public Result<Boolean> uploadTotal(@RequestBody UploadVideoRequest uploadVideoRequest) throws IOException {
@@ -55,11 +54,7 @@ public class UploadAndEditController {
         log.info("1");
         return uploadAndEditService.delete(deleteVideoRequest);
     }
-    //    @ApiOperation("合并")
-//    @PostMapping("/test")
-//    public void test() throws ServerException, InsufficientDataException, ErrorResponseException, IOException, NoSuchAlgorithmException, InvalidKeyException, InvalidResponseException, XmlParserException, InternalException {
-//        minioService.composePart(3,"test2");
-//    }
+
     @ApiOperation("查询进度")
     @GetMapping("/getProcessor")
     public ResponseEntity<Result<Boolean>> getProcessor(@RequestParam("resumableIdentifier") String resumableIdentifier,@RequestParam("resumableChunkNumber")Integer resumableChunkNumber) {

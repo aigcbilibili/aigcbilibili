@@ -65,8 +65,8 @@ public class SelfCenterServiceImpl implements SelfCenterService {
         selfCenterContentResponse.setSelfVideoResponse(selfVideoResponses);
         //收藏夹
         if(privilege.getCollectGroup()==0){
-        List<SelfCollectResponse> selfCollectResponses= userCenterServiceMapper.getSelfCollect(visitedId);
-        selfCenterContentResponse.setSelfCollectResponse(selfCollectResponses);
+            List<SelfCollectResponse> selfCollectResponses= userCenterServiceMapper.getSelfCollect(visitedId);
+            selfCenterContentResponse.setSelfCollectResponse(selfCollectResponses);
         }
         //粉丝列表
         if(privilege.getFansList()==0){
@@ -83,23 +83,23 @@ public class SelfCenterServiceImpl implements SelfCenterService {
             for(IdolOrFansListResponse response : fansResponses){
                 ids.add(response.getUserId());
             }
-           if(ids.size()>0){
-               List<IdCount> fansCountList= followMapper.getFansCount(ids);
-               List<IdCount> idolCountList= followMapper.getIdolCount(ids);
-               Map<Integer,Integer> fansCountMap=new HashMap<>(10);
-               Map<Integer,Integer> idolCountMap=new HashMap<>(10);
-               for(IdCount response : fansCountList){
-                   fansCountMap.put(response.getId(),response.getCount());
-               }
-               for(IdCount response : idolCountList){
-                   idolCountMap.put(response.getId(),response.getCount());
-               }
-               for(IdolOrFansListResponse response : fansResponses){
-                   response.setIdolCount(idolCountMap.get(response.getUserId()))
-                           .setFansCount(fansCountMap.get(response.getUserId()));
-               }
-               selfCenterContentResponse.setFansListResponse(fansResponses);
-           }
+            if(ids.size()>0){
+                List<IdCount> fansCountList= followMapper.getFansCount(ids);
+                List<IdCount> idolCountList= followMapper.getIdolCount(ids);
+                Map<Integer,Integer> fansCountMap=new HashMap<>(10);
+                Map<Integer,Integer> idolCountMap=new HashMap<>(10);
+                for(IdCount response : fansCountList){
+                    fansCountMap.put(response.getId(),response.getCount());
+                }
+                for(IdCount response : idolCountList){
+                    idolCountMap.put(response.getId(),response.getCount());
+                }
+                for(IdolOrFansListResponse response : fansResponses){
+                    response.setIdolCount(idolCountMap.get(response.getUserId()))
+                            .setFansCount(fansCountMap.get(response.getUserId()));
+                }
+                selfCenterContentResponse.setFansListResponse(fansResponses);
+            }
         }
         //关注列表
         if(privilege.getIdolList()==0){
@@ -116,23 +116,23 @@ public class SelfCenterServiceImpl implements SelfCenterService {
             for(IdolOrFansListResponse response : idolListResponses){
                 ids.add(response.getUserId());
             }
-           if(ids.size()>0){
-               List<IdCount> fansCountList= followMapper.getFansCount(ids);
-               List<IdCount> idolCountList= followMapper.getIdolCount(ids);
-               Map<Integer,Integer> fansCountMap=new HashMap<>(10);
-               Map<Integer,Integer> idolCountMap=new HashMap<>(10);
-               for(IdCount response : fansCountList){
-                   fansCountMap.put(response.getId(),response.getCount());
-               }
-               for(IdCount response : idolCountList){
-                   idolCountMap.put(response.getId(),response.getCount());
-               }
-               for(IdolOrFansListResponse response : idolListResponses){
-                   response.setIdolCount(idolCountMap.get(response.getUserId()))
-                           .setFansCount(fansCountMap.get(response.getUserId()));
-               }
-               selfCenterContentResponse.setIdolListResponse(idolListResponses);
-           }
+            if(ids.size()>0){
+                List<IdCount> fansCountList= followMapper.getFansCount(ids);
+                List<IdCount> idolCountList= followMapper.getIdolCount(ids);
+                Map<Integer,Integer> fansCountMap=new HashMap<>(10);
+                Map<Integer,Integer> idolCountMap=new HashMap<>(10);
+                for(IdCount response : fansCountList){
+                    fansCountMap.put(response.getId(),response.getCount());
+                }
+                for(IdCount response : idolCountList){
+                    idolCountMap.put(response.getId(),response.getCount());
+                }
+                for(IdolOrFansListResponse response : idolListResponses){
+                    response.setIdolCount(idolCountMap.get(response.getUserId()))
+                            .setFansCount(fansCountMap.get(response.getUserId()));
+                }
+                selfCenterContentResponse.setIdolListResponse(idolListResponses);
+            }
         }
         //最近点赞
         if(privilege.getRemotelyLike()==0){

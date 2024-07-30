@@ -1,5 +1,6 @@
 package ljl.bilibili.user_center.service.user_info.impl;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.github.yulichang.wrapper.MPJLambdaWrapper;
 import io.minio.MinioClient;
 import io.minio.PutObjectArgs;
@@ -27,9 +28,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 import static ljl.bilibili.user_center.constant.Constant.*;
-/**
- *用户信息
- */
+
 @Service
 public class UserInfoServiceImpl implements UserInfoService {
 
@@ -46,23 +45,18 @@ public class UserInfoServiceImpl implements UserInfoService {
     SendNoticeClient sendNoticeClient;
     @Resource
     UserCenterServiceMapper userCenterServiceMapper;
-    /**
-     *获取用户信息
-     */
+
     @Override
     public Result<UserInfoResponse> getUserInfo(Integer selfId,Integer visitedId){
-        //获取粉丝数、关注数
         MPJLambdaWrapper<User> fansCountWrapper=new MPJLambdaWrapper<>();
         MPJLambdaWrapper<User> idolCountWrapper=new MPJLambdaWrapper<>();
         fansCountWrapper.eq(User::getId,visitedId);
         fansCountWrapper.leftJoin(Follow.class,Follow::getIdolId, User::getId);
         idolCountWrapper.eq(User::getId,visitedId);
         idolCountWrapper.leftJoin(Follow.class,Follow::getFansId, User::getId);
-        //获取用户信息并将粉丝数关注数封装进去
         UserInfoResponse userInfoResponse=userCenterServiceMapper.getUserInfo(visitedId)
                 .setFansCount(Math.toIntExact(userMapper.selectJoinCount(fansCountWrapper)))
                 .setIdolCount(Math.toIntExact(userMapper.selectJoinCount(idolCountWrapper)));
-        //如果自己是已登录状态才会查询该用户是否已关注，未登录状态访问个人主页是不会查询是否该用户已关注的
         if(selfId>0){
             LambdaQueryWrapper<Follow> followLambdaQueryWrapper=new LambdaQueryWrapper<>();
             followLambdaQueryWrapper.eq(Follow::getFansId,selfId);
@@ -80,32 +74,28 @@ public class UserInfoServiceImpl implements UserInfoService {
      */
     @Override
     public Result<Boolean> editSelfInfo(MultipartFile file, Integer userId, String nickname, String intro) throws ServerException, InsufficientDataException, ErrorResponseException, IOException, NoSuchAlgorithmException, InvalidKeyException, InvalidResponseException, XmlParserException, InternalException {
-        //创建数据同步发送消息要到的map并填充值
         Map<String,Object> map=new HashMap<>();
+        LambdaUpdateWrapper<User> wrapper=new LambdaUpdateWrapper<>();
+        wrapper.eq(User::getId,userId);
         map.put(TABLE_ID,userId);
         map.put(OPERATION_TYPE,OPERATION_TYPE_UPDATE);
         map.put(TABLE_NAME,USER_TABLE_NAME);
-        User user=new User();
-        user.setId(userId);
-        //如果上传的修改个人信息请求有封面就上传封面
         if(file!=null){
             String coverName=UUID.randomUUID().toString().substring(0,10)+file.getOriginalFilename();
             minioClient.putObject(PutObjectArgs.builder().contentType(file.getContentType()).stream(file.getInputStream(),-1,10485760).bucket(bucketName).object(coverName).build());
             String url= filePath+bucketName+"/"+coverName;
             map.put(USER_COVER,url);
-            user.setCover(url);
+            wrapper.set(User::getCover,url);
         }
-        //如果有昵称就修改昵称
         if(nickname!=null){
             map.put(USER_NICKNAME,nickname);
-            user.setNickname(nickname);
+            wrapper.set(User::getNickname,nickname);
         }
-        //有介绍就修改介绍
         if(intro!=null){
             map.put(USER_INTRO,intro);
-            user.setIntro(intro);
+            wrapper.set(User::getIntro,intro);
         }
-        userMapper.updateById(user);
+        userMapper.update(null,wrapper);
         sendNoticeClient.sendDBChangeNotice(map);
         return Result.success(true);
     }
