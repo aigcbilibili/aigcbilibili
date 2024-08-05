@@ -61,7 +61,7 @@ onUnmounted(() => {
 })
 const handlerChange = () => {
     editPermiss({
-        id: userInfo.id,
+        userId: userInfo.id,
         idolList: Number(upPermiss[0].value),
         fansList: Number(upPermiss[1].value),
         collectGroup: Number(upPermiss[2].value),
