@@ -32,6 +32,8 @@ public class OutlineVo {
     private String end = "";
     @JsonProperty("fileId")
     private String fileId;
+    @JsonProperty("registerFrom")
+    private String registerFrom;
 
     public static class Chapter {
         // 大纲ID，若为新增大纲则设为NULL

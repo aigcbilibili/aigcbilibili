@@ -70,7 +70,6 @@ public class UploadAndEditServiceImpl implements UploadAndEditService {
     SendNoticeClient client;
     @Resource
     VideoDataMapper videoDataMapper;
-    AtomicBoolean uploadVideoSuccess = new AtomicBoolean(true);
     @Resource
     RedisTemplate objectRedisTemplate;
 
@@ -84,11 +83,11 @@ public class UploadAndEditServiceImpl implements UploadAndEditService {
             Video video = uploadVideoRequest.toEntity();
             LambdaQueryWrapper<Video> queryWrapper = new LambdaQueryWrapper<>();
             String coverFile = uploadVideoRequest.getVideoCover();
-            String url = "https://labilibili.com/video/" + uploadVideoRequest.getUrl();
+            String url = "http://localhost:9000/video/" + uploadVideoRequest.getUrl();
             video.setUrl(url);
             if (coverFile != null && coverFile != "") {
 //                hasCover=true;
-                String prefixPath = "https://labilibili.com/video-cover/";
+                String prefixPath = "http://localhost:9000/video-cover/";
                 byte[] decodedBytes = java.util.Base64.getDecoder().decode(coverFile);
 //                ByteArrayInputStream bis = new ByteArrayInputStream(decodedBytes);
                 // 创建ImageInputStream
@@ -96,58 +95,25 @@ public class UploadAndEditServiceImpl implements UploadAndEditService {
                 // 读取图片文件格式
 //                String imgContentType = getImageFormat(iis);
 //                log.info(imgContentType);
-                String imgContentType="image/jpeg";
+                String imgContentType = "image/jpeg";
                 String coverFileName = video.getName() + UUID.randomUUID().toString().substring(0, 8) + ".jpg";
                 video.setCover(prefixPath + coverFileName);
+                videoMapper.insert(video);
+                videoDataMapper.insert(new VideoData().setVideoId(video.getId()));
                 CustomMultipartFile coverMultipartFile = new CustomMultipartFile(decodedBytes, coverFileName, imgContentType);
-                CompletableFuture.runAsync(() -> log.info(""));
-                CompletableFuture.runAsync(() -> {
-                    log.info("");
-                    log.info("");
-                });
                 queryWrapper.eq(Video::getCover, UUID.randomUUID().toString().substring(0, 8) + coverFileName);
-                CompletableFuture<Void> uploadImgFuture = CompletableFuture.runAsync(() -> minioService.uploadImgFile(coverFileName, coverMultipartFile.getInputStream(), imgContentType)).handle((result, ex) -> {
-                    if (ex != null) {
-                        uploadVideoSuccess.set(false);
-                        log.error("uploadimgfail");
-                    }
-                    return null;
-                });
-                log.info("封面" + video.getCover());
-
-
-                CompletableFuture thenRunFuture = uploadImgFuture.thenRun(() ->
-                        client.sendUploadNotice(new UploadVideo().setVideoId(video.getId()).setVideoName(video.getName()).setUrl(url).setHasCover(true)));
-                CompletableFuture<Void> sendNoticeFuture = CompletableFuture.runAsync(() -> {
-                    User user = userMapper.selectById(uploadVideoRequest.getUserId());
-                    client.dynamicNotice(uploadVideoRequest.toCoverDynamic(user, video));
-                    log.info("dynamicUpload");
-                }).handle((result, ex) -> {
-                    if (ex != null) {
-                        log.error("dynamicFail");
-                        uploadVideoSuccess.set(false);
-                    }
-                    return null;
-                });
+                minioService.uploadImgFile(coverFileName, coverMultipartFile.getInputStream(), imgContentType);
+                client.sendUploadNotice(new UploadVideo().setVideoId(video.getId()).setVideoName(video.getName()).setUrl(url).setHasCover(true));
+                User user = userMapper.selectById(uploadVideoRequest.getUserId());
+                client.dynamicNotice(uploadVideoRequest.toCoverDynamic(user, video));
             } else {
-
-                CompletableFuture thenRunFuture = CompletableFuture.runAsync(() ->
-                        client.sendUploadNotice(new UploadVideo().setVideoId(video.getId()).setVideoName(video.getName()).setUrl(url).setHasCover(false)));
-                CompletableFuture<Void> sendNoticeFuture = CompletableFuture.runAsync(() -> {
-                    User user = userMapper.selectById(uploadVideoRequest.getUserId());
-                    client.dynamicNotice(uploadVideoRequest.toNoCoverDynamic(user, video));
-                }).handle((result, ex) -> {
-                    if (ex != null) {
-                        log.error("dynamicfail");
-                        uploadVideoSuccess.set(false);
-                    }
-                    return null;
-                });
+                videoMapper.insert(video);
+                videoDataMapper.insert(new VideoData().setVideoId(video.getId()));
+                client.sendUploadNotice(new UploadVideo().setVideoId(video.getId()).setVideoName(video.getName()).setUrl(url).setHasCover(false));
+                User user = userMapper.selectById(uploadVideoRequest.getUserId());
+                client.dynamicNotice(uploadVideoRequest.toNoCoverDynamic(user, video));
             }
-            log.info(video.getCover());
-            videoMapper.insert(video);
-            log.info(video.getCover());
-            videoDataMapper.insert(new VideoData().setVideoId(video.getId()));
+
             CompletableFuture<Void> sendDBChangeNotice = CompletableFuture.runAsync(() -> {
                 ObjectMapper objectMapper = new ObjectMapper();
                 JavaTimeModule module = new JavaTimeModule();
@@ -287,7 +253,7 @@ public class UploadAndEditServiceImpl implements UploadAndEditService {
         uploadPartRequest.setResumableIdentifier(uploadPartRequest.getResumableIdentifier().substring(0, commaIndex));
         String resumableIdentifier = uploadPartRequest.getResumableIdentifier();
         String videoName = "";
-        String videoCover="";
+        String videoCover = "";
 //        if(uploadPartRequest.getResumableChunkNumber()==1){
 //            String path = Files.createTempDirectory(".tmp").toString();
 //            File file = new File(path, "test");
@@ -343,12 +309,11 @@ public class UploadAndEditServiceImpl implements UploadAndEditService {
         if (uploadPartMap.get(resumableIdentifier).getTotalCount().equals(uploadPartRequest.getResumableTotalChunks())) {
             log.info("合并");
             videoName = resumableIdentifier + UUID.randomUUID().toString().substring(0, 10);
-            videoCover=uploadPartMap.get(resumableIdentifier).getCover();
+            videoCover = uploadPartMap.get(resumableIdentifier).getCover();
             minioService.composePart(resumableIdentifier, videoName);
         }
         List<String> list = new ArrayList<>();
         list.add(videoName);
-        log.info(videoCover);
         list.add(videoCover);
         return Result.data(list);
     }

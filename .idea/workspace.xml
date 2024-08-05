@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="60509243-e245-4409-8e0d-0435ae2de432" name="更改" comment="上传完整目录">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/notice/src/main/java/ljl/bilibili/notice/service/get_notice/impl/GetNoticeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/notice/src/main/java/ljl/bilibili/notice/service/get_notice/impl/GetNoticeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/user_center/src/main/java/ljl/bilibili/user_center/service/self_center/impl/SelfCenterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/user_center/src/main/java/ljl/bilibili/user_center/service/self_center/impl/SelfCenterServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/user_center/src/main/java/ljl/bilibili/user_center/service/user_info/impl/UserInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/user_center/src/main/java/ljl/bilibili/user_center/service/user_info/impl/UserInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/controller/video_production/UploadAndEditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/controller/video_production/UploadAndEditController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/pojo/UploadPart.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/pojo/UploadPart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/chat/src/main/java/ljl/bilibili/chat/ppt/OutlineVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/chat/src/main/java/ljl/bilibili/chat/ppt/OutlineVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/common/src/main/java/ljl/bilibili/handler/MyMetaObjectHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/common/src/main/java/ljl/bilibili/handler/MyMetaObjectHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/gateway/src/main/java/ljl/bilibili/gateway/GateWayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/gateway/src/main/java/ljl/bilibili/gateway/GateWayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/gateway/src/main/java/ljl/bilibili/gateway/filter/JwtAuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/gateway/src/main/java/ljl/bilibili/gateway/filter/JwtAuthorizationFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/service/video_production/impl/UploadAndEditServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/service/video_production/impl/UploadAndEditServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -572,6 +571,7 @@
       <workItem from="1722265933898" duration="1270000" />
       <workItem from="1722270500615" duration="2053000" />
       <workItem from="1722341308597" duration="257000" />
+      <workItem from="1722861797332" duration="614000" />
     </task>
     <task id="LOCAL-00001" summary="上传所有代码">
       <created>1697809219683</created>
