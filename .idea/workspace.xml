@@ -6,13 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="60509243-e245-4409-8e0d-0435ae2de432" name="更改" comment="上传完整目录">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/gateway/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/java/gateway/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/notice/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/java/notice/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/user_center/src/main/java/ljl/bilibili/user_center/controller/self_center/SelfCenterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/user_center/src/main/java/ljl/bilibili/user_center/controller/self_center/SelfCenterController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java/user_center/src/main/java/ljl/bilibili/user_center/service/self_center/impl/SelfCenterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/user_center/src/main/java/ljl/bilibili/user_center/service/self_center/impl/SelfCenterServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/user_center/src/main/java/ljl/bilibili/user_center/vo/request/self_center/EditUserCenterPrivilegeRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/user_center/src/main/java/ljl/bilibili/user_center/vo/request/self_center/EditUserCenterPrivilegeRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/user_center/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/java/user_center/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/video/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/java/video/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/config/MinioConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/video/src/main/java/ljl/bilibili/video/config/MinioConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -576,6 +571,9 @@
       <workItem from="1722861797332" duration="614000" />
       <workItem from="1722930386997" duration="22000" />
       <workItem from="1722931019614" duration="292000" />
+      <workItem from="1722941513582" duration="308000" />
+      <workItem from="1722941830931" duration="23000" />
+      <workItem from="1722946033907" duration="78000" />
     </task>
     <task id="LOCAL-00001" summary="上传所有代码">
       <created>1697809219683</created>

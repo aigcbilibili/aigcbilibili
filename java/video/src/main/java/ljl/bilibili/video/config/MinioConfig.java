@@ -14,9 +14,6 @@ public class MinioConfig {
     @Value("${minio.access.secret}")
     private String secretKey;
 
-    @Value("${minio.bucket.name}")
-    private String bucketName;
-
     @Bean
     public MinioClient minioClient() {
         try {

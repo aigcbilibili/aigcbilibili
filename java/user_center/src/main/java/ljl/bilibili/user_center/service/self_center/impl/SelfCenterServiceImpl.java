@@ -159,7 +159,7 @@ public class SelfCenterServiceImpl implements SelfCenterService {
     public Result<PrivilegeResponse> getUserPrivilege(Integer userId){
         LambdaQueryWrapper<Privilege> wrapper=new LambdaQueryWrapper<>();
         wrapper.eq(Privilege::getUserId,userId);
-        Privilege privilege=privilegeMapper.selectById(userId);
+        Privilege privilege=privilegeMapper.selectOne(wrapper);
         return Result.data(new PrivilegeResponse().setCollectGroup(privilege.getCollectGroup()).setFansList(privilege.getFansList()).setIdolList(privilege.getIdolList()).setRemotelyLike(privilege.getRemotelyLike()));
     }
     /**
