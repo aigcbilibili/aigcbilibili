@@ -6,7 +6,7 @@ import org.springframework.beans.BeanUtils;
 
 @Data
 public class EditUserCenterPrivilegeRequest {
-    int id;
+    int userId;
     int collectGroup;
     int remotelyLike;
     int fansList;

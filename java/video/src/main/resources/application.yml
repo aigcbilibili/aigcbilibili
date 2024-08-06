@@ -2,7 +2,7 @@ server:
   port: 10201
 spring:
   redis:
-    host: localhost:84
+    host: localhost
   application:
     name: video
   zipkin:
@@ -37,8 +37,8 @@ spring:
 
 minio:
   url: http://localhost:9000
-  access.name: localhost
-  access.secret: localhost
+  access.name: minioadmin
+  access.secret: minioadmin
 rocketmq:
   name-server: localhost:9876
   producer:

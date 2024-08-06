@@ -1,6 +1,7 @@
 package ljl.bilibili.user_center.service.self_center.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.github.yulichang.wrapper.MPJLambdaWrapper;
 import ljl.bilibili.entity.user_center.user_info.Privilege;
 import ljl.bilibili.entity.user_center.user_info.User;
@@ -166,7 +167,9 @@ public class SelfCenterServiceImpl implements SelfCenterService {
      */
     @Override
     public Result<Boolean> editUserPrivilege(EditUserCenterPrivilegeRequest editUserCenterPrivilegeRequest){
-        privilegeMapper.updateById(editUserCenterPrivilegeRequest.toEntity());
+        LambdaUpdateWrapper<Privilege> wrapper=new LambdaUpdateWrapper<>();
+        wrapper.eq(Privilege::getUserId,editUserCenterPrivilegeRequest.getUserId());
+        privilegeMapper.update(editUserCenterPrivilegeRequest.toEntity(),wrapper);
         return Result.success(true);
     }
 

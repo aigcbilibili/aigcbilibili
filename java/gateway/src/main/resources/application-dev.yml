@@ -20,7 +20,7 @@ spring:
 
 
   redis:
-    host: localhost:84
+    host: localhost
   application:
     name: gateway
   zipkin:

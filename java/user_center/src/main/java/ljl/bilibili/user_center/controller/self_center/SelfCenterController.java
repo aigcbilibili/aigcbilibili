@@ -28,7 +28,7 @@ public class SelfCenterController {
 
     }
     @ApiOperation("获取用户个人主页各模块权限开放状态")
-    @PostMapping("/getUserPrivilege/{userId}")
+    @GetMapping("/getUserPrivilege/{userId}")
     public Result<PrivilegeResponse> getUserPrivilege(@PathVariable Integer userId){
         return selfCenterService.getUserPrivilege(userId);
     }

@@ -8,7 +8,7 @@ spring:
       max-request-size: 500MB
       location: /path
   redis:
-    host: localhost:84
+    host: localhost
   cloud:
     nacos:
       discovery:
