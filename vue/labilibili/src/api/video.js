@@ -56,7 +56,7 @@ export const getVideoBig = async (startLoc) => {
 export const getVideoSmall = async (location, userId, folderId) => {
     let getURL = basic_video_get
     if (location === 'trend') {
-        getURL = `/notice/getNotice/getDynamicVideo/${userId}`
+        getURL = `/getNotice/getDynamicVideo/${userId}`
         const response = await request.get(getURL, { userId: userId })
         // 如果数据为空
         if (response.length === 0) {
