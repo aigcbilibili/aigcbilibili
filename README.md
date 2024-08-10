@@ -82,7 +82,7 @@
 - **讯飞星火** 的文生图、给主题生成PPT所有文案（全网首发）
 
 ---
-![e](https://labilibili.com/package/65eec364c3dd5bdeab14220edafc17f4.gif)
+
 
 ## 项目地址
 
