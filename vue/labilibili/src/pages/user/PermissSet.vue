@@ -7,8 +7,8 @@
             <div v-for="(item, index) in upPermiss" :key="index" class="permiss-item flex-based-container">
                 <p style="margin-right: 2rem; color: #7b42b0;">{{ item.name }}</p>
                 <div class="user-content-slide-btn">
-                    <p class="btn-based" :class="{ 'btn-chose': item.value }" @click="item.value = true">允许</p>
-                    <p class="btn-based" :class="{ 'btn-chose': !item.value }" @click="item.value = false">不允许</p>
+                    <p class="btn-based" :class="{ 'btn-chose': !item.value }" @click="item.value = false">允许</p>
+                    <p class="btn-based" :class="{ 'btn-chose': item.value }" @click="item.value = true">不允许</p>
                 </div>
             </div>
         </div>

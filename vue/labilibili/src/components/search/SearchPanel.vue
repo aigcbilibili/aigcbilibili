@@ -87,7 +87,7 @@ watch(searchRes, (newValue, oldValue) => {
  * 搜索最终结果
  */
 const searchFinal = () => {
-  if (!JSON.stringify(searchRes.value) || JSON.stringify(searchRes.value) === "") {
+  if (!searchRes.value) {
     ElMessage.error("请输入内容！")
     return
   }

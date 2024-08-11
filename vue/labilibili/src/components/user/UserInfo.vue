@@ -29,15 +29,17 @@
                 <input v-else :placeholder="'请输入修改后的简介'" class="modified-input-intro" />
             </div>
         </div>
-        <div v-if="isConfigShow" class="user-tool user-info-item">
+        <div v-if="isConfigShow && isBgShow" class="user-tool user-info-item">
             <!-- <img src="@/assets/img/user/config.svg" @click="isEditInfo = ~isEditInfo" id="test-avatar"
                 class="user-info-config common-based-btn" style="margin-right: 1rem; width: 1.6rem; height: 1.6rem;" /> -->
             <img src="@/assets/img/user/changeBg.svg" style="width: 1.6rem; height: 1.6rem;" />
         </div>
         <div class="flex-between-container">
-            <el-button type="primary" class="save-btn" @click="uploadFinal()" v-if="isConfigShow">{{ isEditInfo ? '上传' :
-                '修改信息'
-                }}</el-button>
+            <el-button type="primary" class="save-btn" @click="uploadFinal()" v-if="isConfigShow && isBgShow">{{
+                isEditInfo ?
+                    '上传' :
+                    '修改信息'
+            }}</el-button>
             <followAndMessage :isFollowing="upInfo2.isFollowing" :upId="upId" :userInfo='upInfo2' />
         </div>
         <!--上传头像的页面-->
@@ -99,7 +101,9 @@ const props = defineProps({
         type: Object,
         required: false,
         default: null
-    }
+    },
+
+
 })
 const isBgShow = props.isBgShow
 const handleFileChange = (e) => {
@@ -153,6 +157,8 @@ onMounted(async () => {
         isConfigShow.value = false
         // 验证权限
     }
+
+
     // 如果有传入个人信息
     if (props.upInfo) {
         upInfo.value = props.upInfo
