@@ -1,4 +1,4 @@
-# 仿B站微服务项目
+# 仿B站前后端分离微服务项目
 
 ## 实现了以下功能：
 - 视频的上传、查看、点赞、评论、收藏、弹幕（有分片上传与断点续传实现）
@@ -19,6 +19,39 @@
   ## 项目演示
  ![](https://labilibili.com/package/演5.gif)
 
+## 技术栈
+- springboot：快速开发Java应用程序
+- security：具备强大的鉴权授权
+- nacos：服务注册与发现
+- openfeign：远程调用服务
+- gateway：请求入口与路由网关
+- redis：跨服务缓存
+- elasticsearch：更快的查询与更高的查询匹配度
+- rocketmq：异步处理队列
+- minio：文件对象存储
+- mybatis-plus：便捷执行单表增删改查
+- mybatis-plus-join：业务层多表查询
+- druid：阿里数据库连接池
+- jwt：token实现形式
+- swagger：接口文档
+- gson：谷歌序列化转换
+- hutool：集成众多工具类省去手动实现工具类
+- websocket：实时长连接
+- 讯飞星火api：集成大模型功能
+- jave：视频操作，转码、压缩、截图、去水印等
+- xxl-job：分布式可视化定时任务
+- zipkin：请求链路追踪信息可视化ui
+- slueth：发送请求链路追踪信息
+## 相关教程
+- [本机部署环境](https://www.nowcoder.com/discuss/640368532730990592?sourceSSR=users)
+- [前后端本机运行](https://www.nowcoder.com/discuss/640865638906384384?sourceSSR=users)
+- [前后端接口调通运行](https://www.nowcoder.com/discuss/650364579364581376?sourceSSR=users)
+- [简历话术](https://www.nowcoder.com/feed/main/detail/787da9e468f343039b50014739030311?sourceSSR=users)
+- [需求分析与需求实现思路](https://www.nowcoder.com/discuss/646784094038151168?sourceSSR=users)
+- [技术使用之一篇文章快速掌握redis、mp、es、rocketmq使用](https://www.nowcoder.com/discuss/641707654733123584?sourceSSR=users)
+- [技术使用之快速掌握websocket、权限框架、远程调用、接口文档使用](https://www.nowcoder.com/discuss/642011355679064064?sourceSSR=users)
+- [技术使用之一文迅速掌握minio、xxl-job、jave的使用](https://www.nowcoder.com/discuss/642468459871240192?sourceSSR=users)
+- [技术使用之一文快速掌握链路追踪、异步任务、手机号邮箱号登录、大模型调用](https://www.nowcoder.com/discuss/642820288471703552?sourceSSR=users)
 
 ## 项目地址
 
