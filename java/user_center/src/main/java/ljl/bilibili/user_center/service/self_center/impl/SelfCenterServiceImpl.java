@@ -96,8 +96,12 @@ public class SelfCenterServiceImpl implements SelfCenterService {
                     idolCountMap.put(response.getId(),response.getCount());
                 }
                 for(IdolOrFansListResponse response : fansResponses){
-                    response.setIdolCount(idolCountMap.get(response.getUserId()))
-                            .setFansCount(fansCountMap.get(response.getUserId()));
+                    if(idolCountMap.get(response.getUserId())!=null){
+                        response.setIdolCount(idolCountMap.get(response.getUserId()));
+                    }
+                    if(fansCountMap.get(response.getUserId())!=null){
+                        response.setFansCount(fansCountMap.get(response.getUserId()));
+                    }
                 }
                 selfCenterContentResponse.setFansListResponse(fansResponses);
             }
