@@ -55,6 +55,6 @@ https://github.com/user-attachments/assets/109a5b6e-c354-46ef-abf2-14ffede8b725
 
 ## 项目地址
 
-项目地址：[https://labilibili.com](https://labilibili.com)，演示地址：[https://labilibili.com/video/演示.mp4](https://labilibili.com/video/演示.mp4)，欢迎访问项目，给GitHub点个小星星就更好啦
+项目地址：[https://labilibili.com](https://labilibili.com)，欢迎访问项目，给GitHub点个小星星就更好啦
 
 ---
