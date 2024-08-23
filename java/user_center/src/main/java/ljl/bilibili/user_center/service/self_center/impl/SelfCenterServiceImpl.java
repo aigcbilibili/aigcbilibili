@@ -52,7 +52,12 @@ public class SelfCenterServiceImpl implements SelfCenterService {
      */
     @Override
     public Result<SelfCenterContentResponse> getPersonalCenterContent(Integer selfId, Integer visitedId) {
-        Privilege privilege=privilegeMapper.selectById(visitedId);
+        LambdaQueryWrapper<Privilege> privilegeWrapper=new LambdaQueryWrapper<>();
+        privilegeWrapper.eq(Privilege::getUserId,visitedId);
+        Privilege privilege=privilegeMapper.selectOne(privilegeWrapper);
+        if(selfId.equals(visitedId)){
+            privilege.setCollectGroup(0).setRemotelyLike(0).setFansList(0).setIdolList(0);
+        }
         //投稿视频都公开，因此不需要查询权限后再确认是否需要返回
         SelfCenterContentResponse selfCenterContentResponse=new SelfCenterContentResponse();
         MPJLambdaWrapper<Video> wrapper=new MPJLambdaWrapper<>();
