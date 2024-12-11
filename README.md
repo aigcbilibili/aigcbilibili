@@ -42,16 +42,6 @@ https://github.com/user-attachments/assets/109a5b6e-c354-46ef-abf2-14ffede8b725
 - xxl-job：分布式可视化定时任务
 - zipkin：请求链路追踪信息可视化ui
 - slueth：发送请求链路追踪信息
-## 相关教程
-- [本机部署环境](https://www.nowcoder.com/discuss/640368532730990592?sourceSSR=users)
-- [前后端本机运行](https://www.nowcoder.com/discuss/640865638906384384?sourceSSR=users)
-- [前后端接口调通运行](https://www.nowcoder.com/discuss/650364579364581376?sourceSSR=users)
-- [简历话术](https://www.nowcoder.com/feed/main/detail/787da9e468f343039b50014739030311?sourceSSR=users)
-- [需求分析与需求实现思路](https://www.nowcoder.com/discuss/646784094038151168?sourceSSR=users)
-- [技术使用之一篇文章快速掌握redis、mp、es、rocketmq使用](https://www.nowcoder.com/discuss/641707654733123584?sourceSSR=users)
-- [技术使用之快速掌握websocket、权限框架、远程调用、接口文档使用](https://www.nowcoder.com/discuss/642011355679064064?sourceSSR=users)
-- [技术使用之一文迅速掌握minio、xxl-job、jave的使用](https://www.nowcoder.com/discuss/642468459871240192?sourceSSR=users)
-- [技术使用之一文快速掌握链路追踪、异步任务、手机号邮箱号登录、大模型调用](https://www.nowcoder.com/discuss/642820288471703552?sourceSSR=users)
 
 ## 项目地址
 
